@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.148 紧急热修复 Bash 工具回归缺陷",
+      "OpenAI Codex rust-v0.133.0 默认启用 Goals 引集中投诉",
+      "Gemini CLI v0.44.0 预览版 3 个 P1 PR 紧急修复会话恢复",
+      "GitHub Copilot CLI v1.0.52 MCP 认证竞态与 Windows 路径问题激增",
+      "OpenCode 50 Issues/50 PR 极高活跃度，语音输入功能受追捧",
+      "Qwen Code v0.16.0-nightly 发布失败，OOM 内存问题集群爆发"
+    ],
+    "ai-agents": [
+      "OpenClaw 24 小时 500 Issues/500 PR 密集开发期",
+      "OpenClaw v2026.5.20 强制移除旧 skill 沙箱兼容路径",
+      "OpenClaw Discord 语音会话跟随功能上线",
+      "OpenClaw P1 级 Bug 占比显著，内存泄漏与认证绕过",
+      "OpenClaw #85391 修复 macOS 嵌套 gateway 自毁问题",
+      "OpenClaw 多平台适配聚焦 Telegram/iMessage/Feishu"
+    ],
+    "ai-trending": [
+      "Claude Plugins 官方目录单日斩获 2556 stars",
+      "codegraph 今日 Trending 冠军，+3688 stars 预索引代码知识图谱",
+      "Chrome DevTools 官方 MCP 服务器让 AI 操控浏览器调试",
+      "oh-my-pi 终端 AI 代理支持哈希锚定编辑与子代理",
+      "Rust 语言 AI 基础设施渗透率持续提升",
+      "MCP 协议快速渗透浏览器调试与代码检索场景"
+    ],
+    "ai-web": [
+      "OpenAI 新增 Gartner 2026 Agentic Coding Leader 页面",
+      "Anthropic 今日零更新，延续低调节奏",
+      "OpenAI 借 Gartner 第三方背书强化企业市场可信度",
+      "Anthropic 或处重大产品发布前蓄力期",
+      "Claude 4 系列传闻未获官方确认但社区预期强烈",
+      "数据受限：仅 URL 元数据无正文验证"
+    ],
+    "ai-hn": [
+      "Anna's Archive 致 LLM 公开信 467 分引爆版权伦理辩论",
+      "Antigravity 2.0 首夺 OpenSCAD 3D 基准测试冠军",
+      "微软内部取消 Claude 订阅暴露 AI 成本压力",
+      "Sora 突然关停导致影视项目搁浅引热议",
+      "Superset YC P26 Agent 原生 IDE 引发激烈辩论",
+      "Newsom 呼吁重新构想经济体系应对 AI 冲击"
+    ],
+    "ai-arxiv": [
+      "MOSS 首次实现智能体源代码级自我改写",
+      "Vector Policy Optimization 训练多样性提升测试搜索效率",
+      "DeltaBox Agent 沙箱状态回滚提速至毫秒级",
+      "LLM 逆缩放现象：能力越强预测越差",
+      "AMEL 发现对话历史极性累积偏置 LLM 判断",
+      "Gated DeltaNet-2 解耦擦除与写入推进线性注意力"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 428 万周下载量断层领先开源 LLM",
+      "Qwen3.6-35B-A3B 598 万下载实际调用量最高",
+      "Gemma-4-31B-it 1028 万下载本周冠军，首引原生多模态",
+      "Sulphur-2-base 文本到视频模型下载破 120 万",
+      "Anima 与 HiDream-O1-Image 推动图像生成进入思维链时代",
+      "Unsloth 领跑 GGUF 量化生态，高效部署成刚需"
+    ],
+    "ai-community": [
+      "Google I/O 2026 Antigravity 2.0 Agent API 成讨论焦点",
+      "Gemma 4 + AI Edge Gallery 端到端离线 Agent 实战",
+      "Antigravity 解决 Agent 与浏览器上下文割裂痛点",
+      "浏览器 SDK 检测 LLM Agent 突破人类/机器人二元范式",
+      "Multica 开源平台将 AI Agent 管理为团队成员",
+      "坦诚反思 AI 写几乎所有代码的真实体验"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code rapid hotfix cycle v2.1.147–148",
+      "OpenAI Codex active development in past 24 hours",
+      "Gemini CLI shipped recent updates",
+      "GitHub Copilot CLI sustained investment velocity",
+      "Qwen Code actively developed today",
+      "DeepSeek TUI joins agentic execution shift"
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 issues and 500 PRs in 24h",
+      "OpenClaw v2026.5.20 security-hardening release",
+      "OpenClaw breaking change: legacy skill path removed",
+      "428:72 open-to-closed issue ratio signals backlog",
+      "422:78 open-to-merged PR ratio strains maintainers",
+      "Session state reliability top architectural concern"
+    ],
+    "ai-trending": [
+      "codegraph gains +3,688 stars today",
+      "claude-plugins-official gains +2,556 stars",
+      "Anthropic plugin marketplace validates platform play",
+      "RuView: WiFi-as-sensor spatial AI paradigm",
+      "Understand-Anything: +1,391 stars for code graphs",
+      "Chrome DevTools MCP bridge for agent loops"
+    ],
+    "ai-web": [
+      "OpenAI publishes Gartner 2026 Agentic Coding article",
+      "Anthropic publishes zero new articles today",
+      "OpenAI business-category content only",
+      "Anthropic quiet period continues",
+      "Pre-announcement consolidation suspected",
+      "Agentic coding aligns with industry momentum"
+    ],
+    "ai-hn": [
+      "Anna's Archive LLM appeal: 467 points, 287 comments",
+      "Antigravity 2.0 tops OpenSCAD 3D LLM benchmark",
+      "Gary Marcus checks OpenAI/Anthropic math claims",
+      "AI agents dominate Show HN submissions",
+      "Skepticism toward AI hype persists",
+      "Google ascendancy over OpenAI draws muted engagement"
+    ],
+    "ai-arxiv": [
+      "Tokenisation via Convex Relaxations replaces BPE",
+      "Gated DeltaNet-2 decouples erase and write",
+      "Post-Training is About States, Not Tokens",
+      "Clipping Bottleneck stabilizes RLVR",
+      "Self-evolving agents rewrite source code",
+      "Inverse capability scaling in high-stakes domains"
+    ],
+    "ai-hf": [
+      "Qwen3.6-35B-A3B nears 6M downloads",
+      "DeepSeek-V4-Pro leads with 4,140 likes",
+      "Gemma-4-31B-it exceeds 10M downloads",
+      "SulphurAI text-to-video hits 1.2M downloads",
+      "ByteDance Lance pushes any-to-any architecture",
+      "Unsloth GGUF quantization scene vibrant"
+    ],
+    "ai-community": [
+      "Google I/O 2026 dominates Dev.to AI conversation",
+      "Antigravity 2.0 Agent API dissected by developers",
+      "Offline Brain: custom agent skill for Android",
+      "Browser SDK detects LLM agents built",
+      "$0.37 audit of 14 Google services documented",
+      "AI Resist List curated on Lobste.rs"
+    ]
+  }
+}
