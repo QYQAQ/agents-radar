@@ -49,7 +49,7 @@ export function buildTrendingPrompt(data: TrendingData, dateStr: string, lang: L
         : "（无搜索结果）";
 
   if (lang === "en") {
-    return `You are a technical analyst focused on the AI open-source ecosystem. The following is ${dateStr} GitHub AI-related trending repository data. Please filter for AI relevance, categorize, and analyze trends.
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. The following is ${dateStr} GitHub trending repository data. Please STRICTLY filter for relevance to your research directions only, categorize, and analyze trends. Skip unrelated general tools, frontend frameworks, games, chatbots, or pure business applications.
 
 ## Data Sources
 - **Trending List** (github.com/trending, today's stars most reliable): Real-time hot list with today's new stars
@@ -69,36 +69,37 @@ ${searchSection}
 
 Generate a structured AI Open Source Trends Report in English:
 
-**Step 1 (Filter)**: From the above data, select projects clearly related to AI/ML (exclude unrelated general tools, frontend frameworks, games, etc.). Skip non-AI trending repos.
+**Step 1 (Filter)**: From the above data, select ONLY projects clearly related to your research directions: long-context reasoning, OCR/document understanding, HMER, multimodal reasoning (VLM), post-training alignment (RLHF/DPO/SFT), or hallucination mitigation. Exclude unrelated general tools, frontend frameworks, games, chatbots, and pure business applications.
 
 **Step 2 (Categorize)**: Group filtered projects into these categories (a project can belong to multiple; pick the primary one):
-- 🔧 AI Infrastructure (frameworks, SDKs, inference engines, dev tools, CLI)
-- 🤖 AI Agents / Workflows (agent frameworks, automation, multi-agent systems)
-- 📦 AI Applications (specific apps, vertical solutions)
-- 🧠 LLMs / Training (model weights, training frameworks, fine-tuning tools)
-- 🔍 RAG / Knowledge (vector databases, retrieval-augmented generation, knowledge management)
+- 📄 OCR & Document Intelligence (text recognition, layout analysis, PDF parsing, HMER)
+- 🎭 Multimodal Reasoning (vision-language models, visual QA, cross-modal alignment)
+- 🧠 Long-Context & Reasoning (context window extension, reasoning frameworks, chain-of-thought)
+- 🔧 Post-Training & Alignment (RLHF, DPO, SFT, preference optimization, reasoning enhancement)
+- 👁️ Hallucination & Reliability (fact grounding, hallucination detection, confidence calibration)
+- 🏗️ Infrastructure (training frameworks, inference engines, evaluation tools for above areas)
 
 **Step 3 (Output Report)** with these sections:
 
-1. **Today's Highlights** — 3-5 sentences on the most noteworthy AI open-source developments today
+1. **Today's Highlights** — 3-5 sentences on the most noteworthy developments relevant to long-context, OCR/multimodal, post-training, or hallucination research today
 
 2. **Top Projects by Category** — For each category, list 3-8 representative projects, each with:
    - Project name (with link)
    - Stars data (total + today's new, if available)
    - One sentence: what it is and why it's worth attention today
 
-3. **Trend Signal Analysis** — 200-300 words, distill from today's hot list:
-   - Which type of AI tool is getting explosive community attention?
-   - Any new tech stacks or directions appearing for the first time?
-   - Connection to recent LLM releases / industry events
+3. **Research Trend Signal Analysis** — 200-300 words, distill from today's hot list:
+   - Which research-relevant tools (OCR, multimodal, alignment, reasoning) are gaining community attention?
+   - Any new open-source models, benchmarks, or frameworks relevant to your focus areas?
+   - Connection to recent research breakthroughs or model releases in long-context / vision-language / alignment
 
-4. **Community Hot Spots** — Bullet list of 3-5 specific projects or directions worth developer focus, with brief reasoning
+4. **Research Hot Spots** — Bullet list of 3-5 specific projects or directions worth researcher focus, with brief reasoning and relevance to your areas
 
 Style: English, professional and concise, must include GitHub links for every project.
 `;
   }
 
-  return `你是一位专注于 AI 开源生态的技术分析师。以下是 ${dateStr} 的 GitHub AI 相关热门仓库数据，请进行 AI 相关性筛选、分类和趋势分析。
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${dateStr} 的 GitHub 热门仓库数据，请严格按你的研究方向进行相关性筛选、分类和趋势分析。跳过无关的通用工具、前端框架、游戏、聊天机器人或纯商业应用。
 
 ## 数据说明
 - **Trending 榜单**（github.com/trending，今日 stars 数最可信）：今日实时热榜，含今日新增 stars
@@ -118,30 +119,31 @@ ${searchSection}
 
 请生成一份结构清晰的《AI 开源趋势日报》，要求：
 
-**第一步（过滤）**：从以上数据中筛选出与 AI/ML 明确相关的项目（排除与 AI 无关的通用工具、前端框架、游戏等），对于 Trending 榜单中的非 AI 项目直接略去。
+**第一步（过滤）**：从以上数据中只筛选与你的研究方向明确相关的项目：长上下文推理、OCR/文档理解、HMER、多模态推理（VLM）、post-training 对齐（RLHF/DPO/SFT）、幻觉缓解。排除无关的通用工具、前端框架、游戏、聊天机器人和纯商业应用。
 
 **第二步（分类）**：将筛选后的项目按以下维度分类（一个项目可归入多类，优先归入最主要类别）：
-- 🔧 AI 基础工具（框架、SDK、推理引擎、开发工具、CLI）
-- 🤖 AI 智能体/工作流（Agent 框架、自动化、多智能体）
-- 📦 AI 应用（具体应用产品、垂直场景解决方案）
-- 🧠 大模型/训练（模型权重、训练框架、微调工具）
-- 🔍 RAG/知识库（向量数据库、检索增强、知识管理）
+- 📄 OCR 与文档智能（文本识别、版面分析、PDF 解析、HMER）
+- 🎭 多模态推理（视觉语言模型、视觉问答、跨模态对齐）
+- 🧠 长上下文与推理（上下文扩展、推理框架、思维链）
+- 🔧 Post-Training 与对齐（RLHF、DPO、SFT、偏好优化、推理增强）
+- 👁️ 幻觉与可靠性（事实 grounding、幻觉检测、可信度校准）
+- 🏗️ 基础设施（上述领域的训练框架、推理引擎、评测工具）
 
 **第三步（输出报告）**，包含以下部分：
 
-1. **今日速览** — 3~5 句话概括今日 AI 开源领域最值得关注的动向
+1. **今日速览** — 3~5 句话概括今日与长上下文、OCR/多模态、post-training、幻觉研究相关的最值得关注的动向
 
 2. **各维度热门项目** — 每个维度列出 3~8 个代表项目，每项包含：
    - 项目名（附链接）
    - stars 数据（总量 + 今日新增，如有）
    - 一句话说明：这个项目是什么，为什么今天值得关注
 
-3. **趋势信号分析** — 200~300 字，从今日热榜中提炼：
-   - 哪类 AI 工具正在获得社区爆发性关注？
-   - 有无新兴技术栈或方向首次登榜？
-   - 与近期大模型发布/行业事件的关联
+3. **研究趋势信号分析** — 200~300 字，从今日热榜中提炼：
+   - 哪些与研究相关的工具（OCR、多模态、对齐、推理）正在获得社区关注？
+   - 是否有与你的研究方向相关的新开源模型、基准测试或框架首次登榜？
+   - 与近期长上下文/视觉语言/对齐领域的研究突破或模型发布的关联
 
-4. **社区关注热点** — 以 bullet 形式列出 3~5 个值得开发者重点关注的具体项目或方向，给出简短理由
+4. **研究关注热点** — 以 bullet 形式列出 3~5 个值得研究者重点关注的具体项目或方向，给出简短理由及与你研究领域的相关性
 
 语言要求：中文，专业简洁，每个项目必须附 GitHub 链接。
 `;
@@ -206,7 +208,7 @@ export function buildWebReportPrompt(results: WebFetchResult[], dateStr: string,
         : "本次为增量更新，请聚焦今日新增内容，并结合上下文判断其战略意义。";
 
   if (lang === "en") {
-    return `You are a deep content analyst focused on AI, skilled at extracting strategic signals from official announcements, technical blogs, research papers, and product documentation.
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. Skilled at extracting research-relevant signals from official announcements, technical blogs, and product documentation.
 
 The following content was crawled on ${dateStr} from Anthropic (claude.com / anthropic.com) and OpenAI (openai.com). ${firstRunNote}
 
@@ -214,33 +216,34 @@ ${siteSections}
 
 ---
 
-Generate a detailed AI Official Content Tracking Report in English with these sections:
+Generate a research-focused Official Content Tracking Report in English with these sections:
 
-1. **Today's Highlights** — 3-5 sentences on the most important new releases or developments, calling out key highlights
+1. **Today's Highlights** — 3-5 sentences on the most important developments relevant to long-context, multimodal, alignment, or hallucination research
 
-2. **Anthropic / Claude Content Highlights** — Organize important content by category (news / research / engineering / learn, etc.):
-   - For each piece, 2-4 sentences extracting core insights, technical details, or business significance
+2. **Anthropic / Claude Research Highlights** — Organize content by relevance to your focus areas. For each relevant piece:
+   - 2-4 sentences extracting technical insights, model capabilities, or research methodology
    - Note publication date and original link
-   - If first full crawl, trace important milestones chronologically
+   - Assess relevance to OCR, multimodal reasoning, post-training, or hallucination mitigation
+   - If first full crawl, trace research milestones chronologically
 
-3. **OpenAI Content Highlights** — Same structure, organized by research / release / company / safety categories
-   - ⚠️ Note: OpenAI data is metadata-only (titles derived from URL slugs, no article text). Only list URLs and categories objectively. Do NOT speculate on title meanings or fabricate content summaries. If information is insufficient for analysis, state the data limitation clearly.
+3. **OpenAI Research Highlights** — Same structure, focus on research / safety / model capabilities
+   - ⚠️ Note: OpenAI data is metadata-only. Only list URLs and categories objectively. Do NOT fabricate content. If information is insufficient, state the limitation clearly.
 
-4. **Strategic Signal Analysis** — Based on both companies' release cadence and content focus, analyze:
-   - Each company's recent technical priorities (model capabilities / safety / productization / ecosystem)
-   - Competitive dynamics: who is setting the agenda, who is following
-   - Potential impact on developers and enterprise users
+4. **Research Signal Analysis** — Based on both companies' release cadence and content focus, analyze:
+   - Each company's recent research priorities (model capabilities / multimodal / safety / alignment)
+   - Implications for long-context handling, visual understanding, and reasoning reliability
+   - Potential impact on researchers in your focus areas
 
-5. **Notable Details** — Extract hidden signals from titles, phrasing, and timing, e.g.:
-   - New terms or topics appearing for the first time
-   - Dense releases in a category (may signal a product milestone)
-   - Policy, compliance, and safety developments
+5. **Notable Research Details** — Extract hidden signals from titles, phrasing, and timing, e.g.:
+   - New terms or topics relevant to your research areas appearing for the first time
+   - Dense releases in multimodal, alignment, or safety categories
+   - Policy, safety, and hallucination-related developments
 
 ${isAnyFirstRun ? "6. **Content Landscape Overview** — First full crawl only: summarize the content category distribution for both companies and describe their content strategy style (academic-oriented vs product-oriented vs user stories, etc.)\n\n" : ""}Style: English, professional and detailed, suited for AI researchers, product managers, and technical decision-makers. Every item must include official links.
 `;
   }
 
-  return `你是一位专注于 AI 领域的深度内容分析师，擅长从官方公告、技术博客、研究论文和产品文档中提炼战略信号。
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师，擅长从官方公告、技术博客和产品文档中提炼与研究相关的信号。
 
 以下是 ${dateStr} 从 Anthropic（claude.com / anthropic.com）和 OpenAI（openai.com）官网抓取的内容，${firstRunNote}
 
@@ -248,27 +251,28 @@ ${siteSections}
 
 ---
 
-请生成一份详实的《AI 官方内容追踪报告》，包含以下部分：
+请生成一份研究导向的《官方内容追踪报告》，包含以下部分：
 
-1. **今日速览** — 3~5 句话概括最重要的新发布或动向，点出核心亮点
+1. **今日速览** — 3~5 句话概括与长上下文、多模态、对齐或幻觉研究相关的最重要的新发布或动向
 
-2. **Anthropic / Claude 内容精选** — 按分类（news / research / engineering / learn 等）逐条整理重要内容：
-   - 每篇用 2~4 句话提炼核心观点、技术细节或业务意义
+2. **Anthropic / Claude 研究精选** — 按与你研究方向的相关性整理内容。每篇相关文章：
+   - 用 2~4 句话提炼技术洞察、模型能力或研究方法论
    - 标注发布日期和原文链接
-   - 如首次全量，按时间线梳理重要里程碑
+   - 评估与 OCR、多模态推理、post-training、幻觉缓解的相关性
+   - 如首次全量，按时间线梳理研究里程碑
 
-3. **OpenAI 内容精选** — 同上，按 research / release / company / safety 等分类整理
-   - ⚠️ 注意：OpenAI 数据为仅元数据模式（标题由 URL 路径推断，无正文）。请仅基于 URL 和分类进行客观列举，不要对标题含义进行推测性解读或编造内容摘要。如果信息不足以分析，直接说明数据受限即可。
+3. **OpenAI 研究精选** — 同上，聚焦 research / safety / model capabilities
+   - ⚠️ 注意：OpenAI 数据为仅元数据模式。请仅基于 URL 和分类进行客观列举，不要编造内容摘要。如果信息不足以分析，直接说明数据受限即可。
 
-4. **战略信号解读** — 基于两家公司的发布节奏和内容重点，分析：
-   - 各自近期的技术优先级（模型能力 / 安全 / 产品化 / 生态）
-   - 竞争态势：谁在引领议题，谁在跟进
-   - 对开发者和企业用户的潜在影响
+4. **研究信号解读** — 基于两家公司的发布节奏和内容重点，分析：
+   - 各自近期的研究优先级（模型能力 / 多模态 / 安全 / 对齐）
+   - 对长上下文处理、视觉理解和推理可靠性的影响
+   - 对你研究领域研究者的潜在影响
 
-5. **值得关注的细节** — 从标题、措辞、发布时机中提取隐含信号，例如：
-   - 新兴词汇或话题的首次出现
-   - 某类主题的密集发布（可能预示产品节点）
-   - 政策、合规、安全方面的动向
+5. **值得关注的研究细节** — 从标题、措辞、发布时机中提取隐含信号，例如：
+   - 与你研究领域相关的新兴词汇或话题的首次出现
+   - 多模态、对齐或安全类别的密集发布
+   - 政策、安全和幻觉相关的动向
 
 ${isAnyFirstRun ? "6. **内容格局总览** — 首次全量独有：汇总两家公司各内容类别的数量分布，并说明各自的内容运营风格（学术导向 vs 产品导向 vs 用户故事等）\n\n" : ""}语言要求：中文，专业深入，内容详实，适合 AI 领域研究者、产品经理和技术决策者阅读。每个条目必须附上 GitHub/官网链接。
 `;
@@ -284,41 +288,41 @@ export function buildWeeklyPrompt(
     .join("\n\n---\n\n");
 
   if (lang === "en") {
-    return `You are a technical analyst focused on the AI open-source ecosystem. The following are daily digest summaries from the past 7 days (${weekStr}) of AI tool community activity. Generate a comprehensive weekly recap.
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. The following are daily research digest summaries from the past 7 days (${weekStr}). Generate a comprehensive weekly recap focused on your research directions.
 
 ${digestEntries}
 
 ---
 
-Generate an AI Tools Ecosystem Weekly Report with these sections:
+Generate a Research Weekly Report with these sections:
 
-1. **Week's Top Stories** - 5-8 most important events, releases, and community developments this week, each with date
-2. **CLI Tools Progress** - Overall activity and key changes for each AI CLI tool (Claude Code, Codex, Gemini CLI, etc.)
-3. **AI Agent Ecosystem** - Key developments from OpenClaw and peer projects this week
-4. **Open Source Trends** - Most notable technical directions from GitHub Trending and AI community this week
-5. **HN Community Highlights** - Core AI discussion topics and community sentiment on Hacker News this week
-6. **Official Announcements** - Important content published by Anthropic and OpenAI this week (if any)
-7. **Next Week's Signals** - Based on this week's data, predict trends and upcoming events worth watching
+1. **Week's Top Research Stories** - 5-8 most important research-relevant events, paper releases, and community developments this week, each with date
+2. **OCR & Document Intelligence Progress** - Key developments in text recognition, layout analysis, HMER, and document understanding tools this week
+3. **Multimodal & Reasoning Ecosystem** - Key developments in vision-language models, long-context handling, and reasoning enhancement this week
+4. **Post-Training & Alignment Trends** - Most notable directions in RLHF, DPO, SFT, preference optimization, and alignment research this week
+5. **Hallucination & Reliability Highlights** - Core discussions and developments on hallucination detection, fact grounding, and model trustworthiness this week
+6. **Research Community Pulse** - Notable technical discussions from Hacker News and GitHub relevant to your focus areas
+7. **Next Week's Research Signals** - Based on this week's data, predict research trends and upcoming papers/events worth watching
 
 Style: English, concise and professional, helping technical developers quickly grasp the week's developments.
 `;
   }
 
-  return `你是一位专注于 AI 开源生态的技术分析师。以下是过去 7 天（${weekStr}）的 AI 工具社区每日动态摘要，请生成本周综合回顾报告。
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是过去 7 天（${weekStr}）的每日研究动态摘要，请生成本周综合回顾报告。
 
 ${digestEntries}
 
 ---
 
-请生成《AI 工具生态周报》，包含以下部分：
+请生成《研究动态周报》，包含以下部分：
 
-1. **本周要闻** - 5-8 条本周最重要的事件、版本发布、社区动向，每条附日期
-2. **CLI 工具进展** - 各 AI CLI 工具（Claude Code、Codex、Gemini CLI 等）本周整体动态与关键变化
-3. **AI Agent 生态** - OpenClaw 及同赛道项目的本周重要进展
-4. **开源趋势** - 本周 GitHub Trending 和 AI 社区最关注的技术方向
-5. **HN 社区热议** - 本周 Hacker News AI 讨论的核心话题与社区情绪
-6. **官方动态** - Anthropic 和 OpenAI 本周发布的重要内容（若有）
-7. **下周信号** - 基于本周数据，预判值得关注的趋势或即将到来的事件
+1. **本周研究要闻** - 5-8 条本周最重要的研究相关事件、论文发布、社区动向，每条附日期
+2. **OCR 与文档智能进展** - 文本识别、版面分析、HMER、文档理解工具的本周关键进展
+3. **多模态与推理生态** - 视觉语言模型、长上下文处理、推理增强的本周关键进展
+4. **Post-Training 与对齐趋势** - RLHF、DPO、SFT、偏好优化和对齐研究的本周显著方向
+5. **幻觉与可靠性亮点** - 幻觉检测、事实 grounding、模型可信度的本周核心讨论和进展
+6. **研究社区脉搏** - 本周 Hacker News 和 GitHub 上与你关注领域相关的技术讨论
+7. **下周研究信号** - 基于本周数据，预判值得关注的研究趋势或即将到来的论文/事件
 
 语言要求：中文，简洁专业，适合技术开发者快速掌握一周动态。
 `;
@@ -334,41 +338,41 @@ export function buildMonthlyPrompt(
     .join("\n\n---\n\n");
 
   if (lang === "en") {
-    return `You are a technical analyst focused on the AI open-source ecosystem. The following are ${monthStr} AI tool community digest summaries (${Object.keys(sourceDigests).length} reports total). Generate a comprehensive monthly review.
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. The following are ${monthStr} research digest summaries (${Object.keys(sourceDigests).length} reports total). Generate a comprehensive monthly review focused on your research directions.
 
 ${digestEntries}
 
 ---
 
-Generate an AI Tools Ecosystem Monthly Report with these sections:
+Generate a Research Monthly Report with these sections:
 
-1. **Month's Top Stories** - 5-10 most important events and milestones this month, in chronological order
-2. **CLI Tools Monthly Progress** - Overall development trajectory, major releases, and community growth for each key AI CLI tool
-3. **AI Agent Ecosystem Monthly Review** - Ecosystem landscape shifts, emerging projects, notable signals this month
-4. **Technical Trend Summary** - Most significant technical directions and paradigm shifts in AI open-source this month
-5. **Community Health Assessment** - Monthly activity comparison across major projects, developer engagement evaluation
-6. **Official Announcements Review** - Strategic analysis of Anthropic and OpenAI content published this month
-7. **Next Month's Outlook** - Based on this month's trends, predict key directions and potential events to watch
+1. **Month's Top Research Stories** - 5-10 most important research events and milestones this month, in chronological order
+2. **OCR & Document Intelligence Monthly** - Overall development trajectory, major model releases, and dataset/tool progress in text recognition and document understanding
+3. **Multimodal & Reasoning Ecosystem Review** - Landscape shifts, emerging VLM projects, long-context breakthroughs, and reasoning enhancement signals this month
+4. **Post-Training & Alignment Trend Summary** - Most significant directions in RLHF, DPO, SFT, preference optimization, and alignment methodology this month
+5. **Hallucination & Reliability Assessment** - Monthly progress on hallucination detection, fact grounding, and model trustworthiness evaluation
+6. **Research Community Health** - Monthly activity comparison across research-relevant projects, researcher engagement evaluation
+7. **Next Month's Research Outlook** - Based on this month's trends, predict key research directions and potential paper releases/events to watch
 
 Style: English, in-depth analysis, data-driven, suited for monthly retrospectives and strategic decision-making.
 `;
   }
 
-  return `你是一位专注于 AI 开源生态的技术分析师。以下是 ${monthStr} 月的 AI 工具社区动态汇总（共 ${Object.keys(sourceDigests).length} 份报告），请生成本月综合回顾报告。
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${monthStr} 月的研究动态汇总（共 ${Object.keys(sourceDigests).length} 份报告），请生成本月综合回顾报告。
 
 ${digestEntries}
 
 ---
 
-请生成《AI 工具生态月报》，包含以下部分：
+请生成《研究动态月报》，包含以下部分：
 
-1. **月度要闻** - 本月最重要的 5-10 条事件和里程碑，按时间排列
-2. **CLI 工具月度进展** - 各主要 AI CLI 工具本月整体发展轨迹、重要版本、社区规模变化
-3. **AI Agent 生态月报** - 本月生态格局变化、新兴项目、值得关注的信号
-4. **技术趋势总结** - 本月 AI 开源领域最显著的技术方向与范式变化
-5. **社区生态健康度** - 各主要项目月度活跃度对比、开发者参与度评估
-6. **官方动态回顾** - Anthropic 和 OpenAI 本月发布内容的战略意义分析
-7. **下月展望** - 基于本月趋势，预判值得重点关注的方向和潜在事件
+1. **月度研究要闻** - 本月最重要的 5-10 条研究事件和里程碑，按时间排列
+2. **OCR 与文档智能月度进展** - 文本识别和文档理解领域的主要模型发布、数据集/工具进展的整体发展轨迹
+3. **多模态与推理生态月报** - 本月视觉语言模型格局变化、新兴项目、长上下文突破和推理增强信号
+4. **Post-Training 与对齐趋势总结** - 本月 RLHF、DPO、SFT、偏好优化和对齐方法论的最显著方向
+5. **幻觉与可靠性评估** - 本月幻觉检测、事实 grounding 和模型可信度评估的进展
+6. **研究社区健康度** - 各研究相关项目的月度活跃度对比、研究者参与度评估
+7. **下月研究展望** - 基于本月趋势，预判值得重点关注的研究方向和潜在论文发布/事件
 
 语言要求：中文，深度分析，数据驱动，适合月度复盘和战略决策参考。
 `;
@@ -393,13 +397,13 @@ export function buildHighlightsPrompt(
     .join("\n\n---\n\n");
 
   if (lang === "en") {
-    return `You are a concise news editor. The following are today's AI ecosystem report excerpts, each labeled with a report ID.
+    return `You are a concise research editor. The following are today's research digest excerpts, each labeled with a report ID.
 
 ${sections}
 
 ---
 
-For each report, extract ${itemsPerReport} of the most noteworthy highlights — the kind that would make a reader want to click through. Each highlight should be a single short sentence (under 60 characters).
+For each report, extract ${itemsPerReport} of the most noteworthy research highlights — the kind that would make a researcher want to click through. Each highlight should be a single short sentence (under 60 characters).
 
 Return ONLY valid JSON, no markdown fences, no explanation. Format:
 {"ai-cli":["highlight 1","highlight 2",...],"ai-agents":["highlight 1","highlight 2",...],...}
@@ -408,17 +412,17 @@ Rules:
 - Use the exact report IDs from the [brackets] above as keys
 - Only include reports that have meaningful content (skip reports with failure messages or no activity)
 - ${itemsPerReport} highlights per report, each under 60 characters
-- Focus on: new releases, notable features, trending projects, key discussions
+- Focus on: new paper releases, notable research features, trending research projects, key technical discussions relevant to long-context, OCR/multimodal, alignment, or hallucination
 - Be specific: include project names, version numbers, star counts where relevant`;
   }
 
-  return `你是一位简洁的新闻编辑。以下是今日 AI 生态各报告的摘要，每个报告用 ID 标注。
+  return `你是一位简洁的研究编辑。以下是今日各研究动态报告的摘要，每个报告用 ID 标注。
 
 ${sections}
 
 ---
 
-为每份报告提取 ${itemsPerReport} 条最值得关注的亮点——能让读者产生点击欲望的那种。每条亮点用一句简短的话（不超过 30 个字）。
+为每份报告提取 ${itemsPerReport} 条最值得关注的研究亮点——能让研究者产生点击欲望的那种。每条亮点用一句简短的话（不超过 30 个字）。
 
 只返回合法的 JSON，不要 markdown 代码块，不要解释。格式：
 {"ai-cli":["亮点1","亮点2",...],"ai-agents":["亮点1","亮点2",...],...}
@@ -427,7 +431,7 @@ ${sections}
 - 用上面方括号中的报告 ID 作为 key
 - 只包含有实际内容的报告（跳过失败或无活动的报告）
 - 每个报告 ${itemsPerReport} 条亮点，每条不超过 30 个字
-- 重点关注：新版本发布、重要特性、热门项目、关键讨论
+- 重点关注：新论文发布、重要研究特性、热门研究项目、与长上下文/OCR/多模态/对齐/幻觉相关的关键技术讨论
 - 要具体：包含项目名、版本号、star 数等关键信息`;
 }
 
@@ -447,7 +451,7 @@ export function buildHnPrompt(data: HnData, dateStr: string, lang: Lang = "zh"):
     .join("\n\n");
 
   if (lang === "en") {
-    return `You are an AI industry news analyst. The following are AI-related top posts from Hacker News in the past 24 hours as of ${dateStr} (sorted by score, ${data.stories.length} total):
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. The following are top posts from Hacker News in the past 24 hours as of ${dateStr}. Please STRICTLY filter for posts relevant to your research directions. Ignore startup funding, product launches, and general industry news unrelated to your focus areas.
 
 ---
 
@@ -455,33 +459,34 @@ ${storiesText}
 
 ---
 
-Generate a structured Hacker News AI Community Digest in English:
+Generate a research-focused Hacker News Digest in English:
 
-1. **Today's Highlights** — 3-5 sentences on the hottest AI discussion topics and community sentiment on HN today
+1. **Today's Research Highlights** — 3-5 sentences on the hottest technical discussions relevant to long-context, multimodal, OCR, alignment, or hallucination research on HN today
 
-2. **Top News & Discussions** — Organized by category, select the 2-5 most representative items per category, each with:
+2. **Research News & Discussions** — Organized by research direction, select the 2-5 most representative items per category. If a category has no relevant posts, state "No relevant posts today." Each item includes:
    - Title (with original link) + HN discussion link
    - Score and comment count
-   - One sentence: why this matters, what the community's typical reaction is
+   - One sentence: research significance and community reaction
 
    Categories:
-   - 🔬 Models & Research (new model releases, papers, benchmarks)
-   - 🛠️ Tools & Engineering (open-source projects, frameworks, engineering practices)
-   - 🏢 Industry News (company news, funding, product launches)
-   - 💬 Opinions & Debates (notable Ask HN, Show HN, or hot discussion threads)
+   - 🧠 Long-Context & Reasoning (context windows, reasoning methods, comprehension)
+   - 📄 OCR & Document Intelligence (text recognition, PDF processing, HMER)
+   - 🎭 Multimodal & Vision-Language (VLMs, visual reasoning, cross-modal models)
+   - 🔧 Post-Training & Alignment (RLHF, DPO, SFT, preference optimization)
+   - 👁️ Hallucination & Reliability (fact-checking, grounding, trustworthiness)
 
-3. **Community Sentiment Signal** — 100-200 words analyzing today's HN AI discussion mood and focus:
-   - Which topics are most active (high score + high comments)?
-   - Any clear points of controversy or consensus?
-   - Compared to last cycle, any notable shift in focus?
+3. **Community Sentiment Signal** — 100-200 words analyzing today's HN discussion mood in your focus areas:
+   - Which research topics are most active (high score + high comments)?
+   - Any controversy or consensus on alignment, hallucination, or multimodal capabilities?
+   - Compared to last cycle, any notable shift in research focus?
 
-4. **Worth Deep Reading** — List 2-3 pieces most worth developers/researchers reading in depth, with brief reasoning
+4. **Worth Deep Reading** — List 2-3 pieces most worth researchers reading in depth, with brief reasoning about research relevance
 
 Style: English, concise and professional, preserve all original links.
 `;
   }
 
-  return `你是 AI 行业资讯分析师。以下是 ${dateStr} 从 Hacker News 抓取的过去 24 小时内 AI 相关热门帖子（按分数降序，共 ${data.stories.length} 条）：
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${dateStr} 从 Hacker News 抓取的过去 24 小时内热门帖子。请严格筛选与你研究方向相关的内容，忽略创业融资、产品发布和无关的行业新闻。
 
 ---
 
@@ -489,27 +494,28 @@ ${storiesText}
 
 ---
 
-请生成一份结构清晰的《Hacker News AI 社区动态日报》，要求：
+请生成一份研究导向的《Hacker News 研究动态日报》，要求：
 
-1. **今日速览** — 3~5 句话，概括今日 HN 社区围绕 AI 最热门的讨论方向和情绪
+1. **今日研究速览** — 3~5 句话，概括今日 HN 社区围绕长上下文、多模态、OCR、对齐、幻觉研究最热门的讨论方向和情绪
 
-2. **热门新闻与讨论** — 按以下分类整理，每类选取最具代表性的 2~5 条，每条包含：
+2. **研究新闻与讨论** — 按以下研究方向分类整理，每类选取最具代表性的 2~5 条。如某方向无相关帖子，注明"今日无相关帖子"。每条包含：
    - 标题（附原文链接）+ HN 讨论链接
    - 分数和评论数
-   - 一句话说明：这条内容为什么值得关注，社区有何典型反应
+   - 一句话说明：研究意义及社区典型反应
 
    分类：
-   - 🔬 模型与研究（新模型发布、论文、基准测试）
-   - 🛠️ 工具与工程（开源项目、框架、工程实践）
-   - 🏢 产业动态（公司新闻、融资、产品发布）
-   - 💬 观点与争议（值得关注的 Ask HN、Show HN 或热议帖子）
+   - 🧠 长上下文与推理（上下文窗口、推理方法、理解能力）
+   - 📄 OCR 与文档智能（文本识别、PDF 处理、HMER）
+   - 🎭 多模态与视觉语言（VLM、视觉推理、跨模态模型）
+   - 🔧 Post-Training 与对齐（RLHF、DPO、SFT、偏好优化）
+   - 👁️ 幻觉与可靠性（事实核查、grounding、可信度）
 
-3. **社区情绪信号** — 100~200 字，分析今日 HN AI 讨论的整体情绪和关注重点：
-   - 社区对哪类话题最活跃（高分 + 高评论）？
-   - 有无明显的争议点或共识？
-   - 与上周期相比，关注方向有无明显变化？
+3. **社区情绪信号** — 100~200 字，分析今日 HN 在你关注领域的讨论情绪：
+   - 哪些研究话题最活跃（高分 + 高评论）？
+   - 对齐、幻觉或多模态能力方面有无争议或共识？
+   - 与上周期相比，研究关注方向有无明显变化？
 
-4. **值得深读** — 列出 2~3 条今日最值得开发者/研究者深入阅读的内容，简述理由
+4. **值得深读** — 列出 2~3 条今日最值得研究者深入阅读的内容，简述研究相关理由
 
 语言要求：中文，简洁专业，保留所有原文链接。
 `;
@@ -531,7 +537,7 @@ export function buildPhPrompt(data: PhData, dateStr: string, lang: Lang = "zh"):
     .join("\n\n");
 
   if (lang === "en") {
-    return `You are an AI product analyst. The following are AI-related products launched on Product Hunt in the past 24 hours as of ${dateStr} (sorted by votes, ${data.products.length} total):
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. The following are products launched on Product Hunt in the past 24 hours. Please STRICTLY filter for products relevant to your research directions: tools for document understanding, visual reasoning, alignment evaluation, or research workflows. Skip general chatbots, marketing tools, and unrelated SaaS products.
 
 ---
 
@@ -539,34 +545,34 @@ ${productsText}
 
 ---
 
-Generate a structured Product Hunt AI Products Digest in English:
+Generate a research-focused Product Hunt Digest in English:
 
-1. **Today's Highlights** — 3-5 sentences on the most notable AI product launches and trends on Product Hunt today
+1. **Today's Highlights** — 3-5 sentences on the most notable product launches relevant to document intelligence, multimodal reasoning, alignment tools, or research workflows on Product Hunt today
 
-2. **Top Products** — Organized by category, select the most representative products per category, each with:
+2. **Top Products** — Organized by research relevance, select the most representative products per category. If a category has no relevant products, state "No relevant products today." Each includes:
    - Product name + tagline (with Product Hunt link and website link)
    - Vote count and comment count
-   - One sentence: what problem it solves, what makes it stand out
+   - One sentence: what research problem it addresses, why it stands out for researchers
 
    Categories:
-   - 🤖 AI Agents & Assistants (chatbots, copilots, autonomous agents)
-   - 🛠️ Developer Tools (APIs, SDKs, coding tools, dev infrastructure)
-   - 📊 AI Applications (vertical products, SaaS tools powered by AI)
-   - 🎨 Creative & Content (image/video/text generation, design tools)
-   - 🔧 Infrastructure & Models (model serving, fine-tuning, MLOps)
+   - 📄 Document Intelligence & OCR (PDF tools, text extraction, formula recognition, layout analysis)
+   - 🎭 Multimodal & Vision (visual reasoning tools, image-to-text, cross-modal platforms)
+   - 🔧 Alignment & Evaluation (RLHF tools, preference data collection, hallucination detection, model eval)
+   - 🧠 Reasoning & Research (long-context tools, chain-of-thought visualization, research assistants)
+   - 🏗️ Research Infrastructure (training platforms, dataset tools, benchmarking suites)
 
-3. **Market Signal** — 100-200 words analyzing today's Product Hunt AI launch patterns:
-   - Which categories are most crowded?
-   - Any innovative approaches or novel use cases?
-   - Open-source vs closed-source trend among launches
+3. **Research Market Signal** — 100-200 words analyzing today's launch patterns relevant to your focus areas:
+   - Which research-tool categories are most active?
+   - Any innovative approaches to OCR, multimodal understanding, or alignment?
+   - Open-source vs closed-source trend among research tools
 
-4. **Worth Trying** — List 2-3 products most worth developers trying out, with brief reasoning
+4. **Worth Exploring** — List 2-3 products most worth researchers exploring, with brief reasoning about research utility
 
 Style: English, concise and professional, preserve all original links.
 `;
   }
 
-  return `你是 AI 产品分析师。以下是 ${dateStr} 从 Product Hunt 抓取的过去 24 小时内 AI 相关产品发布（按投票数降序，共 ${data.products.length} 个）：
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${dateStr} 从 Product Hunt 抓取的过去 24 小时内产品发布。请严格筛选与你研究方向相关的产品：文档理解、视觉推理、对齐评测或研究工作流工具。跳过通用聊天机器人、营销工具和无关的 SaaS 产品。
 
 ---
 
@@ -574,28 +580,28 @@ ${productsText}
 
 ---
 
-请生成一份结构清晰的《Product Hunt AI 产品日报》，要求：
+请生成一份研究导向的《Product Hunt 研究工具日报》，要求：
 
-1. **今日速览** — 3~5 句话，概括今日 Product Hunt 上 AI 产品发布的整体趋势和亮点
+1. **今日速览** — 3~5 句话，概括今日 Product Hunt 上与文档智能、多模态推理、对齐工具或研究工作流相关的产品发布趋势和亮点
 
-2. **热门产品** — 按以下分类整理，每类选取最具代表性的产品，每个产品包含：
+2. **热门产品** — 按研究相关性分类整理，每类选取最具代表性的产品。如某方向无相关产品，注明"今日无相关产品"。每个产品包含：
    - 产品名 + 简介（附 Product Hunt 链接和官网链接）
    - 投票数和评论数
-   - 一句话说明：解决什么问题，有何独特之处
+   - 一句话说明：解决什么研究问题，对研究者有何独特价值
 
    分类：
-   - 🤖 AI 智能体与助手（聊天机器人、Copilot、自主 Agent）
-   - 🛠️ 开发者工具（API、SDK、编程工具、开发基础设施）
-   - 📊 AI 应用（垂直场景产品、AI 驱动的 SaaS 工具）
-   - 🎨 创意与内容（图像/视频/文本生成、设计工具）
-   - 🔧 基础设施与模型（模型服务、微调、MLOps）
+   - 📄 文档智能与 OCR（PDF 工具、文本提取、公式识别、版面分析）
+   - 🎭 多模态与视觉（视觉推理工具、图像到文本、跨模态平台）
+   - 🔧 对齐与评测（RLHF 工具、偏好数据收集、幻觉检测、模型评测）
+   - 🧠 推理与研究（长上下文工具、思维链可视化、研究助手）
+   - 🏗️ 研究基础设施（训练平台、数据集工具、基准测试套件）
 
-3. **市场信号** — 100~200 字，分析今日 Product Hunt AI 产品的发布规律：
-   - 哪些类别最密集？
-   - 有无创新性的思路或新颖的应用场景？
-   - 开源 vs 闭源的趋势
+3. **研究市场信号** — 100~200 字，分析今日与你关注领域相关的产品发布规律：
+   - 哪些研究工具类别最活跃？
+   - OCR、多模态理解或对齐方面有无创新性思路？
+   - 研究工具中开源 vs 闭源的趋势
 
-4. **值得试用** — 列出 2~3 个最值得开发者试用的产品，简述理由
+4. **值得探索** — 列出 2~3 个最值得研究者探索的产品，简述研究价值
 
 语言要求：中文，简洁专业，保留所有原文链接。
 `;
@@ -626,7 +632,7 @@ export function buildArxivPrompt(data: ArxivData, dateStr: string, lang: Lang = 
     .join("\n\n");
 
   if (lang === "en") {
-    return `You are an AI research analyst. The following are recent AI-related papers from ArXiv as of ${dateStr} (${data.papers.length} papers from cs.AI, cs.CL, cs.LG):
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. The following are recent papers from ArXiv as of ${dateStr} (${data.papers.length} papers from targeted keyword searches covering cs.CV, cs.CL, cs.AI, cs.LG).
 
 ---
 
@@ -634,30 +640,32 @@ ${papersText}
 
 ---
 
-Generate a structured ArXiv AI Research Digest in English:
+Generate a structured Research Digest in English:
 
-1. **Today's Highlights** — 3-5 sentences on the most significant research directions and breakthroughs
+1. **Today's Highlights** — 3-5 sentences on the most significant research directions and breakthroughs relevant to your focus areas
 
-2. **Key Papers** — Select 8-15 most important papers, organized by theme:
-   - 🧠 Large Language Models (architecture, training, alignment, evaluation)
-   - 🤖 Agents & Reasoning (planning, tool use, multi-agent, chain-of-thought)
-   - 🔧 Methods & Frameworks (new techniques, benchmarks, efficiency improvements)
-   - 📊 Applications (domain-specific, multimodal, code generation)
+2. **Key Papers** — Select 8-15 most important papers, organized by research direction:
+   - 📄 Dense Text OCR & Document Intelligence (text recognition, layout analysis, scene text, document understanding)
+   - 🖋️ Handwritten Math Expression Recognition HMER (formula recognition, symbolic decoding, math datasets)
+   - 🧠 Long-Context Comprehension & Reasoning (context extension, positional encoding, long-document understanding, reasoning methods)
+   - 🎭 Multimodal Reasoning (vision-language models, visual QA, cross-modal alignment, image-text understanding)
+   - 🔧 Post-Training & Alignment (RLHF, DPO, SFT, preference optimization, test-time compute, reasoning enhancement)
+   - 👁️ Hallucination Detection & Mitigation (fact grounding, confidence calibration, trustworthiness evaluation)
 
    For each paper:
    - Title (with ArXiv link)
    - Authors (abbreviated)
-   - One sentence: key contribution and why it matters
+   - One sentence: key contribution and why it matters to researchers in your focus areas
 
-3. **Research Trend Signal** — 100-200 words on emerging research directions visible from today's submissions
+3. **Research Trend Signal** — 100-200 words on emerging research directions visible from today's submissions relevant to your focus areas
 
-4. **Worth Deep Reading** — 2-3 papers most worth reading in full, with reasoning
+4. **Worth Deep Reading** — 2-3 papers most worth reading in full, with reasoning about relevance to OCR, multimodal, alignment, or hallucination research
 
 Style: English, concise and professional, preserve all ArXiv links.
 `;
   }
 
-  return `你是 AI 研究分析师。以下是 ${dateStr} ArXiv 上最新的 AI 相关论文（共 ${data.papers.length} 篇，来自 cs.AI、cs.CL、cs.LG）：
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${dateStr} ArXiv 上最新的相关论文（共 ${data.papers.length} 篇，来自针对 cs.CV、cs.CL、cs.AI、cs.LG 的关键词搜索）：
 
 ---
 
@@ -665,24 +673,26 @@ ${papersText}
 
 ---
 
-请生成一份结构清晰的《ArXiv AI 研究日报》，要求：
+请生成一份结构清晰的研究日报，要求：
 
-1. **今日速览** — 3~5 句话，概括今日最值得关注的研究方向和突破
+1. **今日速览** — 3~5 句话，概括今日与你关注领域最相关的研究方向和突破
 
-2. **重点论文** — 选出 8~15 篇最重要的论文，按主题分类：
-   - 🧠 大语言模型（架构、训练、对齐、评估）
-   - 🤖 智能体与推理（规划、工具使用、多智能体、思维链）
-   - 🔧 方法与框架（新技术、基准测试、效率优化）
-   - 📊 应用（垂直领域、多模态、代码生成）
+2. **重点论文** — 选出 8~15 篇最重要的论文，按研究方向分类：
+   - 📄 密集文本 OCR 与文档智能（文本识别、版面分析、场景文本、文档理解）
+   - 🖋️ 手写数学公式识别 HMER（公式识别、符号解码、数学数据集）
+   - 🧠 长上下文理解与推理（上下文扩展、位置编码、长文档理解、推理方法）
+   - 🎭 多模态推理（视觉语言模型、视觉问答、跨模态对齐、图文理解）
+   - 🔧 Post-Training 与对齐（RLHF、DPO、SFT、偏好优化、推理时计算、推理增强）
+   - 👁️ 幻觉检测与缓解（事实 grounding、可信度校准、可靠性评估）
 
    每篇论文包含：
    - 标题（附 ArXiv 链接）
    - 作者（缩写）
-   - 一句话说明：核心贡献和为什么值得关注
+   - 一句话说明：核心贡献及对你研究方向的研究价值
 
-3. **研究趋势信号** — 100~200 字，从今日投稿中观察到的新兴研究方向
+3. **研究趋势信号** — 100~200 字，从今日投稿中观察到的与你关注领域相关的新兴研究方向
 
-4. **值得精读** — 2~3 篇最值得完整阅读的论文，简述理由
+4. **值得精读** — 2~3 篇最值得完整阅读的论文，简述与 OCR、多模态、对齐或幻觉研究的相关性
 
 语言要求：中文，简洁专业，保留所有 ArXiv 链接。
 `;
@@ -710,7 +720,7 @@ export function buildHfPrompt(data: HfData, dateStr: string, lang: Lang = "zh"):
     .join("\n\n");
 
   if (lang === "en") {
-    return `You are an AI model ecosystem analyst. The following are trending models on Hugging Face Hub as of ${dateStr} (${data.models.length} models, sorted by weekly likes):
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. The following are trending models on Hugging Face Hub as of ${dateStr} (${data.models.length} models, sorted by weekly likes). Please focus on models relevant to your research directions.
 
 ---
 
@@ -718,33 +728,35 @@ ${modelsText}
 
 ---
 
-Generate a structured Hugging Face Trending Models Digest in English:
+Generate a structured Hugging Face Research Models Digest in English:
 
-1. **Today's Highlights** — 3-5 sentences on the most notable model releases and trends on Hugging Face
+1. **Today's Highlights** — 3-5 sentences on the most notable model releases and trends relevant to OCR, multimodal reasoning, long-context, alignment, or hallucination research on Hugging Face
 
-2. **Trending Models** — Organized by category, each with:
+2. **Trending Models** — Organized by research relevance, each with:
    - Model name (with HF link)
    - Author, likes, downloads
-   - One sentence: what it is, why it's trending
+   - One sentence: what it is, why it's trending, and relevance to your focus areas
 
    Categories:
-   - 🧠 Language Models (LLMs, chat models, instruction-tuned)
-   - 🎨 Multimodal & Generation (image, video, audio, text-to-X)
-   - 🔧 Specialized Models (code, math, medical, embeddings)
-   - 📦 Fine-tunes & Quantizations (community fine-tunes, GGUF, AWQ)
+   - 📄 OCR & Document Models (text recognition, layout analysis, document understanding, formula recognition)
+   - 🎭 Multimodal & Vision-Language (VLMs, visual encoders, cross-modal models, image-text understanding)
+   - 🧠 Long-Context & Reasoning Models (extended context LLMs, reasoning-enhanced models, math models)
+   - 🔧 Post-Training & Alignment (RLHF/DPO/SFT models, preference-tuned models, alignment-focused releases)
+   - 👁️ Hallucination Mitigation (fact-grounded models, calibrated confidence models, RAG-enhanced models)
+   - 🏗️ Research Infrastructure (training frameworks, evaluation suites, dataset tools for above areas)
 
-3. **Ecosystem Signal** — 100-200 words analyzing model ecosystem trends:
-   - Which model families are gaining momentum?
-   - Open-weight vs proprietary trends
-   - Notable quantization or fine-tuning activity
+3. **Research Ecosystem Signal** — 100-200 words analyzing model ecosystem trends relevant to your focus areas:
+   - Which model families in OCR, multimodal, or alignment are gaining momentum?
+   - Open-weight vs proprietary trends in vision-language and reasoning models
+   - Notable fine-tuning or post-training activity for document understanding or hallucination mitigation
 
-4. **Worth Exploring** — 2-3 models most worth trying or studying, with reasoning
+4. **Worth Exploring** — 2-3 models most worth researchers trying or studying, with reasoning about research relevance
 
 Style: English, concise and professional, preserve all HuggingFace links.
 `;
   }
 
-  return `你是 AI 模型生态分析师。以下是 ${dateStr} Hugging Face Hub 上的热门模型（共 ${data.models.length} 个，按周点赞数排序）：
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${dateStr} Hugging Face Hub 上的热门模型（共 ${data.models.length} 个，按周点赞数排序）。请重点关注与你研究方向相关的模型。
 
 ---
 
@@ -752,27 +764,29 @@ ${modelsText}
 
 ---
 
-请生成一份结构清晰的《Hugging Face 热门模型日报》，要求：
+请生成一份研究导向的《Hugging Face 研究模型日报》，要求：
 
-1. **今日速览** — 3~5 句话，概括 Hugging Face 上最值得关注的模型发布和趋势
+1. **今日速览** — 3~5 句话，概括 Hugging Face 上与 OCR、多模态推理、长上下文、对齐或幻觉研究相关的最值得关注的模型发布和趋势
 
-2. **热门模型** — 按以下分类整理，每个模型包含：
+2. **热门模型** — 按研究相关性分类整理，每个模型包含：
    - 模型名（附 HF 链接）
    - 作者、点赞数、下载数
-   - 一句话说明：这个模型是什么，为什么在趋势榜上
+   - 一句话说明：这个模型是什么，为什么上榜，以及与你研究方向的相关性
 
    分类：
-   - 🧠 语言模型（LLM、对话模型、指令微调）
-   - 🎨 多模态与生成（图像、视频、音频、文本到X）
-   - 🔧 专用模型（代码、数学、医疗、嵌入）
-   - 📦 微调与量化（社区微调、GGUF、AWQ）
+   - 📄 OCR 与文档模型（文本识别、版面分析、文档理解、公式识别）
+   - 🎭 多模态与视觉语言（VLM、视觉编码器、跨模态模型、图文理解）
+   - 🧠 长上下文与推理模型（扩展上下文 LLM、推理增强模型、数学模型）
+   - 🔧 Post-Training 与对齐（RLHF/DPO/SFT 模型、偏好微调模型、对齐-focused 发布）
+   - 👁️ 幻觉缓解（事实 grounded 模型、校准置信度模型、RAG 增强模型）
+   - 🏗️ 研究基础设施（上述领域的训练框架、评测套件、数据集工具）
 
-3. **生态信号** — 100~200 字，分析模型生态趋势：
-   - 哪些模型家族势头正旺？
-   - 开源权重 vs 闭源的趋势
-   - 值得注意的量化或微调活动
+3. **研究生态信号** — 100~200 字，分析与你关注领域相关的模型生态趋势：
+   - OCR、多模态或对齐领域哪些模型家族势头正旺？
+   - 视觉语言和推理模型中开源权重 vs 闭源的趋势
+   - 文档理解或幻觉缓解方面的微调或后训练活动
 
-4. **值得探索** — 2~3 个最值得尝试或研究的模型，简述理由
+4. **值得探索** — 2~3 个最值得研究者尝试或研究的模型，简述研究相关理由
 
 语言要求：中文，简洁专业，保留所有 HuggingFace 链接。
 `;
@@ -829,7 +843,7 @@ export function buildCommunityPrompt(
         : "（无 Lobste.rs 内容）";
 
   if (lang === "en") {
-    return `You are a tech community analyst. The following are AI-related content from Dev.to and Lobste.rs as of ${dateStr}:
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. The following are content from Dev.to and Lobste.rs as of ${dateStr}. Please filter for articles and discussions relevant to your research directions: technical tutorials, implementation experiences, new tools, and research methods. Skip product promotions, business analysis, and general AI news.
 
 ## Dev.to Articles (${devto.articles.length} articles)
 
@@ -843,32 +857,32 @@ ${lobstersText}
 
 ---
 
-Generate a structured Tech Community AI Digest in English:
+Generate a research-focused Tech Community Digest in English:
 
-1. **Today's Highlights** — 3-5 sentences on the most discussed AI topics across these communities today
+1. **Today's Research Highlights** — 3-5 sentences on the most discussed technical topics relevant to long-context, multimodal, OCR, alignment, or hallucination research across these communities today
 
-2. **Dev.to Highlights** — Select 5-10 most valuable articles:
+2. **Dev.to Research Highlights** — Select 5-10 most valuable articles relevant to your focus areas:
    - Title (with link)
    - Reactions and comments
-   - One sentence: key takeaway for developers
+   - One sentence: key research takeaway or implementation insight
 
-3. **Lobste.rs Highlights** — Select 3-8 most notable stories:
+3. **Lobste.rs Research Highlights** — Select 3-8 most notable stories relevant to your focus areas:
    - Title (with link + discussion link)
    - Score and comments
-   - One sentence: why it's worth reading
+   - One sentence: research relevance and why it's worth reading
 
-4. **Community Pulse** — 100-200 words on what these communities are talking about:
-   - Common themes across both platforms
-   - Practical concerns developers have about AI tools
-   - Emerging tutorials, patterns, or best practices
+4. **Research Community Pulse** — 100-200 words on what these communities are discussing in your focus areas:
+   - Common research themes across both platforms
+   - Practical implementation concerns for OCR, multimodal, or alignment researchers
+   - Emerging tutorials, patterns, or best practices for document understanding, visual reasoning, or hallucination mitigation
 
-5. **Worth Reading** — 2-3 articles/stories most worth reading in depth
+5. **Worth Reading** — 2-3 articles/stories most worth reading in depth, with reasoning about research relevance
 
 Style: English, concise and developer-friendly, preserve all original links.
 `;
   }
 
-  return `你是技术社区分析师。以下是 ${dateStr} Dev.to 和 Lobste.rs 上的 AI 相关内容：
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${dateStr} Dev.to 和 Lobste.rs 上的内容。请筛选与你研究方向相关的文章和讨论：技术教程、实现经验、新工具和研究方法。跳过产品推广、商业分析和通用 AI 新闻。
 
 ## Dev.to 文章（共 ${devto.articles.length} 篇）
 
@@ -882,26 +896,26 @@ ${lobstersText}
 
 ---
 
-请生成一份结构清晰的《技术社区 AI 动态日报》，要求：
+请生成一份研究导向的《技术社区研究动态日报》，要求：
 
-1. **今日速览** — 3~5 句话，概括今日技术社区围绕 AI 最热门的讨论方向
+1. **今日研究速览** — 3~5 句话，概括今日技术社区围绕长上下文、多模态、OCR、对齐、幻觉研究最热门的讨论方向
 
-2. **Dev.to 精选** — 选出 5~10 篇最有价值的文章：
+2. **Dev.to 研究精选** — 选出 5~10 篇与你关注领域相关的最有价值的文章：
    - 标题（附链接）
    - 点赞数和评论数
-   - 一句话说明：对开发者的核心价值
+   - 一句话说明：对研究者的核心收获或实现洞察
 
-3. **Lobste.rs 精选** — 选出 3~8 条最值得关注的内容：
+3. **Lobste.rs 研究精选** — 选出 3~8 条与你关注领域相关的最值得关注的内容：
    - 标题（附链接 + 讨论链接）
    - 分数和评论数
-   - 一句话说明：为什么值得阅读
+   - 一句话说明：研究相关性及为什么值得阅读
 
-4. **社区脉搏** — 100~200 字，分析技术社区在聊什么：
-   - 两个平台共同关注的主题
-   - 开发者对 AI 工具的实际关切
-   - 新兴的教程、模式或最佳实践
+4. **研究社区脉搏** — 100~200 字，分析技术社区在你关注领域的讨论：
+   - 两个平台共同关注的研究主题
+   - OCR、多模态或对齐研究者的实际实现关切
+   - 文档理解、视觉推理或幻觉缓解方面的新兴教程、模式或最佳实践
 
-5. **值得精读** — 2~3 篇最值得深入阅读的内容
+5. **值得精读** — 2~3 篇最值得深入阅读的内容，简述研究相关理由
 
 语言要求：中文，简洁专业，保留所有原文链接。
 `;
