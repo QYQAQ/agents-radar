@@ -1,8 +1,13 @@
 /**
- * ArXiv AI papers fetched via the ArXiv API (Atom feed).
+ * ArXiv papers fetched via the ArXiv API (Atom feed).
  *
- * Strategy: query cs.AI + cs.CL + cs.LG categories for the newest papers,
- * sorted by submission date, filtered to last 48h.
+ * Strategy: keyword-based queries targeting research interests:
+ * - Dense text OCR, HMER, document understanding
+ * - Multimodal reasoning, vision-language models
+ * - Long-context comprehension and reasoning
+ * - Post-training alignment (RLHF, DPO, SFT)
+ * - Hallucination detection and mitigation
+ * Sorted by submission date, filtered to last 48h.
  */
 
 // ---------------------------------------------------------------------------
@@ -33,8 +38,17 @@ export interface ArxivData {
 const ARXIV_MAX_RESULTS = 50;
 const API_URL = "https://export.arxiv.org/api/query";
 
-/** ArXiv categories to search. */
-const CATEGORIES = ["cs.AI", "cs.CL", "cs.LG"];
+/** Keyword-based search queries aligned with research interests. */
+const SEARCH_QUERIES = [
+  // OCR + HMER + document understanding
+  "cat:cs.CV+AND+(all:OCR+OR+all:HMER+OR+all:%22handwritten+math%22+OR+all:%22document+understanding%22+OR+all:%22scene+text%22+OR+all:%22dense+text%22)",
+  // Multimodal reasoning + vision-language + hallucination
+  "(cat:cs.CV+OR+cat:cs.CL+OR+cat:cs.AI)+AND+(all:%22multimodal+reasoning%22+OR+all:%22vision+language%22+OR+all:VLM+OR+all:hallucination+OR+all:%22fact+grounding%22+OR+all:%22visual+reasoning%22)",
+  // Long-context + comprehension
+  "(cat:cs.CL+OR+cat:cs.AI+OR+cat:cs.LG)+AND+(all:%22long+context%22+OR+all:%22context+window%22+OR+all:%22long+document%22+OR+all:comprehension+OR+all:%22extended+context%22)",
+  // Post-training + alignment + reasoning enhancement
+  "(cat:cs.LG+OR+cat:cs.AI+OR+cat:cs.CL)+AND+(all:%22post-training%22+OR+all:RLHF+OR+all:DPO+OR+all:SFT+OR+all:%22preference+optimization%22+OR+all:%22reasoning+enhancement%22+OR+all:%22test-time+compute%22)",
+];
 
 /** Delay between requests (ArXiv asks for 3s). */
 const REQUEST_DELAY_MS = 3000;
@@ -107,13 +121,13 @@ async function sleep(ms: number): Promise<void> {
 export async function fetchArxivData(): Promise<ArxivData> {
   const seen = new Map<string, ArxivPaper>();
 
-  for (let i = 0; i < CATEGORIES.length; i++) {
-    const cat = CATEGORIES[i]!;
+  for (let i = 0; i < SEARCH_QUERIES.length; i++) {
+    const query = SEARCH_QUERIES[i]!;
     if (i > 0) await sleep(REQUEST_DELAY_MS);
 
     try {
       const params = new URLSearchParams({
-        search_query: `cat:${cat}`,
+        search_query: query,
         sortBy: "submittedDate",
         sortOrder: "descending",
         max_results: String(ARXIV_MAX_RESULTS),
@@ -124,7 +138,7 @@ export async function fetchArxivData(): Promise<ArxivData> {
       });
 
       if (!resp.ok) {
-        console.error(`  [arxiv] ${cat}: HTTP ${resp.status}`);
+        console.error(`  [arxiv] query-${i + 1}: HTTP ${resp.status}`);
         continue;
       }
 
@@ -139,9 +153,9 @@ export async function fetchArxivData(): Promise<ArxivData> {
         }
       }
 
-      console.log(`  [arxiv] ${cat}: ${entryBlocks.length} papers`);
+      console.log(`  [arxiv] query-${i + 1}: ${entryBlocks.length} papers`);
     } catch (err) {
-      console.error(`  [arxiv] ${cat}: ${err}`);
+      console.error(`  [arxiv] query-${i + 1}: ${err}`);
     }
   }
 
