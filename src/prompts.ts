@@ -98,7 +98,7 @@ export function buildCliPrompt(
   const prNote = sampleNote(prs.length, sampledPrs.length, lang);
 
   if (lang === "en") {
-    return `You are a technical analyst focused on AI developer tools. Based on the following GitHub data, generate the ${cfg.name} community digest for ${dateStr}.
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. Based on the following GitHub data from ${cfg.name}, generate a digest for ${dateStr} that ONLY covers updates relevant to these research directions. Ignore general product announcements, UI changes, or commercial features unrelated to your focus areas.
 
 # Data source: github.com/${cfg.repo}
 
@@ -126,7 +126,7 @@ Style: concise and professional, suited for technical developers. Include GitHub
 `;
   }
 
-  return `你是一位专注于 AI 开发工具的技术分析师。请根据以下 GitHub 数据，生成 ${dateStr} 的 ${cfg.name} 社区动态日报。
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐、幻觉缓解的研究分析师。请根据以下 GitHub 数据，生成 ${dateStr} 的 ${cfg.name} 研究动态摘要。请只总结与上述研究方向相关的内容，忽略一般性的产品发布、UI 变更或与研究无关的商业功能。
 
 # 数据来源: github.com/${cfg.repo}
 
@@ -189,7 +189,7 @@ export function buildPeerPrompt(
   const prSampleNote = sampleNote(totalPrs, sampledPrs.length, lang);
 
   if (lang === "en") {
-    return `You are an analyst of AI agent and personal AI assistant open-source projects. Based on the following GitHub data from ${cfg.name} (github.com/${cfg.repo}), generate a project digest for ${dateStr}.
+    return `You are a research analyst focused on multimodal reasoning, long-context understanding, post-training alignment, and AI reliability. Based on the following GitHub data from ${cfg.name} (github.com/${cfg.repo}), generate a project digest for ${dateStr} that filters for research-relevant updates. Focus on: vision-language capabilities, reasoning mechanisms, training methodologies, and hallucination-related issues. Skip general product or commercial updates.
 
 # Data Overview
 - Issues updated in last 24h: ${totalIssues} (open/active: ${openIssues}, closed: ${closedIssues})
@@ -222,7 +222,7 @@ Style: objective, data-driven, highlighting project health. Include GitHub links
 `;
   }
 
-  return `你是一位 AI 智能体与个人 AI 助手领域开源项目分析师。请根据以下来自 ${cfg.name} (github.com/${cfg.repo}) 的 GitHub 数据，生成 ${dateStr} 的项目动态日报。
+  return `你是一位专注于多模态推理、长上下文理解、post-training 对齐和 AI 可靠性的研究分析师。请根据以下来自 ${cfg.name} (github.com/${cfg.repo}) 的 GitHub 数据，生成 ${dateStr} 的研究动态摘要。请筛选与研究相关的内容，重点关注：视觉语言能力、推理机制、训练方法论、幻觉相关问题。跳过一般性的产品或商业更新。
 
 # 数据概览
 - 过去24小时 Issues 更新：${totalIssues} 条（新开/活跃: ${openIssues}，已关闭: ${closedIssues}）
@@ -277,7 +277,7 @@ export function buildPeersComparisonPrompt(
     .join("\n\n---\n\n");
 
   if (lang === "en") {
-    return `You are a senior analyst of the AI agent and personal AI assistant open-source ecosystem. The following are ${dateStr} community digest summaries for each project.
+    return `You are a research analyst focused on multimodal reasoning, long-context understanding, post-training alignment, and AI reliability. The following are ${dateStr} project summaries. Please synthesize a research-oriented cross-project analysis.
 
 ${openclawSection}
 
@@ -301,7 +301,7 @@ Style: concise and professional, data-backed, suited for technical decision-make
 `;
   }
 
-  return `你是一位专注于 AI 智能体与个人 AI 助手开源生态的资深技术分析师。以下是 ${dateStr} 各开源项目的社区动态摘要。
+  return `你是一位专注于多模态推理、长上下文理解、post-training 对齐和 AI 可靠性的研究分析师。以下是 ${dateStr} 各项目的研究动态摘要。
 
 ${openclawSection}
 
@@ -315,7 +315,7 @@ ${peerSections}
 
 1. **生态全景** - 用3-5句话概括个人 AI 助手/自主智能体开源生态整体态势
 2. **各项目活跃度对比** - 以表格形式汇总各项目今日的 Issues 数、PR 数、Release 情况及健康度评估
-3. **OpenClaw 在生态中的定位** - 与同类相比的优势、技术路线差异、社区规模对比
+3. **研究定位分析** - 各项目在多模态推理、长上下文处理或对齐研究方面的贡献，技术路线差异
 4. **共同关注的技术方向** - 多项目共同涌现的需求（注明涉及哪些项目、具体诉求）
 5. **差异化定位分析** - 功能侧重、目标用户、技术架构的关键差异
 6. **社区热度与成熟度** - 活跃度分层，哪些处于快速迭代阶段，哪些在质量巩固阶段
@@ -339,7 +339,7 @@ export function buildSkillsPrompt(
   const issuesText = topIssues.map((i) => formatItem(i, lang)).join("\n") || noneStr;
 
   if (lang === "en") {
-    return `You are a technical analyst focused on the Claude Code ecosystem. The following data is from github.com/anthropics/skills (official Claude Code Skills repository). Analyze the community's most-watched Skills activity (data as of ${dateStr}).
+    return `You are a research analyst focused on long-context reasoning, OCR/document understanding, multimodal capabilities, and code intelligence. The following data is from github.com/anthropics/skills. Analyze Skills activity (as of ${dateStr}) and highlight only those relevant to: document processing, visual understanding, reasoning augmentation, or alignment/safety in coding agents.
 
 ## Repository Context
 anthropics/skills is the official Claude Code Skills collection. Each PR typically represents a new or improved Skill. The community proposes new Skills and reports issues via Issues; PRs represent actual Skill submissions.
@@ -363,7 +363,7 @@ Style: concise and professional, include GitHub links for each item.
 `;
   }
 
-  return `你是一位专注于 Claude Code 生态的技术分析师。以下是来自 github.com/anthropics/skills（Claude Code Skills 官方仓库）的数据，请分析社区最关注的 Skills 动态（数据截止 ${dateStr}）。
+  return `你是一位专注于长上下文推理、OCR/文档理解、多模态能力和代码智能的研究分析师。以下是来自 github.com/anthropics/skills 的数据。请分析与文档处理、视觉理解、推理增强或编码智能体对齐/安全相关的 Skills 动态（数据截止 ${dateStr}）。
 
 ## 仓库说明
 anthropics/skills 是 Claude Code 官方 Skills 集合仓库，每个 PR 通常对应一个新增或改进的 Skill。社区通过 Issues 提出新 Skill 需求或反馈问题，PR 则代表实际提交的 Skill。
@@ -399,7 +399,7 @@ export function buildComparisonPrompt(digests: RepoDigest[], dateStr: string, la
     .join("\n\n---\n\n");
 
   if (lang === "en") {
-    return `You are a senior technical analyst of the AI developer tools ecosystem. The following are ${dateStr} community digest summaries for each major AI CLI tool:
+    return `You are a research analyst focused on long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, and hallucination mitigation. The following are ${dateStr} digest summaries for each project. Please synthesize a research-oriented cross-tool analysis focusing on technical contributions relevant to your directions.
 
 ${sections}
 
@@ -418,7 +418,7 @@ Style: concise and professional, data-backed, suited for technical decision-make
 `;
   }
 
-  return `你是一位专注于 AI 开发工具生态的资深技术分析师。以下是 ${dateStr} 各主流 AI CLI 工具的社区动态摘要：
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${dateStr} 各项目的研究动态摘要：
 
 ${sections}
 
