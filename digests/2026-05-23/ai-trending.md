@@ -1,236 +1,141 @@
 # AI 开源趋势日报 2026-05-23
 
-> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-05-23 00:30 UTC
+> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-05-23 14:52 UTC
 
 ---
 
-# AI 开源趋势日报 | 2026-05-23
+# AI 开源趋势日报（2026-05-23）
+
+## 研究方向聚焦：长上下文推理、OCR/HMER、多模态推理、Post-Training 对齐、幻觉缓解
 
 ---
 
-## 第一步：AI 相关性筛选
+## 第一步：相关性筛选结果
 
-**Trending 榜单筛选结果**（14→11个AI相关）：
-| 保留 | 排除 | 排除理由 |
+经严格筛选，以下项目与研究方向**直接相关**：
+
+| 项目 | 相关维度 | 相关性说明 |
 |:---|:---|:---|
-| ✅ anthropic/claude-plugins-official | ❌ odoo/odoo | ERP 业务系统，非AI原生 |
-| ✅ colbymchenry/codegraph | ❌ byJoey/cfnew | 无描述，疑似Cloudflare工具 |
-| ✅ ruvnet/RuView | ❌ trimstray/the-book-of-secret-knowledge | 通用技术知识库 |
-| ✅ rohitg00/ai-engineering-from-scratch | ❌ yt-dlp/yt-dlp | 视频下载工具 |
-| ✅ ChromeDevTools/chrome-devtools-mcp | | |
-| ✅ dotnet/skills | | |
-| ✅ Lum1104/Understand-Anything | | |
-| ✅ Fincept-Corporation/FinceptTerminal | | 金融终端含AI分析功能 |
-| ✅ can1357/oh-my-pi | | |
-| ✅ karpathy/nn-zero-to-hero | | |
+| **run-llama/llama_index** | OCR/文档智能、多模态推理 | 明确标注"OCR platform"，文档理解与多模态RAG核心基础设施 |
+| **NVlabs/LongLive** | 长上下文与推理 | NVIDIA长视频生成，直接关联长上下文建模与推理 |
+| **yichuan-w/LEANN** | 长上下文与推理、基础设施 | 97%存储节省的本地RAG，长上下文压缩与高效检索 |
+| **open-compass/opencompass** | 基础设施、幻觉与可靠性 | LLM评测平台，覆盖多模态与对齐评测 |
+| **jingyaogong/minimind** | 基础设施、Post-Training与对齐 | 从零训练LLM的完整pipeline，含SFT/RLHF教学 |
+| **testtimescaling/testtimescaling.github.io** | 长上下文与推理、Post-Training与对齐 | Test-Time Scaling综述，推理时计算扩展与对齐 |
+| **EgoAlpha/prompt-in-context-learning** | 长上下文与推理 | 上下文学习(ICL)前沿资源，长上下文利用策略 |
+| **galilai-group/stable-pretraining** | Post-Training与对齐、基础设施 | 稳定预训练库，世界模型训练，关联对齐稳定性 |
+| **thinkwee/AwesomeOPD** | Post-Training与对齐 | On-Policy Distillation，在线对齐与知识蒸馏 |
+| **0xPlaygrounds/rig** | 基础设施 | Rust LLM应用框架，模块化推理架构 |
+| **skyzh/tiny-llm** | 长上下文与推理、基础设施 | Apple Silicon上的vLLM实现，推理服务优化 |
+| **zilliztech/claude-context** | 长上下文与推理 | 代码库级上下文检索，长上下文工程实践 |
+| **topoteretes/cognee** | 长上下文与推理 | AI Agent记忆控制平面，长期记忆与上下文管理 |
+| **Y-Research-SBU/PosterGen** | 多模态推理 | CVPR 2026 Findings，学术海报生成，视觉-文本对齐 |
+
+**排除项目**：通用Agent框架（AutoGPT、OpenHands等）、聊天UI（OpenWebUI、Cherry Studio）、纯商业应用（FinceptTerminal）、前端工具、视频下载器（yt-dlp）、安全技能库等非研究核心项目。
 
 ---
 
-## 第二步：分类体系
-
-| 项目 | 主要分类 | 次要分类 |
-|:---|:---|:---|
-| claude-plugins-official | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| codegraph | 🔧 AI 基础工具 | 🔍 RAG/知识库 |
-| RuView | 📦 AI 应用 | |
-| ai-engineering-from-scratch | 🧠 大模型/训练 | 🔧 AI 基础工具 |
-| chrome-devtools-mcp | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| dotnet/skills | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| Understand-Anything | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
-| FinceptTerminal | 📦 AI 应用 | 🤖 AI 智能体/工作流 |
-| oh-my-pi | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| nn-zero-to-hero | 🧠 大模型/训练 | |
-| hermes-agent | 🤖 AI 智能体/工作流 | |
-| learn-claude-code | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| ruflo | 🤖 AI 智能体/工作流 | |
-| career-ops | 📦 AI 应用 | 🤖 AI 智能体/工作流 |
-| cherry-studio | 📦 AI 应用 | 🤖 AI 智能体/工作流 |
-| CowAgent | 🤖 AI 智能体/工作流 | 📦 AI 应用 |
-| nanobot | 🤖 AI 智能体/工作流 | |
-| daily_stock_analysis | 📦 AI 应用 | 🤖 AI 智能体/工作流 |
-| CopilotKit | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| openclaude | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| AionUi | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| nocobase | 📦 AI 应用 | 🤖 AI 智能体/工作流 |
-| activepieces | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| OpenCLI | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| Agent-Reach | 🤖 AI 智能体/工作流 | |
-| dify | 🤖 AI 智能体/工作流 | 🔍 RAG/知识库 |
-| open-webui | 📦 AI 应用 | 🔍 RAG/知识库 |
-| langchain | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| awesome-llm-apps | 🔧 AI 基础工具 | |
-| ragflow | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
-| PaddleOCR | 🔍 RAG/知识库 | 📦 AI 应用 |
-| claude-mem | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
-| anything-llm | 📦 AI 应用 | 🔍 RAG/知识库 |
-| mem0 | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
-| Flowise | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| hello-agents | 🧠 大模型/训练 | 🤖 AI 智能体/工作流 |
-| graphify | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
-| llama_index | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
-| JeecgBoot | 📦 AI 应用 | 🤖 AI 智能体/工作流 |
-| milvus | 🔍 RAG/知识库 | |
-| tensorflow | 🧠 大模型/训练 | 🔧 AI 基础工具 |
-| prompts.chat | 🔧 AI 基础工具 | |
-| transformers | 🧠 大模型/训练 | 🔧 AI 基础工具 |
-| pytorch | 🧠 大模型/训练 | 🔧 AI 基础工具 |
-| LLMs-from-scratch | 🧠 大模型/训练 | |
-| ML-For-Beginners | 🧠 大模型/训练 | |
-| netdata | 📦 AI 应用 | |
-| OpenBB | 📦 AI 应用 | |
-| scikit-learn | 🧠 大模型/训练 | |
-| keras | 🧠 大模型/训练 | |
-| ultralytics | 🧠 大模型/训练 | |
-| faceswap | 📦 AI 应用 | 🧠 大模型/训练 |
-| julia | 🔧 AI 基础工具 | |
-| airflow | 🔧 AI 基础工具 | |
-| streamlit | 🔧 AI 基础工具 | |
-| ECC | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| AutoGPT | 🤖 AI 智能体/工作流 | |
-| ollama | 🔧 AI 基础工具 | 🧠 大模型/训练 |
-| firecrawl | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| browser-use | 🤖 AI 智能体/工作流 | |
-| vllm | 🔧 AI 基础工具 | 🧠 大模型/训练 |
-| TradingAgents | 📦 AI 应用 | 🤖 AI 智能体/工作流 |
-| OpenHands | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| meilisearch | 🔍 RAG/知识库 | |
-| qdrant | 🔍 RAG/知识库 | |
-| cognee | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
-| weaviate | 🔍 RAG/知识库 | |
-| txtai | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
-| langchain4j | 🔧 AI 基础工具 | 🔍 RAG/知识库 |
-| LEANN | 🔍 RAG/知识库 | |
-| claude-context | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
-| lancedb | 🔍 RAG/知识库 | |
-| oceanbase | 🔍 RAG/知识库 | |
-| zvec | 🔍 RAG/知识库 | |
-| databend | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
-| minimind | 🧠 大模型/训练 | |
-| Scrapegraph-ai | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| rig | 🔧 AI 基础工具 | 🧠 大模型/训练 |
-| opencompass | 🧠 大模型/训练 | |
-| tiny-llm | 🧠 大模型/训练 | |
-| prompt-in-context-learning | 🧠 大模型/训练 | |
-| nestia | 🔧 AI 基础工具 | |
-| awesome-japanese-llm | 🔧 AI 基础工具 | |
-| LLM-API-Key-Proxy | 🔧 AI 基础工具 | |
-| AwesomeOPD | 🧠 大模型/训练 | |
-| picollm | 🧠 大模型/训练 | |
-| PosterGen | 🧠 大模型/训练 | |
-| stable-pretraining | 🧠 大模型/训练 | |
-| testtimescaling | 🧠 大模型/训练 | |
-| mxcp | 🔧 AI 基础工具 | |
+## 第二步：分类详情
 
 ---
 
-## 第三步：AI 开源趋势日报
+## 1. 今日速览
+
+今日热榜呈现**"长上下文工程化"与"推理时计算扩展"**两大核心动向：NVIDIA的LongLive 2.0推动长视频生成基础设施迭代；Test-Time Scaling综述项目登榜标志社区对推理时对齐策略的高度关注；LlamaIndex持续强化其OCR+文档智能定位；LEANN以97%存储压缩实现本地长上下文RAG，凸显边缘侧长上下文需求；minimind与stable-pretraining等训练框架则为post-training对齐提供了更稳定的基础设施底座。
 
 ---
 
-### 1. 今日速览
+## 2. 各维度热门项目
 
-**Claude 生态爆发日**：Anthropic 官方插件目录今日登顶，单日获星 2,549，标志 Claude Code 插件化进入官方治理阶段。同期涌现 **codegraph**（+3,684⭐）、**Understand-Anything**（+1,393⭐）等"代码知识图谱"工具，开发者正用结构化索引重构 AI 编码的上下文管理。**MCP 协议全面渗透**——从 Chrome DevTools 到向量数据库 Milvus，模型上下文协议成为基础设施标配。边缘智能新方向浮现：**RuView** 将 WiFi 信号转为空间感知，无需摄像头实现人体存在检测，开启"无像素 AI"新范式。
+### 📄 OCR 与文档智能
 
----
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[run-llama/llama_index](https://github.com/run-llama/llama_index)** | 49,613 | — | **文档Agent与OCR平台**，支持多模态文档解析、向量化检索与RAG pipeline，是文档智能领域的核心基础设施，今日在vector-db主题中保持高活跃度 |
+| **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)** | 11,676 | — | **[MLsys2026] RAG on Everything**，以97%存储压缩实现本地设备上的高效文档检索，直接解决长文档OCR后的存储与检索瓶颈 |
+| **[zilliztech/claude-context](https://github.com/zilliztech/claude-context)** | 11,531 | — | **代码搜索MCP**，将完整代码库作为上下文，本质是结构化文档的长上下文检索工程，对大规模技术文档理解有借鉴意义 |
 
-### 2. 各维度热门项目
+### 🎭 多模态推理
 
-#### 🔧 AI 基础工具（框架、SDK、推理引擎、开发工具、CLI）
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[run-llama/llama_index](https://github.com/run-llama/llama_index)** | 49,613 | — | **多模态文档Agent**，支持图像、文本、表格的联合推理与跨模态检索，VLM应用的关键中间件 |
+| **[Y-Research-SBU/PosterGen](https://github.com/Y-Research-SBU/PosterGen)** | 235 | — | **CVPR 2026 Findings**，学术海报生成模型，涉及视觉-文本布局理解与生成式多模态对齐，HMER相关技术可迁移 |
+| **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | 17,470 | — | **Agent记忆控制平面**，支持多模态信息的长期记忆编码与上下文重构，跨模态记忆管理的基础设施 |
 
-| 项目 | Stars | 一句话说明 |
-|:---|:---|:---|
-| **[colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)** | 0⭐ (+3,684 today) | **今日增速冠军**。为 Claude/Codex/Cursor 预构建代码知识图谱，减少 token 消耗与工具调用，100% 本地运行——AI 编码的"索引革命"。 |
-| **[anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)** | 0⭐ (+2,549 today) | Anthropic 官方插件目录，Claude Code 生态从野生生长进入官方策展时代，质量门槛与发现效率双提升。 |
-| **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** | 0⭐ (+501 today) | Google 官方将 Chrome DevTools 封装为 MCP 服务器，浏览器调试能力直接注入 AI 编码代理，前端开发范式变革。 |
-| **[can1357/oh-my-pi](https://github.com/can1357/oh-my-pi)** | 0⭐ (+457 today) | 终端 AI 编码代理，支持哈希锚定编辑、LSP、Python 解释器、浏览器控制与子代理——"终端即 IDE"的极致实践。 |
-| **[affaan-m/ECC](https://github.com/affaan-m/ECC)** | 188,532⭐ | Agent Harness 性能优化系统，覆盖技能、本能、记忆、安全与研究优先开发，多代理工具链的"操作系统级"优化层。 |
-| **[ollama/ollama](https://github.com/ollama/ollama)** | 172,046⭐ | 本地大模型运行的事实标准，已支持 Kimi-K2.5、GLM-5、MiniMax、DeepSeek 等最新模型，边缘推理基础设施。 |
-| **[vllm-project/vllm](https://github.com/vllm-project/vllm)** | 80,748⭐ | 高吞吐、内存高效的 LLM 推理引擎，生产级 serving 的核心基础设施，持续迭代 PagedAttention 等核心技术。 |
-| **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** | 62,041⭐ | "Bash is all you need"——从零构建 Claude Code 风格的最小代理框架，教育价值与工程简洁性兼具。 |
+### 🧠 长上下文与推理
 
-#### 🤖 AI 智能体/工作流（Agent 框架、自动化、多智能体）
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[NVlabs/LongLive](https://github.com/NVlabs/LongLive)** | — | +79 | **LongLive 2.0: 长视频生成基础设施**，NVIDIA官方项目，长时序一致性推理与上下文保持的核心技术，直接关联长上下文建模 |
+| **[testtimescaling/testtimescaling.github.io](https://github.com/testtimescaling/testtimescaling.github.io)** | 98 | — | **Test-Time Scaling综述**，系统梳理LLM推理时计算扩展的what/how/where/how well，长上下文推理优化的关键理论资源 |
+| **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)** | 11,676 | — | **97%存储节省的本地RAG**，长上下文压缩与高效检索的工程突破，边缘部署场景的核心使能技术 |
+| **[skyzh/tiny-llm](https://github.com/skyzh/tiny-llm)** | 4,202 | — | **Apple Silicon上的vLLM实现**，针对长上下文推理服务的系统级优化，含KV Cache管理与内存高效调度 |
+| **[EgoAlpha/prompt-in-context-learning](https://github.com/EgoAlpha/prompt-in-context-learning)** | 2,235 | — | **上下文学习前沿资源**，长上下文利用策略与示例选择，ICL效率优化的研究入口 |
+| **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | 17,470 | — | **Agent记忆控制平面**，6行代码实现AI Agent的长期记忆管理，解决上下文窗口外的信息持久化问题 |
 
-| 项目 | Stars | 一句话说明 |
-|:---|:---|:---|
-| **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** | 163,147⭐ | "与你共同成长的代理"，Nous Research 旗舰项目，开源社区最大规模的通用 Agent 框架之一。 |
-| **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** | 54,184⭐ | Claude 生态领先的代理编排平台，支持多智能体集群、自主工作流协调、RAG 集成与原生 Claude Code/Codex 集成。 |
-| **[activepieces/activepieces](https://github.com/activepieces/activepieces)** | 22,353⭐ | 集成 ~400 个 MCP 服务器的 AI 自动化平台，"AI 时代的 Zapier"，工作流与 Agent 能力深度融合。 |
-| **[browser-use/browser-use](https://github.com/browser-use/browser-use)** | 95,134⭐ | 让网站对 AI 代理可访问，浏览器自动化的事实标准，Web Agent 的核心基础设施。 |
-| **[OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)** | 74,544⭐ | AI 驱动开发的开源标杆，从需求到 PR 的端到端自主编程，Devin 的开源替代方案持续进化。 |
-| **[Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)** | 184,461⭐ | 通用 AI 代理的先驱项目，持续迭代中，见证 Agent 架构从炒作到实用的演变。 |
-| **[santifer/career-ops](https://github.com/santifer/career-ops)** | 46,702⭐ | 基于 Claude Code 的 AI 求职系统，14 种技能模式、Go 仪表盘、PDF 生成——垂直场景 Agent 的深度定制范例。 |
+### 🔧 Post-Training 与对齐
 
-#### 📦 AI 应用（具体应用产品、垂直场景解决方案）
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)** | 50,450 | — | **2小时从零训练64M参数LLM**，完整覆盖预训练→SFT→RLHF pipeline，post-training对齐的教学级实现 |
+| **[thinkwee/AwesomeOPD](https://github.com/thinkwee/AwesomeOPD)** | 439 | — | **On-Policy Distillation综述**，在线策略蒸馏前沿，DPO/RLHF的替代与补充方向，对齐效率优化的关键资源 |
+| **[testtimescaling/testtimescaling.github.io](https://github.com/testtimescaling.github.io)** | 98 | — | **推理时对齐策略综述**，Test-Time Scaling与推理时偏好优化，post-training向inference-time迁移的理论基础 |
+| **[galilai-group/stable-pretraining](https://github.com/galilai-group/stable-pretraining)** | 234 | — | **稳定预训练库**，世界模型训练的可靠性工程，为后续对齐阶段提供更稳定的初始化基础 |
+| **[0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig)** | 7,388 | — | **Rust LLM应用框架**，模块化推理架构，支持可插拔的对齐策略与推理时干预 |
 
-| 项目 | Stars | 一句话说明 |
-|:---|:---|:---|
-| **[ruvnet/RuView](https://github.com/ruvnet/RuView)** | 0⭐ (+978 today) | **新兴范式**：将商品 WiFi 信号转为实时空间智能、生命体征监测与存在检测——零像素、零摄像头、纯射频感知，隐私友好的边缘 AI。 |
-| **[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)** | 46,114⭐ | AI 生产力工作室，集成智能聊天、自主代理与 300+ 助手，统一接入前沿 LLM 的"瑞士军刀"级客户端。 |
-| **[zhayujie/CowAgent](https://github.com/zhayujie/CowAgent)** | 44,721⭐ | 基于大模型的超级 AI 助理，支持微信/飞书/钉钉/QQ/公众号等多平台，主动思考、任务规划、长期记忆——"中国版 AutoGPT"的实用化落地。 |
-| **[Fincept-Corporation/FinceptTerminal](https://github.com/Fincept-Corporation/FinceptTerminal)** | 0⭐ (+367 today) | 现代金融终端，高级市场分析、投资研究与经济数据工具，AI 增强的交互式决策环境。 |
-| **[OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB)** | 67,948⭐ | 分析师、量化研究员与 AI 代理的金融数据平台，投研领域的开源基础设施。 |
-| **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)** | 78,605⭐ | 多智能体 LLM 金融交易框架，模拟不同角色（基本面/技术/情绪分析师）的协作决策。 |
-| **[deepfakes/faceswap](https://github.com/deepfakes/faceswap)** | 55,235⭐ | 深度伪造软件的开源标杆，AIGC 时代媒体真实性的技术试金石。 |
+### 👁️ 幻觉与可靠性
 
-#### 🧠 大模型/训练（模型权重、训练框架、微调工具）
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[open-compass/opencompass](https://github.com/open-compass/opencompass)** | 7,020 | — | **LLM评测平台**，覆盖100+数据集的多维评测，含幻觉检测、事实性验证与可信度校准基准 |
+| **[run-llama/llama_index](https://github.com/run-llama/llama_index)** | 49,613 | — | **RAG事实 grounding**，通过检索增强生成缓解幻觉，文档级事实验证的核心工程实践 |
+| **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)** | 11,676 | — | **100%私有RAG**，本地部署消除外部API的不确定性，提升生成内容的可追溯性与可靠性 |
 
-| 项目 | Stars | 一句话说明 |
-|:---|:---|:---|
-| **[rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch)** | 0⭐ (+988 today) | **教育热点**："Learn it. Build it. Ship it for others"——AI 工程全栈实践教程，今日增速印证开发者对系统学习路径的渴求。 |
-| **[karpathy/nn-zero-to-hero](https://github.com/karpathy/AndrejKarpathy)** | 0⭐ (+159 today) | Andrej Karpathy 经典神经网络教程，从零构建 GPT 风格模型，AI 教育的"圣经级"项目持续获关注。 |
-| **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)** | 50,417⭐ | 2 小时从零训练 64M 参数 LLM，大模型教育的极致简化，"小即美"的训练范式。 |
-| **[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)** | 95,395⭐ | 用 PyTorch 逐步实现类 ChatGPT LLM，步骤化教学的行业标准参考书。 |
-| **[huggingface/transformers](https://github.com/huggingface/transformers)** | 160,882⭐ | 最先进 ML 模型的定义框架，文本/视觉/音频/多模态全覆盖，Hugging Face 生态的核心支柱。 |
-| **[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)** | 195,235⭐ | 开源机器学习框架的元老，生产级部署与研究的平衡之选。 |
-| **[pytorch/pytorch](https://github.com/pytorch/pytorch)** | 100,098⭐ | 动态神经网络与强 GPU 加速，学术界与工业界研究的首选框架。 |
+### 🏗️ 基础设施
 
-#### 🔍 RAG/知识库（向量数据库、检索增强、知识管理）
-
-| 项目 | Stars | 一句话说明 |
-|:---|:---|:---|
-| **[Lum1104/Understand-Anything](https://github.com/Lum1104/Understand-Anything)** | 0⭐ (+1,393 today) | **知识图谱可视化爆发**：将任意代码转为可交互知识图谱，支持 Claude/Codex/Cursor/Copilot/Gemini CLI 等——"图谱教学 > 图谱炫技"。 |
-| **[langgenius/dify](https://github.com/langgenius/dify)** | 142,282⭐ | 生产级 Agentic 工作流开发平台，RAG 与 Agent 能力的深度整合，企业 AI 应用的首选底座。 |
-| **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** | 81,055⭐ | 领先的开源 RAG 引擎，融合前沿检索增强与 Agent 能力，为 LLM 构建卓越上下文层。 |
-| **[mem0ai/mem0](https://github.com/mem0ai/mem0)** | 56,458⭐ | AI 代理的通用记忆层，跨会话持久化与上下文注入，Agent 长期记忆的基础设施。 |
-| **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** | 77,510⭐ | 跨会话持久上下文，捕获-压缩-注入 Agent 行为记忆，Claude 生态的记忆增强方案。 |
-| **[safishamsi/graphify](https://github.com/safishamsi/graphify)** | 51,815⭐ | 将代码/SQL/文档/图像/视频转为可查询知识图谱，应用代码+数据库模式+基础设施的统一图谱化。 |
-| **[milvus-io/milvus](https://github.com/milvus-io/milvus)** | 44,406⭐ | 高性能云原生向量数据库，规模化 ANN 搜索的基础设施，今日新增 Milvus MCP 扩展生态。 |
-| **[run-llama/llama_index](https://github.com/run-llama/llama_index)** | 49,595⭐ | 领先的文档代理与 OCR 平台，数据连接与检索的事实标准。 |
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[run-llama/llama_index](https://github.com/run-llama/llama_index)** | 49,613 | — | **文档智能基础设施**，OCR+RAG+Agent的完整技术栈，研究到产品的关键桥梁 |
+| **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)** | 50,450 | — | **轻量LLM训练框架**，完整pipeline开源，对齐算法快速验证的理想沙盒 |
+| **[open-compass/opencompass](https://github.com/open-compass/opencompass)** | 7,020 | — | **评测基础设施**，支持多模态模型与对齐方法的系统性评估 |
+| **[skyzh/tiny-llm](https://github.com/skyzh/tiny-llm)** | 4,202 | — | **推理服务教学框架**，长上下文KV Cache优化与调度策略的实验平台 |
+| **[0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig)** | 7,388 | — | **Rust LLM工程框架**，类型安全的模型调用与工具编排，对齐策略的模块化实现 |
+| **[galilai-group/stable-pretraining](https://github.com/galilai-group/stable-pretraining)** | 234 | — | **稳定训练基础设施**，减少预训练不稳定性导致的下游对齐困难 |
 
 ---
 
-### 3. 趋势信号分析
+## 3. 研究趋势信号分析
 
-**"代码知识图谱"成为今日最大爆发点**。codegraph（+3,684⭐）与 Understand-Anything（+1,393⭐）双双登榜，揭示 AI 编码工具正从"长上下文窗口"竞争转向"结构化索引"架构——通过预构建代码的图表示，显著降低 token 消耗与工具调用频率。这与 Claude 4 系列可能的超长上下文发布形成技术互补：当模型能处理百万 token 时，如何高效索引比盲目堆砌更重要。
-
-**MCP 协议完成基础设施化渗透**。从 Chrome DevTools 到向量数据库（zilliztech/claude-context）、从 .NET 技能库到金融终端，模型上下文协议已成为 AI 工具互操作的"USB-C 标准"。Anthropic 官方插件目录的推出，标志该生态从协议层进入应用层治理。
-
-**"无像素 AI"开辟边缘智能新赛道**。RuView 利用 WiFi CSI（信道状态信息）实现人体感知，规避摄像头的隐私与带宽瓶颈，在智能家居、养老监护、安防监控场景具备颠覆潜力。射频感知的 AI 化是计算机视觉外的平行范式。
-
-**教育类项目持续高热**。ai-engineering-from-scratch（+988⭐）与 nn-zero-to-hero（+159⭐）显示开发者对"第一性原理"学习的回归——在工具链极度丰富的 2026 年，从零构建的理解深度成为差异化竞争力。
+今日数据揭示三个关键趋势：**其一，长上下文正从"模型能力"转向"系统工程"**——NVlabs/LongLive、LEANN、zilliztech/claude-context等项目聚焦上下文压缩、检索增强与记忆管理，而非单纯扩展窗口长度，表明社区认识到"有效利用"比"无限延长"更具实用价值。**其二，Test-Time Scaling成为对齐新前沿**——testtimescaling.github.io的登榜与thinkwee/AwesomeOPD的活跃，显示研究重心正从训练时RLHF/DPO向推理时计算扩展与在线策略优化迁移，这与DeepSeek-R1、OpenAI o系列模型的发布逻辑一致。**其三，OCR/文档智能与多模态推理的基建化**——LlamaIndex明确 rebranding 为"OCR platform"，标志文档理解从单一功能进化为Agent核心能力，而Y-Research-SBU/PosterGen等CVPR工作则显示视觉-文本对齐仍在向细粒度场景渗透。值得注意的是，**HMER（手写数学表达式识别）专项开源项目仍显稀缺**，今日数据中无直接对应，表明该领域仍以学术闭源为主，存在显著开源空白。
 
 ---
 
-### 4. 社区关注热点
+## 4. 研究关注热点
 
-- **🔥 [codegraph](https://github.com/colbymchenry/codegraph) — AI 编码的"索引革命"**  
-  今日增速冠军（+3,684⭐），解决大模型编码的核心痛点：上下文碎片化。预索引知识图谱让 Claude/Codex/Cursor 减少 80%+ 无效工具调用，本地优先架构契合企业安全需求。
+- **[testtimescaling/testtimescaling.github.io](https://github.com/testtimescaling/testtimescaling.github.io)** — **推理时对齐的理论基础**
+  - **理由**：首篇系统性Test-Time Scaling综述，直接关联长上下文推理优化与post-training向inference-time的范式转移
+  - **相关性**：为幻觉缓解提供新路径（推理时自我修正）、为长上下文利用提供计算分配策略
 
-- **🔥 [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) — 生态治理里程碑**  
-  Anthropic 首次官方策展插件目录，标志 Claude Code 从实验工具向平台化跃迁。开发者需关注审核标准与分发机制，早期入驻将获得流量红利。
+- **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)** — **边缘侧长上下文RAG**
+  - **理由**：97%存储压缩+本地部署，解决长文档OCR后的实际部署瓶颈，MLsys2026收录验证其系统创新性
+  - **相关性**：OCR/HMER场景的海量公式/符号数据亟需此类压缩检索技术
 
-- **🔥 [RuView](https://github.com/ruvnet/RuView) — 无像素感知的隐私计算**  
-  WiFi 信号→空间智能的跨模态转换，零摄像头实现跌倒检测、呼吸监测、人员定位。射频 AI 可能复刻 2023 年计算机视觉的爆发轨迹。
+- **[NVlabs/LongLive](https://github.com/NVlabs/LongLive)** — **长时序一致性生成**
+  - **理由**：NVIDIA官方长视频生成2.0，长上下文保持与一致性推理的工业级实践
+  - **相关性**：视频级长上下文技术可迁移至长文档、长公式序列的连贯理解
 
-- **🔥 [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) — 浏览器能力的 Agent 化**  
-  Google 官方背书 MCP，前端调试、性能分析、DOM 检查直接成为 Agent 工具。预示浏览器厂商将深度参与 AI 编码工具链重构。
+- **[thinkwee/AwesomeOPD](https://github.com/thinkwee/AwesomeOPD)** — **在线策略蒸馏**
+  - **理由**：On-Policy Distillation作为DPO/RLHF的轻量替代，降低对齐成本与稳定性风险
+  - **相关性**：为HMER/OCR模型的领域适配提供高效对齐方案，减少幻觉
 
-- **🔥 [claude-mem](https://github.com/thedotmack/claude-mem) / [mem0](https://github.com/mem0ai/mem0) — 记忆层的标准化竞争**  
-  跨会话记忆从"锦上添花"变为"刚需基础设施"，捕获-压缩-检索的完整 pipeline 正在形成，与向量数据库的边界逐渐模糊。
+- **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)** — **对齐算法快速验证平台**
+  - **理由**：50K+ stars的轻量训练框架，完整SFT/RLHF pipeline，2小时可复现
+  - **相关性**： ideal沙盒用于测试新型幻觉缓解策略与多模态对齐方法
 
 ---
 
-*本日报基于 2026-05-23 GitHub 公开数据编制，趋势分析代表技术观察视角，不构成投资建议。*
+*报告生成时间：2026-05-23 | 数据覆盖：GitHub Trending + AI主题搜索（7天活跃）*
 
 ---
 *本日报由 [agents-radar](https://github.com/QYQAQ/agents-radar) 自动生成。*

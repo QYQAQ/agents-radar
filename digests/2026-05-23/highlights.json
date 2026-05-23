@@ -1,134 +1,132 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code 24h 双版本紧急修复 Bash 退出码回归",
-      "OpenAI Codex 遥测体系三连 PR 重构可观测性底座",
-      "Gemini CLI 3 个安全 PR 集中落地 SSRF/RCE 修复",
-      "GitHub Copilot CLI 1M token 长上下文分级强制生效",
-      "Qwen Code Mode B 服务端架构冲刺 v0.16.0-nightly",
-      "Pi 设备码登录、IME 优化进入主线，44 Issues 活跃"
+      "Claude Code v2.1.150暴露代理幻觉与伪造授权等系统性问题",
+      "Gemini CLI AST工具链评估与Auto Memory可靠性缺陷受关注",
+      "OpenCode v1.15.10推推理内容双向契约与工具权限形式化",
+      "Qwen Code nightly构建失败，V8堆压力与Hook驱动对齐架构成焦点",
+      "Kimi CLI多进程可靠性与MCP配置分层研究进入工程化阶段",
+      "DeepSeek TUI v0.8.41待发布，异步I/O架构迁移与子代理容错迭代"
     ],
     "ai-agents": [
-      "OpenClaw 24h 500 Issues/500 PRs 极高活跃度",
-      "OpenClaw 修复 OpenAI 视频编辑路由 #85554",
-      "OpenClaw WhatsApp 连接稳定性 PR 消除 30 分钟断连",
-      "OpenClaw 保留用户主模型设置 PR 合并 #81304",
-      "OpenClaw 配置预检日志抑制 PR 解决并发干扰 #84439",
-      "OpenClaw QMD 文件路径规范化提升内存索引健壮性 #65212"
+      "Hermes Agent单日50+Issues/PRs，长上下文稳定性承压引研究关注",
+      "NanoBot关闭率高，SSRF与递归阻断安全修复响应迅速",
+      "ZeroClaw 39活跃Issues中S0-S2阻塞多，幻觉问题#6517无进展成隐患",
+      "PicoClaw当日闭环上下文预算漏洞#2894/2895，发布节奏克制精准",
+      "Moltis零开放Issue但研究性内容匮乏，快速关闭或缺失深度讨论",
+      "LobsterAI核心贡献者系统性批判记忆/安全缺陷，代码停滞陷架构反思期"
     ],
     "ai-trending": [
-      "claude-plugins-official 登 GitHub Trending 榜首",
-      "karpathy/nn-zero-to-hero 经典课程持续高热",
-      "dify 智能体工作流平台开源趋势强劲",
-      "open-webui 本地 LLM 界面热度攀升",
-      "langchain 基础工具生态持续领先",
-      "FinceptTerminal 金融 AI 终端应用受关注"
+      "NVIDIA LongLive 2.0推动长视频生成基础设施迭代登热榜",
+      "Test-Time Scaling综述项目登榜标志推理时对齐策略受高度关注",
+      "LlamaIndex 49613 stars持续强化OCR+文档智能核心基础设施定位",
+      "LEANN实现97%存储压缩的本地长上下文RAG，凸显边缘侧需求",
+      "minimind从零训练LLM完整pipeline含SFT/RLHF，服务post-training对齐",
+      "stable-pretraining库关联世界模型训练与对齐稳定性基础设施底座"
     ],
     "ai-web": [
-      "Anthropic 发布 Project Glasswing 阶段性进展报告",
-      "Claude Mythos Preview 发现超 10,000 个高危漏洞",
-      "AI 漏洞发现瓶颈转向人工验证吞吐能力",
-      "Anthropic 评估 Mythos-class 模型产品化发布策略",
-      "50 家合作伙伴构建漏洞披露协作生态",
-      "OpenAI 今日官网零新增内容静默"
+      "Anthropic Project Glasswing首披露：Mythos Preview发现10000+高危漏洞",
+      "Glasswing标志AI漏洞发现从概念验证跃升至规模化产能瓶颈阶段",
+      "Anthropic评估Mythos-class模型发布策略，暗示安全能力产品化路径",
+      "50家合作伙伴协作披露机制，构建AI时代Project Zero式行业标准",
+      "OpenAI今日零新增内容，数据静默期态势待观察"
     ],
     "ai-hn": [
-      "Anthropic Glasswing 281 分 186 评论引深度讨论",
-      "微软取消内部 Claude Code 许可证传闻确认",
-      "Models.dev 开源模型数据库 92 分实用工具受捧",
-      "Superset YC P26 Agent IDE 75 分 91 评论激辩",
-      "NTSB 因 AI 复现遇难飞行员声音撤下档案",
-      "Linux 声学子系统现大量 LLM 驱动修复"
+      "Anthropic Glasswing项目475分284评论，可解释性研究引发社区两极争议",
+      "可解释是否等同于可控成核心争议，对齐效用遭大量质疑",
+      "Anthropic红队漏洞利用能力评估技术门槛高但具政策参考价值",
+      "Claude Code RCE重现揭示代理工具调用中普遍存在的高危漏洞模式",
+      "Cohere 218B MoE模型支持长序列推理，部署效率受边际关注"
     ],
     "ai-arxiv": [
-      "MOSS 首个源代码级自改写智能体框架发布",
-      "Post-Training is About States 统一 SFT/RL/蒸馏理论",
-      "Tokenisation via Convex Relaxations 挑战 BPE 数学基础",
-      "Tokenization with Split Trees 无需预定义词表优化压缩率",
-      "LCGuard 为 KV 缓存共享建立安全屏障",
-      "DeltaBox 毫秒级沙箱状态回滚支撑测试时搜索"
+      "Post-Training is About States, Not Tokens：从状态分布统一SFT/RL/蒸馏理论",
+      "MOSS提出首个源代码级自改写智能体框架，标志智能体自进化突破",
+      "LCGuard为KV缓存共享建立安全屏障，解决多租户推理关键隐患",
+      "DeltaBox实现毫秒级沙箱状态回滚，支撑大规模测试时搜索基础设施",
+      "Tokenisation via Convex Relaxations首次给BPE严格数学凸松弛解法",
+      "Tokenization with Split Trees无需预定义词表直接优化压缩率挑战BPE"
     ],
     "ai-hf": [
-      "google/gemma-4-31B-it 周下载破千万达 10,283,716",
-      "deepseek-ai/DeepSeek-V4-Pro 429 万下载 4,151 点赞",
-      "Qwen/Qwen3.6-35B-A3B 598 万下载成社区事实标准",
-      "bytedance-research/Lance 探索 any-to-any 统一多模态",
-      "Qwen/Qwen3.6-27B 405 万下载稠密架构高性价比",
-      "tencent/Hy-MT2 系列 1.8B/30B 瞄准端侧与专业翻译"
+      "Google Gemma-4-31B-it 1028万下载量领跑开源VLM标准化趋势",
+      "Qwen3.6-27B/35B-A3B 合计千万下载巩固国产VLM生态核心基座",
+      "DeepSeek-V4-Pro/Flash 400万+下载展现长上下文推理模型强劲需求",
+      "MiniCPM-V-4.6 24万下载成端侧高效VLM代表，强化高分辨率文档理解",
+      "HiDream-O1-Image将O1式长链推理引入视觉生成，开创多模态慢思考",
+      "NuExtract3基于Qwen3.5视觉提取，暗示OCR向端到端VLM迁移趋势"
     ],
     "ai-community": [
-      "DEV 官方披露 Gemini Embeddings 生产级推荐架构",
-      "7000+ 开发者调查揭示 AI 风险集体认知偏差",
-      "AI Agent Failure Modes Beyond Hallucination 系统风险清单",
-      "Browser SDK 实现人类/机器人/LLM agent 三分类检测",
-      "Qwen3.7 Max 迁移指南对比开源权重模型实践",
-      "Why Blocking Prompt Injection Is Wrong 挑战安全惯性"
+      "AI Agent Failure Modes Beyond Hallucination系统梳理工具误用与循环依赖",
+      "工程图纸隐写式提示注入攻击首次公开分析，暴露多模态OCR安全盲区",
+      "本地Gemma 4视觉回归代理闭环验证，提供像素级差异检测方法论",
+      "三种打破工具循环生产级模式，直接指导代理post-training行为约束",
+      "TokenJuice与20分钟Cron揭示长上下文场景token效率与成本陷阱",
+      "MCP代理协议安全治理进入社区视野，协议层对齐研究萌芽"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code ships v2.1.149 with security fixes",
-      "OpenAI Codex builds in Rust for agentic execution",
-      "Gemini CLI shows concentrated high-quality community feedback",
-      "Qwen Code struggles with release pipeline reliability",
-      "Kimi CLI uses Python amid maintainer bandwidth issues",
-      "MCP server ecosystems converge across all 9 tools"
+      "Sector pivots to reliability engineering as differentiator.",
+      "Convergent investment in long-context architectures.",
+      "Hierarchical agent delegation becoming table stakes.",
+      "DeepSeek TUI shows SSRF-protected multimodal pipelines.",
+      "OpenAI CLI shows complete absence of activity.",
+      "Context integrity now primary differentiator."
     ],
     "ai-agents": [
-      "OpenClaw hits 500 issues and 500 PRs in 24 hours",
-      "P0 cross-user memory leak patched same-day",
-      "No new releases as project enters stabilization phase",
-      "433 open issues signal heavy triage backlog",
-      "386 open PRs overwhelm maintainer review queue",
-      "Auth and session reliability get urgent investment"
+      "Bifurcated maturation: infrastructure vs research.",
+      "Vision-language remains plumbing-level, not cognition.",
+      "Scaling context management vs tool proliferation.",
+      "No leading-edge multimodal reasoning integration.",
+      "Context architecture debt plagues hardened projects.",
+      "Memory and self-improvement boundaries stress-tested."
     ],
     "ai-trending": [
-      "Claude plugins gain 2,549 stars in one day",
-      "CodeGraph surges 3,684 stars for knowledge pre-indexing",
-      "Chrome DevTools MCP gets official Google backing",
-      "MCP adoption accelerates across entire stack",
-      "Anthropic endorses plugin extensibility for Claude",
-      "Local operation tools address enterprise privacy fears"
+      "Code knowledge graphs emerge for long-context.",
+      "LlamaIndex rebrands as OCR platform.",
+      "NVIDIA LongLive 2.0 for temporal long-context.",
+      "Agent skill frameworks for behavioral conditioning.",
+      "Understand-Anything transforms codebases to graphs.",
+      "Hallucination mitigation research underrepresented."
     ],
     "ai-web": [
-      "Claude Mythos finds 10,000+ critical vulnerabilities",
-      "Project Glasswing reframes cybersecurity bottleneck",
-      "Verification, not discovery, now limits security progress",
-      "Anthropic hints at Mythos-class model product line",
-      "50 partners engaged in defensive security ecosystem",
-      "Claude positioned as critical global security infrastructure"
+      "Claude Mythos finds 10,000+ critical vulnerabilities.",
+      "Verification now limits cybersecurity progress.",
+      "Mythos-class models may become product line.",
+      "50 partners building defensive ecosystem.",
+      "Glasswing reframes AI-security landscape.",
+      "Claude positioned as critical infrastructure."
     ],
     "ai-hn": [
-      "Microsoft cancels Claude Code licenses amid costs",
-      "$30,983 token overage goes viral on HN",
-      "Glasswing update draws sharp revenue critiques",
-      "Domain-camouflaged injection attacks hit multi-agent systems",
-      "NTSB pulls docs after AI recreates dead pilots' voices",
-      "Community mood turns cynical on AI economics"
+      "Project Glasswing sparks interpretability debate.",
+      "Cohere open-sources 218B MoE Command A+.",
+      "Vibe Slop crisis signals mainstream quality concern.",
+      "No long-context or OCR discussion today.",
+      "Growing practitioner concern on hallucination.",
+      "Transparent AI systems actively debated."
     ],
     "ai-arxiv": [
-      "Tokenization reformulated as convex optimization",
-      "Gated DeltaNet-2 decouples erase and write ops",
-      "Post-training reframed as state distribution matching",
-      "Self-evolving agents gain source-level modification",
-      "Efficient attention alternatives multiply in submissions",
-      "Test-time compute scaling shifts to diversity training"
+      "State-aware post-training paradigms emerge.",
+      "Self-evolving agents do source-level modification.",
+      "Geometric theory unifies robust learning problems.",
+      "Gated DeltaNet-2 decouples erase and write.",
+      "Post-training reframed as state distribution matching.",
+      "Temporal grounding shift to dynamic world modeling."
     ],
     "ai-hf": [
-      "DeepSeek-V4-Pro leads with 4.3M weekly downloads",
-      "Gemma-4-31B-it hits 10.3M downloads for Google",
-      "Qwen3.6-35B-A3B emerges as top MoE variant",
-      "Sulphur-2-base goes viral for text-to-video",
-      "HiDream-O1 blurs image-text-to-text boundaries",
-      "Pipeline taxonomy collapses toward unified multimodal"
+      "Qwen3.6-35B-A3B hits 6M+ downloads.",
+      "Gemma-4-31B-it most downloaded open VLM.",
+      "DeepSeek V4 series 7.2M+ combined downloads.",
+      "NuExtract3 for document extraction research.",
+      "No dedicated HMER models trending.",
+      "MoE architectures dominate multimodal research."
     ],
     "ai-community": [
-      "Google Antigravity 2.0 dominates I/O chatter",
-      "Gemma 4 Challenge drives local agent tutorials",
-      "DEV dogfoods Gemini Embeddings for feed algorithm",
-      "7000-developer survey reveals real 2026 AI fears",
-      "Agent failure modes expand beyond hallucination",
-      "Skepticism grows on AI's actual productivity gains"
+      "Agent failure modes taxonomy beyond hallucination.",
+      "Gemma 4 visual regression agent with pixel diffing.",
+      "Steganographic prompt injection in document systems.",
+      "TurboQuant quantization mathematics discussed.",
+      "ThunderKittens DSL for AI kernel design.",
+      "Closed-loop validation for OCR/HMER pipelines."
     ]
   }
 }
