@@ -486,7 +486,7 @@ Style: English, concise and professional, preserve all original links.
 `;
   }
 
-  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${dateStr} 从 Hacker News 抓取的过去 24 小时内热门帖子。请严格筛选与你研究方向相关的内容，忽略创业融资、产品发布和无关的行业新闻。
+  return `你是一位专注于长上下文推理、OCR/HMER、多模态推理、post-training 对齐和幻觉缓解的研究分析师。以下是 ${dateStr} 从 Hacker News 抓取的过去 24 小时内热门帖子（按分数降序，共 ${data.stories.length} 条）。请严格筛选与你研究方向相关的内容，忽略创业融资、产品发布和无关的行业新闻。
 
 ---
 
