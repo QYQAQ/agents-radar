@@ -115,12 +115,12 @@ ${prsText}
 
 Generate a structured English digest with the following sections:
 
-1. **Today's Highlights** - 2-3 sentences summarizing the most important updates
-2. **Releases** - If new versions exist, summarize changes; omit if none
-3. **Hot Issues** - Pick 10 noteworthy Issues, explain why they matter and community reaction
-4. **Key PR Progress** - Pick 10 important PRs, describe features or fixes
-5. **Feature Request Trends** - Distill the most-requested feature directions from all Issues
-6. **Developer Pain Points** - Summarize recurring developer frustrations or high-frequency requests
+1. **Today's Highlights** - 2-3 sentences summarizing the most important research-relevant updates
+2. **Releases** - If new versions exist, summarize changes relevant to your focus areas; omit if none
+3. **Research-Relevant Issues** - Pick up to 10 Issues related to long-context, OCR/multimodal, post-training, or hallucination. Skip unrelated issues. Explain research significance.
+4. **Research-Relevant PRs** - Pick up to 10 PRs related to your focus areas. Describe technical contributions or fixes relevant to reasoning, vision-language, alignment, or reliability.
+5. **Research Direction Signals** - Distill emerging research-relevant needs from Issues (e.g., better reasoning, vision capabilities, alignment methods, hallucination fixes)
+6. **Technical Limitations** - Summarize recurring technical limitations or research gaps mentioned by users
 
 Style: concise and professional, suited for technical developers. Include GitHub links for each item.
 `;
@@ -143,12 +143,12 @@ ${prsText}
 
 请生成一份结构清晰的中文日报，包含以下部分：
 
-1. **今日速览** - 用2-3句话概括今天最重要的动态
-2. **版本发布** - 如有新版本，总结更新内容；无则省略
-3. **社区热点 Issues** - 挑选 10 个最值得关注的 Issue，说明为什么重要、社区反应如何
-4. **重要 PR 进展** - 挑选 10 个重要的 PR，说明功能或修复内容
-5. **功能需求趋势** - 从所有 Issues 中提炼出社区最关注的功能方向（如 IDE 集成、性能、新模型支持等）
-6. **开发者关注点** - 总结开发者反馈中的痛点或高频需求
+1. **今日速览** - 用2-3句话概括今天最重要的与研究相关的动态
+2. **版本发布** - 如有新版本，总结与研究相关的更新内容；无则省略
+3. **研究相关 Issues** - 挑选最多 10 个与长上下文、OCR/多模态、post-training、幻觉相关的 Issue，跳过无关内容。说明研究价值。
+4. **研究相关 PR 进展** - 挑选最多 10 个与你研究方向相关的 PR，说明对推理、视觉语言、对齐或可靠性的技术贡献
+5. **研究方向信号** - 从 Issues 中提炼与研究相关的需求趋势（如推理增强、视觉能力、对齐方法、幻觉修复等）
+6. **技术局限性** - 总结用户提及的重复性技术限制或研究空白
 
 语言要求：简洁专业，适合技术开发者阅读。每个条目附上 GitHub 链接。
 `;
