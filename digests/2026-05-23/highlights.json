@@ -1,134 +1,134 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code v2.1.148 紧急热修复 Bash 工具回归缺陷",
-      "OpenAI Codex rust-v0.133.0 默认启用 Goals 引集中投诉",
-      "Gemini CLI v0.44.0 预览版 3 个 P1 PR 紧急修复会话恢复",
-      "GitHub Copilot CLI v1.0.52 MCP 认证竞态与 Windows 路径问题激增",
-      "OpenCode 50 Issues/50 PR 极高活跃度，语音输入功能受追捧",
-      "Qwen Code v0.16.0-nightly 发布失败，OOM 内存问题集群爆发"
+      "Claude Code 24h 双版本紧急修复 Bash 退出码回归",
+      "OpenAI Codex 遥测体系三连 PR 重构可观测性底座",
+      "Gemini CLI 3 个安全 PR 集中落地 SSRF/RCE 修复",
+      "GitHub Copilot CLI 1M token 长上下文分级强制生效",
+      "Qwen Code Mode B 服务端架构冲刺 v0.16.0-nightly",
+      "Pi 设备码登录、IME 优化进入主线，44 Issues 活跃"
     ],
     "ai-agents": [
-      "OpenClaw 24 小时 500 Issues/500 PR 密集开发期",
-      "OpenClaw v2026.5.20 强制移除旧 skill 沙箱兼容路径",
-      "OpenClaw Discord 语音会话跟随功能上线",
-      "OpenClaw P1 级 Bug 占比显著，内存泄漏与认证绕过",
-      "OpenClaw #85391 修复 macOS 嵌套 gateway 自毁问题",
-      "OpenClaw 多平台适配聚焦 Telegram/iMessage/Feishu"
+      "OpenClaw 24h 500 Issues/500 PRs 极高活跃度",
+      "OpenClaw 修复 OpenAI 视频编辑路由 #85554",
+      "OpenClaw WhatsApp 连接稳定性 PR 消除 30 分钟断连",
+      "OpenClaw 保留用户主模型设置 PR 合并 #81304",
+      "OpenClaw 配置预检日志抑制 PR 解决并发干扰 #84439",
+      "OpenClaw QMD 文件路径规范化提升内存索引健壮性 #65212"
     ],
     "ai-trending": [
-      "Claude Plugins 官方目录单日斩获 2556 stars",
-      "codegraph 今日 Trending 冠军，+3688 stars 预索引代码知识图谱",
-      "Chrome DevTools 官方 MCP 服务器让 AI 操控浏览器调试",
-      "oh-my-pi 终端 AI 代理支持哈希锚定编辑与子代理",
-      "Rust 语言 AI 基础设施渗透率持续提升",
-      "MCP 协议快速渗透浏览器调试与代码检索场景"
+      "claude-plugins-official 登 GitHub Trending 榜首",
+      "karpathy/nn-zero-to-hero 经典课程持续高热",
+      "dify 智能体工作流平台开源趋势强劲",
+      "open-webui 本地 LLM 界面热度攀升",
+      "langchain 基础工具生态持续领先",
+      "FinceptTerminal 金融 AI 终端应用受关注"
     ],
     "ai-web": [
-      "OpenAI 新增 Gartner 2026 Agentic Coding Leader 页面",
-      "Anthropic 今日零更新，延续低调节奏",
-      "OpenAI 借 Gartner 第三方背书强化企业市场可信度",
-      "Anthropic 或处重大产品发布前蓄力期",
-      "Claude 4 系列传闻未获官方确认但社区预期强烈",
-      "数据受限：仅 URL 元数据无正文验证"
+      "Anthropic 发布 Project Glasswing 阶段性进展报告",
+      "Claude Mythos Preview 发现超 10,000 个高危漏洞",
+      "AI 漏洞发现瓶颈转向人工验证吞吐能力",
+      "Anthropic 评估 Mythos-class 模型产品化发布策略",
+      "50 家合作伙伴构建漏洞披露协作生态",
+      "OpenAI 今日官网零新增内容静默"
     ],
     "ai-hn": [
-      "Anna's Archive 致 LLM 公开信 467 分引爆版权伦理辩论",
-      "Antigravity 2.0 首夺 OpenSCAD 3D 基准测试冠军",
-      "微软内部取消 Claude 订阅暴露 AI 成本压力",
-      "Sora 突然关停导致影视项目搁浅引热议",
-      "Superset YC P26 Agent 原生 IDE 引发激烈辩论",
-      "Newsom 呼吁重新构想经济体系应对 AI 冲击"
+      "Anthropic Glasswing 281 分 186 评论引深度讨论",
+      "微软取消内部 Claude Code 许可证传闻确认",
+      "Models.dev 开源模型数据库 92 分实用工具受捧",
+      "Superset YC P26 Agent IDE 75 分 91 评论激辩",
+      "NTSB 因 AI 复现遇难飞行员声音撤下档案",
+      "Linux 声学子系统现大量 LLM 驱动修复"
     ],
     "ai-arxiv": [
-      "MOSS 首次实现智能体源代码级自我改写",
-      "Vector Policy Optimization 训练多样性提升测试搜索效率",
-      "DeltaBox Agent 沙箱状态回滚提速至毫秒级",
-      "LLM 逆缩放现象：能力越强预测越差",
-      "AMEL 发现对话历史极性累积偏置 LLM 判断",
-      "Gated DeltaNet-2 解耦擦除与写入推进线性注意力"
+      "MOSS 首个源代码级自改写智能体框架发布",
+      "Post-Training is About States 统一 SFT/RL/蒸馏理论",
+      "Tokenisation via Convex Relaxations 挑战 BPE 数学基础",
+      "Tokenization with Split Trees 无需预定义词表优化压缩率",
+      "LCGuard 为 KV 缓存共享建立安全屏障",
+      "DeltaBox 毫秒级沙箱状态回滚支撑测试时搜索"
     ],
     "ai-hf": [
-      "DeepSeek-V4-Pro 428 万周下载量断层领先开源 LLM",
-      "Qwen3.6-35B-A3B 598 万下载实际调用量最高",
-      "Gemma-4-31B-it 1028 万下载本周冠军，首引原生多模态",
-      "Sulphur-2-base 文本到视频模型下载破 120 万",
-      "Anima 与 HiDream-O1-Image 推动图像生成进入思维链时代",
-      "Unsloth 领跑 GGUF 量化生态，高效部署成刚需"
+      "google/gemma-4-31B-it 周下载破千万达 10,283,716",
+      "deepseek-ai/DeepSeek-V4-Pro 429 万下载 4,151 点赞",
+      "Qwen/Qwen3.6-35B-A3B 598 万下载成社区事实标准",
+      "bytedance-research/Lance 探索 any-to-any 统一多模态",
+      "Qwen/Qwen3.6-27B 405 万下载稠密架构高性价比",
+      "tencent/Hy-MT2 系列 1.8B/30B 瞄准端侧与专业翻译"
     ],
     "ai-community": [
-      "Google I/O 2026 Antigravity 2.0 Agent API 成讨论焦点",
-      "Gemma 4 + AI Edge Gallery 端到端离线 Agent 实战",
-      "Antigravity 解决 Agent 与浏览器上下文割裂痛点",
-      "浏览器 SDK 检测 LLM Agent 突破人类/机器人二元范式",
-      "Multica 开源平台将 AI Agent 管理为团队成员",
-      "坦诚反思 AI 写几乎所有代码的真实体验"
+      "DEV 官方披露 Gemini Embeddings 生产级推荐架构",
+      "7000+ 开发者调查揭示 AI 风险集体认知偏差",
+      "AI Agent Failure Modes Beyond Hallucination 系统风险清单",
+      "Browser SDK 实现人类/机器人/LLM agent 三分类检测",
+      "Qwen3.7 Max 迁移指南对比开源权重模型实践",
+      "Why Blocking Prompt Injection Is Wrong 挑战安全惯性"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code rapid hotfix cycle v2.1.147–148",
-      "OpenAI Codex active development in past 24 hours",
-      "Gemini CLI shipped recent updates",
-      "GitHub Copilot CLI sustained investment velocity",
-      "Qwen Code actively developed today",
-      "DeepSeek TUI joins agentic execution shift"
+      "Claude Code ships v2.1.149 with security fixes",
+      "OpenAI Codex builds in Rust for agentic execution",
+      "Gemini CLI shows concentrated high-quality community feedback",
+      "Qwen Code struggles with release pipeline reliability",
+      "Kimi CLI uses Python amid maintainer bandwidth issues",
+      "MCP server ecosystems converge across all 9 tools"
     ],
     "ai-agents": [
-      "OpenClaw: 500 issues and 500 PRs in 24h",
-      "OpenClaw v2026.5.20 security-hardening release",
-      "OpenClaw breaking change: legacy skill path removed",
-      "428:72 open-to-closed issue ratio signals backlog",
-      "422:78 open-to-merged PR ratio strains maintainers",
-      "Session state reliability top architectural concern"
+      "OpenClaw hits 500 issues and 500 PRs in 24 hours",
+      "P0 cross-user memory leak patched same-day",
+      "No new releases as project enters stabilization phase",
+      "433 open issues signal heavy triage backlog",
+      "386 open PRs overwhelm maintainer review queue",
+      "Auth and session reliability get urgent investment"
     ],
     "ai-trending": [
-      "codegraph gains +3,688 stars today",
-      "claude-plugins-official gains +2,556 stars",
-      "Anthropic plugin marketplace validates platform play",
-      "RuView: WiFi-as-sensor spatial AI paradigm",
-      "Understand-Anything: +1,391 stars for code graphs",
-      "Chrome DevTools MCP bridge for agent loops"
+      "Claude plugins gain 2,549 stars in one day",
+      "CodeGraph surges 3,684 stars for knowledge pre-indexing",
+      "Chrome DevTools MCP gets official Google backing",
+      "MCP adoption accelerates across entire stack",
+      "Anthropic endorses plugin extensibility for Claude",
+      "Local operation tools address enterprise privacy fears"
     ],
     "ai-web": [
-      "OpenAI publishes Gartner 2026 Agentic Coding article",
-      "Anthropic publishes zero new articles today",
-      "OpenAI business-category content only",
-      "Anthropic quiet period continues",
-      "Pre-announcement consolidation suspected",
-      "Agentic coding aligns with industry momentum"
+      "Claude Mythos finds 10,000+ critical vulnerabilities",
+      "Project Glasswing reframes cybersecurity bottleneck",
+      "Verification, not discovery, now limits security progress",
+      "Anthropic hints at Mythos-class model product line",
+      "50 partners engaged in defensive security ecosystem",
+      "Claude positioned as critical global security infrastructure"
     ],
     "ai-hn": [
-      "Anna's Archive LLM appeal: 467 points, 287 comments",
-      "Antigravity 2.0 tops OpenSCAD 3D LLM benchmark",
-      "Gary Marcus checks OpenAI/Anthropic math claims",
-      "AI agents dominate Show HN submissions",
-      "Skepticism toward AI hype persists",
-      "Google ascendancy over OpenAI draws muted engagement"
+      "Microsoft cancels Claude Code licenses amid costs",
+      "$30,983 token overage goes viral on HN",
+      "Glasswing update draws sharp revenue critiques",
+      "Domain-camouflaged injection attacks hit multi-agent systems",
+      "NTSB pulls docs after AI recreates dead pilots' voices",
+      "Community mood turns cynical on AI economics"
     ],
     "ai-arxiv": [
-      "Tokenisation via Convex Relaxations replaces BPE",
-      "Gated DeltaNet-2 decouples erase and write",
-      "Post-Training is About States, Not Tokens",
-      "Clipping Bottleneck stabilizes RLVR",
-      "Self-evolving agents rewrite source code",
-      "Inverse capability scaling in high-stakes domains"
+      "Tokenization reformulated as convex optimization",
+      "Gated DeltaNet-2 decouples erase and write ops",
+      "Post-training reframed as state distribution matching",
+      "Self-evolving agents gain source-level modification",
+      "Efficient attention alternatives multiply in submissions",
+      "Test-time compute scaling shifts to diversity training"
     ],
     "ai-hf": [
-      "Qwen3.6-35B-A3B nears 6M downloads",
-      "DeepSeek-V4-Pro leads with 4,140 likes",
-      "Gemma-4-31B-it exceeds 10M downloads",
-      "SulphurAI text-to-video hits 1.2M downloads",
-      "ByteDance Lance pushes any-to-any architecture",
-      "Unsloth GGUF quantization scene vibrant"
+      "DeepSeek-V4-Pro leads with 4.3M weekly downloads",
+      "Gemma-4-31B-it hits 10.3M downloads for Google",
+      "Qwen3.6-35B-A3B emerges as top MoE variant",
+      "Sulphur-2-base goes viral for text-to-video",
+      "HiDream-O1 blurs image-text-to-text boundaries",
+      "Pipeline taxonomy collapses toward unified multimodal"
     ],
     "ai-community": [
-      "Google I/O 2026 dominates Dev.to AI conversation",
-      "Antigravity 2.0 Agent API dissected by developers",
-      "Offline Brain: custom agent skill for Android",
-      "Browser SDK detects LLM agents built",
-      "$0.37 audit of 14 Google services documented",
-      "AI Resist List curated on Lobste.rs"
+      "Google Antigravity 2.0 dominates I/O chatter",
+      "Gemma 4 Challenge drives local agent tutorials",
+      "DEV dogfoods Gemini Embeddings for feed algorithm",
+      "7000-developer survey reveals real 2026 AI fears",
+      "Agent failure modes expand beyond hallucination",
+      "Skepticism grows on AI's actual productivity gains"
     ]
   }
 }

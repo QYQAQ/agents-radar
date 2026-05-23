@@ -1,6 +1,6 @@
 # ArXiv AI 研究日报 2026-05-23
 
-> 数据来源: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | 共 50 篇论文 | 生成时间: 2026-05-22 16:02 UTC
+> 数据来源: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | 共 50 篇论文 | 生成时间: 2026-05-23 00:30 UTC
 
 ---
 
@@ -10,7 +10,7 @@
 
 ## 今日速览
 
-今日50篇论文覆盖大语言模型训练后优化、智能体自主进化、扩散模型理论与应用、以及AI安全与评估等核心方向。最突出的突破包括：**MOSS首次实现智能体源代码级自我改写**，突破了传统文本层面进化的局限；**Vector Policy Optimization**提出训练多样性以提升测试时搜索效率的新范式；**DeltaBox**将AI Agent沙箱状态回滚速度提升至毫秒级，为高频树搜索和RL训练提供基础设施。此外，多项研究聚焦于LLM的时间推理、政治偏见与冲突场景下的对齐失败，显示出AI安全研究正从通用对齐向具体社会风险场景深化。
+今日ArXiv共收录50篇AI核心论文，**智能体自进化与系统安全**成为最突出主题：MOSS提出首个源代码级自改写智能体框架，LCGuard为KV缓存共享建立安全屏障，DeltaBox实现毫秒级沙箱状态回滚以支撑大规模测试时搜索。**后训练范式革新**同样亮眼，"Post-Training is About States, Not Tokens"从状态分布视角统一SFT/RL/蒸馏的理论框架。此外，**tokenization基础层**出现两项重要进展——凸松弛优化与分裂树方法分别从数学基础和压缩效率角度挑战BPE霸权。
 
 ---
 
@@ -20,72 +20,63 @@
 
 | 论文 | 作者 | 一句话说明 |
 |:---|:---|:---|
-| **[Tokenisation via Convex Relaxations](http://arxiv.org/abs/2605.22821v1)** | Tempus et al. | 将BPE/Unigram等贪心式分词重新建模为线性规划问题，全局优化词表构建，有望解决子词分割的局部最优困境。 |
-| **[Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention](http://arxiv.org/abs/2605.22791v1)** | Hatamizadeh et al. | 在线性注意力中解耦"擦除"与"写入"操作，解决压缩记忆编辑时的关联干扰问题，推进线性复杂度序列建模。 |
-| **[Post-Training is About States, Not Tokens](http://arxiv.org/abs/2605.22731v1)** | Dong Nie | 从状态分布视角统一分析SFT、RL与蒸馏，揭示训练方法的本质差异在于状态覆盖而非损失函数形式。 |
-| **[Understanding Data Temporality Impact on LLM Pre-training](http://arxiv.org/abs/2605.22769v1)** | Hippolyte et al. | 系统研究预训练数据的时间动态对时序知识获取的影响，为构建具有时间感知能力的LLM提供实证基础。 |
-| **[Reducing Political Manipulation with Consistency Training](http://arxiv.org/abs/2605.22771v1)** | Phan et al. | 发现LLM对对立政治话题存在"隐性政治偏见"并识别7类操纵技术，提出一致性训练缓解方案。 |
-| **[Is Capability a Liability? More Capable LLMs Make Worse Forecasts](http://arxiv.org/abs/2605.22672v1)** | Merrill et al. | 揭示LLM在超线性增长与尾部风险场景下的**逆缩放现象**：能力越强预测越差，对金融与流行病学应用警示深远。 |
-| **[AMEL: Accumulated Message Effects on LLM Judgments](http://arxiv.org/abs/2605.22714v1)** | Temkit | 发现对话历史极性会累积偏置LLM后续判断，对批量代码审查、内容审核等长对话评估场景提出关键警示。 |
-
----
+| **[Post-Training is About States, Not Tokens: A State Distribution View of SFT, RL, and On-Policy Distillation](http://arxiv.org/abs/2605.22731v1)** | Dong Nie | 跳出损失函数视角，从状态分布角度重新统一理解SFT、RL和蒸馏，为后训练理论提供新范式。 |
+| **[Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention](http://arxiv.org/abs/2605.22791v1)** | Ali Hatamizadeh, Yejin Choi, Jan Kautz | 在线性注意力中解耦"擦除"与"写入"操作，解决压缩记忆编辑时的关联扰动难题，线性复杂度下的注意力新架构。 |
+| **[Tokenisation via Convex Relaxations](http://arxiv.org/abs/2605.22821v1)** | Jan Tempus, Philip Whittington, Craig W. Schmidt et al. | 将BPE/Unigram的贪婪策略重构为线性规划全局优化问题，tokenization首次获得数学上严格的凸松弛解法。 |
+| **[Tokenization with Split Trees](http://arxiv.org/abs/2605.22705v1)** | Craig W. Schmidt, Michael Krumdick, Adam Wiemerslage et al. | 提出ToaST方法，用完整二叉树递归分割pretoken，无需预定义词表即可直接优化压缩率，推理效率与灵活性兼得。 |
+| **[Understanding Data Temporality Impact on Large Language Models Pre-training](http://arxiv.org/abs/2605.22769v1)** | Pilchen Hippolyte, Fabre Romain, Signe Talla Franck et al. | 系统研究预训练数据的时间动态对时序知识获取的影响，揭示shuffle策略如何冻结模型的时间感知能力。 |
+| **[Reducing Political Manipulation with Consistency Training](http://arxiv.org/abs/2605.22771v1)** | Long Phan, Devin Kim, Alexander Pan et al. | 识别LLM中7类"隐蔽政治偏见"技术，通过一致性训练降低模型在政治敏感话题上的不对称操纵风险。 |
+| **[AMEL: Accumulated Message Effects on LLM Judgments](http://arxiv.org/abs/2605.22714v1)** | Sid-ali Temkit | 发现对话历史极性会系统性偏置LLM作为评判者的后续判断，揭示多轮评估中的累积消息效应陷阱。 |
+| **[Posterior Collapse as Automatic Spectral Pruning](http://arxiv.org/abs/2605.22691v1)** | Johannes Hirn | 证明β-VAE中的后验坍塌本质是自动谱剪枝，不同β值揭示潜变量从无用到有用的级联坍塌模式，深化生成模型可解释性。 |
 
 ### 🤖 智能体与推理（规划、工具使用、多智能体、思维链）
 
 | 论文 | 作者 | 一句话说明 |
 |:---|:---|:---|
-| **[MOSS: Self-Evolution through Source-Level Rewriting](http://arxiv.org/abs/2605.22794v1)** | Cai et al. | **里程碑工作**：首个实现源代码级自我改写的自主智能体，突破文本可变工件的局限，使部署后持续学习成为可能。 |
-| **[Vector Policy Optimization: Training for Diversity Improves Test-Time Search](http://arxiv.org/abs/2605.22817v1)** | Bahlous-Boldi et al. | 针对AlphaEvolve等推理时搜索框架，提出向量策略优化训练多样化策略，使单一模型适配多种任务特定奖励函数。 |
-| **[DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox C/R](http://arxiv.org/abs/2605.22781v1)** | Dong et al. | 将沙箱检查点/回滚速度提升至毫秒级，解决LLM Agent高频状态探索（树搜索、RL）的基础设施瓶颈。 |
-| **[LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems](http://arxiv.org/abs/2605.22786v1)** | Asif et al. | 为基于KV Cache隐式通信的多智能体系统构建安全护栏，防止恶意信息通过潜在空间泄露。 |
-| **[Scout-Assisted Planning for Heterogeneous Robot Teams](http://arxiv.org/abs/2605.22693v1)** | Bui et al. | 无人机-地面机器人协同规划框架，通过空中侦察提前发现障碍物，减少物理探索中的代价高昂回溯。 |
-
----
+| **[MOSS: Self-Evolution through Source-Level Rewriting in Autonomous Agent Systems](http://arxiv.org/abs/2605.22794v1)** | Qianshu Cai, Yonggang Zhang, Xianzhang Jia et al. | 突破文本可修改工件的局限，实现智能体**源代码级自改写**，部署后持续从用户交互中学习进化，终结"静态部署-等待人工修复"范式。 |
+| **[LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems](http://arxiv.org/abs/2605.22786v1)** | Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas et al. | 为基于KV缓存隐式通信的多智能体系统建立安全屏障，防止恶意智能体通过潜空间通道窃取信息或注入攻击。 |
+| **[DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox Checkpoint/Rollback](http://arxiv.org/abs/2605.22781v1)** | Yunpeng Dong, Jingkai He, Yuze Hou et al. | 实现毫秒级完整沙箱状态（文件+进程内存+上下文）的checkpoint/rollback，使测试时树搜索和RL在AI Agent中真正可扩展。 |
+| **[Vector Policy Optimization: Training for Diversity Improves Test-Time Search](http://arxiv.org/abs/2605.22817v1)** | Ryan Bahlous-Boldi, Isha Puri, Idan Shenfeld et al. | 训练阶段优化策略多样性而非单一奖励，使LLM在AlphaEvolve等测试时搜索中适配多样任务特定奖励函数。 |
+| **[Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration](http://arxiv.org/abs/2605.22814v1)** | Lily Goli, Justin Kerr, Daniele Reda et al. | 将情景记忆与持久世界模型结合，解决好奇心驱动RL在3D环境中的灾难性遗忘与探索效率问题。 |
+| **[Advancing Mathematics Research with AI-Driven Formal Proof Search](http://arxiv.org/abs/2605.22763v1)** | George Tsoukalas, Anton Kovsharov, Sergey Shirobokov et al. | 首次大规模评估LLM生成Lean形式证明解决研究级数学问题的能力，为AI辅助数学研究建立系统基准。 |
 
 ### 🔧 方法与框架（新技术、基准测试、效率优化）
 
 | 论文 | 作者 | 一句话说明 |
 |:---|:---|:---|
-| **[The Matching Principle: A Geometric Theory of Loss Functions](http://arxiv.org/abs/2605.22800v1)** | Rajput | 统一鲁棒性、域适应、组合泛化等看似无关问题的几何框架，提出"匹配原则"作为损失函数设计的新理论基础。 |
-| **[Proxy-Based Approximation of Shapley and Banzhaf Interactions](http://arxiv.org/abs/2605.22738v1)** | Thies et al. | ProxySHAP以代理模型调和高阶交互估计的速度-精度权衡，使复杂ML系统的可解释性分析更实用。 |
-| **[Optimization over the Intersection of Manifolds](http://arxiv.org/abs/2605.22736v1)** | Yang et al. | 证明流形交正则性的等价条件，为约束优化、低秩学习等提供可处理的几何优化路径。 |
-| **[Uniform Diffusion Models Revisited](http://arxiv.org/abs/2605.22765v1)** | Gourevitch et al. | 重新形式化均匀扩散模型，提出leave-one-out去噪器与吸收态视角，澄清离散扩散的理论基础。 |
-
----
+| **[The Matching Principle: A Geometric Theory of Loss Functions for Nuisance-Robust Representation Learning](http://arxiv.org/abs/2605.22800v1)** | Vishal Rajput | 用统一几何框架涵盖鲁棒性、域适应、光照不变性、组合泛化等看似无关的问题，揭示它们共享的结构——匹配原理。 |
+| **[Proxy-Based Approximation of Shapley and Banzhaf Interactions](http://arxiv.org/abs/2605.22738v1)** | Santo M. A. R. Thies, Hubert Baniecki, R. Teal Witter et al. | ProxySHAP以可扩展方式精确估计高阶Shapley/Banzhaf交互，克服现有方法在速度与精度间的权衡困境。 |
+| **[The Distillation Game: Adaptive Attacks & Efficient Defenses](http://arxiv.org/abs/2605.22737v1)** | Youssef Allouah, Mahdi Haghifam, Sanmi Koyejo et al. | 将模型蒸馏攻防建模为师生间的minimax博弈，导出效用约束下的最优防御策略，量化"有用性-可模仿性"权衡。 |
+| **[HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools](http://arxiv.org/abs/2605.22733v1)** | Edwin Jose | 终结LLM工具的"双轨制"困境，单一Python函数同时暴露为HTTP端点和MCP工具，业务逻辑与协议适配彻底解耦。 |
 
 ### 📊 应用（垂直领域、多模态、代码生成）
 
 | 论文 | 作者 | 一句话说明 |
 |:---|:---|:---|
-| **[Advancing Mathematics Research with AI-Driven Formal Proof Search](http://arxiv.org/abs/2605.22763v1)** | Tsoukalas et al. | 首次大规模评估LLM生成Lean形式证明解决研究级数学问题的能力，为AI辅助数学发现建立基准。 |
-| **[Forecasting Scientific Progress with AI](http://arxiv.org/abs/2605.22681v1)** | Wu et al. | 构建时间约束下的科学进展预测评估框架，测试AI能否真正预见研究方向而非仅事后解释。 |
-| **[MambaGaze: Bidirectional Mamba for Cognitive Load Assessment](http://arxiv.org/abs/2605.22775v1)** | Mousavi et al. | 双向Mamba结合显式缺失数据建模，实现眼动追踪的实时认知负荷评估，面向安全关键人机交互。 |
-| **[Live Music Diffusion Models](http://arxiv.org/abs/2605.22717v1)** | Novack et al. | 面向实时交互音乐生成的扩散模型高效微调与后训练，突破自回归模型在直播共创场景的计算瓶颈。 |
-| **[Deep RL for Flexible Job Shop Scheduling](http://arxiv.org/abs/2605.22773v1)** | Tang et al. | 针对随机作业到达的动态柔性车间调度，DRL方法超越传统MILP求解器，应对组合复杂性与不确定性。 |
+| **[Evaluating Commercial AI Chatbots as News Intermediaries](http://arxiv.org/abs/2605.22785v1)** | Mirac Suzgun, Emily Shen, Federico Bianchi et al. | 首次系统测量ChatGPT、Gemini等商业聊天机器人在14天跨语言新闻周期中的事实准确性，揭示检索-合成管道的时效性盲区。 |
+| **[CogAdapt: Transferring Clinical ECG Foundation Models to Wearable Cognitive Load Assessment via Lead Adaptation](http://arxiv.org/abs/2605.22774v1)** | Amir Mousavi, Mohammad Sadegh Sirjani, Erfan Nourbakhsh et al. | 通过导联自适应将百万级临床ECG基础模型迁移至可穿戴设备，解决认知负荷评估的标注稀缺与跨被试泛化难题。 |
+| **[ChronoMedKG: A Temporally-Grounded Biomedical Knowledge Graph and Benchmark for Clinical Reasoning](http://arxiv.org/abs/2605.22734v1)** | Md Shamim Ahmed, Farzaneh Firoozbakht, Lukas Galke Poech et al. | 构建首个时间感知的生物医学知识图谱，同一症状在3岁与13岁指向不同疾病，为临床时序推理提供基准。 |
+| **[Forecasting Scientific Progress with Artificial Intelligence](http://arxiv.org/abs/2605.22681v1)** | Sean Wu, Pan Lu, Yupeng Chen et al. | 在受控知识约束下评估AI预测科学进展的能力，建立时间 grounded 的预测框架，探索AI能否预见自身发展轨迹。 |
+| **[Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning](http://arxiv.org/abs/2605.22748v1)** | Ismail Geles, Leonard Bauersfeld, Markus Wulfmeier et al. | 多智能体RL在真实赛车中超越人类，关键突破是将其他车辆视为策略性参与者而非环境噪声，解决物理AI的 brittle 难题。 |
 
 ---
 
 ## 研究趋势信号
 
-**智能体基础设施层快速成熟**：今日出现MOSS（源码自进化）、DeltaBox（毫秒级沙箱C/R）、LCGuard（KV通信安全）、HarnessAPI（统一工具框架）四项工作，标志Agent研究从算法创新向工程基础设施纵深发展，"部署后持续学习+高频状态探索+安全通信"的闭环正在形成。**时间推理与动态评估受关注**：数据时间性、科学预测、预报逆缩放等研究共同指向静态知识训练的局限性，时序-aware的LLM训练与评估成为新焦点。**AI安全场景细化**：从通用对齐扩展到政治操纵、冲突恶化、累积消息偏置等具体社会风险，显示安全研究与社会科学交叉深化。
+**智能体基础设施层爆发**：今日出现MOSS（自进化）、LCGuard（安全通信）、DeltaBox（状态管理）三项正交创新，标志Agent系统从"功能实现"进入"工程化运维"阶段。同时，**测试时计算扩展**成为共识——Vector Policy Optimization训练多样性策略、DeltaBox支撑毫秒级回滚搜索、Clipping Bottleneck稳定RLVR，三者共同指向"训练为搜索服务"的新范式。值得注意的是，**Tokenization基础层**在沉寂多年后迎来双突破（凸松弛+分裂树），预示预训练Pipeline的底层重构可能启动。
 
 ---
 
 ## 值得精读
 
-### 1. [MOSS: Self-Evolution through Source-Level Rewriting](http://arxiv.org/abs/2605.22794v1) | Cai et al.
+### 1. [MOSS: Self-Evolution through Source-Level Rewriting](http://arxiv.org/abs/2605.22794v1)
+**理由**：现有自进化智能体仅修改技能文件、提示词等"文本工件"，MOSS首次实现**运行时源代码自改写**，从根本上打破"部署即冻结"的范式。其技术路径（程序合成+差分测试+回滚保护）与哲学含义（智能体获得真正自主性）均具里程碑意义，可能重新定义Agent的维护经济学。
 
-**理由**：当前自进化智能体局限于修改技能文件、提示模板等文本工件，MOSS首次实现**运行时源代码级自我改写**——Agent直接编辑自身Python源码并热重载。这一突破使部署后持续学习从"配置调整"跃迁至"程序合成"，可能重新定义软件系统的生命周期管理。论文需关注其安全性约束（如何防止破坏核心功能）与验证机制。
+### 2. [Post-Training is About States, Not Tokens](http://arxiv.org/abs/2605.22731v1)
+**理由**：SFT/RL/Distillation的理论分析长期被损失函数视角割裂，本文提出**状态分布视角**的统一框架，揭示三种方法本质是对状态访问分布的不同塑形。这一视角转换可能解释为何某些"理论上次优"的实践（如DPO）效果良好，并为后训练算法设计提供新原则。
 
-### 2. [Is Capability a Liability? More Capable LLMs Make Worse Forecasts](http://arxiv.org/abs/2605.22672v1) | Merrill et al.
-
-**理由**：**逆缩放（inverse scaling）** 在特定结构（超线性增长+尾部风险）上的系统验证，对金融风控、疫情预测等关键应用具有直接警示意义。论文需精读其机制分析：更强模型是否因过度拟合历史模式而忽视 regime change 的可能性？这一发现可能挑战"模型越大越可靠"的默认假设，推动不确定性量化方法的革新。
-
-### 3. [The Matching Principle: A Geometric Theory of Loss Functions](http://arxiv.org/abs/2605.22800v1) | Rajput
-
-**理由**：试图以单一几何框架统一鲁棒性、域适应、组合泛化、对齐安全等八个"各自为政"的研究领域。若理论成立，将成为表示学习的"第一性原理"式工作，为损失函数设计提供系统性指导而非启发式调参。需验证其核心数学构造（Fisher-Rao度量下的匹配条件）在具体任务中的可计算性与实证效果。
-
----
+### 3. [The Matching Principle](http://arxiv.org/abs/2605.22800v1)
+**理由**：将鲁棒学习、域适应、组合泛化、对齐安全等**八个独立研究领域**纳入统一几何框架，声称它们共享"匹配原理"这一深层结构。若理论成立，将大幅简化方法设计空间——面对新场景时无需从零发明专用技术，而是求解匹配约束的特定实例。其野心与统一性值得验证。
 
 ---
 *本日报由 [agents-radar](https://github.com/QYQAQ/agents-radar) 自动生成。*
