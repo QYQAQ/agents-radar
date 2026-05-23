@@ -60,7 +60,7 @@ function makeDigest(overrides: Partial<RepoDigest> = {}): RepoDigest {
 describe("buildCliPrompt", () => {
   it("generates Chinese prompt by default", () => {
     const result = buildCliPrompt(cfg, [makeItem()], [makeItem()], [release], "2026-03-09");
-    expect(result).toContain("技术分析师");
+    expect(result).toContain("研究分析师");
     expect(result).toContain("TestTool");
     expect(result).toContain("2026-03-09");
     expect(result).toContain("org/test");
@@ -69,9 +69,9 @@ describe("buildCliPrompt", () => {
 
   it("generates English prompt", () => {
     const result = buildCliPrompt(cfg, [makeItem()], [], [], "2026-03-09", "en");
-    expect(result).toContain("technical analyst");
+    expect(result).toContain("research analyst");
     expect(result).toContain("TestTool");
-    expect(result).toContain("Hot Issues");
+    expect(result).toContain("Research-Relevant Issues");
   });
 
   it("shows 无 when no data", () => {
@@ -159,12 +159,12 @@ describe("buildSkillsPrompt", () => {
   it("includes skills repository context", () => {
     const result = buildSkillsPrompt([makeItem()], [makeItem()], "2026-03-09");
     expect(result).toContain("anthropics/skills");
-    expect(result).toContain("Claude Code Skills");
+    expect(result).toContain("研究分析师");
   });
 
   it("generates English variant", () => {
     const result = buildSkillsPrompt([], [], "2026-03-09", "en");
-    expect(result).toContain("Claude Code ecosystem");
+    expect(result).toContain("research analyst");
     expect(result).toContain("None");
   });
 });
