@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.150 1M→200K 上下文降级事故引安全过滤器争议",
+      "OpenAI Codex GPT-5.5 1M 承诺未兑现，usage 追踪系统 4 部曲 PR 落地",
+      "Gemini CLI 路由分类器修复孤儿函数，AST 感知工具链探索中",
+      "OpenCode v1.15.10 批量修复无限压缩循环与 GC 死亡螺旋",
+      "Pi v0.75.5 YOLO 权限门控，Qwen 3.7 Max 推理预算接入",
+      "Qwen Code v0.16.1 迭代规划+先读后改，headless subagent 验证机制"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 Issues/500 PRs 高活跃，长上下文压缩级联故障成焦点",
+      "消息重试目标 ID 归一化修复，分布式 exactly-once 语义工程实现",
+      "记忆 dreaming 与 memory-core 解耦，provider 接口重构中",
+      "子 agent 生命周期对齐问题映射 LLM Agent 可靠性研究前沿",
+      "工具调用 schema token 开销优化，直接关联 agent 系统效率",
+      "会话状态管理缺陷与安全边界设计成为核心工程维度"
+    ],
+    "ai-trending": [
+      "PaddleOCR ⭐78,421 RAG 主题活跃，PDF/图像结构化转换桥接 LLM",
+      "graphify ⭐52,484 代码/论文/图像/视频统一知识图谱，多模态文档理解",
+      "claude-mem ⭐77,683 跨会话 AI 压缩持久化，文档级长记忆管理",
+      "LlamaIndex ⭐49,618 自称领先 OCR 平台，复杂版面公式表格处理",
+      "LlamaFactory ⭐71,530 ACL 2024，VLM SFT/LoRA 多模态对齐基础设施",
+      "codegraph 等登榜爆发，长上下文压缩与结构化检索需求强烈"
+    ],
+    "ai-hn": [
+      "Anthropic 科幻叙事诱导模型\"邪恶\"行为研究，10 评论触价值对齐张力",
+      "Claude Code RCE 复现与时间感知缺陷，工具链 AI 可靠性危机显现",
+      "MCP 生态讨论涌现，AI 基础设施标准化成工程务实焦点",
+      "企业级 LLM 定制与 RAG/知识图谱本地部署，后训练走向生产",
+      "Frontier labs 算力利用率分析，长上下文训练成本效率隐含意义",
+      "CodeShot 网页截图视觉解析，多模态 agent 基础设施未触核心"
+    ],
+    "ai-hf": [
+      "Qwen3.6-35B-A3B MoE VLM 600 万下载，3B 激活参数研究稀疏化幻觉缓解",
+      "Gemma-4-31B-it 1029 万下载，开源闭源多模态对齐质量对比基准",
+      "MiniCPM-V-4.6 ⭐914/24.7 万下载，端侧文档理解与 HMER 研究标杆",
+      "DeepSeek-V4-Pro/Flash 双发 720 万下载，长上下文标准版+极速版产品化",
+      "bytedance-research/Lance any-to-any 统一架构，或重塑多模态训练范式",
+      "NuExtract3 基于 Qwen3.5 信息抽取 VLM，结构化文档 OCR 后处理"
+    ],
+    "ai-community": [
+      "工程图纸隐写提示注入攻击，多模态视觉文档鲁棒性评估新方向",
+      "持久化 KV 缓存替代 RAG 实验，长上下文效率优化架构探索",
+      "纯 WebAssembly 神经网络引擎浏览器运行，OCR 边缘低延迟部署",
+      "RLHF 偏好学习阶段教程延续，后训练对齐教学参考框架",
+      "Gemma 4 视觉-代码联合推理端到端，软件工程场景幻觉评估基准",
+      "本地优先推理与隐私保护替代方案，部署优化新方向涌现"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Silent context degradation plagues production deployments",
+      "Claude Code v2.1.150 regression released",
+      "Pi offers /yolo permissive automation mode",
+      "DeepSeek TUI proposes Claude Code delegation",
+      "All major tools now operate at 100K-1M token scales",
+      "Hierarchical agent architectures with verification loops converge"
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 issues and 500 PRs in 24 hours",
+      "483:17 open-to-closed issue ratio shows throughput",
+      "189:311 open-to-merged PR ratio indicates review constraints",
+      "Project in stabilization phase for reliability",
+      "Latest beta v2026.5.22-beta.1: docs only",
+      "Clawsweeper labels reveal maintainer bandwidth gaps"
+    ],
+    "ai-trending": [
+      "NVlabs/LongLive 2.0 for long video generation",
+      "PaddleOCR at 78,421 stars bridges docs to LLMs",
+      "Llama Index rebrands as document agent/OCR platform",
+      "Hermes-agent surges in agentic reasoning interest",
+      "HuggingFace Transformers remains critical backbone",
+      "Pure post-training alignment repos underrepresented"
+    ],
+    "ai-hn": [
+      "Anthropic: dystopian sci-fi induces evil AI behavior",
+      "Data curation for value alignment debated (10 comments)",
+      "Local RAG knowledge graph agent Show HN",
+      "Claude Code wiki generation tools emerging",
+      "Community focused on productization not research",
+      "No long-context or OCR research discussions today"
+    ],
+    "ai-hf": [
+      "Qwen3.6-35B-A3B hits 6.0M downloads",
+      "DeepSeek-V4-Pro leads likes at 4,190",
+      "MiniCPM-V-4.6: 247K downloads for OCR docs",
+      "HiDream-O1-Image: iterative visual refinement",
+      "NuExtract3: structured extraction from visual inputs",
+      "No dedicated HMER models in trending list"
+    ],
+    "ai-community": [
+      "Steganographic prompt injection in blueprint OCR",
+      "Persistent KV cache may replace RAG for long-context",
+      "KL3FT3Z novel attack surface for HMER pipelines",
+      "Gemma 4 on-device multimodal deployment trending",
+      "ThunderKittens DSL optimizes vision transformer kernels",
+      "RLHF tutorials mature on preference collection"
+    ]
+  }
+}
