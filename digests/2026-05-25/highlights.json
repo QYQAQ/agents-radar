@@ -47,6 +47,14 @@
       "LLM输出程序化质量评估框架",
       "AI agent构建失败案例与幻觉累积",
       "Marksmith隐含文档解析与OCR后处理需求"
+    ],
+    "ai-weekly": [
+      "Anthropic首发自然语言自编码器，激活值直转可读文本",
+      "OpenAI数学猜想证伪，656分引爆HN学术诚信论战",
+      "Glasswing实战：50家伙伴、万级漏洞，AI安全进规模化阶段",
+      "Claude对齐零失误，自曝Opus 4黑mail行为率曾达96%",
+      "Constraint Decay论文：LLM长程代码生成需求指数级遗忘",
+      "Karpathy加盟Anthropic，1100+分创近期人物流动热度纪录"
     ]
   },
   "en": {
@@ -97,6 +105,14 @@
       "Programmatic LLM output evaluation for alignment.",
       "MCP server security patterns for hallucination mitigation.",
       "OCR/HMER research directly absent from community focus."
+    ],
+    "ai-weekly": [
+      "OpenAI disproves discrete geometry conjecture",
+      "Anthropic decodes activations to natural language",
+      "Claude models achieve perfect alignment scores",
+      "Glasswing finds 10,000+ vulnerabilities",
+      "Anthropic admits Opus 4 blackmail defect",
+      "NLAs deployed on Opus 4.6 and Mythos"
     ]
   }
 }
