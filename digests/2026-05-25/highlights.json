@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code长上下文幻觉致仓库误删",
+      "OpenAI Codex上下文压缩回归0.132.0+",
+      "Gemini CLI指数级token泄漏修复",
+      "Kimi CLI ACP协议层三连发",
+      "Qwen Code v0.16.1 AUTO模式安全对齐强化",
+      "DeepSeek TUI v0.8.44品牌迁移与符号化长上下文"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 Issues/PRs聚焦Agent沙箱化",
+      "SSRF防御与auth会话隔离PR #60488",
+      "DeepSeek V4 reasoning-only失败模式讨论",
+      "compaction model配置被忽略暴露上下文管理缺陷",
+      "虚假follow-up承诺的Agent幻觉行为",
+      "prompt injection防护成安全主线"
+    ],
+    "ai-trending": [
+      "Understand-Anything单日+3999 stars代码知识图",
+      "codegraph +3003 stars预索引减少Token消耗",
+      "claude-mem 77K stars持久化跨会话记忆层",
+      "PaddleOCR 78K stars明确OCR→RAG管道定位",
+      "minimind 50K stars 2小时训练64M参数LLM",
+      "llama_index 49K stars自定位OCR平台"
+    ],
+    "ai-hn": [
+      "Constraint Decay论文161分量化LLM约束衰减",
+      "本地LLM先提问再回答降低幻觉率",
+      "Agent上下文形式化语言论文abs/2605.01920",
+      "Claude Code远程系统提示注入争议",
+      "Anthropic 2028全球AI领导力情景研究",
+      "社区从能力展示转向可靠性审计"
+    ],
+    "ai-hf": [
+      "Lance 760赞any-to-any原生全模态架构",
+      "Qwen3.6-27B 424万下载image-text-to-text标杆",
+      "Gemma-4-31B-it 1039万下载开源VLM工业验证",
+      "MiniCPM-V-4.6 26万下载端侧OCR密集场景",
+      "Qwen3.6-35B-A3B-MTP MoE稀疏激活多模态",
+      "HauhauCS 120万下载反映去幻觉化需求"
+    ],
+    "ai-community": [
+      "Control Plane Leaking长上下文安全新攻击面",
+      "Gemma 4区分推理失败与策略失败",
+      "实时多模态CV与对话接口延迟权衡",
+      "LLM输出程序化质量评估框架",
+      "AI agent构建失败案例与幻觉累积",
+      "Marksmith隐含文档解析与OCR后处理需求"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Industry pivots from features to reliability engineering.",
+      "Claude Code leads with 10 research-relevant issues.",
+      "OpenAI Codex has 9 PRs on context lifecycle management.",
+      "Gemini CLI matches Codex with 9 research PRs.",
+      "All major tools invest in context compaction, compression.",
+      "Smaller players pursue symbolic context handles."
+    ],
+    "ai-agents": [
+      "500 issues/PRs but diluted research signal.",
+      "Security-hardening sprint on prompt injection, SSRF.",
+      "Agent reliability failures: hallucinated follow-up promises.",
+      "Context window management under long-session pressure.",
+      "Three releases, all gateway/performance focused.",
+      "Absent: multimodal research, reasoning architecture updates."
+    ],
+    "ai-trending": [
+      "Code-to-knowledge-graph conversion dominates trending.",
+      "Three projects attack codebase compression for long context.",
+      "PaddleOCR at 78K+ stars, quiet document intelligence leader.",
+      "minimind at 50K stars, tiny LLM training from scratch.",
+      "Hallucination mitigation tools notably absent from hot list.",
+      "Llama Index integrates vision models for multimodal RAG."
+    ],
+    "ai-hn": [
+      "Constraint Decay paper: 161 points, 81 comments.",
+      "LLM agents progressively violate constraints over long tasks.",
+      "Debate: attention dilution vs. training distribution shift.",
+      "Local LLMs ask clarifying questions to reduce hallucination.",
+      "Karpathy-to-Anthropic hiring drew minimal research attention.",
+      "No direct OCR/HMER or multimodal breakthroughs today."
+    ],
+    "ai-hf": [
+      "Qwen3.6-27B hits 1.4M downloads, multimodal reasoning interest.",
+      "MiniCPM-V-4.6 gains traction for document understanding.",
+      "Uncensored Qwen3.6-35B: 1.2M downloads, alignment removal experiment.",
+      "Gemma-4-31B-it reaches 10.4M downloads as research backbone.",
+      "Bytedance Lance: any-to-any multimodal architecture.",
+      "NuExtract3: structured extraction from visual documents."
+    ],
+    "ai-community": [
+      "Control plane leaking: context becomes command channel.",
+      "Real-time vision-language pipeline latency discussions.",
+      "Gemma 4 explored for offline document understanding.",
+      "Programmatic LLM output evaluation for alignment.",
+      "MCP server security patterns for hallucination mitigation.",
+      "OCR/HMER research directly absent from community focus."
+    ]
+  }
+}
