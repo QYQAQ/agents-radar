@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code长上下文瓶颈暴露，执行层guardrails社区贡献兴起",
+      "OpenAI Codex遭遇Context compaction可靠性危机，TUI交互深度投入",
+      "Gemini CLI实验Union-find语义压缩，建设组件级评估体系",
+      "GitHub Copilot CLI v1.0.55修复SEA，多智能体状态分裂待解",
+      "Qwen Code v0.16.1-nightly修复构建，Daemon长上下文原语密集建设",
+      "DeepSeek TUI发布v0.8.45，Cache-maximalism架构宣言7个EPIC规划"
+    ],
+    "ai-agents": [
+      "OpenClaw 24小时477 Issues高故障压力，流式看门狗误报子代理静默丢失",
+      "PR #86678惰性重建session快照，降低高负载网关CPU支持长会话",
+      "PR #86677修复Codex恢复时幻觉历史，跨运行时上下文同步突破",
+      "推理模型kimi-k2.5/DeepSeek-R1扩展思考触发系统性可观测性缺口",
+      "上下文压缩compaction数据完整性验证缺失成P1级焦点",
+      "社区对静默失败容忍度骤降，容错机制成多智能体架构关键"
+    ],
+    "ai-trending": [
+      "LlamaIndex 49,660 stars明确自定位OCR platform，文档解析与Agent深度融合",
+      "RAGFlow 81,230 stars强调deep document understanding，版面分析模块活跃",
+      "graphify 53,698 stars多模态文档结构化，跨模态检索填补HMER空白",
+      "反Slop运动taste-skill/stop-slop兴起，直击LLM输出质量与幻觉",
+      "Knowledge Graph for Code类项目爆发，与长上下文压缩密切相关",
+      "社区从拼参数转向拼上下文质量和输出可靠性，研究议程高度契合"
+    ],
+    "ai-web": [
+      "Anthropic Chris Olah梵蒂冈致辞，AI伦理从技术面扩展至宗教制度层面",
+      "首次系统承认前沿AI实验室激励冲突，暗示外部审计与独立evals设计",
+      "外部约束话语建构，RLAIF宪法批评者外部性设计或迎跨文化反馈聚合",
+      "OpenAI今日零新增，发布节奏延续低调，技术发布真空期持续",
+      "Responsible Scaling Policies与价值观锚定机制寻求哲学基础",
+      "多模态人类价值表征可能嵌入全球治理话语，影响视觉交互内容过滤"
+    ],
+    "ai-hn": [
+      "Cursed Browser项目实证VLM解析HTML系统性幻觉，跨模态虚构行为暴露",
+      "Unsiloed AI宣称登顶olmOCR-Bench，PDF文本提取评测竞争白热化",
+      "Chatbot长记忆双刃剑效应，过度记忆致隐私泄露与上下文污染",
+      "YourMemory持久记忆层引入时序推理，记忆-推理分离架构受关注",
+      "教皇AI通谕与Anthropic密集互动，价值对齐升格公共政策焦点",
+      "olmOCR-Bench榜首争夺反映文档智能评测趋热，实际泛化性存疑"
+    ],
+    "ai-hf": [
+      "Qwen3.6-27B 4.4M下载image-text-to-text，MTP架构视觉特征并行解码",
+      "MiniCPM-V-4.6 285K下载端侧VLM前沿，视觉编码器压缩适配边缘OCR",
+      "DeepSeek-V4-Pro纯文本推理旗舰获最高社区关注，长上下文架构突破",
+      "HRM-Text-1B 90K下载标签存疑，或填手写数学表达式识别空白",
+      "NuExtract3视觉信息抽取，端到端文档结构理解替代传统OCR",
+      "Uncensored/Obliterated GGUF系列反映对齐干预逆向工程，可控生成紧迫"
+    ],
+    "ai-community": [
+      "AWS官方解析KV缓存压缩致上下文遗忘，分层摘要策略可靠性设计",
+      "RLHF系列教程深入Bradley-Terry损失变体，PPO/DPO pipeline复现参考",
+      "WebGPU+WASM浏览器运行2B参数模型，视觉模型端侧部署可迁移",
+      "扩散模型模式坍缩解释视觉输出同质化，采样温度与分布学习本质",
+      "MCP协议安全争议反映agentic系统对齐实际挑战，工具调用边界待清",
+      "RAG背压机制与流式检索，超长文档上下文窗口效率工程启发"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code hooks target alignment infrastructure",
+      "OpenAI Codex context compaction failures dominate issues",
+      "Vim-mode TUI burst: 6 PRs merged for Codex",
+      "No tool solves reasoning-context retention tension",
+      "Gemini CLI pursues semantic clustering research",
+      "Daemon-mode architectures converge across ecosystem"
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 PRs, zero releases, stabilization mode",
+      "Reasoning model integration: Kimi K2.5, DeepSeek-R1",
+      "Memory retrieval isolation failures flagged",
+      "Rastermill migration for multimodal pipelines",
+      "Codex runtime parity with QA confidence proofs",
+      "Compaction quality validation actively researched"
+    ],
+    "ai-trending": [
+      "Understand-Anything: +5,604 stars for code KG",
+      "codegraph: +3,161 stars, structured code compression",
+      "LlamaIndex rebrands as document agent/OCR platform",
+      "RAGFlow hits 81,230 stars, agentic RAG leader",
+      "Kronos: foundation model for financial language",
+      "Alignment tools underrepresented in trending list"
+    ],
+    "ai-web": [
+      "Anthropic co-founder addresses Vatican on AI encyclical",
+      "Olah: incentive misalignment is technical risk",
+      "External accountability framed as safety necessity",
+      "Structural safety thinking institutionalized at top",
+      "No OpenAI technical content released today",
+      "Magnifica humanitas: governance signal for alignment"
+    ],
+    "ai-hn": [
+      "YourMemory: temporal reasoning for agent memory",
+      "Cursed Browser: systematic VLM hallucination testbed",
+      "Unsiloed AI #1 on olmOCR-Bench benchmark",
+      "Pope encyclical spawns policy-heavy threads",
+      "Long-context scaling research absent today",
+      "Post-training alignment papers quiet on front page"
+    ],
+    "ai-hf": [
+      "Qwen 3.6 family dominates trending models",
+      "DeepSeek-V4-Pro: 4.8M downloads, reasoning demand",
+      "MiniCPM-V-4.6 emerges as compact VLM contender",
+      "No dedicated OCR/HMER models in top-30",
+      "Uncensored variants trend, safety questions raised",
+      "Lance any-to-any architecture signals paradigm shift"
+    ],
+    "ai-community": [
+      "AWS tutorial: AI forgetting as hallucination source",
+      "RLHF reward model training tutorial published",
+      "Tiered routing for long-context pipeline stress",
+      "Browser-based 2B parameter model deployment",
+      "Memory/forgetting mechanisms directly addressed",
+      "OCR/HMER articles notably absent from feeds"
+    ]
+  }
+}
