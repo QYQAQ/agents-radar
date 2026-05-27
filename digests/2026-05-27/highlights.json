@@ -1,0 +1,114 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 1M上下文默认开启引发计费混乱",
+      "OpenAI Codex 15子智能体TUI崩溃待修复",
+      "Gemini CLI子代理MAX_TURNS误报告为成功",
+      "Kimi Code CLI API密钥池化解并行速率限制",
+      "Qwen Code V8 4GB Heap OOM系统性修复",
+      "DeepSeek TUI v0.8.47修复RwLock死锁"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 PR/380 Issues暴露长上下文可靠性危机",
+      "Codex集成栈出现beta阻断级回归#86948",
+      "Claude CLI系统提示传递机制长期退化#86433",
+      "扩展推理模型流式超时容忍诉求#68596",
+      "工具结果上下文窗口利用率关键讨论#86746",
+      "事件循环饱和与会话状态机脆弱性制约健康度"
+    ],
+    "ai-trending": [
+      "claude-mem单日获星352，持久化记忆层爆发",
+      "stop-slop与taste-skill同日登榜反同质化",
+      "LlamaIndex标榜OCR平台定位",
+      "graphify统一代码文档为知识图谱",
+      "PageIndex无向量推理RAG新范式",
+      "LlamaFactory 71.6k星持续高热度"
+    ],
+    "ai-web": [
+      "Anthropic首曝Claude Mythos Preview因爆炸半径过高搁置",
+      "爆炸半径双因素分解：P(failure)×damage(failure)",
+      "可信执行环境使高能力agent生产部署成为可能",
+      "韩国人均使用率超预期3.5倍验证区域需求",
+      "OpenAI今日无增量更新"
+    ],
+    "ai-hn": [
+      "类睡眠LLM记忆巩固机制论文181分129评论",
+      "OpenAI幻觉数学不可避免旧闻重提引共识疲劳",
+      "Meta/Google AI安全控制数分钟可剥离",
+      "Claude跨产品爆炸半径控制架构披露"
+    ],
+    "ai-hf": [
+      "bytedance-research/Lance any-to-any统一架构首入热门榜",
+      "MiniCPM-V-4.6近百万下载巩固端侧文档理解",
+      "Qwen3.6-27B 457万下载主导开源VLM生态",
+      "Qwen3.6-35B-A3B-Uncensored 160万下载暴露去对齐张力",
+      "DeepSeek-V4-Pro突破500万下载成推理标杆",
+      "Unsloth MTP量化版优化多模态长文档解码"
+    ],
+    "ai-community": [
+      "RAG非万能：工具使用优先于向量检索新范式",
+      "LLM-as-Judge幻觉检测教程可复用",
+      "数字阁楼：智能体记忆标准化表示探讨",
+      "TileLang GEMM到MLA内核优化加速VLM推理",
+      "CV团队VLM分层预算管控实践"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Agent orchestration platforms diverge architecturally.",
+      "System-level alignment now governs model selection.",
+      "Context compaction is an active research frontier.",
+      "Reasoning trace preservation remains unsolved.",
+      "Concurrent agent execution masquerades as bugs.",
+      "Cost control is now an alignment battleground."
+    ],
+    "ai-agents": [
+      "380 issues signal system instability crisis.",
+      "Session-state failures dominate bug reports.",
+      "Reasoning model timeouts plague async orchestration.",
+      "Silent message loss indicates architectural strain.",
+      "Long-context window support advances for Anthropic 1M.",
+      "Codex app-server integration has beta-blocker regressions."
+    ],
+    "ai-trending": [
+      "Anti-slop tooling targets output quality degradation.",
+      "Knowledge graph tools explode for hallucination reduction.",
+      "Persistent memory systems mature with compression.",
+      "Agent harnesses shift to behavioral shaping.",
+      "OCR/HMER absent, suggesting domain consolidation.",
+      "claude-mem hits 78,644 stars with relevance injection."
+    ],
+    "ai-web": [
+      "Anthropic details agent containment architecture.",
+      "Claude granted deployment access to take down services.",
+      "Claude Mythos Preview withheld for excessive blast radius.",
+      "Capability-contingent release precedent established.",
+      "Korean usage skews 3.5× to technical creative work.",
+      "No OpenAI content published today."
+    ],
+    "ai-hn": [
+      "Sleep-like consolidation proposed for LLM memory.",
+      "Bio-inspired mechanism targets reasoning drift.",
+      "OpenAI admits hallucinations are mathematically inevitable.",
+      "Claude containment strategies drive alignment discussion.",
+      "MCP memory tool addresses persistent context limits.",
+      "129 comments debate catastrophic forgetting solutions."
+    ],
+    "ai-hf": [
+      "Qwen3.6 family dominates with 4.6M downloads.",
+      "MiniCPM-V-4.6 advances efficient document understanding.",
+      "Lance any-to-any architecture unifies multimodal pipelines.",
+      "Uncensored fine-tunes raise alignment trade-off questions.",
+      "OCR/HMER models absent from trending list.",
+      "NuExtract3 offers adjacent document extraction relevance."
+    ],
+    "ai-community": [
+      "Standard model proposed for agent memory taxonomy.",
+      "LLM-as-Judge tutorial detects pre-production hallucinations.",
+      "RLHF series explains reward model training mechanics.",
+      "TileLang enables efficient long-context attention.",
+      "Drift detection critical for document-heavy workflows.",
+      "Visual agent interfaces drive VLM cost management."
+    ]
+  }
+}
