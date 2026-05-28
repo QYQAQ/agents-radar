@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.152推代码审查自动化，agent自我改进成焦点",
+      "OpenAI Codex rust-v0.135.0-alpha重构沙箱安全与分页存储",
+      "Gemini CLI v0.45.0-preview攻多智能体诚实性，A2A协议入PR",
+      "GitHub Copilot CLI v1.0.55曝73%上下文被工具占用，schema膨胀困局",
+      "Kimi Code CLI v1.45.0修并行调度瓶颈，API key竞争待解",
+      "OpenCode v1.15.11跨provider兼容性痛点突出，Windows句柄泄漏"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.5.26网关加速但引入Native hook回归",
+      "PR #87460保Anthropic thinking block签名，推理完整性关键修",
+      "视觉工具依赖缺失致pipeline失败，VLM可靠性亮红灯",
+      "Claude推理默认开启引爆成本与信息泄露争议",
+      "模型安全边界过度限制运维任务，对齐过冲现形",
+      "长上下文会话竞态条件与死锁密集暴露"
+    ],
+    "ai-trending": [
+      "PageIndex 32K星推零向量推理RAG，版面理解替代嵌入范式",
+      "stop-slop与taste-skill同日爆发，AI生成质量校准成新焦点",
+      "Hermes Agent 17万星标志开源Agent对齐新高度",
+      "LlamaFactory 71K星巩固VLM统一微调基础设施地位",
+      "RAGFlow 81K星强化RAG+Agent融合，深度文档理解",
+      "claude-mem上下文压缩记忆系统，长上下文新范式"
+    ],
+    "ai-web": [
+      "Anthropic首发编码代理社会科学采纳鸿沟研究，20%采用率",
+      "Claude Code Auto Mode分类器驱动权限自动化，93%行为保持",
+      "性别与机构不平等：男性研究者采用率2倍于女性",
+      "OpenAI Codex税务代理自我改进机制标题释出",
+      "渐进式自动化+可解释分类器 vs 直接放开权限",
+      "领域特定代理自主性边界安全扩展分野"
+    ],
+    "ai-hn": [
+      "Claude提取1997足球经理游戏数据，复古长上下文应用",
+      "ADHD认知架构模拟优化代码生成，注意力分配控制",
+      "多智能体漏洞发现系统任务分解与执行对齐",
+      "Sam Altman与Dario Amodei回调AI就业末日预言",
+      "AI产品市场契合度610分高热，行业叙事转向",
+      "LLM认知架构趣味讨论，提示工程方法论审慎"
+    ],
+    "ai-hf": [
+      "Lance any-to-any原生多模态，图像视频文本任意互转",
+      "Qwen3.6-27B 457万下载统治VLM研究平台",
+      "MiniCPM-V-4.6端侧高效VLM，OCR精度效率权衡样本",
+      "W4A4量化VLM研究量化对细粒度文本识别影响",
+      "MTP-GGUF多token预测优化结构化输出连贯性",
+      "Uncensored MoE VLM 159万下载，对齐幻觉trade-off反面教材"
+    ],
+    "ai-community": [
+      "RAG本质检索问题框架，长上下文检索质量评估",
+      "文件级内存+1M token上下文替代向量数据库架构",
+      "VLM语义缓存产品照片管道，视觉推理工程优化",
+      "医疗QA微调数据准备，领域自适应对齐借鉴",
+      "多模态SOC本地部署幻觉可靠性硬教训",
+      "Brier评分概率校准方法进入ML工程实践"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.152 fixes long-context truncation bugs",
+      "OpenAI Codex competes on closed-loop automation trust boundaries",
+      "Gemini CLI emphasizes explicit user control over agents",
+      "Kimi Code CLI focuses on local deployment transparency",
+      "Qwen Code targets open-source reasoning trace preservation",
+      "DeepSeek TUI explores alignment robustness in TUI format"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.5.26 triggers regression cascades in session state",
+      "382 issues and 500 PRs updated in 24 hours post-release",
+      "Reasoning block handling for Anthropic thinking signatures fails",
+      "Model routing fidelity compromised by sticky fallback prevention",
+      "Multimodal pipeline failures in image tool dependencies",
+      "Long-context reliability broken by compaction deadlocks"
+    ],
+    "ai-trending": [
+      "stop-slop skill files gain thousands of stars for alignment",
+      "PageIndex 32,240 stars: vectorless reasoning-based RAG emerges",
+      "PaddleOCR 78,717 stars bridges visual documents to LLMs",
+      "Kronos expands multimodal reasoning into financial time-series",
+      "LlamaFactory sustains prominence for efficient fine-tuning",
+      "ECC project stars surge for post-training behavioral control"
+    ],
+    "ai-web": [
+      "Anthropic discloses two-classifier safety architecture for auto mode",
+      "Claude Code auto mode implements AI-assisted oversight for agents",
+      "n=1,260 study on social sciences coding agent adoption disparities",
+      "OpenAI tax-focused Codex signals vertical specialization trend",
+      "Anthropic crawls auto mode article again on 2026-05-27",
+      "Empirical data on human-AI collaboration productivity correlates"
+    ],
+    "ai-hn": [
+      "Multi-agent LLM system for automated vulnerability discovery posted",
+      "ADHD prompting claims 3x reasoning improvement in Claude Code",
+      "Benchmark gaming exposed in agentic coding evaluation systems",
+      "Long-context reasoning extended to security exploitation chains",
+      "Altimate.ai Correctness Layer manipulates agent benchmarks",
+      "Attention mechanism research implied by ADHD prompting pattern"
+    ],
+    "ai-hf": [
+      "Qwen3.6 family dominates with unified multimodal architectures",
+      "MiniCPM-V-4.6 emerges as compact vision-language contender",
+      "bytedance-research/Lance introduces any-to-any cross-modal paradigm",
+      "sapientinc/HRM-Text-1B rare dedicated handwritten recognition model",
+      "Unsloth GGUF variants show demand for efficient long-context deployment",
+      "Microsoft Lens-Turbo links academic text-to-image with arXiv"
+    ],
+    "ai-community": [
+      "RAG failures stem from retrieval quality not generation claims Dev.to",
+      "File-based memory with 1M-token windows proposed as RAG alternative",
+      "ThunderKittens DSL dissected for AI kernel optimization",
+      "Vector database necessity questioned for long-context efficiency",
+      "Agent memory systems intensely discussed in practical deployment",
+      "Multimodal pipelines appear in cybersecurity product-photo use cases"
+    ]
+  }
+}
