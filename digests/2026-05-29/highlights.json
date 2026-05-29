@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.154：Opus 4.8 默认 high effort，thinking block 400 错误爆发",
+      "OpenAI Codex rust-v0.135.0：结构化上下文保留提案与统一 exec sandbox",
+      "Copilot CLI v1.0.56：reasoning tokens 报告上线，fc_call ID 重复错误集群",
+      "Kimi CLI：大 context ConnectTimeout、orphan tool_calls 修复与 undo 索引对齐",
+      "OpenCode v1.15.12：adaptive reasoning 修复，DeepSeek V4 reasoning_content 断裂",
+      "Pi v0.77.0：GPT-5.5 1M→272K 截断修复，跨模型会话恢复冲突"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.5.27 安全加固：系统提示隔离与副作用命令拦截",
+      "PR #87788：Codex 提示词优化，per-turn payload 减少至 turn-scoped 指令",
+      "PR #86708：推理流累积修复，onReasoningStream 发送累积文本",
+      "Kimi K2.6 reasoning_content 400 错误：LCM 压缩后仍复发，上下文机制深层缺陷",
+      "NanoBot/Hermes Agent 等 13 项目覆盖，375 Issues/500 PRs 高活跃度",
+      "视觉语言能力空白：仅图像工具 sharp 依赖硬失败，多模态推理待突破"
+    ],
+    "ai-trending": [
+      "microsoft/markitdown +1410 stars：Office/PDF 转结构化 Markdown，OCR-LLM 关键预处理",
+      "VectifyAI/PageIndex 32K stars：Vectorless Reasoning-based RAG，摒弃传统向量检索",
+      "LlamaIndex 49K stars：官方定位为 OCR 平台，向量检索与文档理解深度整合",
+      "taste-skill/stop-slop 登榜：直指 LLM 输出同质化，幻觉缓解研究新方向",
+      "PaddleOCR 78K stars：100+ 语言 OCR，RAG 场景核心文档解析引擎",
+      "yichuan-w/LEANN 11K stars：97% 存储节省的端侧 RAG，OCR+边缘部署参考"
+    ],
+    "ai-web": [
+      "Claude Opus 4.8：首次产品化 effort control，RLHF/RLAIF 可插拔推理深度预算",
+      "Claude Design 产品化：Opus 4.7 视觉引擎，多模态视觉推理进企业工作流",
+      "Containment 工程博客：blast radius 约束范式，agent 沙箱化架构系统披露",
+      "$65B Series H 融资/$965B 估值：企业级 agent 部署规模化拐点验证",
+      "12 个月权限剧变：从拒绝 Claude 关闭服务到常规操作，自主性阈值突破",
+      "OpenAI Frontier Governance Framework：元数据页面，前沿治理框架信息受限"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.8 1177 分/943 评论：社区质疑版本号通胀，等待实测验证",
+      "LLM Smells 批判分析：模型行为异常、幻觉模式与可靠性问题引发关注",
+      "实时 LLM 推理 3000 tokens/s：单请求高吞吐，长上下文交互应用潜力",
+      "LFM2.5-8B-A1B 端侧 MoE：1B 激活参数实现 8B 性能，有限上下文效率优化",
+      "Apple 蒸馏 Gemini 进 iPhone：多万亿参数模型端侧部署工业动态",
+      "Claude Code 渲染精灵语 #63096：边缘 case 暴露渲染管道缺陷"
+    ],
+    "ai-hf": [
+      "Qwen3.6-27B 479 万下载：视觉语言对齐架构，MoE 稀疏激活效率研究",
+      "bytedance-research/Lance 954 赞：any-to-any 统一多模态生成新基线",
+      "MiniCPM-V-4.6 38 万下载：端侧 VLM OCR 与文档理解效率-精度权衡",
+      "unsloth/Qwen3.6-27B-MTP-GGUF 80 万下载：投机解码在多模态场景适用性",
+      "Qwen3.6-35B-A3B-MTP-GGUF 68 万下载：稀疏专家长上下文动态路由行为",
+      "Uncensored/OBLITERATED 类模型流行：安全对齐与有用性权衡逆向工程警示"
+    ],
+    "ai-community": [
+      "Provenant 65 倍 token 压缩：代码库结构化符号图，百万上下文部署范式",
+      "离线三模型辩论系统：纳什均衡审判机制，复杂推理自我纠错博弈论框架",
+      "挖掘 95% 忽略响应：logprobs/reasoning_content，VLM 概率校准直接启发",
+      "Stop LLM 幻觉日期：确定性验证层替代模型自省，领域特定约束对齐",
+      "Spec-Driven AI 开发：形式化规格约束生成，对齐从后训练迁移至提示工程",
+      "ThunderKittens DSL 高性能内核：视觉推理底层优化关键参考"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.154 adds effort controls and dynamic workflows",
+      "OpenAI Codex supports extended thinking mode and MCP ecosystem",
+      "Gemini CLI implements reasoning tag stripping for trace preservation",
+      "Kimi Code CLI contributes to reasoning block cluster issues",
+      "DeepSeek TUI explores brittle state management in agents",
+      "All 9 tools show systemic fragility in context compression"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.5.27 ships security and content boundary hardening",
+      "375 issues reveal hallucination-adjacent failures in tool call IDs",
+      "500 PRs focus on reasoning content handling across providers",
+      "Kimi K2.6 and DeepSeek V4 reasoning integration challenges",
+      "Vision tool failures indicate multimodal pipeline robustness gaps",
+      "Agent reply duplication signals structured output reliability crisis"
+    ],
+    "ai-trending": [
+      "taste-skill gains 2,234 stars for agent behavioral constraints",
+      "stop-slop rises 761 stars as grassroots alignment mechanism",
+      "anthropics/skills climbs 718 stars validating skill engineering",
+      "Understand-Anything surges 3,776 stars on multimodal knowledge graphs",
+      "PaddleOCR hits 78,870 stars as document understanding benchmark",
+      "markitdown adds 1,410 stars for LLM ingestion pipeline"
+    ],
+    "ai-web": [
+      "Claude Opus 4.8 introduces user-controllable effort levels",
+      "Claude Design launches multimodal visual creation tool",
+      "Anthropic raises $65B at $965B valuation for safety research",
+      "Agent containment architecture reveals withheld Mythos Preview",
+      "Dynamic workflows target very large-scale recursive decomposition",
+      "Blast radius bounding for autonomous agent damage control"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.8 draws 943 comments on reasoning scrutiny",
+      "Various LLM Smells catalogs systematic failure mode heuristics",
+      "Real-time inference hits 3k tokens per second per request",
+      "LFM2.5-8B-A1B advances on-device MoE deployment",
+      "Community stress-tests long-context claims empirically",
+      "143 comments debate reasoning consistency degradation"
+    ],
+    "ai-hf": [
+      "Qwen3.6-27B dominates vision-language trending variants",
+      "DeepSeek-V4-Pro advances long-context efficient reasoning",
+      "MiniCPM-V-4.6 emerges for compact document understanding",
+      "GGUF proliferation signals intense post-training alignment",
+      "Lance explores any-to-any unified cross-modal architecture",
+      "Hallucination-mitigation releases remain underrepresented"
+    ],
+    "ai-community": [
+      "Provenant claims 65x token reduction via provenance tracking",
+      "Deterministic parsing tool stops temporal hallucinations in agents",
+      "Structured output validation critical for OCR post-processing",
+      "Model self-training loop debates surface alignment concerns",
+      "Specification-driven development practices emerge as pattern",
+      "Observability frameworks replace ad-hoc agent orchestration"
+    ]
+  }
+}
