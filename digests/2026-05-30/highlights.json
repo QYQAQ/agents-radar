@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code Thinking block完整性危机引发关注",
+      "OpenAI Codex动态压缩协议进入alpha测试",
+      "Gemini CLI AST感知推理提升代码理解",
+      "Copilot CLI 73%窗口被MCP工具消耗暴露瓶颈",
+      "Qwen Code压缩范式重构与推理可控性突破",
+      "DeepSeek TUI宪法提示可配置实现对齐自定义"
+    ],
+    "ai-agents": [
+      "OpenClaw长上下文压缩预算控制PR #87927",
+      "流式增量计数优化PR #88153降低推理延迟",
+      "Claude桥接harness推进多提供商对齐架构",
+      "Codex运行时恢复机制解决会话状态锁竞争",
+      "Agent子代理工作目录隔离修复并发安全",
+      "事件循环饱和问题揭示分布式AI可靠性边界"
+    ],
+    "ai-trending": [
+      "stop-slop技能文件获数千星标反幻觉爆发",
+      "markitdown微软文档转Markdown新增1873星",
+      "stable-worldmodel首登榜世界模型评测基建",
+      "bytedance/deer-flow长时程Agent记忆架构",
+      "PaddleOCR RAG主题高星视觉文档理解瓶颈",
+      "VectifyAI PageIndex跳过向量化推理检索革新"
+    ],
+    "ai-web": [
+      "OpenAI可信第三方评估框架元数据曝光",
+      "Rosalind Biodefense生物防御同步延迟出现",
+      "Anthropic零更新或蓄力Claude 4后续迭代",
+      "Constitutional AI next-gen版本推断性研发",
+      "Claude 4扩展思考模式与幻觉缓解关联",
+      "Amazon深度整合后商业化优先策略推断"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.8蒸馏Qwen引发训练透明度争议",
+      "Liquid AI 8B-A1B MoE 38T token非Transformer扩展",
+      "tiny-vLLM C++/CUDA实现高性能推理优化",
+      "Inference Scaling论文形式化KV cache理论边界",
+      "CVE-Bench Agent安全评估工作值得关注",
+      "AISlop与Rsync事件质疑AI代码生成质量"
+    ],
+    "ai-hf": [
+      "PaddleOCR-VL-1.6端到端文档理解范式跃迁",
+      "MiniCPM-V-4.6端侧VLM 42万下载边缘部署激增",
+      "Qwen3.6-27B 485万下载成VLM幻觉评估基准",
+      "DeepSeek-V4系列超900万下载领跑开源推理",
+      "bytedance-research/Lance any-to-any原生多模态",
+      "nvidia/LocateAnything-3B空间grounding缓解幻觉"
+    ],
+    "ai-community": [
+      "模型蒸馏技术差异解读澄清知识迁移边界",
+      "结构化数据生成约束解码缓解幻觉实践",
+      "MarkItDown多模态文档预处理影响HMER质量",
+      "512MB RAM RAG内存优化长上下文极限实证",
+      "Claude Code跨设备上下文同步状态持久化",
+      "Agent运行时安全嵌入代码生成审计实践"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.157 released with reasoning/alignment notes",
+      "Context window pressure dominates CLI agent architectures",
+      "Runtime alignment shifts to prompt reordering, cache stability",
+      "Hierarchical agents converge: sub-agents, MCP, skills",
+      "OpenAI Codex and Gemini CLI join mature multi-polar ecosystem",
+      "Bounded-effort guidance replaces pure model-centric RLHF"
+    ],
+    "ai-agents": [
+      "OpenClaw: 826 issues/PRs in 24h on runtime stabilization",
+      "Four beta releases target context compaction, event-loop starvation",
+      "Tool-call ID deduplication fixes multi-turn reasoning integrity",
+      "Codex runtime stabilization is top engineering priority",
+      "Session-state reliability under long-context pressure",
+      "Context compaction budget capping prevents resource exhaustion"
+    ],
+    "ai-trending": [
+      "Anti-slop tooling emerges: taste-skill, stop-slop for output calibration",
+      "markitdown gains +1,873 stars for document intelligence pipelines",
+      "liteparse in Rust pushes efficient document understanding",
+      "stable-worldmodel: reproducible world model research opens up",
+      "stable-pretraining from GalilAI targets long-horizon reasoning",
+      "ECC agent harness embeds memory, security for alignment workflows"
+    ],
+    "ai-web": [
+      "OpenAI publishes Rosalind Biodefense (3 entries) and third-party evals",
+      "Third-party evaluation frameworks target alignment verification",
+      "Rosalind suggests multimodal scientific literature analysis",
+      "No Anthropic content; asymmetric release cadence noted",
+      "Anthropic's 200K+ context window remains unchallenged today",
+      "Metadata-only entries limit technical depth of analysis"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.8 distillation from Qwen alleged, raising attribution issues",
+      "Liquid AI 8B-A1B MoE trained on 38T tokens released",
+      "Inference scaling trade-offs dominate community attention",
+      "Gartner predicts 40% agent demotion, reliability governance focus",
+      "Liquid AI sparse architecture relevant for long-context efficiency",
+      "Zero comments on inference scaling paper despite technical relevance"
+    ],
+    "ai-hf": [
+      "PaddleOCR-VL-1.6 merges ERNIE4.5 for document understanding",
+      "bytedance-research/Lance is any-to-any modality model",
+      "Qwen3.6 variants dominate: base, GGUF, MTP, MoE formats",
+      "DeepSeek-V4-Pro and -Flash drive long-context adoption",
+      "froggeric/Qwen-Fixed-Chat-Templates fix template hallucinations",
+      "MiniCPM family sustains interest in efficient small multimodal models"
+    ],
+    "ai-community": [
+      "Structured generation reliability critical for OCR/HMER pipelines",
+      "Tokenizer-level LLM quality analysis emerges in article #29",
+      "LangChain Interrupt signals runtime alignment controls",
+      "Memory optimization pressures context window utilization",
+      "RAG and multi-agent systems touch long-context indirectly",
+      "Direct OCR/HMER research absent from mainstream developer feeds"
+    ]
+  }
+}
