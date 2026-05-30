@@ -1,0 +1,121 @@
+{
+  "repositories": [
+    {
+      "owner": "openclaw",
+      "name": "openclaw",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/openclaw/openclaw/issues",
+        "pulls": "https://api.github.com/repos/openclaw/openclaw/pulls",
+        "releases": "https://api.github.com/repos/openclaw/openclaw/releases"
+      }
+    },
+    {
+      "owner": "HKUDS",
+      "name": "nanobot",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/HKUDS/nanobot/issues",
+        "pulls": "https://api.github.com/repos/HKUDS/nanobot/pulls",
+        "releases": "https://api.github.com/repos/HKUDS/nanobot/releases"
+      }
+    },
+    {
+      "owner": "nousresearch",
+      "name": "hermes-agent",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/nousresearch/hermes-agent/issues",
+        "pulls": "https://api.github.com/repos/nousresearch/hermes-agent/pulls",
+        "releases": "https://api.github.com/repos/nousresearch/hermes-agent/releases"
+      }
+    },
+    {
+      "owner": "sipeed",
+      "name": "picoclaw",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/sipeed/picoclaw/issues",
+        "pulls": "https://api.github.com/repos/sipeed/picoclaw/pulls",
+        "releases": "https://api.github.com/repos/sipeed/picoclaw/releases"
+      }
+    },
+    {
+      "owner": "qwibitai",
+      "name": "nanoclaw",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/qwibitai/nanoclaw/issues",
+        "pulls": "https://api.github.com/repos/qwibitai/nanoclaw/pulls",
+        "releases": "https://api.github.com/repos/qwibitai/nanoclaw/releases"
+      }
+    },
+    {
+      "owner": "nullclaw",
+      "name": "nullclaw",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/nullclaw/nullclaw/issues",
+        "pulls": "https://api.github.com/repos/nullclaw/nullclaw/pulls",
+        "releases": "https://api.github.com/repos/nullclaw/nullclaw/releases"
+      }
+    },
+    {
+      "owner": "nearai",
+      "name": "ironclaw",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/nearai/ironclaw/issues",
+        "pulls": "https://api.github.com/repos/nearai/ironclaw/pulls",
+        "releases": "https://api.github.com/repos/nearai/ironclaw/releases"
+      }
+    },
+    {
+      "owner": "netease-youdao",
+      "name": "LobsterAI",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/netease-youdao/LobsterAI/issues",
+        "pulls": "https://api.github.com/repos/netease-youdao/LobsterAI/pulls",
+        "releases": "https://api.github.com/repos/netease-youdao/LobsterAI/releases"
+      }
+    },
+    {
+      "owner": "TinyAGI",
+      "name": "tinyagi",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/TinyAGI/tinyagi/issues",
+        "pulls": "https://api.github.com/repos/TinyAGI/tinyagi/pulls",
+        "releases": "https://api.github.com/repos/TinyAGI/tinyagi/releases"
+      }
+    },
+    {
+      "owner": "moltis-org",
+      "name": "moltis",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/moltis-org/moltis/issues",
+        "pulls": "https://api.github.com/repos/moltis-org/moltis/pulls",
+        "releases": "https://api.github.com/repos/moltis-org/moltis/releases"
+      }
+    },
+    {
+      "owner": "agentscope-ai",
+      "name": "CoPaw",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/agentscope-ai/CoPaw/issues",
+        "pulls": "https://api.github.com/repos/agentscope-ai/CoPaw/pulls",
+        "releases": "https://api.github.com/repos/agentscope-ai/CoPaw/releases"
+      }
+    },
+    {
+      "owner": "qhkm",
+      "name": "zeptoclaw",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/qhkm/zeptoclaw/issues",
+        "pulls": "https://api.github.com/repos/qhkm/zeptoclaw/pulls",
+        "releases": "https://api.github.com/repos/qhkm/zeptoclaw/releases"
+      }
+    },
+    {
+      "owner": "zeroclaw-labs",
+      "name": "zeroclaw",
+      "endpoints": {
+        "issues": "https://api.github.com/repos/zeroclaw-labs/zeroclaw/issues",
+        "pulls": "https://api.github.com/repos/zeroclaw-labs/zeroclaw/pulls",
+        "releases": "https://api.github.com/repos/zeroclaw-labs/zeroclaw/releases"
+      }
+    }
+  ]
+}
