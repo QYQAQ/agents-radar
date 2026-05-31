@@ -1,0 +1,308 @@
+#!/usr/bin/env python3
+"""
+Generate the per-repo CSV template for OpenClaw ecosystem digest reports.
+
+This script creates a CSV file with predefined headers for issue/PR data
+aggregation. It supports customizable output paths, logging, and robust
+error handling including input validation, path resolution, and graceful exits.
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import logging
+import os
+import sys
+from argparse import ArgumentParser, Namespace, ArgumentTypeError
+from pathlib import Path
+from typing import Final, NoReturn, Sequence
+
+# ---------------------------------------------------------------------------
+# Constants
+# ---------------------------------------------------------------------------
+
+HEADERS: Final[Sequence[str]] = (
+    "repo_name",
+    "issue_or_pr",
+    "id",
+    "title",
+    "state",
+    "created_at",
+    "updated_at",
+    "labels",
+    "url",
+)
+"""Headers for the CSV output file."""
+
+SUPPORTED_EXTENSIONS: Final[tuple[str, ...]] = (".csv",)
+"""Allowed file extensions for the output file. Expand as needed."""
+
+DEFAULT_OUTPUT_PATH: Final[str] = "/templates/data_template.csv"
+"""Default output path used when no argument is provided."""
+
+# ---------------------------------------------------------------------------
+# Logging Setup
+# ---------------------------------------------------------------------------
+
+_logger = logging.getLogger(__name__)
+_logger_setup: bool = False
+
+
+def _configure_logging(verbose: bool) -> None:
+    """Set up root logger with appropriate level and handler.
+
+    Args:
+        verbose: If True, set level to DEBUG; otherwise INFO.
+    """
+    global _logger_setup
+    if _logger_setup:
+        # Already configured; just adjust level
+        logging.getLogger().setLevel(logging.DEBUG if verbose else logging.INFO)
+        return
+
+    root_logger = logging.getLogger()
+    handler = logging.StreamHandler(sys.stderr)
+    formatter = logging.Formatter(
+        fmt="%(asctime)s [%(levelname)-8s] %(name)s: %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+    handler.setFormatter(formatter)
+    root_logger.addHandler(handler)
+    root_logger.setLevel(logging.DEBUG if verbose else logging.INFO)
+    _logger_setup = True
+
+    _logger.debug("Logging configured (verbose=%s).", verbose)
+
+
+# ---------------------------------------------------------------------------
+# Argument Parsing
+# ---------------------------------------------------------------------------
+
+
+def _path_type(value: str) -> Path:
+    """Argparse type callback that converts a string to a Path.
+
+    Args:
+        value: Input string path.
+
+    Returns:
+        Path object.
+
+    Raises:
+        ArgumentTypeError: If the string cannot be converted to a valid Path.
+    """
+    try:
+        expanded = Path(value).expanduser()
+        # Attempt to resolve to detect invalid characters early
+        expanded.resolve(strict=False)
+        return expanded
+    except (ValueError, OSError, RuntimeError) as exc:
+        raise ArgumentTypeError(f"Invalid path '{value}': {exc}") from exc
+
+
+def parse_arguments(argv: Sequence[str] | None = None) -> Namespace:
+    """Parse command-line arguments.
+
+    Args:
+        argv: Optional list of arguments (defaults to sys.argv[1:]).
+
+    Returns:
+        Parsed arguments namespace with attributes:
+            - output_path (Path): Resolved output file path.
+            - verbose (bool): Debug logging flag.
+
+    Raises:
+        SystemExit: If argument parsing fails. This is by design and
+            propagates to the caller (typically ``main()``).
+    """
+    parser = ArgumentParser(
+        description=__doc__,
+        allow_abbrev=True,
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        type=_path_type,
+        default=DEFAULT_OUTPUT_PATH,
+        dest="output_path",
+        help="Path to the generated CSV file (default: %(default)s).",
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Enable debug-level logging.",
+    )
+    return parser.parse_args(argv)
+
+
+# ---------------------------------------------------------------------------
+# Path Validation & Preparation
+# ---------------------------------------------------------------------------
+
+
+def _prepare_output_path(path: Path) -> Path:
+    """Validate and resolve the output file path.
+
+    Performs the following operations in order:
+        1. Resolves to an absolute, canonical path (home directory expanded,
+           symlinks resolved, ``..`` normalized).
+        2. Verifies the file extension is in the supported set.
+        3. Creates the parent directory if it does not exist.
+        4. Checks that the parent is a directory.
+        5. Warns if the file already exists (overwrite will occur).
+
+    Args:
+        path: Target file path (may be relative or contain ``~``).
+
+    Returns:
+        The resolved, absolute path.
+
+    Raises:
+        ValueError: If the extension is unsupported or the parent directory
+            cannot be created.
+        PermissionError: If directory creation fails due to insufficient
+            permissions.
+        OSError: For other filesystem errors (e.g., disk full).
+    """
+    # 1. Resolve to absolute, canonical path
+    try:
+        resolved = path.expanduser().resolve(strict=False)
+    except (OSError, RuntimeError) as exc:
+        raise ValueError(
+            f"Cannot resolve output path '{path}': {exc}"
+        ) from exc
+
+    # 2. Validate extension
+    if resolved.suffix.lower() not in SUPPORTED_EXTENSIONS:
+        raise ValueError(
+            f"Unsupported file extension '{resolved.suffix}'. "
+            f"Allowed: {', '.join(SUPPORTED_EXTENSIONS)}."
+        )
+
+    # 3. Ensure parent directory exists
+    parent = resolved.parent
+    try:
+        parent.mkdir(parents=True, exist_ok=True)
+    except PermissionError:
+        raise PermissionError(
+            f"Insufficient permissions to create directory: '{parent}'"
+        )
+    except OSError as exc:
+        raise ValueError(
+            f"Cannot create parent directory for '{resolved}': {exc}"
+        ) from exc
+
+    # 4. Verify parent is a directory
+    if not parent.is_dir():
+        raise ValueError(
+            f"Parent path exists but is not a directory: '{parent}'"
+        )
+
+    # 5. Warn if file already exists
+    if resolved.exists():
+        _logger.warning(
+            "Output path already exists and will be overwritten: %s", resolved
+        )
+
+    _logger.debug("Resolved output path: %s", resolved)
+    return resolved
+
+
+def _check_write_permissions(path: Path) -> None:
+    """Pre-check write permissions for the target file.
+
+    Args:
+        path: Resolved file path.
+
+    Raises:
+        PermissionError: If the file exists and is not writable, or the
+            parent directory is not writable.
+    """
+    if path.exists():
+        if not os.access(path, os.W_OK):
+            raise PermissionError(
+                f"Output file exists but is not writable: '{path}'"
+            )
+    else:
+        parent = path.parent
+        if parent.exists() and not os.access(parent, os.W_OK):
+            raise PermissionError(
+                f"Parent directory exists but is not writable: '{parent}'"
+            )
+
+
+# ---------------------------------------------------------------------------
+# CSV Writing
+# ---------------------------------------------------------------------------
+
+
+def write_template(output_path: Path) -> None:
+    """Create the CSV template file with predefined headers.
+
+    Args:
+        output_path: Destination file path (will be resolved and validated).
+
+    Raises:
+        PermissionError: If writing to the path is not allowed.
+        OSError: If an I/O error occurs (e.g., disk full).
+        ValueError: If validation fails.
+    """
+    resolved_path = _prepare_output_path(output_path)
+    _check_write_permissions(resolved_path)
+
+    _logger.info("Writing CSV template to: %s", resolved_path)
+    try:
+        with open(
+            resolved_path, "w", newline="", encoding="utf-8"
+        ) as csvfile:
+            writer = csv.writer(csvfile, quoting=csv.QUOTE_MINIMAL)
+            writer.writerow(HEADERS)
+    except PermissionError:
+        raise PermissionError(
+            f"Permission denied when writing to '{resolved_path}'"
+        )
+    except OSError as exc:
+        raise OSError(
+            f"Failed to write CSV template to '{resolved_path}': {exc}"
+        ) from exc
+
+    _logger.info("CSV template successfully created at: %s", resolved_path)
+
+
+# ---------------------------------------------------------------------------
+# Main Entry Point
+# ---------------------------------------------------------------------------
+
+
+def main(argv: Sequence[str] | None = None) -> NoReturn:
+    """Main entry point for the script.
+
+    Parses arguments, configures logging, and generates the CSV template.
+
+    Args:
+        argv: Optional argument list (defaults to command-line args).
+
+    Returns:
+        This function never returns; it exits with an appropriate exit code.
+    """
+    try:
+        args = parse_arguments(argv)
+        _configure_logging(args.verbose)
+
+        write_template(args.output_path)
+        sys.exit(0)
+    except (ValueError, PermissionError, OSError) as exc:
+        _logger.critical("Fatal error: %s", exc)
+        sys.exit(1)
+    except KeyboardInterrupt:
+        _logger.warning("Operation cancelled by user.")
+        sys.exit(130)
+    except Exception as exc:  # pylint: disable=broad-exception-caught
+        _logger.exception("Unexpected fatal error: %s", exc)
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
