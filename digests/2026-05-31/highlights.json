@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code Opus 4.8 工具调用幻觉集中爆发",
+      "OpenAI Codex 多智能体运行时锁定 PR 链攻坚",
+      "Gemini CLI v0.45.0 子代理幻觉治理成焦点",
+      "GitHub Copilot CLI 超长会话模型崩溃暴露",
+      "Pi V8 内存硬限制突破需求迫切",
+      "Qwen Code v0.17.0 浅拷贝替代 structuredClone 防 OOM"
+    ],
+    "ai-agents": [
+      "OpenClaw 推理内容签名过期触及多模态可靠性",
+      "Codex 加密推理内容错误重放修复状态一致性",
+      "本地模型激进上下文裁剪的边缘部署权衡",
+      "视觉预处理管道故障直击多模态推理瓶颈",
+      "500 Issues/PRs 高活跃下的研究前沿信号稀疏",
+      "子代理工作目录隔离的工程化成熟度提升"
+    ],
+    "ai-trending": [
+      "run-llama/liteparse 925 stars Rust 文档解析器登顶",
+      "microsoft/markitdown +2470 stars 文档转换标准化",
+      "OpenBMB/VoxCPM Tokenizer-Free TTS 新架构",
+      "anthropics/claude-code +592 stars 模块化技能对齐",
+      "galilai-group/stable-worldmodel 世界模型首入热榜",
+      "PaddleOCR 79k stars 衔接 LLM 文档结构化流水线"
+    ],
+    "ai-hn": [
+      "Anthropic LLM 漏洞利用能力评估释放敏感信号",
+      "Rotary GPU 论文探索 MoE 有限显存本地执行",
+      "DeepSWE 基准漏洞暴露 Claude Opus 对齐漏洞",
+      "768GB Optane 单 GPU 跑 1T 参数模型 4tps",
+      "AI 破解 Erdős 几何问题社区反应冷淡质疑",
+      "1M 古希腊文献 AI 翻译隐含长文档理解需求"
+    ],
+    "ai-hf": [
+      "Qwen3.6-35B-A3B MoE 5.7M 下载多模态效率基座",
+      "PaddleOCR-VL-1.6 文档级视觉理解关键跃迁",
+      "MiniCPM-V-4.6 端侧幻觉缓解研究新场景",
+      "DeepSeek-V4 Flash 变体推理效率对齐平衡",
+      "LocateAnything-3B 视觉 grounding 减少对象幻觉",
+      "Uncensored 社区模型热度攀升对齐需求扩散"
+    ],
+    "ai-community": [
+      "Lean4 定理证明器成幻觉缓解形式化验证新路径",
+      "多 LLM 辩论-裁决架构零成本一致性推理",
+      "TOON 格式 71% token 压缩比优化长上下文",
+      "记忆审计追踪机制保障代理状态可验证",
+      "干净上下文优于冗长提示的实证支持",
+      "后训练对齐从模型层面向系统层面转移"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Long-context reliability surpasses feature differentiation.",
+      "Hallucination mitigation shifts to system-level architecture.",
+      "Agentic orchestration converges on MCP protocols.",
+      "Safety philosophy diverges: deterministic vs adaptive.",
+      "Reasoning transparency becomes contested battlefield.",
+      "Claude Code faces widespread production failures."
+    ],
+    "ai-agents": [
+      "500 issues and PRs indicate stabilization push.",
+      "v2026.5.28 addresses Codex runtime reliability.",
+      "Session state integrity actively fixed.",
+      "Multimodal pipeline failures targeted.",
+      "Vision-language preprocessing gets focus.",
+      "Reasoning block handling under maintenance."
+    ],
+    "ai-trending": [
+      "liteparse: Rust document parser gains 925 stars.",
+      "VoxCPM: tokenizer-free TTS cross-modal development.",
+      "Agent harness frameworks proliferate for memory augmentation.",
+      "PaddleOCR sustains RAG community investment.",
+      "Document intelligence dominates research development.",
+      "Long-context pipelines gain preprocessing tools."
+    ],
+    "ai-hn": [
+      "Rotary GPU enables MoE inference on limited VRAM.",
+      "DeepSWE benchmark controversy exposes evaluation loopholes.",
+      "768GB Optane runs 1T-parameter LLM locally.",
+      "Memory-bandwidth engineering for context-length scaling.",
+      "Limited direct OCR/multimodal research discussion.",
+      "Community focuses on tooling over foundational advances."
+    ],
+    "ai-hf": [
+      "PaddleOCR-VL-1.6 integrates ERNIE4.5 for documents.",
+      "Lance: any-to-any multimodal generation model.",
+      "LocateAnything-3B advances grounded visual localization.",
+      "Qwen3.6-35B-A3B hits 5.7M downloads with MoE.",
+      "DeepSeek-V4-Pro anchors long-context at 4.5M weekly.",
+      "Uncensored fine-tunes raise alignment robustness questions."
+    ],
+    "ai-community": [
+      "TOON format claims 71% JSON token reduction.",
+      "Hermes-as-judge enables multi-model debate arbitration.",
+      "Lean4 theorem provers surge for formal verification.",
+      "FileRAG and GraphRAG advance structured memory.",
+      "Context compression underpins multimodal retrieval.",
+      "Theorem provers applicable to HMER post-processing."
+    ]
+  }
+}
