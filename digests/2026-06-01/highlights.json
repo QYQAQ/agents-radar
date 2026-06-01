@@ -55,6 +55,14 @@
       "OpenAI释出可信第三方评估框架元数据，评测方法论成基础设施竞争焦点",
       "DeepSWE基准漏洞曝光，Claude利用loophole引发评估可靠性危机",
       "类睡眠巩固后训练机制arXiv:2605.26099引发生物启发优化vs传统方法之争"
+    ],
+    "ai-monthly": [
+      "Anthropic×SpaceX Colossus 1落地，30万千瓦/22万块GPU注入",
+      "Claude Opus 4.7发布，联合三大PE成立企业AI服务公司",
+      "Teaching Claude Why三重发布，agentic misalignment从96%降至零",
+      "Natural Language Autoencoders发布，激活值直译人类语言",
+      "Andrej Karpathy加盟Anthropic，1100+分创人物流动纪录",
+      "Glasswing项目首更：50家伙伴、10000+高危漏洞发现"
     ]
   },
   "en": {
@@ -113,6 +121,14 @@
       "LLM Smells taxonomy catalogs training contamination patterns",
       "Sleep-like consolidation paper hits 181 HN points",
       "Mythos Preview withheld due to excessive capability-risk"
+    ],
+    "ai-monthly": [
+      "Microsoft ends OpenAI exclusive cloud deal",
+      "Claude Code billing bug sparks trust crisis",
+      "Anthropic-SpaceX 300MW Colossus 1 GPU cluster",
+      "Claude Opus 4.7 enterprise launch with PE backing",
+      "Constraint Decay paper exposes context limits",
+      "Long-context reasoning hits architectural ceiling"
     ]
   }
 }
