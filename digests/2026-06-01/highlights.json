@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code Opus 4.8 幻觉综合征集中爆发",
+      "OpenCode 10 PR 强攻推理链完整性",
+      "DeepSeek TUI v0.8.48 品牌迁移+前缀缓存",
+      "Codex rust-v0.136.0-alpha.2 长上下文压缩",
+      "Gemini CLI AST-aware 推理差异化",
+      "Qwen Code v0.17.0-nightly 内存压力诊断"
+    ],
+    "ai-agents": [
+      "Claude Opus 1M 被截断至 128K 暴露适配层缺陷",
+      "硬门控强制工具调用策略积压 #13583",
+      "多槽位内存架构支持可组合记忆机制",
+      "上下文引擎生命周期注入运行时设置",
+      "工具发现与模式内省 hook 暴露",
+      "500 Issues+500 PRs 高活跃度下的可靠性攻坚"
+    ],
+    "ai-trending": [
+      "markitdown 单日 +2798 stars 领跑文档智能",
+      "VoxCPM tokenizer-free TTS 跨模态对齐借鉴",
+      "PageIndex 无向量推理式 RAG 范式革新",
+      "supermemory 等记忆项目显式爆发",
+      "minimind 极简 LLM 从零训练范式",
+      "train-llm-from-scratch 教学式完整流程"
+    ],
+    "ai-hn": [
+      "rsync 仓库 LLM 提交引发安全危机",
+      "Anthropic 发布 Claude containment 工程实践",
+      "TCN 替代 Transformer 架构长线关切",
+      "Erdős 难题 AI 解被疑模式匹配非真推理",
+      "CT AI 通知法案雇主合规义务",
+      "Google SOTA 截图营销遭社区冷遇"
+    ],
+    "ai-hf": [
+      "Qwen3.6-27B 下载破 500 万主导 VLM",
+      "PaddleOCR-VL-1.6 ERNIE4.5 文档级升级",
+      "Lance any-to-any 挑战拼接式多模态",
+      "DeepSeek-V4-Pro 588 万下载长上下文标杆",
+      "MiniCPM-V-4.6 端侧高分辨率理解",
+      "NuExtract3 结构化文档抽取 Qwen3.5 基座"
+    ],
+    "ai-community": [
+      "渐进蒸馏迭代压缩长上下文模型",
+      "执行状态连续性补全代理断裂层",
+      "微软双论文代理技能评估与自进化",
+      "Agentic RL 12 步任务信用分配失败",
+      "LLM 幻觉拒绝级联回退链修复",
+      "模型切换欺骗行为实战案例曝光"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code faces hallucination crises and safety violations.",
+      "OpenAI Codex ships rust-v0.136.0-alpha.2 with multi-agent versioning.",
+      "Context windows stretch to 100K–1M tokens across all major tools.",
+      "Infrastructure gaps now constrain capability more than model quality.",
+      "Token accounting and serialization limits are dominant battlegrounds.",
+      "Community tools Pi and OpenCode pursue provider-agnostic portability."
+    ],
+    "ai-agents": [
+      "OpenClaw hits 500 issues and 500 PRs in 24 hours.",
+      "Four beta releases patch agent recovery and mobile delivery.",
+      "Context window misconfigurations cluster as core research risk.",
+      "Thinking/reasoning block handling shows reliability gaps.",
+      "Long-context session failures threaten multimodal deployment.",
+      "Signal-to-noise ratio for core AI research remains low."
+    ],
+    "ai-trending": [
+      "microsoft/markitdown surges +2,798 stars for document conversion.",
+      "PaddleOCR dominates at 79K+ stars bridging PDFs to LLM data.",
+      "VectifyAI/PageIndex challenges embedding-based RAG at 32K stars.",
+      "OpenBMB/VoxCPM hits tokenizer-free multilingual TTS (+635).",
+      "train-llm-from-scratch gains +626 on alignment democratization.",
+      "LlamaFactory sustains prominence in post-training workflows."
+    ],
+    "ai-hn": [
+      "TCNs proposed as O(L) alternative to O(L²) transformers.",
+      "LLM-assisted Erdős solution sparks math world controversy.",
+      "HN skepticism shows fatigue with unverified AI-math claims.",
+      "Anthropic alignment blog draws minimal research discussion.",
+      "Community awaits TCN empirical benchmarks on reasoning.",
+      "Front page leans product/policy over foundational breakthroughs."
+    ],
+    "ai-hf": [
+      "Qwen3.6-27B leads with 5M downloads and 1,552 likes.",
+      "PaddleOCR-VL-1.6 sole dedicated OCR/VL model trending.",
+      "DeepSeek-V4-Pro and Flash show efficient reasoning investment.",
+      "bytedance-research/Lance pushes any-to-any multimodal.",
+      "nvidia/LocateAnything-3B advances spatial reasoning.",
+      "Hallucination mitigation releases remain underrepresented."
+    ],
+    "ai-community": [
+      "Execution-state continuity gap identified for AI-native systems.",
+      "Progressive distillation preserves reasoning at smaller footprint.",
+      "Microsoft dual-paper probes agent self-evaluation reliability.",
+      "WonderLab shows self-evolving optimization research.",
+      "SDAR paper tackles RL credit assignment and reward hacking.",
+      "Fallback chains for LLM refusals address robustness gaps."
+    ]
+  }
+}
