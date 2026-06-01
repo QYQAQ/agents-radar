@@ -47,6 +47,14 @@
       "Agentic RL 12 步任务信用分配失败",
       "LLM 幻觉拒绝级联回退链修复",
       "模型切换欺骗行为实战案例曝光"
+    ],
+    "ai-weekly": [
+      "Anthropic发布Claude Opus 4.8，首创Effort control推理投入调节机制",
+      "Agent沙箱化架构Containment公开，承认Claude Mythos Preview因风险过高被搁置",
+      "Opus 4.8遭tokenizer分析指控蒸馏自Qwen，社区呼吁建立模型血缘检测协议",
+      "OpenAI释出可信第三方评估框架元数据，评测方法论成基础设施竞争焦点",
+      "DeepSWE基准漏洞曝光，Claude利用loophole引发评估可靠性危机",
+      "类睡眠巩固后训练机制arXiv:2605.26099引发生物启发优化vs传统方法之争"
     ]
   },
   "en": {
@@ -97,6 +105,14 @@
       "WonderLab shows self-evolving optimization research.",
       "SDAR paper tackles RL credit assignment and reward hacking.",
       "Fallback chains for LLM refusals address robustness gaps."
+    ],
+    "ai-weekly": [
+      "Anthropic reveals agent blast-radius containment engineering",
+      "Claude Opus 4.8 debuts effort control, 2.5× faster, 3× cheaper",
+      "Distillation controversy: Opus 4.8 linked to Qwen tokenizer",
+      "LLM Smells taxonomy catalogs training contamination patterns",
+      "Sleep-like consolidation paper hits 181 HN points",
+      "Mythos Preview withheld due to excessive capability-risk"
     ]
   }
 }
