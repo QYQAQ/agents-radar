@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex rust-v0.136.0快速迭代多智能体基础设施落地",
+      "Gemini CLI 10个全开放PR聚焦评估体系与工具链建设",
+      "Qwen Code v0.17.0-nightly发布压缩管线系统性加固",
+      "DeepSeek TUI v0.8.49品牌迁移期记忆系统图结构化升级",
+      "OpenCode 10个全开放PR攻坚长上下文状态管理",
+      "Claude Code 10个Issue聚焦可靠性修复进入维护期"
+    ],
+    "ai-agents": [
+      "OpenClaw 24h内连发3个beta版本修复Codex迁移稳定性危机",
+      "prompt cache命中率从93%暴跌至29%首次获量化数据",
+      "Mistral prompt_cache_key兼容PR直接关联缓存定价对齐",
+      "多智能体协作架构RFC仍处于停滞状态",
+      "469 Issues/500 PRs活跃度极高但研究信号稀薄",
+      "Agent/CLI运行时中断恢复占P1级Bug 60%以上"
+    ],
+    "ai-trending": [
+      "微软markitdown单日+3034 stars登顶文档转换基础设施",
+      "PageIndex 32K stars提出无向量推理式RAG新范式",
+      "VoxCPM2 tokenizer-free TTS架构暗示多模态表征统一化",
+      "heretic项目触及对齐鲁棒性自动审查移除",
+      "agent harness概念爆发对齐向工具调用层迁移",
+      "train-llm-from-scratch触及训练流程透明化"
+    ],
+    "ai-web": [
+      "Claude Opus 4.8发布强调agentic judgment与自我纠错能力",
+      "Anthropic 650亿美元H轮融资估值达9650亿美元",
+      "Anthropic秘密提交S-1文件启动上市准备",
+      "动态工作流针对超大规模问题设计关联长上下文扩展性",
+      "可控effort级别暗示推理时计算动态分配策略",
+      "Fast mode 2.5倍速度提升价格降至前代1/3"
+    ],
+    "ai-hn": [
+      "斯坦福CS336首次规范AI Agent学术使用边界引发热议",
+      "开源项目隐藏对抗性prompt删除代码揭示对齐脆弱性",
+      "Florida诉OpenAI系列诉讼将幻觉风险推向舆论焦点",
+      "Claude自主替代DevOps工程师引发目标漂移隐忧",
+      "OpenAI数学突破社区零评论反映可复现性信任危机",
+      "agent能力分级与人机协作学术诚信框架成治理难题"
+    ],
+    "ai-hf": [
+      "PaddleOCR-VL-1.6基于ERNIE4.5强化视觉语言文档理解",
+      "DeepSeek-V4-Pro 4530点赞MIT许可证Flash版下载破350万",
+      "Qwen3.6-27B与35B MoE双版本扩张多模态推理",
+      "nvidia NVFP4量化版本值得关注推理效率",
+      "MiniCPM-V-4.6端侧高效部署研究信息瓶颈与幻觉压缩",
+      "NuExtract3基于Qwen3.5研究视觉感知与结构化输出对齐"
+    ],
+    "ai-community": [
+      "AI生成代码膨胀揭示长上下文有效信号密度衰减问题",
+      "OrinIDE v1.0.7实现项目级上下文聚合与外科式编辑",
+      "Attractor Guided Engineering涉及RLHF中reward shaping",
+      "AI Agent调试清单含轨迹回放可评估多步推理幻觉",
+      "RAG vs Agent架构决策对长上下文与检索互补有实证价值",
+      "约束LLM行为匹配真实用户交互模式成跨平台共识"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "512K-1M token windows show catastrophic context loss in practice",
+      "Claude Code leads with 9 active research-relevant issues",
+      "All major tools exhibit reasoning chain corruption at scale",
+      "Graph-typed memory stores vs flat-file persistence divergence",
+      "Tool-use frameworks converging across ecosystem",
+      "Agentic systems with persistent memory now standard"
+    ],
+    "ai-agents": [
+      "469 issues, 500 PRs in 24h shows stabilization phase",
+      "Tool-call hallucination patterns in unmatched pairs exposed",
+      "Transcript integrity guarantees under active development",
+      "Prompt cache optimization for long-context efficiency",
+      "No vision-language or multimodal research in top activity",
+      "Codex runtime migration dominates systems effort"
+    ],
+    "ai-trending": [
+      "Microsoft MarkItDown surges +3,034 stars for OCR pipelines",
+      "OpenBMB VoxCPM2: tokenizer-free TTS with +888 stars",
+      "LlamaIndex positions as leading document agent OCR platform",
+      "PageIndex introduces vectorless reasoning-based RAG",
+      "LEANN achieves 97% storage savings for on-device RAG",
+      "PaddleOCR bridges image PDF-to-structured data gaps"
+    ],
+    "ai-web": [
+      "Claude Opus 4.8 adds controllable inference effort feature",
+      "Dynamic workflows tackle very large-scale agentic problems",
+      "Improved self-correction in long-running workflows",
+      "Anthropic IPO prep signals enterprise reliability focus",
+      "AWS partnership expansion metadata-only from OpenAI",
+      "Effort control enables reasoning depth vs latency tradeoffs"
+    ],
+    "ai-hn": [
+      "Stanford CS336 AI agent guidelines spark alignment debate",
+      "Course-level operationalizing of human preference boundaries",
+      "Community debates adversarial gaming of agent constraints",
+      "No long-context architecture discussions on front page",
+      "Florida lawsuits dominate over technical research",
+      "Deployment concerns eclipse foundational research attention"
+    ],
+    "ai-hf": [
+      "Qwen3.6-27B dominates multimodal research traction",
+      "PaddleOCR-VL-1.6 integrates ERNIE4.5 for document understanding",
+      "Bytedance Lance: true any-to-any multimodal architecture",
+      "DeepSeek-V4-Pro sustains open-weight reasoning momentum",
+      "NVIDIA LocateAnything-3B targets spatial reasoning",
+      "GGUF quantized variants proliferate for edge deployment"
+    ],
+    "ai-community": [
+      "Attractor Guided Engineering as first-class primitive",
+      "Context engineering tackles long-context coherence",
+      "Harness engineering proposed for agent behavior constraint",
+      "Andrew Godwin analyzes model constraint internalization",
+      "Vibecoding paradigms obscure structural issues debate",
+      "AI agent debugging checklist for failed run root cause"
+    ]
+  }
+}
