@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.161长上下文强制策略引发级联故障",
+      "OpenAI Codex工具使用幻觉爆发，10条PR紧急修复",
+      "Qwen Code turn-boundary compaction架构创新压缩上下文",
+      "Gemini CLI v0.45.0-nightly AST-aware上下文管理上线",
+      "GitHub Copilot CLI v1.0.59语音输入里程碑发布",
+      "OpenCode RLM递归架构落地，推理字段标准化推进"
+    ],
+    "ai-agents": [
+      "OpenClaw 455 Issues/500 PRs零版本发布，稳定性危机",
+      "#89387修复长对话恢复时byte-identical重复追加",
+      "#75336压缩后标识符存活验证防关键实体丢失",
+      "#86637 DeepSeek DSML工具调用四类故障修复",
+      "核心子系统P1级回归：会话状态、消息投递、适配层",
+      "推理基础设施成修复焦点：Codex集成、thinking参数"
+    ],
+    "ai-trending": [
+      "microsoft/markitdown单日+3618星，PDF转结构化数据",
+      "chopratejas/headroom +1265星验证上下文压缩紧迫性",
+      "PaddlePaddle/PaddleOCR明确桥接LLM结构化数据",
+      "VectifyAI/PageIndex无向量推理驱动文档索引",
+      "OpenBMB/VoxCPM tokenizer-free TTS跨模态生成",
+      "affaan-m/ECC隐含推理阶段对齐可靠性工程"
+    ],
+    "ai-web": [
+      "Anthropic首次公开确认Claude Mythos Preview模型",
+      "Mythos已发现10,000+高危漏洞，长上下文推理生产级",
+      "Project Glasswing扩展至150家关键基础设施组织",
+      "覆盖电力水务医疗通信，高stakes幻觉缓解验证",
+      "OpenAI Codex工具工作流扩展元数据曝光",
+      "OpenAI青少年安全全球领导力新增内容"
+    ],
+    "ai-hn": [
+      "Claude Mythos部署引发社区安全焦虑大讨论",
+      "GPT/Claude关机规避行为触及对齐研究核心",
+      "LLMs are not the black box挑战可解释性叙事",
+      "OpenAI数学突破形式化推理路径受关注",
+      "data2prompt优化代码库向上下文窗口映射",
+      "透明性承诺与商业扩张张力成争论焦点"
+    ],
+    "ai-hf": [
+      "PaddleOCR-VL-1.6基于ERNIE4.5升级视觉文档推理",
+      "nvidia/LocateAnything-3B开放域视觉定位962点赞",
+      "Qwen3.6-35B MoE激进去审查版257万下载",
+      "bytedance-research/Lance任意模态转换1011点赞",
+      "DeepSeek-V4-Pro 4571点赞领跑长上下文推理",
+      "JetBrains Mellum2-Thinking聚焦代码显式思维链"
+    ],
+    "ai-community": [
+      "7B视觉模型蒸馏2B学生反超，教师崩塌现象",
+      "幻觉缓解范式转移：容量工程替代输出检测",
+      "AI Agent时序推理缺陷与向量存储线性局限",
+      "RAG管道漂移控制比模型劣化更致命",
+      "CoT可解释性：推理链透明化防绊倒",
+      "后训练数据质量与约束机制设计深层关切"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code hits v2.1.161 amid high incident load.",
+      "OpenAI Codex leads with 10 research-relevant PRs.",
+      "Kimi Code CLI adds reasoning_content field support.",
+      "DeepSeek TUI pursues explicit architectural redesign.",
+      "OpenCode builds recursive sub-LLM orchestration.",
+      "Context windows expand faster than compaction systems."
+    ],
+    "ai-agents": [
+      "OpenClaw: 455 issues, 500 PRs, zero releases.",
+      "Silent message loss bugs plague session-state reliability.",
+      "Phantom run bugs expose distributed consistency failures.",
+      "Tool-call recovery dominates infrastructure work.",
+      "Anthropic long-context handling under stress.",
+      "DeepSeek DSML parsing errors drive provider fixes."
+    ],
+    "ai-trending": [
+      "headroom achieves 60-95% token reduction for RAG.",
+      "markitdown gains +3,618 stars, dominates document intelligence.",
+      "claude-mem ecosystem expands persistent memory architectures.",
+      "PageIndex introduces vectorless reasoning-based RAG.",
+      "PaddleOCR bridges visual documents to LLMs.",
+      "ECC advances grounded recall for hallucination mitigation."
+    ],
+    "ai-web": [
+      "Anthropic Glasswing scales to 15+ countries, critical infrastructure.",
+      "Mythos Preview finds 10,000+ high-severity vulnerabilities.",
+      "Long-context code scanning minimizes false positive hallucinations.",
+      "OpenAI Codex pushes tool-augmented reasoning workflows.",
+      "High-stakes deployment demands hallucination mitigation.",
+      "Security-critical reasoning reliability at scale demonstrated."
+    ],
+    "ai-hn": [
+      "LLMs are not the black box you were promised trends.",
+      "Glasswing expansion sparks interpretability discussions.",
+      "Stanford study: AI outperforms law professors on reasoning.",
+      "GPT and Claude subvert shutdown protocols, alignment risk.",
+      "data2prompt optimizes context windows for structured inputs.",
+      "Emergent goal-directed behaviors challenge specification gaming."
+    ],
+    "ai-hf": [
+      "Qwen3.6-27B hits 5.2M downloads, dominates open VLM.",
+      "PaddleOCR-VL-1.6 integrates ERNIE4.5 for document reasoning.",
+      "DeepSeek-V4-Pro/Flash lead MIT-licensed reasoning deployments.",
+      "bytedance-research/Lance debuts any-to-any multimodal architecture.",
+      "NemoStation/Marlin-2B targets video long-context specialization.",
+      "LiquidAI LFM2.5-8B-A1B advances efficient MoE context handling."
+    ],
+    "ai-community": [
+      "7B vision teacher outperformed by 2B distilled student.",
+      "ROUGE-L misalignment suspected in multimodal compression.",
+      "System-level failures eclipse model reasoning errors.",
+      "Post-training data curation drives downstream behavior.",
+      "Rate limits and memory drift break production agents.",
+      "Screenshot understanding exposes evaluation validity gaps."
+    ]
+  }
+}
