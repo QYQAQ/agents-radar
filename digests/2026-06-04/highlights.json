@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.162工具幻觉与长上下文降级集中爆发",
+      "OpenAI Codex三连发prompt hooks，基础设施投入最大",
+      "Qwen Code v0.17.1多Agent流隔离已合并，迭代激进",
+      "DeepSeek TUI v0.8.51-0.8.53三连发，WhaleFlow EPIC启动",
+      "OpenCode幻觉缓解PR密集，会话运行时重构快速迭代",
+      "Pi视觉上下文压缩与长上下文性能退化修复响应快"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 Issues/PRs聚焦会话状态可靠性工程加固",
+      "跨编码器重排序器进入memory-core评审阶段",
+      "多槽位内存角色架构提出插件化组合方案",
+      "无签名思考块导致会话停滞的推理链路修复",
+      "v2026.6.2-beta.1废弃dangerous-code scanner路径",
+      "v2026.6.1工具调用中断恢复与会话绑定清理"
+    ],
+    "ai-trending": [
+      "headroom 3530星登顶，RAG上下文token减少60-95%",
+      "opendataloader-pdf 570星，PDF解析AI-ready标准化",
+      "PageIndex 32K星，无向量推理替代嵌入检索",
+      "claude-mem 80K星探索跨会话上下文持久化",
+      "AirLLM 208星极限推理压缩架构创新",
+      "hermes-agent 1735星构建post-training对齐Agent框架"
+    ],
+    "ai-web": [
+      "Anthropic提出blast radius capping代理系统安全新范式",
+      "Claude Mythos Preview因能力过强被首次公开推迟",
+      "AI赋能网络威胁832个恶意账户MITRE ATT&CK映射",
+      "12个月从拒绝到常规授权，post-training对齐实质突破",
+      "Partner Network Services Track对齐走向规模化企业集成",
+      "GPT Rosalind元数据更新暗示新一代多模态科学推理模型"
+    ],
+    "ai-hn": [
+      "OpenSOP直接针对agents lying构建约束框架获积极反响",
+      "Claude Opus 4.8 Max空消息异常响应暴露边界脆弱性",
+      "Gemini Spark端到端多模态代理引发terrifying伦理担忧",
+      "Gemma 4 12B 16GB RAM笔记本运行打破边缘部署壁垒",
+      "OpenAI安全蓝图政策层面推进post-training对齐",
+      "vLLM课程长上下文推理效率未引发深度技术讨论"
+    ],
+    "ai-hf": [
+      "Gemma-4 12B any-to-any架构打破模态边界进入实用阶段",
+      "PaddleOCR-VL-1.6基于ERNIE4.5统一OCR与文档理解",
+      "DeepSeek-V4 MoE架构极高下载量主导开源推理赛道",
+      "LocateAnything-3B 78K下载，定位理解联合视觉编码器",
+      "Step-3.7-Flash多模态MoE路由与视觉token压缩策略",
+      "Qwen3.6-Uncensored 260万下载，视觉语言对齐密集迭代"
+    ],
+    "ai-community": [
+      "工具调用说真话，查询说谎，揭示相关性≠正确性",
+      "嵌入路由策略复杂查询失效模式公开反思",
+      "23分钟长文区分特征性随机与缺陷性方差",
+      "800行TypeScript给OpenClaw语音代理实时订餐",
+      "AI写PR后信任层自动化验证规范符合性",
+      "MoE模型消费级硬件推理优化成实践热点"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.162 fixes tool-format hallucinations",
+      "OpenAI Codex adds inference-time constrained decoding hooks",
+      "Gemini CLI invests in evaluation infrastructure and memory systems",
+      "Qwen Code pioneers deterministic workflow runtimes",
+      "DeepSeek TUI targets automated harness evolution",
+      "OpenCode emerges as open-source alternative with MCP ecosystem"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 PRs stabilize session-state reliability",
+      "OpenClaw compaction reduces context bloat in reasoning pipelines",
+      "OpenClaw memory retrieval architecture redesigned",
+      "OpenClaw stalled thinking failures being investigated",
+      "OpenClaw v2026.6.2-beta.1 released with plugin system",
+      "NanoBot shows persistent memory agentic capabilities"
+    ],
+    "ai-trending": [
+      "headroom compresses tool outputs 60-95% for long-context",
+      "opendataloader-pdf gains 570 stars for AI-ready PDF parsing",
+      "hermes-agent ecosystem grows with persistent memory",
+      "airllm enables 70B inference on 4GB GPU",
+      "microsoft/markitdown trends for document-to-structured-data",
+      "PaddleOCR hits 79,466 stars for multimodal document OCR"
+    ],
+    "ai-web": [
+      "Anthropic reveals withheld Claude Mythos Preview model",
+      "Anthropic maps 832 AI attacks onto MITRE ATT&CK framework",
+      "Anthropic containment shifts to blast radius capping",
+      "OpenAI metadata hints at GPT Rosalind announcement",
+      "Anthropic scales to 820K enterprise users via partners",
+      "Anthropic agent containment architecture detailed"
+    ],
+    "ai-hn": [
+      "Claude Code agent loop dissected in 1400-line analysis",
+      "OpenSOP constrains agents to prevent lying behavior",
+      "Claude Opus 4.8 Max generates on empty messages",
+      "Gemma 4 12B optimized for laptop deployment",
+      "Gemini Spark agentic experience reports emerge",
+      "Long-context reasoning dominates agent reliability discussion"
+    ],
+    "ai-hf": [
+      "Gemma 4 introduces any-to-any multimodal architecture",
+      "DeepSeek-V4-Pro surpasses 5.8M downloads",
+      "PaddleOCR-VL-1.6 integrates ERNIE4.5 for document OCR",
+      "Mellum2-12B-Thinking exposes chain-of-thought reasoning",
+      "ByteDance Lance advances video-text-to-text",
+      "NVFP4/FP8 quantization dominates model deployment"
+    ],
+    "ai-community": [
+      "Tool-call traces expose hallucinated reasoning",
+      "Embedding-based routing failures documented in production",
+      "LLM outputs constrained to match actual user behavior",
+      "RadixAttention optimizes efficient long-sequence attention",
+      "Self-correcting agents use executable traces for verification",
+      "Semantic retrieval errors inform long-context routing"
+    ]
+  }
+}
