@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.163 发布治理功能，8 项研究级 Issues 含 2 篇 post-mortem",
+      "OpenAI Codex rust-v0.137.0 迭代，4 项 Computer Use 平台故障深度分析",
+      "Qwen Code v0.17.1-nightly 流程更新，10 项研究 Issues 与 10 项 PR 全栈活跃",
+      "OpenCode #30811 系统总结 5 大故障模式，为今日最高质量深度分析之一",
+      "长上下文压缩成共识焦点：Claude Code、OpenCode、Qwen Code 共推压缩可验证性",
+      "模型自适应对齐（HarnessPosture）与用户生命周期个性化成为新兴架构方向"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 Issues + 500 PRs 零版本发布，处于密集迭代期",
+      "Codex-vs-Pi runtime parity QA harness 完成 RFC，默认运行时迁移关键框架确立",
+      "Token-efficiency 与 Testbox parity 证明完成，动态验证仍待观察",
+      "Discord READY 事件回归修复，网关消息接收可靠性恢复",
+      "QQBot 消息重复问题关闭，幻觉式重复生成获关注",
+      "长上下文可靠性成核心矛盾：session state 损坏、消息丢失、重复回复"
+    ],
+    "ai-trending": [
+      "headroom 3142 星登顶，60-95% token 压缩率直击长上下文成本瓶颈",
+      "claude-mem 持久化记忆压缩，缓解记忆幻觉获关注",
+      "ECC Agent 性能优化系统，记忆与推理优化融合 post-training 对齐",
+      "PaddleOCR 强调 bridge images/PDFs and LLMs，文档智能向多模态 RAG 深化",
+      "Test-time scaling 首以综述仓库入榜（103 星），推理阶段计算优化策略系统梳理",
+      "VectifyAI/PageIndex 无向量推理 RAG，文档索引新范式挑战传统检索"
+    ],
+    "ai-web": [
+      "OpenAI 新增 3 条元数据指向 /chatgpt-memory-dreaming/，暗示记忆离线巩固新范式",
+      "ChatGPT Memory Dreaming 或类比神经科学记忆重放，指向持续学习新方向",
+      "Anthropic 零新增，或预示重大发布前蓄力期",
+      "Claude 4 传闻涉及扩展思维链与记忆机制升级，需持续追踪",
+      "OpenAI 记忆机制若扩展至多模态，将影响视觉-语言对齐",
+      "长上下文记忆管理或成缓解上下文窗口压力的新路径"
+    ],
+    "ai-hn": [
+      "Anthropic 递归自我改进文章 302 分 396 评论，为本日最高讨论热度",
+      "社区质疑 Anthropic 呼吁暂停与自身商业利益的矛盾姿态",
+      "华为 KVarN 开源 vLLM KV-cache 量化后端，长上下文显存效率获关注",
+      "递归自我改进技术可行性与安全边界引发两极争议",
+      "无专门长上下文基准或推理方法学论文发布，研究偏政策而非硬核",
+      "KV-cache 量化技术讨论较专业但评论不多，工程价值待验证"
+    ],
+    "ai-community": [
+      "Transformer Attention 与 Hopfield 1982 更新规则数学等价，LLM 记忆获统计物理视角",
+      "10 本书级超长文档 RAG 生产实践，检索粒度与上下文分配经验",
+      "嵌入路由 5 大硬教训，多源信息路由对视觉-语言融合有直接借鉴",
+      "Schema-first 超越 JSON validation，结构化输出成幻觉缓解新手段",
+      "模型蒸馏评论区质量悖论，触及后训练对齐评估可信度",
+      "RadixAttention 引入与 RAG 生产级实践，长上下文架构优化持续受关注"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.163 focuses on research issues over features.",
+      "OpenAI Codex rust-v0.137.0 invests in reasoning infrastructure.",
+      "Multi-agent hierarchies now standard across all nine CLI tools.",
+      "Persistent memory systems emerge as shared architectural pattern.",
+      "Context management failures dominate common failure modes.",
+      "Silent orchestration errors plague agent coordination layers."
+    ],
+    "ai-agents": [
+      "OpenClaw hits 500 issues and 500 PRs in 24 hours.",
+      "Encrypted reasoning streams added for GPT-5.4/5.5 support.",
+      "Bootstrap re-injection bloat triggers context management crises.",
+      "Hard reset loops expose session-state integrity failures.",
+      "Silent message loss mimics hallucination in production.",
+      "Codex runtime migration remains incomplete with parity gaps."
+    ],
+    "ai-trending": [
+      "headroom achieves 60-95% context compression with quality preserved.",
+      "PaddleOCR gains 141 stars, hits 79,853 total.",
+      "hermes-agent launches to 1,913 stars for persistent memory agents.",
+      "PageIndex reaches 32,563 stars with vectorless reasoning-based RAG.",
+      "opencompass stays active as multimodal evaluation infrastructure.",
+      "Long-context reasoning bottleneck sees direct compression attack."
+    ],
+    "ai-web": [
+      "OpenAI publishes triple-indexed 'Chatgpt Memory Dreaming' article.",
+      "Memory dreaming hints at proactive consolidation research.",
+      "Offline memory processing or sleep-inspired optimization suspected.",
+      "Anthropic publishes zero new articles today.",
+      "Long-context retention architecture expansion signaled.",
+      "Hallucination mitigation possibly targeted via memory dreams."
+    ],
+    "ai-hn": [
+      "Anthropic papers on recursive self-improvement dominate discussion.",
+      "AI-driven vulnerability discovery intensifies safety boundary focus.",
+      "KVarN KV-cache quantization by Huawei scores 112 points.",
+      "Memory dreaming post gets minimal engagement at 8 points.",
+      "Alignment debate splits accelerationist vs. precautionary stances.",
+      "No OCR, HMER, or multimodal reasoning posts appear today."
+    ],
+    "ai-community": [
+      "Post-training alignment dynamics explored directly on Lobste.rs.",
+      "Structured output validation moves beyond JSON schema enforcement.",
+      "Hopfield-network attention interpretation renews memory theory.",
+      "Single-parameter memory mechanisms draw researcher interest.",
+      "Constrained generation implementations surface on Dev.to.",
+      "Model distillation reveals detectable human-like discourse artifacts."
+    ]
+  }
+}
