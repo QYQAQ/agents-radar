@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.165修复长上下文压缩后session误报",
+      "OpenAI Codex双alpha发布，200k+tokens缓存隔离成焦点",
+      "Copilot CLI v1.0.60开放reasoning effort控制",
+      "OpenCode v1.16.2密集迭代显式max-context限制",
+      "Pi workflow扩展探索多智能体编排第三条路径",
+      "DeepSeek TUI暴露磁盘缓存跨会话复用诉求"
+    ],
+    "ai-agents": [
+      "OpenClaw #90775合并：长会话状态一致性关键修复",
+      "#85651待审：上下文压力感知续写机制突破前夜",
+      "#90788 CoT预飞行规划重构推理过程显式化",
+      "加密推理内容处理失败暴露透明度-兼容性张力",
+      "467 Issues/500 PRs零版本发布：密集迭代期特征",
+      "gpt-5.4/5.5传输层故障揭示模型-网关可靠性债务"
+    ],
+    "ai-trending": [
+      "headroom登Trending：60-95%上下文压缩率工程化",
+      "PaddleOCR 80k星+747日增：文档智能刚需持续",
+      "NVIDIA Cosmos：物理世界模型延伸多模态边界",
+      "minimind小模型训练探索长上下文基础设施",
+      "PageIndex推理式检索缓解长上下文幻觉",
+      "opencompass评测基础设施覆盖多模态长上下文"
+    ],
+    "ai-web": [
+      "Anthropic首认Claude Mythos因安全风险延迟发布",
+      "Natural Language Autoencoders：激活直接解码为自然语言",
+      "Constitutional Classifiers 2.0升级对齐监测",
+      "内省意识实证：模型能否准确报告知识边界",
+      "遏制架构系统披露：Agent安全工程范式转移",
+      "NMR光谱解析：科学图表多模态理解案例"
+    ],
+    "ai-hn": [
+      "Claude引入rsync bug实证：AI编程可靠性危机",
+      "开发者优先为AI写文档而非人类：认知外包扭曲",
+      "Claude Code swarms规模化运行经验：上下文分割",
+      "Anthropic呼吁暂停AI自我改进：政策对齐交叉",
+      "Making Claude a Chemist：化学多模态专业化",
+      "MLX vs Llama.cpp：端侧VLM部署效率基准"
+    ],
+    "ai-hf": [
+      "PaddleOCR-VL-1.6基于ERNIE4.5强化文档理解",
+      "Gemma-4 12B any-to-any统一模态架构开源",
+      "LocateAnything-3B开放域视觉定位10万下载",
+      "DeepSeek-V4-Pro 4657点赞MoE推理优化领跑",
+      "Qwen3.6 uncensored版268万下载：对齐负面样本",
+      "Unsloth Gemma-4量化版30万下载：端侧部署热"
+    ],
+    "ai-community": [
+      "Gemma 4 encoder-free设计重定义视觉-语言融合",
+      "连续性优于内存：coding agent核心瓶颈反思",
+      "权威新鲜度：RAG知识可信度分层治理框架",
+      "MCP 98.7% token成本削减：工具经济性基准",
+      "post-training本质哲学讨论：数据质量深层焦虑",
+      "时间敏感授权：形式合规vs实质安全张力"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "All major tools now operate at 1M+ token scales",
+      "Field converges on hierarchical agent architectures",
+      "Context compaction crashes dominate issue backlogs",
+      "Multimodal input dropouts are universal pain point",
+      "Permission state races plague agent orchestration",
+      "Claude Code v2.1.165 focuses on context governance"
+    ],
+    "ai-agents": [
+      "OpenClaw: 467 issues, 500 PRs in 24 hours",
+      "Zero new releases signals stabilization period",
+      "Heavy focus on session-state reliability",
+      "Multiple P1 regressions from 2026.6.1 release",
+      "Context window optimization is top priority",
+      "Reasoning transparency mechanisms emerging"
+    ],
+    "ai-trending": [
+      "PaddleOCR: +747 stars, document-to-AI surge",
+      "NVIDIA Cosmos: +479 stars, world models accelerating",
+      "headroom: +2,473 stars, aggressive context compression",
+      "hermes-agent: +1,845 stars, agentic memory systems",
+      "claude-mem: 80,860 stars, cross-session memory",
+      "HMER pipeline demand bridging PDFs to LLMs"
+    ],
+    "ai-web": [
+      "Anthropic: 17 articles, largest single-day disclosure",
+      "Claude Mythos Preview confirmed too dangerous to ship",
+      "Natural Language Autoencoders decode activations directly",
+      "5 alignment papers, 4 interpretability papers released",
+      "Chemistry multimodal work expands domain reasoning",
+      "OpenAI published zero articles, notable asymmetry"
+    ],
+    "ai-hn": [
+      "Claude impact on rsync bug density analyzed",
+      "First rigorous quantitative AI coding reliability study",
+      "Programmers now document for Claude, not humans",
+      "Anthropic calls for global AI development pause",
+      "On-device multimodal transcription systems trending",
+      "Chemistry-specialized LLMs show domain interest"
+    ],
+    "ai-hf": [
+      "Gemma-4 introduces native any-to-any multimodal",
+      "PaddleOCR-VL-1.6 uses ERNIE4.5 for documents",
+      "DeepSeek-V4-Pro dominates download rankings",
+      "Qwen3.6 uncensored variants surge in interest",
+      "NVIDIA LocateAnything-3B advances visual grounding",
+      "Cosmos3 variants grow generative video infrastructure"
+    ],
+    "ai-community": [
+      "Gemma 4 12B eliminates vision encoders entirely",
+      "Encoder-free design removes OCR alignment bottlenecks",
+      "MAI-Thinking-1: Microsoft's new reasoning model",
+      "RadixAttention for efficient long-context serving",
+      "Authority freshness vs memory freshness debated",
+      "Constraint mechanisms for hallucination mitigation shared"
+    ]
+  }
+}
