@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.166发布级联回退机制",
+      "OpenAI Codex rust-v0.138.0-alpha.6架构重构最活跃",
+      "Qwen Code v0.17.1-nightly攻坚OOM与推理稳定性",
+      "DeepSeek TUI v0.9.0阻塞中，WhaleFlow引擎重构推理范式",
+      "OpenCode社区驱动分页懒加载权限形式化",
+      "Pi协议层打磨上下文生命周期管理前沿"
+    ],
+    "ai-agents": [
+      "OpenClaw 297 Issues/500 PRs极高活跃度",
+      "v2026.6.5-beta.2推理内容隔离防thinking泄漏",
+      "MCP工具结果多模态数据规范化",
+      "P1级Bug：模型原生推理内容传输层泄漏",
+      "147 Issues关闭修复吞吐量高",
+      "长上下文压缩后reasoning_content丢失回归"
+    ],
+    "ai-trending": [
+      "PaddleOCR +433 stars瞄准LLM结构化数据桥梁",
+      "MemPalace +446 stars跨会话持久记忆基准评测",
+      "claude-mem 80.9k stars工程落地记忆路线",
+      "RyanLiu112/Awesome-Process-Reward-Models新兴综述",
+      "PageIndex 32.6k stars无向量推理RAG挑战传统范式",
+      "VibeVoice +216 stars微软语音-语言融合多模态"
+    ],
+    "ai-hn": [
+      "OpenAI Lockdown Mode防御提示注入攻击引热议",
+      "AI记忆95%错误率直接冲击长上下文可靠性",
+      "Anthropic Claude化学家分子图多模态前沿",
+      "反AI情绪调查帖633评论社区防御性悲观",
+      "具身认知与Agentic AI感知-行动闭环理论",
+      "LLM压缩与科学定律数学同构性探讨"
+    ],
+    "ai-hf": [
+      "Gemma-4-12B-it 315k下载any-to-any原生多模态统一",
+      "PaddleOCR-VL-1.6基于ERNIE4.5强化文档公式识别",
+      "DeepSeek-V4系列超500万下载MoE推理模型领跑",
+      "LocateAnything-3B 111k下载开放式视觉定位",
+      "Step-3.7-Flash vision-language隐含幻觉缓解优化",
+      "Mellum2-Thinking多模态思维链可靠性工程"
+    ],
+    "ai-community": [
+      "FP8/INT8 KV缓存静默削弱推测解码收益",
+      "RAG检索质量质疑大模型必要性实证探讨",
+      "DeepSeek think标签推理过程可视化方法论",
+      "生产级agent三检验框架MCP安全对齐",
+      "RadixAttention引入长上下文基础设施关键进展",
+      "Nature研究语言模型行为特质传播机制"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.166–168 ships with reliability hardening",
+      "OpenAI Codex grapples with context corruption regressions",
+      "DeepSeek TUI invests in deterministic replay primitives",
+      "Qwen Code adds typed workflow IR as first-class feature",
+      "Multimodal CJK/OCR pipelines remain underdeveloped across all 9 tools",
+      "Field bifurcates: incumbents vs architectural challengers"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.6.5-beta.1/2 fixes reasoning scaffolding sanitization",
+      "297 issues reveal multimodal pipeline fragility patterns",
+      "Long-context degradation: compaction-related reasoning_content loss",
+      "Model auto-populates unintended schema fields post-training",
+      "Reasoning relay corruption across turns documented",
+      "500 PRs indicate active core inference infrastructure work"
+    ],
+    "ai-trending": [
+      "PaddleOCR +433 stars bridges images/PDFs to LLMs",
+      "VibeVoice +216 stars advances frontier audio-language models",
+      "synthetic-rag-index claims 90%+ RAG index compression",
+      "PageIndex 32.6K stars pioneers vectorless reasoning-based RAG",
+      "Field consolidates into integrated agent/memory systems",
+      "No pure alignment projects in hot list signals shift"
+    ],
+    "ai-hn": [
+      "OpenAI Lockdown Mode defends prompt injection attacks",
+      "AI Memory study finds 95% error rate in tenure-track research",
+      "Claude chemist paper advances multimodal scientific reasoning",
+      "41TB BTRFS fixed by Claude one-shot sparks reliability debate",
+      "Zero HN engagement on 95% memory error rate paper",
+      "No OCR/HMER discussions despite document intelligence growth"
+    ],
+    "ai-hf": [
+      "Gemma-4 adopts any-to-any vision-text-audio architecture",
+      "PaddleOCR-VL-1.6 advances HMER with ERNIE4.5 layout analysis",
+      "LocateAnything-3B enables precise visual grounding for VLM hallucination control",
+      "DeepSeek-V4-Pro dominates downloads for efficient long-context",
+      "Qwen3.6-35B-A3B-Uncensored raises alignment trade-off questions",
+      "Unified multimodal backbones replace bolted-on vision encoders"
+    ],
+    "ai-community": [
+      "FP8/INT8 KV cache quantization halves speculative decoding gains",
+      "Behavioral trait transmission in LLMs surfaces post-training",
+      "RAG retrieval quality debate questions large embedding necessity",
+      "AI memory systems face authority verification challenges",
+      "Code quality gates emerge for AI-generated output hallucination",
+      "AI slop problem documented in software engineering contexts"
+    ]
+  }
+}
