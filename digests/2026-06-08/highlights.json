@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 长上下文管理机制系统性故障集中爆发",
+      "OpenAI Codex 压缩窗口可追溯性与安全对齐三线并进",
+      "Qwen Code v0.17.1-nightly 发布 microcompaction 长上下文技术栈",
+      "Gemini CLI AST 感知工具评估与 Auto Memory 幻觉链",
+      "OpenCode 社区驱动 RLM 范式探索与跨模型幻觉修复",
+      "DeepSeek TUI 架构重构引入 Gherkin 验收测试方法论"
+    ],
+    "ai-agents": [
+      "OpenClaw 296 Issues/500 PRs 高活跃，Codex 嵌入式运行时工具调用状态机异常",
+      "#91076 修复 orphan tool.call 回归，触及多步推理链终止条件判定",
+      "#91206 显式 model 参数被丢弃，模型路由自动推断冲突待解",
+      "#91246 WebChat 媒体 handoff 修复，多模态输出与文本推理衔接",
+      "记忆系统 dreaming 语义质量与长上下文会话管理成核心议题",
+      "P1 级回归 Bug 揭示 agent 推理链边界情况处理仍是核心挑战"
+    ],
+    "ai-trending": [
+      "NousResearch/hermes-agent +1,112 stars 登顶，持续成长型 Agent 架构",
+      "PageIndex 32K stars 提出 vectorless reasoning-based RAG 新范式",
+      "LEANN 11.9K stars 实现 97% 存储压缩的端侧 RAG",
+      "LlamaIndex 自称 document agent and OCR platform，OCR 与 Agent 深度融合",
+      "Awesome-Process-Reward-Models 标志过程奖励建模成对齐新前沿",
+      "LlamaFactory 71.9K stars 统一多模态 SFT/对齐关键工具"
+    ],
+    "ai-hn": [
+      "arXiv:2605.31514 讽刺批判 LLM 拟人化归因评估缺陷",
+      "Ask HN 自发探讨推理时计算与 CoT 工程实现透明度",
+      "MoE 专家选择泄露输入信息，触及 RLHF 偏好数据隐私风险",
+      "Luminous 集成 SAM 3 与 CLIP，多模态工具化下沉趋势",
+      "社区对 AI 能力边界怀疑与工程落地效率务实追求并存",
+      "长上下文幻觉缓解无直接论文，评估基准有效性遭间接质疑"
+    ],
+    "ai-hf": [
+      "PaddleOCR-VL-1.6 266 赞，OCR 向视觉语言范式关键演进",
+      "Gemma-4-12B-it 434K 下载，原生 any-to-any 多模态架构",
+      "LocateAnything-3B 115K 下载，开放词汇视觉 grounding 轻量突破",
+      "Gemma-4 GGUF 量化版 568K 下载超原版，边缘部署需求强烈",
+      "Qwen3.6-35B-A3B-Uncensored 下载量异常，对齐透明度需求迫切",
+      "DeepSeek-V4-Pro 与 V4-Flash 分占推理质量与效率两极"
+    ],
+    "ai-community": [
+      "多智能体执行安全危机与可验证架构模式提出",
+      "AI agent 审计 trail 与可采信证据区分方法论",
+      "CLAIM-26 测试序列探讨 AI 记忆权限判断与缓存失效",
+      "RAG 稠密检索生产失效与混合搜索修复路径",
+      "一线幻觉缓解实战经验，生成可信度控制实用模式",
+      "Nature 论文揭示 LLM 行为特质通过数据中隐藏信号传播"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code Skills adds extensible agent capabilities.",
+      "OpenCode prioritizes local model heterogeneous deployment.",
+      "Qwen Code emerges as capable open alternative.",
+      "DeepSeek TUI targets terminal UI reasoning workflows.",
+      "Kimi Code CLI joins long-context tooling race.",
+      "All major tools now engineer context compaction."
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 PRs, zero releases, stabilization mode.",
+      "P1 regressions hit Codex integration and memory.",
+      "Skill runtime watcher fixes leaked file descriptors.",
+      "Activity skews to infrastructure, not core AI.",
+      "Session state and compaction dominate PRs.",
+      "Vision-language work absent from today's activity."
+    ],
+    "ai-trending": [
+      "PageIndex hits 32.7k stars with vectorless RAG.",
+      "PaddleOCR at 81.3k stars bridges PDFs to LLMs.",
+      "turbovec gains 1,554 stars for quantized indexing.",
+      "Hermes-agent signals post-training alignment investment.",
+      "opencompass provides multimodal reasoning benchmarks.",
+      "Agent harness tools surge across ecosystem."
+    ],
+    "ai-hn": [
+      "Ask HN probes thinking effort implementations directly.",
+      "LLM anthropomorphism paper hits 101 points, 86 comments.",
+      "MoE expert selection paper reveals privacy risks.",
+      "Test-time compute scaling debated as pattern matching.",
+      "Extended reasoning chain architecture lacks public docs.",
+      "OCR and hallucination topics in quiet cycle."
+    ],
+    "ai-hf": [
+      "PaddleOCR-VL-1.6 advances HMER on ERNIE4.5.",
+      "gemma-4-12B brings any-to-any multimodal open weights.",
+      "Cosmos3 variants accelerate open-world video understanding.",
+      "LocateAnything-3B targets grounding hallucination mitigation.",
+      "DeepSeek-V4-Pro: 4.7K likes, 5.5M downloads dominates.",
+      "Long-context models subsumed into generalist training."
+    ],
+    "ai-community": [
+      "Post-training alignment reframed as emergent intervention layer.",
+      "Multi-agent audit trails target verifiable reasoning chains.",
+      "Claude Code source reveals bounded recursion limits.",
+      "Execution safety crisis identified in agent workflows.",
+      "Structured output verification applicable to visual pipelines.",
+      "OCR/HMER directly absent from today's feed."
+    ]
+  }
+}
