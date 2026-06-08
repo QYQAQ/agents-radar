@@ -47,6 +47,14 @@
       "RAG 稠密检索生产失效与混合搜索修复路径",
       "一线幻觉缓解实战经验，生成可信度控制实用模式",
       "Nature 论文揭示 LLM 行为特质通过数据中隐藏信号传播"
+    ],
+    "ai-weekly": [
+      "Anthropic 650亿美元H轮融资，估值9650亿美元，对齐研究获史无前例资本",
+      "Claude Mythos Preview因blast radius过高被推迟，首次公开承认能力过强无法部署",
+      "Project Glasswing扩展至150家合作伙伴，发现10000+高危漏洞",
+      "OpenAI元数据现Memory Dreaming路径，暗示离线记忆巩固机制",
+      "17篇技术内容集中释放，Constitutional Classifiers 2.0与NLAs亮相",
+      "markitdown两周暴涨至3618 stars，PDF解析成LLM上下文关键基础设施"
     ]
   },
   "en": {
@@ -97,6 +105,14 @@
       "Execution safety crisis identified in agent workflows.",
       "Structured output verification applicable to visual pipelines.",
       "OCR/HMER directly absent from today's feed."
+    ],
+    "ai-weekly": [
+      "Anthropic raises $65B Series H at $96.5B valuation",
+      "Project Glasswing expands to 150 infrastructure partners",
+      "Claude Mythos Preview delayed due to excessive blast radius",
+      "Anthropic publishes agent containment architecture details",
+      "OpenAI leaks ChatGPT Memory Dreaming mechanism",
+      "Anthropic urges global AI pause while publishing RSI research"
     ]
   }
 }
