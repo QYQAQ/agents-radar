@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 1M上下文计费危机爆发",
+      "OpenAI Codex rust-v0.138.0 Guardian主动压缩",
+      "Qwen Code v0.17.1三重OOM防御上线",
+      "OpenCode三重内存压缩与ACP协议hardening",
+      "DeepSeek TUI v0.8.55 KV cache持久化提案",
+      "Pi v0.79.0 Project Trust权限机制发布"
+    ],
+    "ai-agents": [
+      "OpenClaw beta.5剥离推理脚手架防泄漏",
+      "MCP工具结果强制转换支持损坏图像",
+      "子Agent会话生命周期一致性修复",
+      "cron幻觉抑制机制研究推进",
+      "转录图像脱敏保留base64负载修复",
+      "500 Issues/496 PRs单日活跃度峰值"
+    ],
+    "ai-trending": [
+      "PageIndex 32K星无向量推理RAG挑战嵌入范式",
+      "deer-flow 70K星长时程SuperAgent框架",
+      "PaddleOCR 81K星聚焦PDF→LLM结构化桥接",
+      "MemPalace推动长上下文持久化工程化",
+      "LlamaFactory 72K星多模态对齐刚需持续",
+      "claude-context 11.8K星整库即上下文技术"
+    ],
+    "ai-web": [
+      "Anthropic生物agent确定性检索层达近100%准确率",
+      "基础设施适配agent范式转换声明",
+      "OpenAI Confidential S-1暗示IPO进程",
+      "NCBI Virus评估挑战通用LLM科学部署假设",
+      "gget virus解耦自然语言与结构化查询",
+      "城市-汽车隐喻基础设施中心视角转换"
+    ],
+    "ai-hn": [
+      "Anthropic Project Glasswing可解释性进展",
+      "N-day漏洞量化评估LLM辅助网络攻击",
+      "Trusting AI Blindly社区安全焦虑升温",
+      "LLMs危险未知核心机制深度审视",
+      "Meta智能眼镜人脸识别下架隐私边界",
+      "Claude Fable 5多模态叙事生成待发布"
+    ],
+    "ai-hf": [
+      "Gemma-4 554K下载any-to-any统一架构登顶",
+      "LocateAnything-3B 121K下载视觉 grounding",
+      "PaddleOCR-VL-1.6 9.9K下载端到端文档理解",
+      "DeepSeek-V4 MoE架构持续主导长上下文",
+      "Qwen3.6 Uncensored 3M下载对齐负面案例",
+      "Step-3多模态推理模型入榜"
+    ],
+    "ai-community": [
+      "对抗评估框架5 LLM全失败通过率低于63%",
+      "AI记忆授权通过但拒绝机制失效边界案例",
+      "Agent错误隐性累积长上下文级联失效",
+      "Go PDF引擎底层文档解析工程经验",
+      "结构化输出减少30-50%token冗余量化",
+      "30天无人监管AI Agent实际故障模式"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.169 released with minor updates",
+      "OpenAI Codex shows 9 open research-relevant issues",
+      "Thick runtime vs thin client fragmentation emerges",
+      "Context window economics now primary scaling bottleneck",
+      "Convergent evolution toward declarative agent specs",
+      "Persistent episodic memory becoming standard"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.6.5-beta.5 fixes reasoning tag leakage",
+      "500 issues, 496 PRs in 24h stabilization period",
+      "QQBot strips <thinking> content before delivery",
+      "MCP tool result coercion for malformed multimodal outputs",
+      "P1 hallucination issues receiving active maintainer attention",
+      "Session-state reliability is top research priority"
+    ],
+    "ai-trending": [
+      "bytedance/deer-flow: long-horizon SuperAgent launches",
+      "PaddleOCR hits 81,484 stars bridging OCR-to-LLM pipelines",
+      "VectifyAI/PageIndex: vectorless reasoning-based RAG emerges",
+      "mem0ai/mem0 vs cognee: competing persistent memory architectures",
+      "open-compass/opencompass: 100+ dataset alignment evaluation",
+      "cognee advances persistent agent memory systems"
+    ],
+    "ai-web": [
+      "Anthropic publishes agents-in-biology reliability research",
+      "LLMs fail biological data retrieval without deterministic tools",
+      "gget virus tool achieves near-perfect accuracy augmentation",
+      "Architectural separation: reasoning vs fact retrieval required",
+      "OpenAI S-1 submission signals corporate development",
+      "Anthropic vs OpenAI divergent communication strategies"
+    ],
+    "ai-hn": [
+      "Trusting AI Blindly: illusion of finished work critique",
+      "Measuring LLMs' impact on N-day exploits security research",
+      "Zero comments on hallucination topic despite relevance",
+      "Corporate developments dominate over technical research",
+      "ChatGPT overhaul rumors attract community attention",
+      "No long-context or multimodal reasoning posts today"
+    ],
+    "ai-hf": [
+      "PaddleOCR-VL-1.6 launches on ERNIE4.5 architecture",
+      "google/gemma-4-12B pushes efficient any-to-any multimodal",
+      "nvidia/LocateAnything-3B open-vocabulary spatial localization",
+      "DeepSeek-V4-Pro: 4.7K likes, 5.4M downloads dominates",
+      "Gemma Unsloth GGUF variant hits 645K+ downloads",
+      "LocateAnything enhances document layout grounding"
+    ],
+    "ai-community": [
+      "Adversarial eval framework exposes failures in 5 LLMs",
+      "Agent memory safety case study: authorized yet harmful actions",
+      "Structured output optimization quantifies token economics",
+      "RadixAttention optimizes KV-cache for long-context",
+      "Serverless GPU provider comparisons for inference scaling",
+      "63% ceiling score reveals fundamental alignment gaps"
+    ]
+  }
+}
