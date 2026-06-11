@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code子智能体嵌套扩展至5层，安全与幻觉问题密集暴露",
+      "OpenAI Codex rust-v0.140.0-alpha重构图像管线与上下文窗口重置工具",
+      "Gemini CLI v0.46.0硬化评估基础设施，76项测试加固AST感知工具",
+      "OpenCode v1.17.0-3突破500k文件级代码库性能，支持reasoning交错字段",
+      "Qwen Code聚焦压缩算法幂等性，fork子智能体默认启用",
+      "DeepSeek TUI v0.8.56-57解除多模型硬编码，Hooks v2确定性控制层上线"
+    ],
+    "ai-agents": [
+      "OpenClaw 24小时465个活跃Issue，401个待合并PR，社区参与密度极高",
+      "PR #92059修复NO_REPLY幽灵回复，抑制心跳场景幻觉生成",
+      "PR #90173稳定A2A提示缓存，消除高基数session key导致的跨agent推理断裂",
+      "tiered bootstrap加载与SQLite会话迁移推进长上下文管理工程化",
+      "v2026.6.6-beta.1系统性收紧安全边界，MCP stdio隔离改变视觉工具调用路径",
+      "多智能体推理可靠性成核心矛盾，A2A会话循环与提示缓存稳定性攻坚"
+    ],
+    "ai-trending": [
+      "Agent Skills框架成核心爆发点，Google等开源技能库推动工程标准化",
+      "PageIndex 32,854 stars：无向量推理式RAG挑战传统向量检索范式",
+      "LEANN实现97%存储节省的端侧RAG，文档检索范式变革信号",
+      "bytedance/deer-flow 70,903 stars：分钟到小时级长程SuperAgent框架",
+      "process reward models与test-time scaling专题仓库出现，推理时对齐细化",
+      "LlamaIndex明确文档代理与OCR平台定位，从通用RAG向文档智能深度演进"
+    ],
+    "ai-web": [
+      "Anthropic实证：确定性检索层将生物数据库准确率推至近100%",
+      "神经+符号混合架构在高风险科学场景的幻觉缓解有效性获实证",
+      "gget virus工具增强生成(TAG)从根本上消除事实性幻觉来源",
+      "生物数据基础设施Agent兼容性作为独立变量纳入评估范式",
+      "OpenAI仅Oracle Cloud合作公告，无研究内容",
+      "Anthropic垂直领域Agent可靠性与结构化数据交互布局连贯"
+    ],
+    "ai-hn": [
+      "Anthropic Fable系列对齐策略争议成最活跃研究讨论，安全疲劳明显",
+      "guardrail设计帕累托最优问题：安全研究社区批评过度干预可用性",
+      "Claude Fable 5越狱实时传播揭示对齐防御脆弱性循环",
+      "150M参数RAG证据提取模型获关注，轻量级可验证grounding偏好",
+      "政府审批新模型主张触及能力释放vs安全管控治理边界",
+      "系统提示泄露为研究对齐指令注入机制提供实证材料"
+    ],
+    "ai-hf": [
+      "Google Gemma-4系列885点赞，统一any-to-any架构成多模态研究焦点",
+      "DeepSeek-V4-Pro 4758点赞领跑，MoE架构与推理优化值得关注",
+      "NVIDIA LocateAnything-3B 1803点赞：开放视觉定位可将公式检测升级为指代表达",
+      "Qwen3.6-Uncensored 1630点赞/305万下载，安全对齐与能力解锁张力持续",
+      "Step-3.7-Flash 363点赞：高效VLM优化长文档流式视觉理解",
+      "diffusiongemma-26B探索扩散模型与语言模型融合，影响文本渲染与OCR纠错"
+    ],
+    "ai-community": [
+      "多轮AI代理丢失思路(train of thought)的实证分析揭示长上下文推理故障",
+      "AgentLiar检测编码代理虚假完成任务，直击能力幻觉子领域",
+      "同意偏差作为幻觉隐性变体，触及RLHF奖励黑客问题",
+      "Nature论文揭示LLM隐藏信号行为传递，为模型对齐提供新视角",
+      "RAG-Based Testing系列系统化文档理解测试方法论",
+      "结构化上下文注入范式furnishing the brain优化长上下文推理组织"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Context integrity is foundational reliability concern for AI CLIs",
+      "Claude Code v2.1.172 tackles context contamination issues",
+      "All major tools now use hierarchical multi-agent systems",
+      "MCP, subagents, reasoning blocks are converging abstractions",
+      "Runtime hooks replace retraining for black-box alignment",
+      "DeepSeek TUI uses parameterized constitution system"
+    ],
+    "ai-agents": [
+      "OpenClaw has 500 issues and 500 PRs in 24 hours",
+      "465:35 open-to-closed ratio shows triaging bottleneck",
+      "Zero issues address vision-language or reasoning capabilities",
+      "Context management is top research-relevant activity",
+      "Tool-use schema overexposure causes model misbehavior",
+      "Memory system temporal decay under investigation"
+    ],
+    "ai-trending": [
+      "LlamaIndex positions as leading document agent OCR platform",
+      "PaddleOCR hits 81,755 stars for PDF-to-structured-data",
+      "VectifyAI PageIndex uses vectorless reasoning-based RAG",
+      "Bytedance Deer-Flow at 70.9K stars for long-horizon SuperAgent",
+      "Hermes-Agent reaches 189.9K stars for agent harness optimization",
+      "OpenCompass grows as post-training assessment infrastructure"
+    ],
+    "ai-web": [
+      "Anthropic publishes agent reliability in biological data retrieval",
+      "Deterministic wrappers raise accuracy to nearly 100%",
+      "RAG without guaranteed tool outputs remains unreliable",
+      "Study uses gget virus for deterministic retrieval layer",
+      "OpenAI content is only Oracle Cloud metadata reference",
+      "Anthropic invests in domain-specific agent infrastructure"
+    ],
+    "ai-hn": [
+      "Claude Fable 5 release sparks safety guardrail controversies",
+      "150M parameter RAG evidence extraction model emerges",
+      "Local real-time music generation runs on iPhone CPU",
+      "Researchers actively bypass Fable 5 safety architecture",
+      "System prompt transparency debates intensify",
+      "Enterprise deployment restrictions draw scrutiny"
+    ],
+    "ai-hf": [
+      "Google Gemma 4 family launches unified any-to-any architecture",
+      "DeepSeek-V4-Pro leads with 4.76M weekly downloads",
+      "sapientinc/HRM-Text-1B fills HMER ecosystem gap at 1B params",
+      "NVIDIA LocateAnything-3B adds grounded visual localization",
+      "GGUF quantized variants proliferate for deterministic inference",
+      "Unsloth and Google official quantization infrastructure matures"
+    ],
+    "ai-community": [
+      "AgentLiar Detector catches agents falsely claiming completion",
+      "Multi-turn agents lose train of thought in long contexts",
+      "Claude Fable 5 guardrails silently degrade outputs",
+      "Catastrophic forgetting resurfaces in continual learning",
+      "Post-deployment behavior control dominates alignment discussion",
+      "ZML inference framework advances edge deployment"
+    ]
+  }
+}
