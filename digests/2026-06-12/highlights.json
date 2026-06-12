@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code默认1M上下文暴露压缩语义丢失瓶颈",
+      "OpenAI Codex连发4个Rust alpha版无说明引猜测",
+      "Copilot CLI出现invoke标签泄漏的格式幻觉",
+      "Kimi Code CLI零研究活跃或资源转向基座模型",
+      "多智能体并行fanout状态一致性成理论空白",
+      "长上下文从营销卖点变为系统性工程负担"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 Issues+500 PRs创单日活跃峰值",
+      "Security Matrix运行时审计模型引入确定性评估器",
+      "图像模型输入继承bug修复纠正多模态降级",
+      "工具调用Levenshtein模糊匹配减少幻觉失败",
+      "session-state类bug积压仍为显著技术债",
+      "无版本发布但社区研究密度异常集中"
+    ],
+    "ai-trending": [
+      "deer-flow 70K星长时程SuperAgent挑战小时级推理",
+      "SIA框架首入Trending触发自动优化研究联想",
+      "PaddleOCR 81K星验证文档智能为社区硬刚需",
+      "LlamaFactory 72K星支撑多模态RLHF工业化",
+      "RAGFlow 82K星深度融合Agent与深度文档解析",
+      "mem0 58K星记忆层直击长上下文衰减痛点"
+    ],
+    "ai-web": [
+      "DXC宣称95%代码由Claude生成创企业渗透率纪录",
+      "Claude Corps千人线下部署对抗纯数字化培训局限",
+      "FDE认证体系暗示人因工程标准而非仅模型基准",
+      "金融核心系统代码幻觉构成高后果场景压力测试",
+      "OpenAI收购Ona或涉组织网络分析或非洲布局",
+      "Anthropic将企业可靠性与社会适应性并列为差异化支柱"
+    ],
+    "ai-hn": [
+      "Claude Fable隐形蒸馏护栏引发过度拒绝危机",
+      "281分286评创今日最热对齐透明度制度讨论",
+      "Anthropic撤回限制模型对比评估条款遭学术自由质疑",
+      "MTG Bench测试LLM复杂规则长程规划推理能力",
+      "Claude Code离线运行Qwen3.6关注量化对长上下文影响",
+      "本地部署实践暴露空域环境上下文管理工程难题"
+    ],
+    "ai-hf": [
+      "Gemma-4 any-to-any原生多模态架构霸榜HF",
+      "DeepSeek-V4-Pro 400万下载验证MoE推理规模化",
+      "LocateAnything-3B开放集定位赋能文档版面分析",
+      "Qwen3.6-35B Uncensored 300万下载暴露对齐脆弱性",
+      "unsloth量化版Gemma-4下载超官方降低研究门槛",
+      "Step-3.7-Flash中文文档理解潜力待OCR验证"
+    ],
+    "ai-community": [
+      "自定义Prompt DSL压缩系统提示70%令牌",
+      "RAG边缘案例测试框架系统性梳理失效模式",
+      "DiffusionGemma并行解码重构长序列生成效率",
+      "Agent记忆授权与意图语义鸿沟触发幻觉",
+      "LLM基准饱和动力学警示垂直领域评估设计",
+      "免训练路由机制Echo降低长上下文调度成本"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.173 adds 1M context normalization",
+      "OpenAI Codex debugs hierarchical agent system failures",
+      "Gemini CLI tackles safety classifier systemic failures",
+      "Qwen Code builds foundational memory architectures",
+      "DeepSeek TUI develops context window management",
+      "E converges on unbounded agent fan-out failures"
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 issues/PRs, growing backlog",
+      "Context confusion issue #32296 impacts hallucination",
+      "Session drift #69118 threatens reasoning reliability",
+      "Compaction model misconfiguration in #57901",
+      "State synchronization debt accumulating rapidly",
+      "Multi-agent orchestration reliability gaps persist"
+    ],
+    "ai-trending": [
+      "PaddleOCR dominates document-to-LLM pipelines at 81K stars",
+      "bytedance/deer-flow launches sandboxed SuperAgent memory",
+      "hexo-ai/sia debuts benchmark-driven self-improvement",
+      "claude-mem, mem0, cognee memory systems surging",
+      "LlamaFactory sustains unified fine-tuning demand",
+      "Long-horizon reasoning trajectories gain open-source investment"
+    ],
+    "ai-web": [
+      "Claude generates >95% of DXC OASIS platform code",
+      "DXC deploys Claude into banks, airlines, insurers",
+      "Claude Corps: $150M human-AI collaboration experiment",
+      "Enterprise agentic deployment at regulated scale",
+      "OpenAI acquires ONA, signals infrastructure consolidation",
+      "Anthropic pivots to workforce transition frameworks"
+    ],
+    "ai-hn": [
+      "Claude Fable invisible guardrails trigger backlash",
+      "Anthropic apologizes for over-refusal on innocuous prompts",
+      "Policy backtracking on researcher sabotage claims",
+      "RLHF alignment failures vs deceptive behavior debate",
+      "Deployment safety prioritized over capability releases",
+      "Governance crisis consumes all research oxygen"
+    ],
+    "ai-hf": [
+      "Google Gemma-4 family pushes any-to-any multimodal",
+      "DeepSeek-V4-Pro hits 4.7M likes, 4M downloads",
+      "sapientinc/HRM-Text-1B targets HMER benchmarks",
+      "Abliterated fine-tunes proliferate alignment removal",
+      "NVIDIA LocateAnything-3B advances grounded multimodal",
+      "Nemotron-3.5-Ultra scales enterprise alignment"
+    ],
+    "ai-community": [
+      "DiffusionGemma enables parallel block decoding",
+      "Benchmark saturation threatens OCR/HMER evaluation",
+      "Behavioral trait transmission in training data found",
+      "Pre-execution gating architectures gain traction",
+      "Vibe coding vs production reliability gap widening",
+      "Verification architectures dominate practitioner discourse"
+    ]
+  }
+}
