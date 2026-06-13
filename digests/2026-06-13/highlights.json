@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code长上下文工具失效与安全误报降级",
+      "OpenAI Codex session segmentation与TUI图像突破",
+      "Gemini CLI v0.48.0 AST感知代码理解发布",
+      "GitHub Copilot流式渲染epidemic与提示词膨胀",
+      "OpenCode v1.17.4 doom loop检测与权限漏洞",
+      "DeepSeek TUI v0.8.59海马体记忆与多模态管道修复"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.6.6安全边界全面收紧补丁",
+      "180s compaction timeout导致长上下文循环失败",
+      "memory_search索引损坏与元数据缺失危机",
+      "多智能体协作架构提案：能力画像+共享黑板",
+      "#92554 Kimi K2.7 Code支持接入被关闭",
+      "358个待合并PR聚焦消息路由与平台集成"
+    ],
+    "ai-trending": [
+      "PaddleOCR 82K stars领跑OCR文档智能赛道",
+      "RAGFlow 82K stars RAG+Agent融合引擎登顶",
+      "LMCache KV Cache加速长上下文推理瓶颈",
+      "mem0 58K stars长上下文记忆持久化方案",
+      "LlamaFactory 72K stars VLM统一微调基础设施",
+      "OpenCompass评测平台持续活跃验证对齐效果"
+    ],
+    "ai-web": [
+      "Anthropic发布Claude化学家跨表征推理项目",
+      "NMR光谱连续信号到离散分子结构逆问题求解",
+      "thalidomide案例凸显结构-功能精确性要求",
+      "人机协同标注暗示专家在环RLHF变体",
+      "Public Record首次量化公众AI认知依赖焦虑",
+      "TCS战略合作标志Claude高合规行业渗透"
+    ],
+    "ai-hn": [
+      "Anthropic对齐声明可信度遭视频直接质疑",
+      "Trump政府封锁Anthropic最强模型出口",
+      "Claude Fable-5越狱与法律威胁研究自由",
+      "ACM警告vibe coding导致工程实践退化",
+      "AI辅助安全漏洞利用测量研究引发关注",
+      "幽灵作者与重复人格LLM行为模式研究"
+    ],
+    "ai-hf": [
+      "Gemma-4-12B-it 967⭐ any-to-any原生多模态架构",
+      "DeepSeek-V4-Pro 4797⭐ MoE对话优化领跑",
+      "LocateAnything-3B 1925⭐ 14.9万下载视觉定位",
+      "diffusiongemma-26B-A4B扩散语言融合新路径",
+      "Kimi-K2.7-Code 337⭐长上下文代码多模态预览",
+      "Unsloth Gemma-4 GGUF/QAT量化生态迅速跟进"
+    ],
+    "ai-community": [
+      "SQLite本地记忆79%超越全上下文GPT-4",
+      "三层记忆架构：工作/情景/语义衰减门控",
+      "AWS Agent Toolkit schema约束防API幻觉",
+      "缓存重试降级导致agent静默失败陷阱",
+      "RAG测试框架：检索质量与忠实度系统化",
+      "LongMemEval本地向量记忆突破长上下文瓶颈"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Context quality engineering replaces length marketing",
+      "Claude Code: 5 critical long-context tool failures",
+      "OpenAI Codex: compacti context issues active",
+      "Kimi CLI, Qwen Code, OpenCode: open-source convergence",
+      "Session segmentation now first-class architecture",
+      "Memory hierarchies becoming core design concern"
+    ],
+    "ai-agents": [
+      "500 issues, 488 PRs: sustained high activity",
+      "v2026.6.6: security boundary tightening release",
+      "Long-context optimization: active research front",
+      "Session state management regressions noted",
+      "Multi-agent coordination remains unsolved",
+      "Temporal reasoning in memory retrieval active"
+    ],
+    "ai-trending": [
+      "PaddleOCR 82K stars: OCR-to-LLM bridge",
+      "LMCache: KV cache for long-context deployment",
+      "LlamaIndex rebrands as document agent platform",
+      "Agent-skills frameworks: structured reasoning shift",
+      "RLHF/DPO embedded, not standalone",
+      "RAG, OCR, multimodal reasoning converging"
+    ],
+    "ai-web": [
+      "Anthropic: 'Making Claude a chemist' NMR reasoning",
+      "Multimodal scientific reasoning with accuracy demands",
+      "TCS partnership: regulated industry deployment",
+      "Public Record: 44% prefer safety over growth",
+      "47% support legal liability frameworks",
+      "Hallucination mitigation in high-stakes contexts"
+    ],
+    "ai-hn": [
+      "Anthropic red-team: LLM-assisted N-day exploits",
+      "Allegations of Anthropic 'lying' about capabilities",
+      "'AI Renaissance' critique: scaling sustainability",
+      "ACM: agentic coding bypasses core engineering",
+      "Vibe coding discourse dominates HN",
+      "No technical long-context discussion today"
+    ],
+    "ai-hf": [
+      "Gemma 4 12B/26B: dominant any-to-any architecture",
+      "DeepSeek-V4-Pro: 4.8K likes, 3.4M downloads",
+      "NVIDIA LocateAnything-3B: 149K downloads",
+      "Abliterated Gemma 4 derivatives proliferate",
+      "Post-training alignment robustness questioned",
+      "No dedicated OCR/HMER models in top-30"
+    ],
+    "ai-community": [
+      "79% LongMemEval with local SQLite beats GPT-4",
+      "AWS Agent Toolkit: API hallucination prevention",
+      "Nature paper: behavioral trait transmission signals",
+      "Non-deterministic system evaluation unsolved",
+      "RAG testing frameworks for document understanding",
+      "MCP output validation security discussions"
+    ]
+  }
+}
