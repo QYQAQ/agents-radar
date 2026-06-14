@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.177：长上下文记忆持久化突破",
+      "OpenAI Codex rust-v0.140.0：exec-server跨平台确定性测试密集补强",
+      "Gemini CLI：MCP图像MIME嗅探与AST感知工具",
+      "GitHub Copilot CLI v1.0.62：子代理模型配置与推理努力度控制",
+      "OpenCode v1.17.6：ACE控制层与缓存稳定性攻坚",
+      "DeepSeek TUI v0.8.60预发布：Agent Fleet控制平面+WhaleFlow运行时"
+    ],
+    "ai-agents": [
+      "OpenClaw #92804：工具调用边界文本累积修复防推理断裂",
+      "OpenClaw #92725：记忆系统外部分级器集成入主干",
+      "OpenClaw 500 Issues/PRs：多智能体编排可靠性工程化",
+      "OpenClaw #92698：短期记忆晋升跳过Markdown占位符",
+      "OpenClaw通道交付：Telegram/WhatsApp富文本非研究向",
+      "OpenClaw v2026.6.8-beta.1：纯通道层更新可跳过"
+    ],
+    "ai-trending": [
+      "NVIDIA SkillSpector +804 stars：AI agent安全扫描首登榜",
+      "PaddleOCR 82K stars：图像/PDF-LLM桥梁定位明确",
+      "LMCache +238 stars：最快KV Cache层攻长上下文内存瓶颈",
+      "caveman +72K stars：Claude Code skill削减65% token极端压缩",
+      "LlamaIndex 50K stars：自称为领先文档agent与OCR平台",
+      "graphify 66K stars：代码/文档/图像/视频统一知识图谱"
+    ],
+    "ai-web": [
+      "Anthropic首次披露Mythos-class模型分级体系",
+      "Claude Fable 5动态安全降级：敏感查询软拒绝至Opus 4.8",
+      "Fable 5因越狱实验遭美国政府全面封禁，首次国家安全级下架",
+      "5%误触发率暴露对齐精度-召回权衡核心难题",
+      "Fable 5长上下文复杂任务优势指向架构突破",
+      "OpenAI今日零更新，Anthropic独占研究焦点"
+    ],
+    "ai-hn": [
+      "Fable 5下架获3055分2214评论：首个因太聪明被行政干预的模型",
+      "Amazon越狱实验成为政府管制直接依据引基准线争议",
+      "Fable 5 vs GPT-5.5：规划优势是否正是触发审查的能力维度",
+      "Shepherd's Dog游戏：长上下文连贯叙事能力的纪念性样本",
+      "80款Fable mini-games批量生成实证工具突然死亡破坏可重复研究",
+      "社区核心焦虑：长程推理不可解释性成监管焦点"
+    ],
+    "ai-hf": [
+      "google/gemma-4-12B-it百万下载：any-to-any原生图文互生",
+      "google/diffusiongemma-26B：扩散迭代机制显式建模不确定性缓幻觉",
+      "moonshotai/Kimi-K2.7-Code：视觉-代码跨模态对齐解耦设计",
+      "MiniMax-M3：国产闭源模型开源权重释放稀缺对比样本",
+      "nvidia/LocateAnything-3B 69K下载：视觉grounding轻量架构治幻觉",
+      "abliterated/uncensored模型激增反映对齐安全性博弈张力"
+    ],
+    "ai-community": [
+      "git-lrc显式遗忘机制：上下文注意力稀释的工程解",
+      "MCP端到端工具验证：减少功能级幻觉的必要性论证",
+      "Agent语义断点追踪：诊断长上下文推理漂移方法论",
+      "MoE路由机制解析：视觉-语言跨模态注意力分配参考",
+      "Gemma 4 QAT：对齐后行为稳定性的量化-幻觉权衡",
+      "AI互攻实验负相关：对抗性评估的新发现"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "MCP emerges as interoperability standard across tools",
+      "Runtime behavioral governance replaces model-level RLHF",
+      "Claude Code v2.1.177 ships with skills system",
+      "OpenCode leads provider-agnostic frameworks",
+      "Context compaction workarounds proliferate",
+      "Turn caps and tool allowlists standardize"
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 issues/PRs in 24 hours",
+      "Memory management architecture active",
+      "Tool-call hallucination mitigation ongoing",
+      "P0 memory leaks persist in distributed execution",
+      "Prompt caching efficiency research cluster",
+      "Subagent orchestration failures indicate debt"
+    ],
+    "ai-trending": [
+      "NVIDIA SkillSpector +804 stars for agent validation",
+      "LMCache +238 stars tackles KV cache optimization",
+      "PaddleOCR 82K stars dominates document-to-LLM pipeline",
+      "No new HMER or alignment projects trending",
+      "System-prompts repo +109 stars for hallucination study",
+      "Agentic infrastructure surges over core research"
+    ],
+    "ai-web": [
+      "Claude Fable 5 exceeds all prior public benchmarks",
+      "Mythos-class signals new frontier capability tier",
+      "US emergency export control within 72 hours",
+      "Jailbreak enables cybersecurity vulnerability discovery",
+      "5% false-positive rate on safeguards disclosed",
+      "Overly broad safeguards failed via jailbreak bypass"
+    ],
+    "ai-hn": [
+      "Anthropic Fable 5 suspended by government order",
+      "Amazon security research triggered jailbreak concern",
+      "Fable 5 vs GPT-5.5 planning comparison published",
+      "GLM 5.2 released by Zhipu AI",
+      "Safety discourse dominates over capabilities research",
+      "Long-context mechanics discussion notably absent"
+    ],
+    "ai-hf": [
+      "Gemma-4-12B-it surpasses 1M downloads",
+      "DeepSeek-V4-Pro leads with 3.25M downloads",
+      "NVIDIA LocateAnything-3B for spatial grounding",
+      "Uncensored fine-tunes proliferate alignment questions",
+      "Kimi-K2.7-Code targets long-context code understanding",
+      "DiffusionGemma merges generation with text understanding"
+    ],
+    "ai-community": [
+      "Agent intentional forgetting mechanisms explored",
+      "Gemma 4 QAT checkpoints ship for efficiency",
+      "3.8x pricing unpredictability hurts benchmarking",
+      "BabyChain multimodal tool chain released",
+      "HeadLess BAI visual understanding system noted",
+      "Sign language recognition adjacent to OCR research"
+    ]
+  }
+}
