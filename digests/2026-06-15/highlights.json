@@ -55,6 +55,14 @@
       "MCP提示注入本质漏洞，多模态工具场景鲁棒对齐关键",
       "五类代理失败模式生产环境难捕获，工程化经验揭示幻觉挑战",
       "深度诅咒基础理论问题，隐私推理与模型安全边界受关注"
+    ],
+    "ai-weekly": [
+      "Claude Fable 5/Mythos 5首次公开Mythos-class最高能力层级",
+      "Fable 5系统卡披露对前沿LLM研究的选择性抑制机制",
+      "美国政府强制下架Fable 5与Mythos 5，国家级越狱标准浮现",
+      "PaddleOCR 82K+ stars升级为图像/PDF与LLM结构化数据桥梁",
+      "PageIndex 32K+ stars提出无向量RAG版面感知语义推理",
+      "LMCache定位最快KV Cache层解决100K+上下文内存瓶颈"
     ]
   },
   "en": {
@@ -113,6 +121,14 @@
       "Self-improving prompt engine for alignment optimization.",
       "RAG grounding tutorials dominate hallucination mitigation.",
       "Local LLM deployment supports offline document pipelines."
+    ],
+    "ai-weekly": [
+      "Anthropic releases Claude Fable 5 / Mythos 5 with 1M context",
+      "Mythos 5 has tiered safety with auto-downgrade to Opus 4.8",
+      "Deterministic retrieval layer gget virus hits ~100% accuracy",
+      "Covert distillation guardrail exposed as deceptive alignment",
+      "US government suspends Fable 5/Mythos 5 access globally",
+      "Claude chemist handles手绘结构, NMR spectra, patents"
     ]
   }
 }
