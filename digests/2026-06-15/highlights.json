@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code多层级智能体缺陷密集暴露，递归控制脆弱性引关注",
+      "Qwen Code v0.18.0-nightly连续两日构建失败，工具输出膨胀危机",
+      "DeepSeek TUI品牌迁移至CodeWhale，WhaleFlow基础层首次合入",
+      "OpenCode视觉输入能力退化，多模态可靠性危机显现",
+      "Codex密集网络安全误标记，安全对齐过度拒绝成 epidemic",
+      "Pi模型级压缩与计费修复进入PR，差异化压缩策略受关注"
+    ],
+    "ai-agents": [
+      "OpenClaw会话状态持久化架构重构，长上下文传输消息丢失问题",
+      "Codex运行时工具执行对齐，揭示跨提供商工具表面一致性深层问题",
+      "模型提供商切换时级联故障，复杂编排场景可靠性挑战",
+      "工具调用静默丢弃，AI系统可靠性未解决难题",
+      "Embedding系统优雅降级，模型能力缺失时系统韧性研究",
+      "提示词保留机制，指令遵循完整性工程实现"
+    ],
+    "ai-trending": [
+      "PaddleOCR 82k stars，PDF/图像结构化数据转换服务LLM训练",
+      "cognee 17.8k stars，自托管知识图谱引擎为Agent提供持久记忆",
+      "claude-mem 82k stars，会话压缩注入实现上下文延续",
+      "caveman 72.5k stars，极简token表达削减65%上下文开销",
+      "testtimescaling 105 stars，Test-Time Scaling综述反映推理扩展律需求",
+      "lancedb 10.6k stars，多模态AI嵌入式检索库支撑VLM数据索引"
+    ],
+    "ai-web": [
+      "OpenAI Partner Network战略发布，生态扩张向产业落地倾斜",
+      "Anthropic零新增，Claude系列或处重大版本迭代前间隙期",
+      "OpenAI元数据条目仅URL推断，正文不可获取研究信号受限",
+      "Partner Network潜在关联OCR/HMER垂直场景商业化定位",
+      "API安全标准与输出可靠性承诺或伴随生态扩张共建",
+      "建议监控后续模型能力评估与安全标准披露细节"
+    ],
+    "ai-hn": [
+      "Claude行为异常与对齐失效，Bram Cohen文章引发150条评论激辩",
+      "Making Claude a Chemist，工具调用执行复杂化学多步推理",
+      "Claude Fable 5规划能力优于GPT-5.5，长上下文基准评测对比",
+      "Claude Managed Agents托管架构，长上下文状态管理技术",
+      "Codex模拟黑洞，科学文本→代码→可视化多模态链条",
+      "对齐方法遭社区怀疑，下一代模型可靠性引深层焦虑"
+    ],
+    "ai-hf": [
+      "Gemma-4 12B any-to-any架构，原生视觉语言统一设计240万下载",
+      "DeepSeek-V4-Pro近5000点赞，MoE架构与后训练优化领跑推理",
+      "DiffusionGemma 26B MoE，扩散生成与文本推理融合缓解幻觉",
+      "MiniMax-M3国产VLM长上下文视觉推理待评测",
+      "Kimi-K2.7-Code视觉代码联合推理，图表转代码工具价值",
+      "Uncensored-HauhauCS-Aggressive下载异常高企，对齐安全挑战严峻"
+    ],
+    "ai-community": [
+      "Grovel Index量化LLM谄媚行为，RLHF反馈机制优化新框架",
+      "AI代理记忆语义关联缺陷，上下文选择检索策略待改进",
+      "自改进提示引擎基于代码库历史，长上下文动态优化借鉴",
+      "MCP提示注入本质漏洞，多模态工具场景鲁棒对齐关键",
+      "五类代理失败模式生产环境难捕获，工程化经验揭示幻觉挑战",
+      "深度诅咒基础理论问题，隐私推理与模型安全边界受关注"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Agent reliability is the new competitive battleground.",
+      "Claude Code faces critical safety incidents, high urgency.",
+      "OpenAI Codex invests heavily in Rust infrastructure.",
+      "All tools converge on long-context, multi-agent, reasoning.",
+      "Differentiation shifts to architectural philosophy.",
+      "Open-source tools: OpenCode, Pi, Qwen, DeepSeek TUI."
+    ],
+    "ai-agents": [
+      "500 issues, 500 PRs but sparse research signal.",
+      "Zero items address vision-language or hallucination mitigation.",
+      "Context compaction failures reveal indirect research insights.",
+      "Tool-use hallucination patterns emerge in issues.",
+      "Session state corruption indicates reliability gaps.",
+      "Reasoning trace visibility remains unaddressed."
+    ],
+    "ai-trending": [
+      "NVIDIA SkillSpector +964 stars: agent security priority.",
+      "Kronos +244 stars: domain-specific multimodal reasoning.",
+      "PaddleOCR 82K stars dominates document intelligence bridge.",
+      "RAGFlow and mem0 invest in grounded generation.",
+      "vLLM 82K+ stars enables long-context model serving.",
+      "Persistent memory key for hallucination reduction."
+    ],
+    "ai-web": [
+      "OpenAI publishes single 'Partner Network' business entry.",
+      "Anthropic produces zero new articles, quiet period.",
+      "No direct technical signals for researchers today.",
+      "Anthropic's 2026 public research communications declining.",
+      "OpenAI maintains metadata presence for non-technical items.",
+      "Long-context, multimodal, alignment research untracked."
+    ],
+    "ai-hn": [
+      "'Making Claude a Chemist' shows multimodal scientific reasoning.",
+      "'Why Is Claude Turning into an a**Hole?' flags alignment shifts.",
+      "Post-training alignment degradation concerns emerge.",
+      "'AI is code' argues architectural limits on prompting.",
+      "No OCR/HMER or long-context technical papers surfaced.",
+      "Claude Fable 5 vs GPT-5.5 comparison lacks depth."
+    ],
+    "ai-hf": [
+      "google/gemma-4-12B-it: 1.08M downloads, any-to-any multimodal.",
+      "diffusiongemma-26B-A4B-it: diffusion language modeling at scale.",
+      "Kimi-K2.7-Code invests in long-context code reasoning.",
+      "DeepSeek-V4-Pro: 3M+ downloads, open-weight reasoning alternative.",
+      "GGUF variants signal local deployment infrastructure maturing.",
+      "Unified multimodal architectures critical for hallucination study."
+    ],
+    "ai-community": [
+      "'Curse of Depth' paper on long-context transformer degradation.",
+      "'Grovel Index' measures LLM sycophancy quantitatively.",
+      "AI memory systems: retention vs pattern-matching debate.",
+      "Self-improving prompt engine for alignment optimization.",
+      "RAG grounding tutorials dominate hallucination mitigation.",
+      "Local LLM deployment supports offline document pipelines."
+    ]
+  }
+}
