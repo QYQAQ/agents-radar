@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.178密集修复安全规则与跨平台问题",
+      "OpenAI Codex rust-v0.140.0演进User Message Queue架构",
+      "Qwen Code v0.18.1推自paced loop范式创新",
+      "Pi v0.79.4架构级重构数据驱动模型注册",
+      "Kimi CLI聚焦会话恢复与对齐链路修复",
+      "DeepSeek TUI子智能体架构重构宪法AI落地"
+    ],
+    "ai-agents": [
+      "OpenClaw零版本发布处于密集修复期",
+      "Telegram Bot API 10.1富消息转发支持多模态输入",
+      "TTS错误读出reasoning内容暴露内容过滤漏洞",
+      "用户行为覆盖在每日会话重置后丢失",
+      "Mattermost线程消息保持修复对话连续性",
+      "auth profile SQLite只读权限修复最小权限原则"
+    ],
+    "ai-trending": [
+      "Agent-Reach单日+1100 stars零API多平台抓取",
+      "NVIDIA SkillSpector+1079 stars首创技能漏洞检测",
+      "PaddleOCR 82K stars领跑OCR转结构化数据喂LLM",
+      "Kronos+396 stars金融时序-文本多模态推理",
+      "trycua/cua+70 stars开源计算机使用Agent框架",
+      "mem0/cognee记忆层项目持续活跃支撑长上下文"
+    ],
+    "ai-web": [
+      "Anthropic首次揭示Claude 4.5内部情绪表征几何组织",
+      "情绪表征的情境错配激活或是社交幻觉根源",
+      "Claude向NMR光谱跨表征推理迈出关键一步",
+      "化学多模态研究关联分子结构识别高stakes任务",
+      "激活修补验证内部情绪状态可预测改变输出",
+      "两篇论文隐含幻觉缓解与多模态对齐深层关切"
+    ],
+    "ai-hn": [
+      "Fable 5推理痕迹逆向分析揭示post-training路径",
+      "Anthropic安全超级能力叙事社区分化激烈争论",
+      "白宫强制Fable/Mythos下线创政治干预先例",
+      "安全团队与产品团队内部治理冲突曝光",
+      "Claude Debugs Postgres Alarm涉及可靠性修复",
+      "长上下文OCR多模态技术讨论今日基本缺位"
+    ],
+    "ai-hf": [
+      "Gemma-4 12B/26B any-to-any统一架构霸榜",
+      "Kimi-K2.7-Code 256K+上下文窗口代码多模态",
+      "DeepSeek-V4-Pro 293万下载反映可靠推理需求",
+      "diffusiongemma-26B扩散+语言融合赋能HMER",
+      "MiniMax-M3国产多模态MoE中文文档OCR价值",
+      "FastContext-1.0-4B Explorer SubAgent缓解幻觉"
+    ],
+    "ai-community": [
+      "AI幻觉是架构问题非LLM bug引发辩论",
+      "9分钟实验验证会话关闭后记忆边界迁移",
+      "文件系统级Agent记忆架构解决上下文截断",
+      "浏览器历史感知Claude记忆完整架构开源",
+      "MCP工具安全护栏与Agent权限控制成焦点",
+      "嵌入空间结构特性超越文本→向量简化认知"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Context compaction is the new battleground for CLI tools.",
+      "Hallucination mitigation now uses constitutional architectures.",
+      "Claude Code leads with 7 research-relevant issues today.",
+      "Gemini CLI emphasizes open-source extensibility.",
+      "Multimodal integration remains uneven across all tools.",
+      "Nine tools compete in this multi-polar ecosystem."
+    ],
+    "ai-agents": [
+      "OpenClaw hit 500 issues and 500 PRs in 24 hours.",
+      "Session state management dominates technical discussions.",
+      "Memory trust architectures are actively debated.",
+      "Reasoning model output sanitization is a key gap.",
+      "444 open vs 56 closed issues shows backlog accumulation.",
+      "No releases cut despite high community velocity."
+    ],
+    "ai-trending": [
+      "NVIDIA SkillSpector gained 1,079 stars for agent security.",
+      "cognee and mem0 push persistent memory architectures.",
+      "PaddleOCR at 82,321 stars bridges documents to LLMs.",
+      "Agent-Reach surged 1,100 stars for perception expansion.",
+      "Kronos foundation model targets financial time-series.",
+      "Post-training alignment is a major trending focus."
+    ],
+    "ai-web": [
+      "Anthropic published two research articles on June 15.",
+      "Claude Sonnet 4.5 emotion concepts study advances interpretability.",
+      "NMR spectra multimodal chemistry research shows scientific progress.",
+      "Mechanistic interpretability complements alignment approaches.",
+      "OpenAI had zero new publications today.",
+      "Post-training alignment shapes internal representations."
+    ],
+    "ai-hn": [
+      "Fable 5 training methodology analyzed via reasoning traces.",
+      "Claude debugs Postgres alarm in long-context SRE workflow.",
+      "Regulatory scrutiny rises on Anthropic model withdrawals.",
+      "Minimal community engagement on trace analysis post.",
+      "OCR and HMER discussions absent from front page.",
+      "Long-context tool use coherence is demonstrated."
+    ],
+    "ai-hf": [
+      "google/gemma-4-12B-it introduces any-to-any architecture.",
+      "MiniMax-M3 targets multimodal agent capabilities.",
+      "DeepSeek-V4-Pro hit 2.9M downloads as closed-weight.",
+      "GGUF variants dominate 7 of 30 trending models.",
+      "No dedicated OCR or HMER models trended this week.",
+      "Quantization impact on hallucination behavior is unclear."
+    ],
+    "ai-community": [
+      "AI Doesn't Hallucinate, Your Architecture Does thesis gains traction.",
+      "MCP infrastructure emerges for reproducible agent behavior.",
+      "Loop engineering succeeds prompt engineering for agents.",
+      "3B parameter SLMs show promise for document understanding.",
+      "Fable 5 takedown sparks benchmark validity debates.",
+      "Architectural guardrails matter more than prompt engineering."
+    ]
+  }
+}
