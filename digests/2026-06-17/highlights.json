@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.179：上下文压缩致指令遗忘，多智能体规则传播断裂",
+      "OpenAI Codex rust-v0.141.0-alpha：共享Token预算，会话状态幻觉修复",
+      "Gemini CLI：thought泄漏修复，终端图像拖拽，AST感知工具链",
+      "Qwen Code v0.18.1-preview：12h会话崩溃，vision-bridge架构，/loop自主调度",
+      "OpenCode：模型切换脆弱性，加密推理失效，vision-bridge架构创新",
+      "Pi v0.79.5~6：DeepSeek V4兼容性，工具序列化统一，流式活性保证"
+    ],
+    "ai-agents": [
+      "OpenClaw #88504：多槽位记忆角色架构，长上下文分层记忆管理",
+      "OpenClaw #93620：MiniMax M3 reasoning_content跨轮次传递修复",
+      "OpenClaw #67420：13智能体并发OOM，记忆系统资源调度与后训练对齐",
+      "OpenClaw：466活跃Issues，上下文膨胀与溢出恢复系统性失效",
+      "OpenClaw：子智能体完成丢失、竞态条件、身份污染等可靠性边界",
+      "OpenClaw：从功能扩展转向可靠性加固，P0/P1幻觉类行为集中爆发"
+    ],
+    "ai-trending": [
+      "claude-mem 82,781 stars登顶：跨会话持久上下文压缩，信息遗忘破解",
+      "cognee+mem0：知识图谱+向量混合记忆架构成AI智能体标配",
+      "VoxCPM：tokenizer-free TTS，视觉-音频联合建模新范式",
+      "PaddleOCR 82,534 stars：100+语言，PDF/图像结构化提取标杆",
+      "caveman：token极简化65%削减，后训练推理成本优化",
+      "LEANN：97%存储节省，长上下文推理成本极限压缩"
+    ],
+    "ai-web": [
+      "Anthropic：40万Claude Code会话量化，领域expertise边际增益递减",
+      "Anthropic：调试占比腰斩，端到端agentic使用跃升25%价值估算",
+      "Anthropic-TCS 5万人合作：金融医疗强监管，输出可审计性要求",
+      "Anthropic：planning/execution人机分工，RLHF/RLAIF行为对齐验证",
+      "OpenAI：Deployment Simulation元数据，部署前模拟评估方法论",
+      "Anthropic安全立场：show don't tell，post-training对齐策略重申"
+    ],
+    "ai-hn": [
+      "Anthropic模型出口限制：对齐即政治工具，安全研究本质遭质疑",
+      "GLM-5.2：Long-Horizon定位，术语模糊引技术机制争议",
+      "DeepSeek V4 Pro：5% Claude成本，性价比叙事延续但零评论疲劳",
+      "Fable ban真相：越狱事件背后地缘政治，社区107分18评激辩",
+      "开源vs闭源：中国模型性价比与西方安全管制张力",
+      "GLM-5.2技术白皮书缺失：长上下文推理vs长程决策机制难辨"
+    ],
+    "ai-hf": [
+      "google/gemma-4-12B-it：首个any-to-any统一架构，像素级文本嵌入",
+      "google/diffusiongemma-26B：扩散生成+语言统一，公式逆向推理路径",
+      "moonshotai/Kimi-K2.7-Code：截图代码/公式/表格，HMER隐式OCR测试",
+      "MiniMaxAI/MiniMax-M3：agent+multimodal标签，涌现能力曲线早期研究",
+      "HauhauCS/Qwen3.6-35B-A3B：Uncensored激进微调，对齐移除幻觉对照",
+      "nvidia/LocateAnything-3B：3B参数视觉定位，多模态空间推理"
+    ],
+    "ai-community": [
+      "Dev.to #4：Fable 5危机，上下文层外置模型，Rent Intelligence Own Memory",
+      "Dev.to #22：RAG从Top-K到路由+记忆+证据校验，2023问题演进",
+      "Dev.to #1：AI检测器误判实证，Sloan案例量化可信度评估",
+      "Dev.to #3：347篇样本统计审计，LLM-as-judge系统性偏差",
+      "Dev.to #24：代理记忆存证不存道德，幻觉缓解可解释范式",
+      "Dev.to #29：.NET RAG跨语言分块，文档结构理解工程实现"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "All tools show fragility beyond ~100K tokens.",
+      "Claude Code v2.1.179 fixes context compaction bugs.",
+      "OpenAI Codex: 12 PRs on automation safety stack.",
+      "Qwen's /loop cloning is behavioral alignment advance.",
+      "Field shifting from features to infrastructure hardening.",
+      "Agent state propagation remains unsolved across tools."
+    ],
+    "ai-agents": [
+      "500+ issues/PRs but sparse research-relevant activity.",
+      "Context window bloat and overflow recovery flagged.",
+      "Phantom promises: hallucination-adjacent reliability issue.",
+      "Multi-agent orchestration fragility noted in pipeline.",
+      "No vision-language or reasoning architectures today.",
+      "v2026.6.8 releases omitted: infrastructure-only changes."
+    ],
+    "ai-trending": [
+      "OpenBMB/VoxCPM: 408 stars, tokenizer-free multilingual TTS.",
+      "PaddleOCR bridges document images to LLMs at 82K stars.",
+      "cognee memory platform: long-context persistence investment.",
+      "LEANN vector compression for agent memory retrieval.",
+      "stable-pretraining: nascent post-training alignment direction.",
+      "AwesomeOPD: on-policy distillation for efficient transfer."
+    ],
+    "ai-web": [
+      "Anthropic: ~400K Claude Code sessions study published.",
+      "Expertise amplifies AI: 25% task value rise, 50% less debug time.",
+      "Largest privacy-preserving human-AI collaboration study.",
+      "Core views on AI safety republished without updates.",
+      "OpenAI 'Deployment Simulation' slug: no content yet.",
+      "Agentic coding success measured via verifiable outputs."
+    ],
+    "ai-hn": [
+      "GLM-5.2 open weights target long-horizon tasks.",
+      "DeepSeek V4 Pro: 5% of Claude cost, zero discussion.",
+      "Wolfram Language v15: symbolic-neural AI assistant.",
+      "No posts on OCR/HMER or hallucination mitigation today.",
+      "Geopolitical access dominates over technical evaluation.",
+      "Minimal community engagement on long-context release."
+    ],
+    "ai-hf": [
+      "google/gemma-4-12B-it: 'any-to-any' multimodal paradigm.",
+      "MiniMax-M3 and Kimi-K2.7-Code intensify VLM competition.",
+      "DeepSeek-V4-Pro dominates open-weight reasoning engagement.",
+      "microsoft/FastContext-1.0-4B-SFT targets efficient long-context.",
+      "Aggressive 'uncensored' post-training variants proliferate.",
+      "No explicit OCR/HMER tags; VLMs subsume document tasks."
+    ],
+    "ai-community": [
+      "Fable 5 crisis: externalized memory systems now necessity.",
+      "Structured verification loops emerge for hallucination mitigation.",
+      "RAG evolution: evidence-checking beyond naive retrieval.",
+      "OCaml/Rust LLM runtime: new multimodal composition paradigms.",
+      "Sovereign local context layers resist provider disruption.",
+      "Criteria-check subagents separate proof from moral storage."
+    ]
+  }
+}
