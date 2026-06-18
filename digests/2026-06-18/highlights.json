@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.181多智能体协调危机集中爆发",
+      "OpenAI Codex rust-v0.141.0-alpha.5/6长上下文压缩与多智能体编排并进",
+      "Gemini CLI v0.48.0-preview.0原生终端图像输入突破",
+      "OpenCode v1.17.8自适应推理控制与超长上下文工程化",
+      "Pi 1M上下文适配推理强度分级精细化",
+      "Qwen Code v0.18.2/3视觉桥接务实化工具调用对齐"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 Issues/500 PRs上下文压力感知续接机制PR #85651",
+      "OpenClaw #93713已合并：已删除代理会话清理避免状态腐败",
+      "OpenClaw #93853修复本地嵌入端点路由错误保障RAG可靠性",
+      "OpenClaw #88992 message_tool_only模式幻觉式工具调用恢复",
+      "OpenClaw #85103模型回退链失效高优先级Issue",
+      "OpenClaw #25592 LLM推理状态泄漏安全边界突破"
+    ],
+    "ai-trending": [
+      "rlm递归语言模型推理库首次登榜支持多沙箱",
+      "UI-TARS-desktop +150 stars多模态Agent基础设施升温",
+      "RAGFlow长上下文与OCR文档智能双分类登榜",
+      "caveman token效率项目长上下文推理优化",
+      "mem0/claude-mem长上下文记忆与幻觉可靠性并行",
+      "AwesomeOPD On-Policy Distillation对齐与长上下文结合"
+    ],
+    "ai-web": [
+      "Anthropic 20篇网络安全全景披露Mythos Preview评估",
+      "Claude Code 40万会话研究：专家知识持久回报而非替代",
+      "Project Glasswing：AI协助保护关键软件防御倡议",
+      "Mythos三阶段能力评估：漏洞发现→利用→攻击链",
+      "OpenAI仅2篇Life Sci Bench索引无实质内容",
+      "Claude Code人机协作模式：人类规划AI执行价值升25%"
+    ],
+    "ai-hn": [
+      "白宫要求Anthropic零越狱引发Rice定理完备性讨论",
+      "OpenRouter Last Agent Standing多模型实时决策可靠性测试",
+      "Orion-2视觉智能体框架零评论反映工具饱和",
+      "Ångstrom用Claude Code自动化训练击败Meta UMA-OMC",
+      "Claude vs Grok机器人冲刺决策娱乐化讨论126评论",
+      "Anthropic黑客 calming the... 条目截断安全叙事"
+    ],
+    "ai-community": [
+      "上下文窗口测量诊断框架：模型变笨非MCP之过",
+      "模块化指令架构动态加载压缩上下文token 7赞",
+      "Stateful Python Kernels VLM空间推理迭代草图绘制",
+      "premortem机制引入Claude/Codex代码审查35赞",
+      "知识权威层区分RAG与内部不可变知识源防幻觉",
+      "纯SNN 1.088B参数规模化实验新型架构效率边界"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.181 released with multi-agent reliability fixes.",
+      "OpenAI Codex and Claude Code compete on closed-loop agent orchestration.",
+      "Gemini CLI emphasizes multimodal input expansion and structured evaluation.",
+      "OpenCode and Pi serve as polyglot model routers with extreme context scaling.",
+      "Kimi CLI and DeepSeek TUI occupy specialized agent niches.",
+      "All 9 tools exhibit context management failures and autonomy drift."
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 issues, 500 PRs, zero releases in 24 hours.",
+      "490 open issues indicate heavy maintenance mode on core architecture.",
+      "59 merged PRs focus on session-state reliability and context management.",
+      "Research signals cluster around context window optimization.",
+      "Hallucination-adjacent failures: spurious message delivery, tool misrouting.",
+      "Silent content loss detected in messaging channel integrity fixes."
+    ],
+    "ai-trending": [
+      "PaddleOCR dominates with 82,820 stars for document-to-LLM pipelines.",
+      "UI-TARS-desktop from ByteDance open-sources multimodal desktop agents.",
+      "Recursive Language Models (rlm) library offers plug-and-play reasoning.",
+      "TimesFM from Google Research advances temporal reasoning foundation models.",
+      "cognee and graphify accelerate knowledge-graph-based agent memory.",
+      "Community moves beyond naive RAG to structured persistent memory."
+    ],
+    "ai-web": [
+      "Anthropic opens Seoul office, NAVER deploys Claude Code to thousands.",
+      "Frontier Red Team page reveals systematic cyber capability evaluations.",
+      "Claude Code expertise paper analyzes ~400,000 sessions with privacy preservation.",
+      "OpenAI's Life Sci Bench hints at biological reasoning benchmark release.",
+      "Agentic coding paper finds human-AI task allocation expertise gradients.",
+      "Anthropic's transparency initiative covers N-day and zero-day exploit research."
+    ],
+    "ai-hn": [
+      "OpenRouter benchmarks Claude vs Grok in safety-critical adversarial scenarios.",
+      "Ångstrom case study: Claude Code automated training outperformed Meta's UMA-OMC.",
+      "Liquid AI's frontier small model training insights posted, zero comments.",
+      "Visual Agents with Code Mode bridges VLM to practical automation.",
+      "Government alignment pressures dominate over algorithmic advances.",
+      "Community fixates on Anthropic/White House jailbreak disputes."
+    ],
+    "ai-community": [
+      "Empirical measurement of context window degradation mid-session published.",
+      "Modular instruction architectures reduce token overhead significantly.",
+      "Stateful Python kernels enable iterative VLM spatial reasoning.",
+      "'Curse of depth' paper explains why deeper LLMs struggle at reasoning.",
+      "Premortem-based review workflows emerge as alignment tools.",
+      "Structured evaluation methods advance hallucination mitigation practice."
+    ]
+  }
+}
