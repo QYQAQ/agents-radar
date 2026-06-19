@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code聚焦约束推理幻觉与MCP工具脆弱性",
+      "OpenAI Codex rust-v0.141.0发布，长上下文checkpoint受关注",
+      "Gemini CLI v0.47.0强化评估基础设施与AST感知",
+      "GitHub Copilot CLI曝会话污染与潜意识Agent逃逸风险",
+      "OpenCode目标驱动架构探索下一代Agent范式",
+      "CodeWhale v0.8.62品牌迁移，权限引擎引关注"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 Issues仅5%解决率，核心架构可靠性未收敛",
+      "PR #94720修复压缩旋转时丢失助手回复的记忆一致性bug",
+      "PR #94719消除硬编码版本防止OAuth认证失败",
+      "PR #90885修复压缩模型别名解析错误",
+      "PR #75336新增压缩后标识符存活验证",
+      "消息投递可靠性与子代理状态污染成技术债务焦点"
+    ],
+    "ai-trending": [
+      "DeusData/codebase-memory-mcp单日+2,322 stars登顶",
+      "Lightricks/LTX-2音视频生成模型开源延续多模态势头",
+      "yifanfeng97/Hyper-Extract超图抽取助力复杂文档理解",
+      "alibaba/zvec闪电级进程内向量库挑战现有方案",
+      "VectifyAI/PageIndex无向量推理RAG形成技术路线张力",
+      "zai-org/GLM-5 Agentic Engineering转型暗示对齐迁移"
+    ],
+    "ai-web": [
+      "Anthropic BioMysteryBench首次评估生物信息学全流程科研能力",
+      "Project Fetch Phase Two Claude Opus 4.7物理世界交互提速20倍",
+      "Anthropic首尔设办公室签署韩国AI安全MOU纳入多语言评估",
+      "OpenAI健康智能体与企业级控制功能暗示垂直场景治理转向",
+      "BioMysteryBench设计哲学强调self-contained与human-vetted质控",
+      "Claude从辅助工具到自主执行体的范式跃迁标志"
+    ],
+    "ai-hn": [
+      "Are You in the Weights?检测个人数据是否出现在模型权重中",
+      "Weibo VibeThinker-3B引发小模型基准测试有效性核心争议",
+      "Anthropic Mythos/Fable 5访问限制触发出口管制政策焦虑",
+      "缓存感知推理路由量化LLM成本节约的长上下文优化",
+      "LLM引导Helion内核自动调优从分钟到秒的推理加速",
+      "Artificial Analysis Briefcase框架指向知识工作真实能力测量"
+    ],
+    "ai-hf": [
+      "google/gemma-4-12B-it any-to-any统一架构处理图文音视频",
+      "nvidia/LocateAnything-3B显式坐标约束缓解视觉幻觉",
+      "MiniMax-M3 MoE多模态推理隐含数学公式理解潜力",
+      "moonshotai/Kimi-K2.7-Code代码图表LaTeX渲染图理解",
+      "google/diffusiongemma-26B-A4B-it扩散+语言统一赋能生成式OCR",
+      "prefeitura-rio/Rio-3.5-Open-397B 397B超大规模MoE开源"
+    ],
+    "ai-community": [
+      "推测解码加速1.9x但静默改变输出分布，评估失效",
+      "跨层一致性作为Agent故障统一分析框架新理论",
+      "多步骤LLM流水线级联错误与自动重试机制实践",
+      "三层判断引擎处理高相似度但结论相异的RAG幻觉",
+      "深度诅咒论文引发Transformer深层表征退化关注",
+      "本地LLM与云端模型真实编码任务评测对比"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code emphasizes skill-based multimodal design refinement.",
+      "OpenAI Codex prioritizes token-budget governance for long-context safety.",
+      "Gemini CLI invests in structured evaluation infrastructure.",
+      "Emergent tools pioneer explicit goal-directed reasoning.",
+      "System-level reliability is the new research frontier.",
+      "Infrastructure concerns are now first-class alignment prerequisites."
+    ],
+    "ai-agents": [
+      "OpenClaw shows high engineering velocity but significant instability.",
+      "500 active issues/PRs reflect unresolved technical debt.",
+      "Core challenges in session state management persist.",
+      "Vision-language routing validation has active bug reports.",
+      "Reasoning loop continuity is a critical research area.",
+      "Context compaction exhibits in-flight fixes for reliability."
+    ],
+    "ai-trending": [
+      "PaddleOCR dominates with 82,988 stars for OCR-to-RAG pipelines.",
+      "GLM-5 from Zhipu AI emerged with 202 new stars.",
+      "LTX-2 is a notable audio-video generative model release.",
+      "Hyper-Extract gained 124 stars for structured knowledge extraction.",
+      "TimesFM gained 844 stars for temporal reasoning foundations.",
+      "PageIndex offers vectorless reasoning-based RAG indexing."
+    ],
+    "ai-web": [
+      "Claude Opus 4.7 achieved 20× speed improvement on robotic tasks.",
+      "BioMysteryBench advances long-context literature synthesis evaluation.",
+      "Multimodal reasoning shows uneven trajectory in physical control.",
+      "Seoul office introduces multilingual safety evaluation priority.",
+      "BioMysteryBench tests figure interpretation and cross-modal integration.",
+      "OpenAI releases provided no research-extractable signals."
+    ],
+    "ai-hn": [
+      "VibeThinker-3B reignites benchmark validity debates for small models.",
+      "Cache-aware inference routing quantifies LLM cost savings.",
+      "Are You in the Weights? detects training data membership.",
+      "Benchmark gaming concerns distort small model evaluations.",
+      "Community shows fatigue with benchmark controversy cycles.",
+      "Anthropic export control dominates policy discussions."
+    ],
+    "ai-hf": [
+      "Gemma-4 family achieves any-to-any multimodal reasoning status.",
+      "DeepSeek V4-Pro dominates raw engagement metrics.",
+      "FastContext-1.0-4B-SFT targets long-context efficiency explicitly.",
+      "LocateAnything-3B advances spatial grounding for visual understanding.",
+      "DiffusionGemma-26B merges text generation with visual understanding.",
+      "Qwen3.6 fine-tunes experiment with post-training alignment boundaries."
+    ],
+    "ai-community": [
+      "Speculative decoding can silently corrupt output quality.",
+      "Agent failures are cross-layer coherence violations.",
+      "Depth curse in LLMs limits long-context reasoning.",
+      "Private inference raises multimodal sensitive data questions.",
+      "Cross-layer coherence framework applies to multimodal pipelines.",
+      "OCR/HMER discussions remain niche in community discourse."
+    ]
+  }
+}
