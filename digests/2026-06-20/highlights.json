@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.183：10个研究级Issues聚焦长上下文压缩与可靠性",
+      "OpenAI Codex连发3个预发布版本，10个PR攻坚多智能体递归控制",
+      "Gemini CLI 8个PR推进工具使用对齐与thinking字段标准化",
+      "Qwen Code/Pi/OpenCode各10个PR，共同诉求token用量实时可见",
+      "Kimi CLI研究活跃度极低，仅1个间接PR",
+      "社区共性瓶颈：长上下文稳定性从'能跑'转向'可控'"
+    ],
+    "ai-agents": [
+      "OpenClaw #95128：修复图像块压缩计数零权重bug，含图会话不再撞墙",
+      "OpenClaw #95139：Ollama推理能力发现与thinking层级全展示",
+      "500 Issues+500 PRs但研究信号稀疏，工程迭代主导",
+      "session state可靠性焦虑：多个P0/P1崩溃未闭环",
+      "v2026.6.9-beta.1纯产品层更新，Telegram富文本优化",
+      "视觉-语言修复与长上下文压缩机制成唯二研究相关点"
+    ],
+    "ai-trending": [
+      "headroom +4005 stars：预压缩RAG块实现60-95% token削减",
+      "LTX-2 +196 stars：音频-视频联合生成，时序-视觉-听觉对齐",
+      "OpenMontage +156 stars：首个开源agentic视频生产，500+技能",
+      "codebase-memory-mcp/graphify：知识图谱成结构化记忆新范式",
+      "timesfm持续受关注：预训练架构对序列建模有借鉴",
+      "PageIndex 33K stars：无向量推理式RAG，跳过敏密检索"
+    ],
+    "ai-web": [
+      "Anthropic发布40万会话agentic coding实证研究：规划-执行分工量化",
+      "调试占比7个月下降近半，暗示'委托-验收'范式转移或隐性幻觉风险",
+      "任务价值评估方法论：与Upwork岗位对标，平均提升25%",
+      "多职业成功率趋同，专家与中级差距有限暗示能力天花板",
+      "John Jumper加盟Anthropic，科学推理与AI安全交叉",
+      "OpenAI今日无新增研究，发布节奏持续放缓"
+    ],
+    "ai-hn": [
+      "GPT-5.5幻觉率3倍于GLM-5.2，规模与幻觉反直觉关系引关注",
+      "John Jumper加盟Anthropic获74分57评论，科学推理成焦点",
+      "MiniMax M3 vs GLM 5.2自主编码基准对比，多模态推理评估",
+      "GLM-5.2击败Fable 5网站设计，视觉-语言结构化输出竞争",
+      "Anthropic Agent SDK计费策略调整，社区对商业叙事警惕",
+      "Mythos早期用户访问政策受关注，技术实用主义主导"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro近5000点赞领跑，MoE架构对话能力参考",
+      "gemma-4-12B-it：any-to-any统一多模态，OCR/HMER统一编码基础",
+      "MiniMax-M3：MoE视觉语言，专家路由机制研究",
+      "Kimi-K2.7-Code：图像输入代码生成，HMER公式→LaTeX迁移",
+      "Microsoft FastContext-1.0-4B：长上下文压缩与探索子代理",
+      "diffusiongemma-26B：扩散语言模型，迭代去噪缓解多模态幻觉"
+    ],
+    "ai-community": [
+      "幻觉检测需系统化：从主观感受转向可度量基准",
+      "证据绑定机制：AI摘要强制附原始引用，服务可验证性",
+      "AIClaw长对话压缩：关键信息保留策略",
+      "Skills over System Prompts：后训练对齐范式讨论",
+      "对抗性AI Council：多智能体辩论缓解幻觉实践",
+      "RAG验证层：开发者自证被自己的语料库纠错两次"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.183 fixes recursive spawning bug",
+      "OpenAI Codex adds checkpoint-based session continuity",
+      "Gemini CLI emphasizes systematic behavioral evaluation",
+      "Kimi Code CLI shifts to thin client architecture",
+      "headroom gains 4005 stars for 60-95% token reduction",
+      "Thick vs thin runtime divide defines ecosystem split"
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 issues/PRs but only 43 merged in 24h",
+      "Long-context fragility: compaction timeouts persist",
+      "Reasoning-tag normalization across MiniMax and Anthropic",
+      "Stabilization phase for 2026.6.x release cycle",
+      "Vision-language limited to incremental image fixes",
+      "No visible hallucination mitigation work today"
+    ],
+    "ai-trending": [
+      "headroom: 4005 stars, 60-95% token reduction",
+      "PaddleOCR dominates document intelligence at 83075 stars",
+      "graphify signals knowledge graph context shift",
+      "codebase-memory-mcp enables structured code reasoning",
+      "LlamaFactory sustains post-training alignment investment",
+      "HMER niche remains underrepresented in open source"
+    ],
+    "ai-web": [
+      "Anthropic publishes 400000-session Claude Code study",
+      "Experts delegate more to AI, not less",
+      "50% debugging time reduction over seven months",
+      "Privacy-preserving real-world evaluation paradigm introduced",
+      "Structural shift to end-to-end agentic use",
+      "Novel task-grounded success metrics for alignment"
+    ],
+    "ai-hn": [
+      "GPT-5.5 hallucinates 3x more than GLM-5.2 claim",
+      "DFlash/Spec V2 speculative decoding advances",
+      "John Jumper joins Anthropic for scientific reasoning",
+      "GLM-5.2 challenges closed models in coding tasks",
+      "No long-context architecture discussion today",
+      "No alignment training paradigm posts today"
+    ],
+    "ai-hf": [
+      "google/gemma-4-12B-it: first any-to-any architecture",
+      "MiniMax-M3: native multimodal MoE with agents",
+      "Kimi-K2.7-Code: long-context code+VLM hybrid",
+      "diffusiongemma-26B: diffusion-based language modeling",
+      "FastContext-1.0-4B-SFT targets efficient long-context",
+      "Qwen3.6 proliferation raises safety eval concerns"
+    ],
+    "ai-community": [
+      "Hallucination detection moves beyond vibe checks",
+      "Evidence-bound reports with attribution mechanisms",
+      "AIClaw compresses long agent conversations",
+      "RAG verification layers catch ungrounded claims",
+      "Skills-over-prompts alignment architecture emerges",
+      "Adversarial debate frameworks improve output reliability"
+    ]
+  }
+}
