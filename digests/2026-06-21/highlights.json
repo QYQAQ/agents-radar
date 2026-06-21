@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 系统提示衰减与代理递归失控深层缺陷暴露",
+      "OpenAI Codex rust-v0.142.0-alpha.7 发布世界状态模型与 MCP 沙箱回滚",
+      "Qwen Code v0.18.4 语音多模态突破与输入验证硬化密集修复",
+      "DeepSeek TUI v0.8.63 Token 预算调节器与子智能体控制开关",
+      "OpenCode v1.17.9 agent teams 与推理动态调控快速迭代",
+      "Pi v0.79.9 thinking level 映射与 instructions 字段协议收敛"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 Issues/500 PRs 高动能高债务，模型推理内容泄露安全事件",
+      "#95434 子代理 modelOverride 未持久化致推理模型路由回退缺陷",
+      "#95414 本地模型 JSON 工具调用键名尾随空格 schema 验证失败修复",
+      "#92665 LiteLLM 代理 Anthropic cacheRetention 识别恢复长上下文缓存",
+      "#90703 OpenAI 兼容推理模型 xhigh thinking 层级扩展支持",
+      "#86655 Claude-bridge 多模态 Agent 架构新增应用"
+    ],
+    "ai-trending": [
+      "headroom +3,795 stars 60-95% token 压缩率长上下文成本优化",
+      "codebase-memory-mcp +1,271 stars 代码库持久知识图毫秒级查询",
+      "VectifyAI/PageIndex 33,247 stars 无向量推理替代嵌入 RAG 新范式",
+      "LlamaIndex 50,243 stars 自定位文档 Agent 与 OCR 平台",
+      "LlamaFactory 持续高活跃 Post-training 对齐基础设施",
+      "testtimescaling 推理时计算扩展替代训练时对齐迁移趋势"
+    ],
+    "ai-hn": [
+      "ArgusRed post-training 渗透测试替代拒绝对齐争议 69 分 30 评论",
+      "Claude Code 全磁盘扫描过度权限隐私问题社区焦虑焦点",
+      "GLM-5.2 网页设计击败 Fable 5 开源多模态能力评测",
+      "John Jumper DeepMind 跳槽 Anthropic 蛋白质预测与 LLM 交叉",
+      "Elon Musk 与中国 CEO 多模态前沿能力国际竞争时间线分歧",
+      "开源前沿宣称评测方法论与实际落地差距社区审慎态度"
+    ],
+    "ai-hf": [
+      "google/gemma-4-12B-it 1,106 赞原生 any-to-any 多模态统一架构",
+      "DeepSeek-V4-Pro 近 5000 赞 MoE 长上下文推理基线",
+      "moonshotai/Kimi-K2.7-Code 929 赞视觉 token 压缩高效多模态推理",
+      "nvidia/LocateAnything-3B 2,216 赞视觉 grounding 幻觉缓解评测工具",
+      "microsoft/FastContext-1.0-4B-SFT 长上下文 SFT 后训练对齐专用",
+      "datalab-to/lift 86 赞 PDF 文档理解 OCR 后处理早期基线"
+    ],
+    "ai-community": [
+      "AIClaw 开源长 Agent 对话摘要保留压缩机制实现",
+      "Claude Code Team 多智能体层级过程监督工程范式",
+      "Verify Layer RAG 幻觉捕获模型与用户双重错误实证",
+      "Slow Decay 自主系统渐进行为漂移无告警检测方法",
+      "KV cache 与 PagedAttention 长上下文推理基础设施详解",
+      "gzip-LM 轻量语言模型与 LLM 领域知识结合根本挑战"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code faces agent misalignment and infinite recursion",
+      "OpenAI Codex invests in long-context lineage tracking",
+      "DeepSeek TUI suffers self-authorization hallucinations",
+      "Qwen Code focuses on input validation research",
+      "Gemini CLI expands multimodal capabilities",
+      "Headroom achieves 60-95% token reduction today"
+    ],
+    "ai-agents": [
+      "OpenClaw has 500 issues, 500 PRs, low merge throughput",
+      "P1 issues: reasoning leakage, thinking signature invalidation",
+      "Context compaction failures affect model behavior integrity",
+      "Autofix pipeline uses Claude Agent SDK for verification",
+      "Heavy stabilization phase with session state debt",
+      "Only 20 closed issues against 471 open PRs"
+    ],
+    "ai-trending": [
+      "Headroom gains 3,795 stars with 60-95% token reduction",
+      "DeusData/codebase-memory-mcp gets 1,271 stars for sub-ms indexing",
+      "VectifyAI/PageIndex pioneers vectorless reasoning-based RAG",
+      "Bytedance/deer-flow reaches 72,005 stars as SuperAgent harness",
+      "PaddleOCR dominates at 83,137 stars for document intelligence",
+      "PageIndex eliminates 97% embedding storage costs"
+    ],
+    "ai-hn": [
+      "Anthropic Project Fetch Phase Two advances long-context",
+      "Post-trained model pen tests instead of refusing discussed",
+      "AutoJack vulnerability exposes agent RCE exploits",
+      "GLM-5.2 vs Fable 5 benchmarks intensify multimodal race",
+      "Seven methods for steering Claude Code skills published",
+      "Long-horizon agent sandboxing gaps revealed"
+    ],
+    "ai-hf": [
+      "Google Gemma-4 dominates with any-to-any architecture",
+      "DeepSeek-V4-Pro leads with 4,985 likes, 2.8M downloads",
+      "MiniMax-M3 advances vision-language integration",
+      "Kimi-K2.7-Code extends context for document understanding",
+      "Datalab-to/lift purpose-built for PDF document analysis",
+      "GGUF quantized variants proliferate for efficient deployment"
+    ],
+    "ai-community": [
+      "Verify layer catches both hallucinations and corpus errors",
+      "AI memory should be product state not prompt trick",
+      "Compression-based methods debated as language models",
+      "Human-in-the-loop validation surfaces alignment issues",
+      "Long-context memory architecture actively debated",
+      "RAG hallucination mitigation builds on Karpathy pattern"
+    ]
+  }
+}
