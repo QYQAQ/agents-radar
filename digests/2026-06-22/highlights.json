@@ -55,6 +55,14 @@
       "15 种 AI 代码重复错误系统性幻觉归类",
       "MCP 协议安全边界与工具调用风险",
       "em-dash 五模型扫描揭示输出字符分布偏差"
+    ],
+    "ai-weekly": [
+      "Anthropic情绪表征可解释性：定位RLHF神经元靶点",
+      "Claude化学家：NMR光谱跨模态推理系统",
+      "40万会话验证Agentic Coding人机分工经济学",
+      "20篇网络安全研究：Mythos攻防+Glasswing防御",
+      "BioMysteryBench：长文献多步假设推理基准",
+      "Project Fetch Phase Two：物理任务速度超人类20倍"
     ]
   },
   "en": {
@@ -113,6 +121,14 @@
       "gzip-as-LM offers minimalist compression-based intelligence.",
       "Vibe coding reframed as axis, not level.",
       "Constraint enforcement affects model alignment behavior."
+    ],
+    "ai-weekly": [
+      "Anthropic quantifies 400K Claude Code session economics",
+      "White House forces Mythos/Fable model shutdown crisis",
+      "BioMysteryBench tests long-context scientific reasoning",
+      "Geometric emotion concepts mapped in Claude Sonnet 4.5",
+      "Claude interprets NMR spectra across molecular modalities",
+      "John Jumper AlphaFold Nobel laureate activity noted"
     ]
   }
 }
