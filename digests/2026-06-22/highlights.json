@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 12+ PR 密集重构 SQLite 存储架构",
+      "Claude Code 长上下文稳定性危机用户侧爆发",
+      "Qwen Code v0.18.5 多模态 Vision Bridge 积极扩展",
+      "DeepSeek TUI v0.8.63 品牌迁移与 Token 预算调节",
+      "Kimi Code CLI 24 小时零活动引生态关注",
+      "OpenCode 幻觉缓解层与系统提示不可变性探索"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 PR 但核心研究进展有限",
+      "Reasoning Leakage #91804 回归触及推理机制",
+      "Prompt Cache #95305 修复长上下文前缀稳定性",
+      "Tool Search 幻觉 #92273 致记忆系统丢失",
+      "v2026.6.9 内存向量存储静默迁移致数据丢失",
+      "session state 基础设施债务沉重对齐层缓慢"
+    ],
+    "ai-trending": [
+      "deer-flow 72K+ stars 长时程 SuperAgent 架构登榜",
+      "headroom 与 codebase-memory-mcp 解决长上下文成本",
+      "PaddleOCR 83K stars 图像 PDF 转结构化数据",
+      "PageIndex 33K stars 无向量推理文档索引挑战 RAG",
+      "synthetic-rag-index 缩减 90%+ 索引体积",
+      "系统提示词泄露仓库反映对齐安全紧迫性"
+    ],
+    "ai-web": [
+      "OpenAI 新增 Samsung Codex 企业部署案例",
+      "Anthropic 零新增或处重大发布前积累期",
+      "Claude 身份验证争议折射人对齐机制",
+      "三星大规模工业代码生成可靠性待观察",
+      "index 分类确认产品叙事非研究披露",
+      "历史关注 200K+ 长上下文与 Constitutional AI"
+    ],
+    "ai-hn": [
+      "Recall 本地项目记忆工具 59 分探索跨会话一致性",
+      "LLM 评委给未打开文件 agent 打高分引评估危机",
+      "Apertus 主权 AI 154 分社区质疑技术细节不足",
+      "Claude 身份验证 538 分分裂安全与隐私",
+      "开源替代方案对齐质量差距争议冷淡",
+      "AI agent 安全评估与长上下文记忆受关注"
+    ],
+    "ai-hf": [
+      "gemma-4-12B-it 1.8M 下载 any-to-any 统一架构",
+      "Qwen3.6-35B-A3B 514 万下载 MoE+视觉冠军",
+      "Kimi-K2.7-Code 36 万下载视觉代码联合推理",
+      "Uncensored 版本 396 万下载揭示对齐张力",
+      "FastContext-1.0-4B-SFT 长上下文 SFT 优化",
+      "lift 516 下载 PDF 版面分析 OCR+VLM 融合"
+    ],
+    "ai-community": [
+      "Kitana 字典遍历替代 token 预测架构创新",
+      "Memory Agent 可控遗忘三 bug 关联幻觉缓解",
+      "AARM 非 LLM 权限控制解耦安全与推理",
+      "15 种 AI 代码重复错误系统性幻觉归类",
+      "MCP 协议安全边界与工具调用风险",
+      "em-dash 五模型扫描揭示输出字符分布偏差"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "MCP emerges as interoperability standard across tools.",
+      "Context-aware meta-cognition is the active frontier.",
+      "No tool offers robust cross-platform sandbox parity.",
+      "Local LLM deployment remains second-class to cloud APIs.",
+      "Structured reasoning transparency draws heavy investment.",
+      "Agent reliability and tool-use hallucination are universal pain points."
+    ],
+    "ai-agents": [
+      "OpenClaw has 478 open issues, 479 open PRs backlog.",
+      "Two releases shipped: v2026.6.9 and v2026.6.10-beta.1.",
+      "Memory store relocation broke upgrades silently.",
+      "Session-state management regressions persist.",
+      "Reasoning leakage and raw subagent output surface to users.",
+      "Context window management failures are critical."
+    ],
+    "ai-trending": [
+      "Deer-Flow: long-horizon SuperAgent for multi-hour tasks.",
+      "Headroom gains +2624 stars with 60-95% token compression.",
+      "Cognee and Codebase-Memory-MCP converge on knowledge graphs.",
+      "PaddleOCR bridges visual documents to LLM-ready data.",
+      "Alignment tooling consolidates into larger frameworks.",
+      "No standalone RLHF/DPO repositories trended today."
+    ],
+    "ai-web": [
+      "OpenAI published one enterprise deployment article only.",
+      "Anthropic published zero new articles today.",
+      "Strategic pause suspected before summer releases.",
+      "Claude 4 series: 200K+ context, extended thinking.",
+      "Monitor for ICML 2026 preprints in July.",
+      "Shift toward partner-exclusive disclosures evident."
+    ],
+    "ai-hn": [
+      "LLM-as-judge scored 0.85 without opening target file.",
+      "Apertus sovereign model sparks open data skepticism.",
+      "Local-first AI tooling discussion trends on HN.",
+      "No long-context architecture posts on front page.",
+      "No OCR/HMER or multimodal training discussions today.",
+      "HN drifts toward product over foundational research."
+    ],
+    "ai-hf": [
+      "Gemma 4 debuts any-to-any unified architecture.",
+      "DeepSeek-V4-Pro hits 5K likes, 2.6M downloads.",
+      "FastContext-1.0-4B-SFT targets long-context efficiency.",
+      "datalab-to/lift is PDF-native image-text-to-text model.",
+      "Qwen ecosystem fragments into extensive fine-tuning forks.",
+      "LocateAnything-3B drives open multimodal capabilities."
+    ],
+    "ai-community": [
+      "Dictionary traversal proposed to replace token prediction.",
+      "Agentic security and control mechanisms debated heavily.",
+      "Memory architecture explores forgetting and hybrid retrieval.",
+      "gzip-as-LM offers minimalist compression-based intelligence.",
+      "Vibe coding reframed as axis, not level.",
+      "Constraint enforcement affects model alignment behavior."
+    ]
+  }
+}
