@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 40万会话实证研究：专家反而让AI承担更多执行",
+      "Codex rust-v0.142.0发布，工具调用安全成焦点",
+      "Gemini CLI 10条PR中9条研究级，活跃度并列第一",
+      "OpenCode修复image_url回归，多模态输入防御收紧",
+      "DeepSeek TUI v0.8.64发布，长上下文状态管理受关注",
+      "Kimi CLI v1.48.0更新，研究级议题占比67%"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.6.10-beta.2发布，但无研究性变更",
+      "PR #76806提出irreducible overflow检测，触及推理可靠性",
+      "PR #78521工具结果安全边界包装，强化agent安全",
+      "PR #95218限制JSON响应16MiB，防长上下文OOM",
+      "PR #95614保护人类笔记不被记忆覆盖，涉及人机协同",
+      "项目处于维护稳定性优先于研究创新阶段"
+    ],
+    "ai-trending": [
+      "Deer-Flow +738 stars，字节开源长时程SuperAgent",
+      "codebase-memory-mcp +1185 stars，毫秒级代码知识图谱",
+      "PageIndex提出Vectorless推理RAG，跳过向量检索",
+      "LightThinker EMNLP 2025逐步思维压缩，减推理链长度",
+      "OpenMontage +2938 stars，12条多模态pipeline",
+      "stable-pretraining可靠预训练库，训练推理协同优化"
+    ],
+    "ai-web": [
+      "Anthropic 40万会话研究：任务价值7个月平均提升25%",
+      "Anthropic 2亿美元盖茨基金会合作，AI公益部署",
+      "Claude Code发现专家悖论：expertise越高AI承担越多",
+      "人机决策What-How不对称性，认知劳动层级化分工",
+      "成功率职业扁平化，工具降低准入门槛",
+      "OpenAI仅元数据更新，无实质研究内容"
+    ],
+    "ai-hn": [
+      "Claude Code Extended Thinking被质疑非真实思维链，270分",
+      "GLM-5.2本地运行指南，长上下文推理民主化",
+      "GLM-5.2 agentic评测超越GPT-5.5，但互动冷清",
+      "OpenAI与Getty图像版权协议，视觉语言grounding",
+      "Codex日志bug致SSD损坏，生产级稳定性受质疑",
+      "社区对推理模型内部机制可信度激烈讨论"
+    ],
+    "ai-hf": [
+      "Gemma-4 12B any-to-any架构，多模态统一里程碑",
+      "MiniMax-M3 1208赞，新兴VLM架构引关注",
+      "Kimi-K2.7-Code 962赞，视觉代码理解专用模型",
+      "NVIDIA LocateAnything-3B 2291赞，视觉定位核心工具",
+      "百度Unlimited-OCR 156赞，突破文档长度约束",
+      "DeepSeek-V4-Pro 5000+赞，MoE架构对话优化基座"
+    ],
+    "ai-community": [
+      "RAG faithfulness metrics被揭测量复制粘贴而非忠实性",
+      "稀疏KV缓存将注意力复杂度降为非二次增长",
+      "Agent记忆难点在遗忘，非记住",
+      "自纠正检索循环设计，扩展多轮文档推理",
+      "信任建模为多维向量，构建可审计推理链",
+      "跨46仓库知识图谱构建，HMER图表示学习借鉴"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code and Codex lead vertically-integrated safety-heavy approaches.",
+      "Gemini, Kimi, Qwen pursue model-native CLI strategies.",
+      "OpenCode, Pi, DeepSeek TUI are model-agnostic extensible alternatives.",
+      "Long-context reliability gap drives engineering investment across all tools.",
+      "Hallucination mitigation shifted to architectural interventions.",
+      "No mature OCR/HMER or advanced multimodal document understanding yet."
+    ],
+    "ai-agents": [
+      "OpenClaw: 265 issues, 500 PRs in 24 hours high velocity.",
+      "Tool-call ID sanitization failures affect output correctness.",
+      "Context compaction loops threaten long-context reliability.",
+      "Fast mode release v2026.6.10-beta.2 is product-oriented.",
+      "No vision-language or reasoning architecture updates today.",
+      "Session state and message delivery dominate infrastructure work."
+    ],
+    "ai-trending": [
+      "DeerFlow +738 stars: long-horizon agent reasoning with memory.",
+      "PaddleOCR 83,320 stars bridges images/PDFs to LLMs.",
+      "VectifyAI/PageIndex 33,294 stars: vectorless reasoning-based RAG.",
+      "LightThinker's EMNLP 2025 thinking compression trending.",
+      "DeusData MCP server +1,185 stars: codebase knowledge graphs.",
+      "Test-time scaling survey repositories signal active community investment."
+    ],
+    "ai-web": [
+      "Anthropic publishes 400K session agentic coding study.",
+      "Expertise amplifies AI utility in human-AI complementarity finding.",
+      "Gates Foundation partnership targets high-stakes low-resource deployment.",
+      "Seven-month longitudinal data on agentic workflow evolution.",
+      "OpenAI's Daybreak URL suggests security initiative, no research signals.",
+      "Real-world usage patterns inform reward modeling implications."
+    ],
+    "ai-hn": [
+      "Claude Code Extended Thinking authenticity questioned, 270 points.",
+      "GLM-5.2 local deployment via Unsloth enables reproducible research.",
+      "Displayed reasoning traces may be post-hoc not genuine.",
+      "Major interpretability implications for chain-of-trust methodologies.",
+      "Community skepticism toward vendor transparency claims intense.",
+      "No OCR/HMER or post-training alignment discussion on front page."
+    ],
+    "ai-hf": [
+      "baidu/Unlimited-OCR targets unlimited-length document recognition.",
+      "google/diffusiongemma-26B-A4B-it introduces diffusion multimodal architecture.",
+      "microsoft/FastContext-1.0-4B-SFT for long-context subagent exploration.",
+      "nvidia/LocateAnything-3B advances grounding for hallucination mitigation.",
+      "datalab-to/lift Qwen3.5-based PDF structured extraction model.",
+      "Strong momentum toward unified multimodal reasoning with calibrated confidence."
+    ],
+    "ai-community": [
+      "Typed provenance vector-space trust model for agent chains.",
+      "RAG faithfulness metrics fail to catch confidently wrong outputs.",
+      "Agent memory architecture: forgetting and stale memory detection.",
+      "Sparse KV caches discussed for long-context scaling.",
+      "Provenance tracking for multi-step reasoning pipelines.",
+      "Red-teaming benchmarks could generalize to visual reasoning evaluation."
+    ]
+  }
+}
