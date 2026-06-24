@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.187推凭证隔离与组织模型限制",
+      "OpenAI Codex rust-v0.143.0-alpha连发7个alpha版本",
+      "Gemini CLI思维链泄漏与安全对齐成焦点",
+      "Qwen Code v0.19.1优化MCP资源与整数严格化",
+      "OpenCode 9 PRs集中修复GC崩溃与状态一致性",
+      "Pi v0.80.x重构API致多提供商断裂"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 PRs/187 Issues但合并率仅28%",
+      "SOUL.md自进化机制进入代码审查阶段",
+      "Anthropic thinking块签名验证出现严重回归",
+      "OpenAI/DeepSeek双路径缓存前缀抖动暴露",
+      "per-agent env合约解决运行时安全边界",
+      "prompt cache系统性缺陷威胁长工具调用链"
+    ],
+    "ai-trending": [
+      "PaddleOCR 83,516⭐领跑OCR+LLM结构化转换",
+      "Deer-Flow +739星聚焦长时程任务记忆持久化",
+      "Codebase-Memory-MCP +1300星建代码级记忆基础设施",
+      "LlamaIndex 50,316⭐自定位文档Agent与OCR平台",
+      "RAGFlow 83,463⭐深度文档理解融合Agent能力",
+      "LanceDB 10,700⭐向量无关推理型RAG新范式"
+    ],
+    "ai-web": [
+      "Anthropic发布Claude Tag团队级主动AI协作者",
+      "65%代码生成率暗示内部模型超公开版上下文能力",
+      "跨通道上下文记忆引入累积误差传播风险",
+      "proactive行为模式暴露无指令自主行动对齐难题",
+      "OpenAI今日静默无新增研究内容",
+      "时间维度推理与依赖关系管理成架构突破点"
+    ],
+    "ai-hn": [
+      "Claude Tag身份验证机制227分引隐私安全激辩",
+      "GPT-5.5-Cyber 204分质疑防御优先叙事双重用途",
+      "TikZ WYSIWYG编辑器315分对接VLM图形理解",
+      "No AI Co-Authors宣言反映学术诚信焦虑上升",
+      "社区自发探索LLM推理边界案例集",
+      "Ask HN讨论上下文利用效率与错误累积"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 5,030点赞MoE架构领跑",
+      "nvidia/LocateAnything-3B视觉定位细粒度空间理解",
+      "google/diffusiongemma-26B统一生成理解架构",
+      "baidu/Unlimited-OCR 472星首进热榜无限制文本识别",
+      "Qwen3.6系列GGUF量化变体大量涌现",
+      "Kimi-K2.7-Code 975星支持视觉输入代码推理"
+    ],
+    "ai-community": [
+      "Context Compaction Visualizer暴露Agent信息丢失机制",
+      "Agent记忆中毒后七条架构重构规则",
+      "意图为脊柱代码可钻取层范式提出",
+      "Eval先写对齐验证模式应对生成不确定性",
+      "Rust熵监控实现大小模型动态路由推理",
+      "checkpoint-and-resume解决 ephemeral GPU 训练丢失"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.187 adds security hardening only",
+      "Codex pushes encrypted reasoning tokens for containment",
+      "Gemini CLI advances multimodal reasoning pipelines",
+      "OpenCode hardens deterministic safety guardrails",
+      "Qwen Code compresses tensors for long-context efficiency",
+      "DeepSeek TUI struggles with alignment robustness"
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 PRs, 187 issues in 24 hours",
+      "Reasoning block signature validation fails silently",
+      "Tool call serialization errors corrupt agent state",
+      "Memory promotion bugs cause capability misrepresentation",
+      "Zero releases despite extreme development velocity",
+      "IronClaw focuses on multi-provider model compatibility"
+    ],
+    "ai-trending": [
+      "LlamaIndex rebrands as document agent/OCR platform",
+      "Deer-Flow hits 73.9K stars for long-horizon agents",
+      "PageIndex launches vectorless reasoning-based RAG",
+      "Cognee explodes to 20.2K stars for agent memory",
+      "claude-mem reaches 83.9K stars on persistent memory",
+      "Hermes Agent at 200.9K stars for alignment research"
+    ],
+    "ai-web": [
+      "Claude Tag deploys channel-persistent memory architecture",
+      "65% code generation rate validates tool reasoning",
+      "Anthropic traces Code→Cowork→Tag agent trajectory",
+      "Cross-channel context integrity challenges emerge",
+      "Multi-user intent resolution understudied in literature",
+      "Proactive planning shifts from session to environment"
+    ],
+    "ai-hn": [
+      "Claude Tag HN thread: 227 points, 154 comments",
+      "RLM-based local debugger traces agent reasoning failures",
+      "Community skeptical of Tag's technical vs marketing value",
+      "No direct long-context or OCR research posts today",
+      "Privacy dominates over technical architecture discussion",
+      "No AI Co-Authors manifesto draws alignment parallels"
+    ],
+    "ai-hf": [
+      "baidu/Unlimited-OCR: major open-weight OCR release",
+      "diffusiongemma-26B-A4B-it pushes any-to-any architecture",
+      "Kimi-K2.7-Code compresses tensors for long context",
+      "DeepSeek-V4-Pro dominates engagement metrics",
+      "Qwen3.6 fine-tunes proliferate for reasoning elicitation",
+      "gemma-4-12B-it tightens vision-language grounding"
+    ],
+    "ai-community": [
+      "Context Compaction Visualizer debugs agent memory loss",
+      "Agent memory v2 addresses poisoning failures",
+      "Prompt Injection as Role Confusion formalizes boundaries",
+      "VibeThinker-3B explores verifiable small-model reasoning",
+      "MCP design lessons standardize context protocols",
+      "Memory architecture directly impacts hallucination mitigation"
+    ]
+  }
+}
