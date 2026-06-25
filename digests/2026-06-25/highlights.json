@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.191聚焦长上下文压缩与多Agent幻觉问题",
+      "OpenAI Codex单日5个alpha版本迭代Ultra推理状态同步",
+      "Gemini CLI智能体可靠性危机：思维泄漏与AST优化并行",
+      "OpenCode v1.17.10攻坚MCP完整能力与快照回退机制",
+      "DeepSeek TUI v0.8.65遭release-blocker：Fleet编排目标漂移",
+      "Pi高活跃流式可靠性：跨提供商标准化与Agent并行探索"
+    ],
+    "ai-agents": [
+      "OpenClaw 346 Issues/500 PRs爆发：子代理生命周期管理危机",
+      "#91804致命回归：内部推理内容暴露用户的post-training脆弱性",
+      "#94228 thinking block签名验证失败中断长工具链会话",
+      "#95996重构yield语义：异步工具调用一致性突破",
+      "v2026.6.10自动快速模式：推理效率与质量动态权衡",
+      "推理安全机制系统性脆弱：对齐层从评估走向实时干预"
+    ],
+    "ai-trending": [
+      "bytedance/deer-flow 74.4k星：分钟至小时级长周期SuperAgent框架",
+      "VectifyAI/PageIndex 33.4k星：无向量推理型RAG挑战传统检索",
+      "PaddleOCR 83.7k星持续领跑：100+语言结构化文档理解基座",
+      "LlamaIndex 50.4k星自定位文档Agent与OCR平台转型",
+      "stable-pretraining基础训练库登榜：post-training对齐工具稀缺",
+      "graphify 71.6k星：多模态知识图表示新范式崛起"
+    ],
+    "ai-web": [
+      "Anthropic核安全分类器96%准确率部署生产：实时干预范式转移",
+      "NNSA/DOE合作：post-training安全层从评估走向政府协同基础设施",
+      "Frontier Model Forum标准化意图：安全分类器行业互操作推进",
+      "81k用户经济影响调查：AI社会对齐实证研究大规模样本",
+      "OpenAI-Broadcom Jalapeno芯片：LLM专用推理硬件长上下文优化",
+      "核分类器拦截高风险技术幻觉：第二层防御体系验证"
+    ],
+    "ai-hn": [
+      "OpenAI-Broadcom Jalapeno芯片483分304评：推理效率与百万上下文悬念",
+      "Anthropic-阿里蒸馏争议：模型能力窃取与post-training保护激辩",
+      "社区防御性共识：提示注入防护与agent可信执行需求陡增",
+      "Claude/GPT/Mira循环机制方法论：推理架构比较零评论遇冷",
+      "OpenArt Director多模态生成：vibe direct产品化而非VLM对齐研究",
+      "Agnes AI多模态API遇冷：开源基础设施未触发视觉推理讨论"
+    ],
+    "ai-hf": [
+      "baidu/Unlimited-OCR 732赞：无限制OCR突破文档版面长度约束",
+      "google/gemma-4-12B-it 1162赞：any-to-any统一架构双向生成",
+      "moonshotai/Kimi-K2.7-Code 984赞：compressed-tensors视觉代码理解",
+      "MiniMax-M3 1228赞：国产多模态事实一致性与幻觉缓解待研",
+      "diffusiongemma-26B-A4B-it 1060赞：扩散+VLM幻觉控制独特平台",
+      "HauhauCS Qwen3.6-35B 2205赞：激进去审查版MoE视觉模型 dominance"
+    ],
+    "ai-community": [
+      "VibeThinker-3B探索小模型可验证推理：规模必要性重评估",
+      "Baidu Unlimited-OCR one-shot长程OCR：上下文碎片化挑战",
+      "HolmesGPT mirrord验证闭环：工具使用+自动验证agent可靠性",
+      "red teaming 6/9 breaches归零：权限边界测试自动对抗评估落地",
+      "RAG精确匹配0.57语义0.96背离：表面正确实质幻觉隐蔽检测",
+      "Agent可复现性三角：非确定性调用/隐式状态/观测缺失危机"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "No tool achieves robust 1M-token production reliability.",
+      "All major tools exhibit client-server desynchronization at scale.",
+      "Field transitioning from chat-with-tools to persistent multi-agent workflows.",
+      "OpenAI Codex shows highest activity: infrastructure-heavy alpha.",
+      "Claude Code v2.1.191 regression-focused with moderate activity.",
+      "Context compaction and alignment verification remain fragmented."
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 PRs, 346 issues in 24h high-velocity development.",
+      "Technical debt accumulating in reasoning-critical paths.",
+      "281:65 open-to-closed issue ratio shows backlog growth.",
+      "Activity dominated by channel connectors, not core AI capabilities.",
+      "No explicit vision-language model updates in latest cycle.",
+      "Hallucination issues treated as incident-response, not systematic."
+    ],
+    "ai-trending": [
+      "bytedance/deer-flow: +74,436 stars, long-horizon SuperAgent.",
+      "zjunlp/LightThinker: EMNLP 2025 thinking compression research.",
+      "VectifyAI/PageIndex: 33,382 stars, vectorless reasoning-based RAG.",
+      "PaddlePaddle/PaddleOCR: 83,695 stars, document intelligence bridge.",
+      "Shift from embedding-based retrieval to explicit reasoning.",
+      "Extended reasoning with sandboxed execution trending."
+    ],
+    "ai-web": [
+      "Anthropic: 96% accuracy nuclear proliferation classifier.",
+      "Anthropic publishes AI economic impacts empirical evidence.",
+      "OpenAI 'Jalapeno' chip reference: hardware vertical integration.",
+      "Anthropic government-partnered post-deployment safety monitoring.",
+      "OpenAI metadata-only, no verifiable research content today.",
+      "Diverging strategies: Anthropic transparency vs OpenAI hardware."
+    ],
+    "ai-hn": [
+      "Loops explained: Claude, GPT, Mira reasoning architectures.",
+      "Comparative analysis of reasoning loop implementations.",
+      "Ask HN: LLM middleware hooks for alignment interventions.",
+      "Anthropic-Alibaba distillation dispute: model extraction implications.",
+      "Zero comments on reasoning loops despite technical relevance.",
+      "Limited community engagement on alignment extensibility."
+    ],
+    "ai-hf": [
+      "baidu/Unlimited-OCR: 732 likes, 45K+ downloads, universal OCR.",
+      "google/diffusiongemma-26B: diffusion-based vision-language, 1M+ downloads.",
+      "GLM-5.2 MoE with DSA for long-context applications.",
+      "microsoft/FastContext-1.0-4B-SFT: efficient long-context processing.",
+      "moonshotai/Kimi-K2.7-Code: compressed tensor extended sequences.",
+      "datalab-to/lift: PDF-specialized Qwen3.5 document extraction."
+    ],
+    "ai-community": [
+      "VibeThinker-3B: verifiable reasoning in small language models.",
+      "Unlimited-OCR: long-horizon OCR capabilities discussion.",
+      "Prompt injection reframed as role confusion security-alignment.",
+      "Eval harness caught citation-without-comprehension hallucinations.",
+      "RAG failure modes: retrieval-collapse and context-dilution.",
+      "Agent memory architectures for hallucination mitigation."
+    ]
+  }
+}
