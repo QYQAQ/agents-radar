@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code安全分类器扩展与误报张力集中爆发",
+      "OpenAI Codex MCP运行时动态路由架构重构",
+      "Gemini CLI thought leakage修复与信任对话框漏洞",
+      "OpenCode上下文压缩机制失效与Bun运行时脆性",
+      "Pi推理状态机脆弱性与inference-time对齐工具化",
+      "Qwen Code多模型后端语义不一致问题涌现"
+    ],
+    "ai-agents": [
+      "OpenClaw Cron会话工具调用失败时产生幻觉输出",
+      "500 Issues仅关闭23条，长上下文管理危机未解",
+      "session状态丢失与内存无限增长成共性瓶颈",
+      "reasoning_delta与content交叉时可见内容恢复难题",
+      "模型切换上下文窗口超限静默失败模式",
+      "Anthropic reasoning机制Discord呈现策略争议"
+    ],
+    "ai-trending": [
+      "MinerU今日+644 stars登Trending榜首",
+      "claude-mem 84.3k stars探索会话级持久记忆",
+      "Cognee 22.4k stars构建长期知识图谱记忆",
+      "LightThinker EMNLP 2025提出思维链压缩",
+      "bytedance/deer-flow 74.7k stars长程SuperAgent训练",
+      "PageIndex 33.4k stars向量数据库向推理型RAG演进"
+    ],
+    "ai-web": [
+      "OpenAI发布《How Agents Are Transforming Work》",
+      "Agent叙事重心从模型能力转向工作流渗透",
+      "产业界加速从模型中心向系统中心范式迁移",
+      "Anthropic今日零新增，研究披露进入产品化阶段",
+      "OpenAI内容层级从research下沉至index",
+      "URL路径推断存在不准确风险，正文不可获取"
+    ],
+    "ai-hn": [
+      "JetSpec并行树解码9.64x无损推理加速",
+      "DeepSeek Flash纯文本agent颠覆多模态成本假设",
+      "Ornith-1.0自脚手架方法提升agent编码能力",
+      "100k页开源VLM OCR规模化处理实践",
+      "GLM-5.2安全评估争议引发社区讨论",
+      "中国AI模型与Anthropic/OpenAI差距缩小"
+    ],
+    "ai-hf": [
+      "baidu/Unlimited-OCR 70,743下载突破版面分析局限",
+      "Kimi-K2.7-Code 50万下载验证代码-视觉联合推理",
+      "MiniMax-M3 15.4万下载多模态架构新范式",
+      "google/gemma-4-12B-it 218万下载any-to-any基线",
+      "HauhauCS QAT量化与去审查微调持续活跃",
+      "DeepSeek-V4-Pro 5061点赞长上下文推理登顶"
+    ],
+    "ai-community": [
+      "评估框架flaky问题，UNSTABLE作为一等失败状态",
+      "AI系统需要证据而非仅可观测性治理幻觉",
+      "Baidu Unlimited-OCR长文档一次性识别突破",
+      "VibeThinker-3B小模型可验证推理验证",
+      "Prompt Injection作为角色混淆安全研究",
+      "TIRx/Event Tensor多模态推理底层优化"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Ecosystem bifurcates into research-forward vs product-optimized tools.",
+      "All major tools now support multi-agent orchestration and MCP.",
+      "Context compaction destroys task memory across all platforms.",
+      "Claude Code Skills adds extensible capability framework.",
+      "DeepSeek TUI explores privacy-first decentralized orchestration.",
+      "Qwen Code invests in novel context management infrastructure."
+    ],
+    "ai-agents": [
+      "OpenClaw hits 500 issues and 500 PRs in 24 hours.",
+      "477:23 open-to-closed issue ratio signals maintainer strain.",
+      "Autofix pipeline enables automated post-training alignment.",
+      "Project focuses on security boundary enforcement, not features.",
+      "Hallucination mitigation remains active but unresolved.",
+      "IronClaw and NanoBot compete on lightweight agent runtimes."
+    ],
+    "ai-trending": [
+      "MinerU gains 644 stars for PDF-to-markdown parsing.",
+      "zjunlp/LightThinker compresses reasoning step-by-step.",
+      "VectifyAI/PageIndex hits 33,420 stars with vectorless RAG.",
+      "bytedance/deer-flow reaches 74,713 stars as SuperAgent harness.",
+      "PaddleOCR holds 83,822 stars as top open-source OCR toolkit.",
+      "Long-horizon reasoning workflows dominate trending projects."
+    ],
+    "ai-web": [
+      "OpenAI publishes one article on agentic AI transformation.",
+      "Anthropic produces zero new public content today.",
+      "Strategic pause follows intense reasoning model release cycles.",
+      "Potential shift toward non-public research phases detected.",
+      "No technical publications available for long-context analysis.",
+      "Product-focused communications may replace research disclosures."
+    ],
+    "ai-hn": [
+      "JetSpec achieves 9.64x lossless LLM inference speedup.",
+      "OCR at scale benchmarks VLMs on 100k pages empirically.",
+      "DeepSeek Flash inverts economics of browser agent inference.",
+      "Ornith-1.0 introduces self-scaffolding for agentic coding.",
+      "Parallel tree decoding preserves reasoning fidelity losslessly.",
+      "Community favors implementable systems over policy news."
+    ],
+    "ai-hf": [
+      "baidu/Unlimited-OCR hits 890 likes, 70K+ downloads.",
+      "moonshotai/Kimi-K2.7-Code reaches 992 likes, 502K downloads.",
+      "deepseek-ai/DeepSeek-V4-Pro dominates with 5,061 likes, 1.88M downloads.",
+      "google/gemma-4-12B-it debuts as any-to-any unified model.",
+      "Uncensored variants raise post-training safety degradation concerns.",
+      "End-to-end OCR models replace pipeline-based HMER systems."
+    ],
+    "ai-community": [
+      "Flaky evals identified as first-class failure state for judges.",
+      "Baidu's Unlimited-OCR targets long-horizon document understanding.",
+      "VibeThinker-3B explores verifiable reasoning in small models.",
+      "Agent planning harder than execution in production systems.",
+      "Evidence-based AI systems dominate alignment discussions.",
+      "HMER specifically absent despite OCR and reasoning overlap."
+    ]
+  }
+}
