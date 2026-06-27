@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 1M上下文窗口配置漂移危机",
+      "OpenAI Codex核心协议重构TurnItem生命周期",
+      "Gemini CLI递归推理硬上限15轮落地",
+      "GitHub Copilot子代理并发深度限制首发布",
+      "Kimi Plan Mode状态机幻觉暴露",
+      "Qwen Code视觉回退模型与流式看门狗"
+    ],
+    "ai-agents": [
+      "OpenClaw 500条更新合并完成率不足10%",
+      "Anthropic thinking块签名验证致长工具链中断",
+      "Claude模型推理默认开启触及幻觉控制核心",
+      "多智能体会话状态一致性成三大研究主题之一",
+      "语音通话会话键规范化修复历史分裂",
+      "子智能体深度计算静默错误影响层级推理"
+    ],
+    "ai-trending": [
+      "MinerU单日+960 stars登榜PDF转LLM-ready",
+      "bytedance/deer-flow长周期SuperAgent首进前列",
+      "zjunlp/LightThinker逐步思考压缩EMNLP 2025",
+      "lancedb多模态嵌入检索库获关注",
+      "PaddleOCR 83,958 stars巩固中文OCR基座",
+      "VectifyAI PageIndex推理替代向量检索"
+    ],
+    "ai-web": [
+      "Anthropic生物代理确定性检索层准确率跃升近100%",
+      "Claude化学家NMR光谱跨表征推理",
+      "Claude Tag 2026-06-23团队代理范式迁移",
+      "GPT-5.6 Sol URL元数据无正文实质空白",
+      "历史文章三年跨度批量重新索引异常",
+      "Mythos Preview安全研究密集重新索引"
+    ],
+    "ai-hn": [
+      "停止拟人化中间token为推理痕迹获关注",
+      "GPT-5.6政府审批式发布引发486条评论分裂",
+      "U.S.政府决定谁可用GPT-5.6引875条焦虑",
+      "AI数学辅助证明严谨性冲击讨论浅层",
+      "安全审查与技术开放张力情绪分化明显",
+      "模型能力炒作周期社区呈现疲劳迹象"
+    ],
+    "ai-hf": [
+      "百度Unlimited-OCR 1040⭐领跑通用端到端识别",
+      "MiniMax-M3 1246⭐原生多模态非拼接架构",
+      "NVIDIA LocateAnything-3B 49万下载空间推理定位",
+      "HauhauCS去对齐版本345万下载暴露对齐税",
+      "Qwythos-9B 1M窗口极端长度推理基准",
+      "datalab-to/lift 158⭐学术PDF轻量解析方案"
+    ],
+    "ai-community": [
+      "AI代码功能正确但语义错误风险27条评论",
+      "百度Unlimited-OCR提出one-shot长文档范式",
+      "MCP从RPC向上下文分发架构范式转移",
+      "多智能体handoff无缝调试评估框架",
+      "LLM输出格式控制JSON Schema实战约束",
+      "git-lrc微观代码审查构建安全边界层"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code removed 1M context window.",
+      "Gemini tests hard reasoning limits.",
+      "Qwen injects runtime context dynamically.",
+      "DeepSeek optimizes token economy.",
+      "All tools show context management failures.",
+      "Post-training alignment regressions reported."
+    ],
+    "ai-agents": [
+      "OpenClaw: 500 issues, 500 PRs, zero releases.",
+      "Silent reasoning default changes detected.",
+      "Thinking block handling bugs critical.",
+      "469 open issues vs 31 closed.",
+      "Multi-agent orchestration instability.",
+      "Session state reliability issues."
+    ],
+    "ai-trending": [
+      "MinerU +960 stars today for PDF-to-markdown.",
+      "PageIndex shifts to vectorless reasoning RAG.",
+      "PaddleOCR bridges images/PDFs to LLMs.",
+      "deer-flow vs LightThinker: divergent reasoning paths.",
+      "headroom compresses tokens pre-LLM ingestion.",
+      "claude-mem enables persistent cross-session context."
+    ],
+    "ai-web": [
+      "Claude Tag: 65% internal code generation adoption.",
+      "Claude chemist: NMR spectra multimodal reasoning.",
+      "Project Fetch: 20x robotics improvement in one year.",
+      "Anthropic published 18 technical articles.",
+      "OpenAI GPT-5.6 Sol preview metadata only.",
+      "Persistent multi-user collaborative agents launched."
+    ],
+    "ai-hn": [
+      "GPT-5.6 Sol preview sparks access gate debate.",
+      "Stop anthropomorphizing reasoning traces paper.",
+      "Skepticism on intermediate token interpretation.",
+      "Community demands reproducible capability evidence.",
+      "Policy-heavy discourse over technical substance.",
+      "Long-context benchmarking transparency questioned."
+    ],
+    "ai-hf": [
+      "Unlimited-OCR: 134K downloads for open-weight OCR.",
+      "LocateAnything-3B: efficient multimodal architecture.",
+      "Ornith-1.0 397B scales reasoning capabilities.",
+      "GLM-5.2 uses MoE-DSA for deployment efficiency.",
+      "8 of 30 models are GGUF/quantized releases.",
+      "Gemma-4-12B-agentic-fable5: post-training alignment."
+    ],
+    "ai-community": [
+      "Agent handoff failures propagate at seams.",
+      "Unlimited-OCR advances long-horizon document understanding.",
+      "Prompt injection reframed as role confusion.",
+      "VibeThinker-3B verifiable reasoning in small LLMs.",
+      "MCP reframed as context distribution not RPC.",
+      "Multi-agent trace evaluation critical for hallucination mitigation."
+    ]
+  }
+}
