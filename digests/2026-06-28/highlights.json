@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 单日9起安全过滤器假阳性集群爆发",
+      "OpenAI Codex 8个PR聚焦MCP OAuth五层安全架构",
+      "Qwen Code v0.19.2 nightly修复缓存失效与幻觉早期化",
+      "Pi 首创excludeFromContext上下文分层新范式",
+      "DeepSeek TUI 9个PR优化cache效率与自主性幻觉",
+      "Gemini CLI 76+行为测试覆盖评估基础设施领先"
+    ],
+    "ai-agents": [
+      "OpenClaw 500 Issues仅2.8%收敛率暴露长上下文稳定性危机",
+      "PR #90239/90259会话历史继承修复上下文连续性",
+      "PR #61485 hooks可修改化实现推理干预关键扩展点",
+      "NanoBot/Hermes Agent等13项目覆盖多智能体生态",
+      "内存无限增长与compaction语义丢失成系统性技术债",
+      "多智能体协作架构设计讨论活跃但落地缓慢"
+    ],
+    "ai-trending": [
+      "cognee 23,998星登Trending榜首，知识图谱实现跨会话无限记忆",
+      "bytedance/deer-flow 75,051星支持分钟到小时级长时程Agent",
+      "PaddleOCR 84,068星定位图像/PDF转LLM结构化数据",
+      "VectifyAI/PageIndex 33,473星推向量less推理驱动RAG",
+      "LightThinker思维链压缩研究暗示推理阶段隐式对齐",
+      "LlamaIndex 50,452星强化文档Agent与OCR平台定位"
+    ],
+    "ai-hn": [
+      "Anthropic指控Alibaba大规模账户挖矿引发蒸馏伦理争议",
+      "llama.cpp 20%提示处理速度提升补丁优化端侧长上下文",
+      "Asian Mythos-like模型涌现挑战出口管制有效性",
+      "Ornith-1.0开源Agent编码模型专攻代码库级长上下文",
+      "Apple Vision Pro负责人加盟OpenAI暗示空间多模态融合",
+      "社区防御性焦虑升温，本地化部署与开源替代兴趣增强"
+    ],
+    "ai-hf": [
+      "baidu/Unlimited-OCR 21万下载突破OCR上下文长度限制",
+      "HauhauCS Qwen3.6-35B-A3B 330万下载成去对齐现象级样本",
+      "GLM-5.2系列MoE+NVFP4量化迭代视觉语言推理",
+      "MiniMax-M3 18万下载提供跨模态对齐新范式基线",
+      "nvidia/LocateAnything-3B细粒度视觉定位评估空间幻觉",
+      "Microsoft FastContext-1.0-4B-SFT Explorer SubAgent切入事实检索"
+    ],
+    "ai-community": [
+      "MemStrata动态代码内容超越RAG的长记忆替代架构",
+      "Context rot编译时缓解转化运行时衰减为静态优化",
+      "LLM-as-Judge未验证假设暴露评估对齐基础性盲区",
+      "对抗性双池审查系统减少代码审查幻觉与模式崩溃",
+      "确定性架构设计为随机AI输出提供形式化验证框架",
+      "AI Context Engineering超越提示工程的新系统范式"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code leads safety-constrained enterprise deployment",
+      "OpenAI Codex focuses on deterministic long-context infrastructure",
+      "Gemini CLI pursues eval-driven agent alignment",
+      "Context-economics maturation replaces unlimited context marketing",
+      "MCP protocol adoption becomes table stakes across tools",
+      "Cache-aware routing and structured RAG primitives converge"
+    ],
+    "ai-agents": [
+      "OpenClaw shows 500 issues and 500 PRs in 24 hours",
+      "Only 2.8% issue closure rate suggests complex backlog",
+      "Focus on context compaction and memory indexing",
+      "Hallucination-adjacent failure modes: phantom completions",
+      "Multi-agent coordination infrastructure central to progress",
+      "Zero new releases indicate consolidation phase"
+    ],
+    "ai-trending": [
+      "Cognee gains 780 stars for persistent agent memory",
+      "PaddleOCR hits 84K stars for multimodal document understanding",
+      "bytedance/deer-flow reaches 75K stars for long-horizon reasoning",
+      "VectifyAI/PageIndex introduces vectorless reasoning-based RAG",
+      "zjunlp/LightThinker offers step-by-step thinking compression",
+      "Context-economics maturation across trending projects"
+    ],
+    "ai-hn": [
+      "llama.cpp patch gains 20% prompt processing TPS",
+      "Ornith-1.0 specializes LLMs for agentic coding",
+      "AI-whisper multi-agent system sparks discussion",
+      "Limited HN engagement with core research topics",
+      "Inference optimization critical for long-context deployment",
+      "Absent: hallucination mitigation and alignment discussions"
+    ],
+    "ai-hf": [
+      "Baidu Unlimited-OCR hits 212K downloads for document understanding",
+      "Qwythos-9B-Claude-Mythos-5-1M GGUF reaches 712K downloads",
+      "NVIDIA LocateAnything-3B targets spatial hallucination mitigation",
+      "DeepSeek-V4-Pro-DSpark releases with arxiv preprint",
+      "Microsoft FastContext-1.0-4B-SFT targets Explorer SubAgent",
+      "Quantized vision-language models show strong community demand"
+    ],
+    "ai-community": [
+      "Context engineering emerges as distinct discipline",
+      "Context rot identified as multi-turn agent degradation",
+      "Baidu Unlimited-OCR release drives long-horizon document research",
+      "Adversarial review systems surface for alignment verification",
+      "Deterministic architectures proposed for stochastic AI",
+      "VibeThinker-3B explores verifiable small-model reasoning"
+    ]
+  }
+}
