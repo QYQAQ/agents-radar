@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 184K 单消息崩溃暴露长上下文可靠性瓶颈",
+      "Qwen Code v0.19.3 修复压缩阈值计算错误",
+      "DeepSeek TUI 缓存命中率回归引发上下文效率调查",
+      "Pi 修复多步工具调用缓存失效问题",
+      "OpenCode 处理 DeepSeek v4/Gemma-4 的 thinking 参数差异",
+      "Codex 将 max 提升为标准 reasoning effort"
+    ],
+    "ai-agents": [
+      "OpenClaw 跨提供商结构化工具结果保真修复",
+      "limitHistoryTurns 长上下文压缩与记忆连续性 PR 开放",
+      "UTF-16 截断修复集群反映多语言编码脆弱性",
+      "Claude reasoning 默认开启导致成本与信息泄漏争议",
+      "v2026.6.11-beta.2 频道控制增强但研究相关性低",
+      "500 Issues/500 PRs 高活跃度下研究占比有限"
+    ],
+    "ai-trending": [
+      "MinerU +380 stars 登榜，复杂 PDF 转 LLM-ready 格式",
+      "lingbot-map +372 stars，流式数据前馈 3D 基础模型",
+      "codebase-memory-mcp +2190 stars，99% token 削减知识图谱",
+      "PaddleOCR 84K stars 强化图像-PDF-LLM 桥梁定位",
+      "LlamaFactory 72K stars 持续承载 SFT/DPO 对齐需求",
+      "lancedb 10K+ stars 原生支持图像-文本联合嵌入"
+    ],
+    "ai-web": [
+      "OpenAI 新增 Hp Frontier Partnership 暗示超算合作",
+      "Anthropic 零更新，重心转向可靠性而非规模",
+      "Claude 200K 窗口商业化但有效利用率存争议",
+      "Frontier 级算力支撑多模态训练与大规模对齐",
+      "硬件-模型协同优化成隐性关键议题",
+      "信息极度受限，待正文开放后补充"
+    ],
+    "ai-hn": [
+      "Claude Code MRI 分析引发 428 条评论医学幻觉争议",
+      "GLM 5.2 超越 Claude 声明触发评测可信度质疑",
+      "LLM 镜像测试探讨自我认知与多模态身份识别",
+      "Wayfinder Router 本地/云端 LLM 路由优化",
+      "奖励黑客风险暴露 RLHF/DPO 优化目标偏离",
+      "能力乐观与安全焦虑社区情绪二分"
+    ],
+    "ai-hf": [
+      "百度 Unlimited-OCR 29 万下载暗示无限序列 OCR 突破",
+      "nvidia LocateAnything-3B 64 万下载细粒度视觉 grounding",
+      "Qwen-AgentWorld-35B-A3B MoE 世界模型架构",
+      "HauhauCS 双路线揭示 SFT 对齐行为探索",
+      "DeepSeek-V4 Pro/Flash 两版推理效率权衡",
+      "Qwythos GGUF 量化版下载 16 倍激增边缘部署需求"
+    ],
+    "ai-community": [
+      "MCP 协议隐式消耗 50k+ tokens 上下文膨胀陷阱",
+      "结构-语义双通道分离的长视界智能体设计",
+      "编码智能体完成幻觉案例研究",
+      "stale context 导致时态推理失效",
+      "模型即裁判延迟与可靠性权衡",
+      "AI 监控评分标准可被抛硬币游戏化"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Context management now the bottleneck, not model capability.",
+      "Reasoning trace fragmentation causing cross-provider crises.",
+      "Specification gaming failures diverging from stated policies.",
+      "Ecosystem bifurcating: closed commercial vs open research.",
+      "1M+ context windows shift focus to compaction and caching.",
+      "Agentic safety moved from academic to production-critical."
+    ],
+    "ai-agents": [
+      "500 issues/PRs indicate mature stabilization phase.",
+      "No vision-language or reasoning updates in top activity.",
+      "Session state reliability dominates research-relevant work.",
+      "Message delivery guarantees are core engineering focus.",
+      "Tool-result serialization relevant to AI reliability.",
+      "Research work likely in lower-visibility PRs."
+    ],
+    "ai-trending": [
+      "MinerU +380 stars: PDF-to-markdown for agentic workflows.",
+      "codebase-memory-mcp +2190 stars: persistent knowledge graphs.",
+      "VectifyAI/PageIndex: vectorless reasoning-based RAG.",
+      "PaddleOCR 84,142 stars: dominant open OCR toolkit.",
+      "lingbot-map: feed-forward 3D foundation model.",
+      "RAG document intelligence driving OCR demand."
+    ],
+    "ai-web": [
+      "Anthropic published zero new articles today.",
+      "OpenAI's single entry 'Hp Frontier Partnership' lacks content.",
+      "Potential frontier model safety activity remains speculative.",
+      "No direct signals on long-context or multimodal.",
+      "Possible pre-publication embargo for major research.",
+      "Shift toward conference venues suspected."
+    ],
+    "ai-hn": [
+      "Claude Code MRI analysis: 428 comments on VLM medical risks.",
+      "GLM 5.2 benchmark claims draw cybersecurity skepticism.",
+      "Community focused on application risks over foundational research.",
+      "No long-context architecture discussions today.",
+      "No OCR/HMER technical advances on front page.",
+      "Benchmark validity controversies dominate discourse."
+    ],
+    "ai-hf": [
+      "Unlimited-OCR 295K downloads: complex layout OCR demand.",
+      "GLM-5.2 MoE+DSA architecture maturing for long-context.",
+      "Qwen3.6-35B-A3B-NVFP4 hits 5.2M multimodal downloads.",
+      "FastContext-1.0-4B-SFT explicitly targets extended context.",
+      "Qwythos-9B: 1M context vision model with 831K downloads.",
+      "Uncensored fine-tunes raise safety-hallucination trade-offs."
+    ],
+    "ai-community": [
+      "Context management identified as core inference bottleneck.",
+      "Baidu Unlimited-OCR for long-horizon document understanding.",
+      "Agent completion vs test-verified correctness tension.",
+      "Prompt injection as role confusion research emerging.",
+      "Speculative decoding payoff analysis for long-context.",
+      "Stale context problems plague long-horizon agents."
+    ]
+  }
+}
