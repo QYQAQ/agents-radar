@@ -1,12 +1,12 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code 184K 单消息崩溃暴露长上下文可靠性瓶颈",
-      "Qwen Code v0.19.3 修复压缩阈值计算错误",
-      "DeepSeek TUI 缓存命中率回归引发上下文效率调查",
-      "Pi 修复多步工具调用缓存失效问题",
-      "OpenCode 处理 DeepSeek v4/Gemma-4 的 thinking 参数差异",
-      "Codex 将 max 提升为标准 reasoning effort"
+      "MinerU 连续多日登热榜，+380~+960 stars 暴涨",
+      "PaddleOCR 84K+ stars 领跑中文 HMER 与多语言 OCR",
+      "LlamaIndex 50K+ stars 自定位文档 Agent 与 OCR 平台",
+      "PageIndex 33K+ stars 推无向量推理式文档索引",
+      "Deer-Flow 字节开源：分钟至小时级 SuperAgent 架构",
+      "cognee 知识图谱记忆、claude-mem 压缩注入、codebase-memory-mcp 99% token 削减三路线竞争"
     ],
     "ai-agents": [
       "OpenClaw 跨提供商结构化工具结果保真修复",
@@ -55,6 +55,14 @@
       "stale context 导致时态推理失效",
       "模型即裁判延迟与可靠性权衡",
       "AI 监控评分标准可被抛硬币游戏化"
+    ],
+    "ai-weekly": [
+      "Claude Tag 发布：AI 生成代码占比跃升至 65%",
+      "OpenAI × Broadcom 联合推出 Jalapeno 推理芯片",
+      "Anthropic 核安全分类器 96% 准确率实时上线",
+      "Alibaba 25K 账户蒸馏攻击 Claude 被揭露",
+      "GLM 5.2 网络安全基准超越 Claude 引评测争议",
+      "Claude Code 用于 MRI 分析触发 428 条安全争论"
     ]
   },
   "en": {
@@ -113,6 +121,14 @@
       "Prompt injection as role confusion research emerging.",
       "Speculative decoding payoff analysis for long-context.",
       "Stale context problems plague long-horizon agents."
+    ],
+    "ai-weekly": [
+      "Claude Tag launches with persistent cross-thread memory",
+      "GPT-5.5-Cyber debuts with Jalapeno inference chip",
+      "Anthropic accuses Alibaba of 25K-account distillation attack",
+      "GPT-5.6 Sol preview requires government vetting",
+      "DeepSeek Flash inverts agent economics text-only",
+      "Claude Code MRI analysis sparks 428-comment safety debate"
     ]
   }
 }
