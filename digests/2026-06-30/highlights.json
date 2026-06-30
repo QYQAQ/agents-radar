@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.196 聚焦长上下文压缩与缓存可靠性",
+      "OpenAI Codex rust-v0.142.4 多 Agent 调度研究热度最高",
+      "Gemini CLI v0.51.0-nightly 推进 prompt cache 命中率稳定",
+      "OpenCode 高活跃无 release，长上下文压缩诉求突出",
+      "Qwen Code 关注 auto-compaction 循环与输出 token 修正",
+      "DeepSeek TUI 研究热度高，上下文管理成技术护城河"
+    ],
+    "ai-agents": [
+      "OpenClaw 24h 375 Issues/500 PRs 高活跃高积压",
+      "Telegram reasoning 回复修复避免 reasoning 块静默丢失",
+      "ACP runtime controls 收紧 owner 权限强化安全边界",
+      "视觉语言输入 capability validation 缺失待研究",
+      "tool-use 循环与 session 状态机可靠性缺陷突出",
+      "多 provider 缓存/认证对齐问题成工程瓶颈"
+    ],
+    "ai-trending": [
+      "PaddleOCR 84k stars 持续引领文档结构化入口",
+      "RAGFlow 83k stars 深度融合 RAG 与 Agent 能力",
+      "PageIndex 33k stars 探索无向量推理驱动 RAG",
+      "graphify 74k stars 构建多源数据知识图",
+      "test-time scaling 综述仓库 107 stars 受关注",
+      "LlamaIndex 50k stars 复杂文档解析索引活跃"
+    ],
+    "ai-hn": [
+      "Micro-Agent 单 API 内多 Agent 协作逼近前沿模型",
+      "Qwythos-9B 1M 上下文小参数模型引发压缩趋势讨论",
+      "ScreenMind 端侧每截图运行视觉模型受关注",
+      "off-grid-ai 本地多模态栈整合视觉语音离线运行",
+      "LLM 效率暑期课程视频提供推理训练效率背景",
+      "社区情绪偏向工程落地与效率优化"
+    ],
+    "ai-hf": [
+      "baidu/Unlimited-OCR 36万下载成 OCR 文档理解新基准",
+      "Qwythos-9B-1M-GGUF 90万下载显示长上下文多模态需求",
+      "Qwen-AgentWorld-35B-A3B MoE 多模态 Agent 世界模型",
+      "Ornith-1.0-397B MoE 超大规模 VLM 对齐研究对象",
+      "Qwen/Gemma/GLM 三大家族主导多模态长上下文生态",
+      "大量 GGUF 量化与 uncensored 变体反映后训练活跃"
+    ],
+    "ai-community": [
+      "跨46个仓库语义搜索解决长上下文代码入口点问题",
+      "situation memory 替代模型记忆减少幻觉概念启发",
+      "SERP 数据清洗降低外部知识增强噪声幻觉",
+      "模型置信度校准成幻觉缓解对齐关键信号",
+      "LangChain 实时搜索 Agent 动态上下文管理教程",
+      "本地 Ollama 集成 Git 工作流边缘部署实践"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.196 focuses on safety over-refusal fixes",
+      "OpenAI Codex rust-v0.142.4 tackles long-context compaction",
+      "Gemini CLI v0.51.0-nightly improves reasoning control",
+      "Copilot CLI v1.0.66-2 addresses session lifecycle issues",
+      "Cross-tool convergence on MCP, sandboxing, subagents",
+      "Tool-execution boundaries are the new reliability frontier"
+    ],
+    "ai-agents": [
+      "OpenClaw: 375 issues, 500 PRs in 24 hours",
+      "PR #95051 fixes durable reasoning replies in Telegram",
+      "Vision-language routing is a key research signal",
+      "Reasoning-content preservation under active work",
+      "Tool-use loop behavior shows silent failure modes",
+      "Large open backlog in embedded-agent execution"
+    ],
+    "ai-trending": [
+      "PaddleOCR at 84,244 stars bridges PDFs/images to LLMs",
+      "LlamaIndex now self-describes as document agent + OCR",
+      "RAGFlow central to long-context grounding",
+      "mem0 trending for hallucination mitigation",
+      "OpenCompass expands multimodal/reasoning evals",
+      "OCR/document intelligence dominates RAG cluster"
+    ],
+    "ai-hn": [
+      "Micro-Agent explores collaborative sub-agent decomposition",
+      "Qwythos-9B claims 1M context in 9B parameters",
+      "ScreenMind runs vision model on every screenshot",
+      "Thread focuses on inference-time compute scaling",
+      "Long-context distillation skepticism in comments",
+      "Light on foundational research, heavy on tooling"
+    ],
+    "ai-hf": [
+      "Qwen3.5/3.6 and GLM-5.2 MoE variants dominate trending",
+      "baidu/Unlimited-OCR tops OCR with 362,945 downloads",
+      "NVIDIA LocateAnything-3B packages VL for edge",
+      "NVFP4-optimized Qwen/GLM checkpoints signal efficient deployment",
+      "Uncensored fine-tunes show active alignment experiments",
+      "Hallucination mitigation embedded in base training, not standalone"
+    ],
+    "ai-community": [
+      "46-repo semantic search context engineering tutorial",
+      "Unlimited-OCR one-shot long-horizon OCR repo on Lobste.rs",
+      "Token-level transformer/hybrid comparisons for multimodal reasoning",
+      "Adaptive AI-enabled computer worms raise alignment concerns",
+      "Cleaning search results before LLM ingestion mitigates hallucination",
+      "Confidence/cost routing uses model agreement as signal"
+    ]
+  }
+}
