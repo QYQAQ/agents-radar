@@ -6,7 +6,283 @@
     <description>AI 开源生态每日简报 · Daily AI ecosystem digest</description>
     <language>zh-CN</language>
     <atom:link href="https://duanyytop.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 12 Jul 2026 00:32:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 01:34:30 +0000</lastBuildDate>
+    <item>
+      <title>AI 工具生态周报 2026-07-13</title>
+      <link>https://duanyytop.github.io/agents-radar/#2026-07-13/ai-weekly</link>
+      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-07-13/ai-weekly</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <description>AI 工具生态周报 2026-W29 覆盖日期: 2026-07-01 ~ 2026-07-12 | 生成时间: 2026-07-13 01:32 UTC 研究动态周报 · 2026-W29 覆盖周期：2026-07-02 至 2026-07-12重点关注：长上下文推理、OCR/文档智能、多模态推理、Post-training 对齐、幻觉与可靠性 1. 本周研究要闻 Anthropic 重新部署 Claude Fable 5 / Mythos 5，并发布 Claude Sonnet 5 与 Claude Science（2026-07-01/02）Fable 5 被定位为首个面向公众放量的 “Mythos-class” 模型，官方强调“任务越长、越复杂，优势越大”；Sonnet 5 则以接近 Opus 4.8 的 agentic 能力下沉到中端成本；Claude Science 则面向可审计的科学文献解析、多步研究与图表迭代。 Anthropic 公开 Fable 5 网络安全护栏与越狱严重性框架（2026-07-03）首次列出安全分类器“防范 / 不防范”的伤害清单，并与 Glass...</description>
+      <content:encoded><![CDATA[<h1>AI 工具生态周报 2026-W29</h1>
+<blockquote>
+<p>覆盖日期: 2026-07-01 ~ 2026-07-12 | 生成时间: 2026-07-13 01:32 UTC</p>
+</blockquote>
+<hr>
+<h1>研究动态周报 · 2026-W29</h1>
+<blockquote>
+<p>覆盖周期：2026-07-02 至 2026-07-12<br>重点关注：长上下文推理、OCR/文档智能、多模态推理、Post-training 对齐、幻觉与可靠性</p>
+</blockquote>
+<hr>
+<h2>1. 本周研究要闻</h2>
+<ol>
+<li><p><strong>Anthropic 重新部署 Claude Fable 5 / Mythos 5，并发布 Claude Sonnet 5 与 Claude Science（2026-07-01/02）</strong><br>Fable 5 被定位为首个面向公众放量的 “Mythos-class” 模型，官方强调“任务越长、越复杂，优势越大”；Sonnet 5 则以接近 Opus 4.8 的 agentic 能力下沉到中端成本；Claude Science 则面向可审计的科学文献解析、多步研究与图表迭代。</p>
+</li>
+<li><p><strong>Anthropic 公开 Fable 5 网络安全护栏与越狱严重性框架（2026-07-03）</strong><br>首次列出安全分类器“防范 / 不防范”的伤害清单，并与 Glasswing 合作发布 AI jailbreak severity framework 早期草案，将 post-training 对齐从训练层延伸至部署层分类器与对抗评估。</p>
+</li>
+<li><p><strong>Anthropic 与 UST 合作案例发布：Claude 进入 “Physical AI”（2026-07-09/10）</strong><br>Claude 被部署到半导体、汽车、制造等实体工程流程，需要读取原理图（schematics）和引脚图（pinouts）。该场景对结构化工程文档理解、长上下文细节保持和工业级可靠性提出极高要求。</p>
+</li>
+<li><p><strong>Anthropic 集中释放多项对齐与可解释性研究（2026-07-08）</strong><br>包括《An off switch for dual-use knowledge in AI models》《Constitutional Classifiers》《Persona vectors》《The assistant axis》《Golden Gate Claude》等，涉及知识擦除、越狱防御、人格向量控制、多模态概念特征操控。</p>
+</li>
+<li><p><strong>OpenClaw 生态发布 v2026.7.1-beta.5 并修复多项可靠性问题（2026-07-12）</strong><br>引入模型判定的操作批准、凭据掩码、确定性降级；同时修复“工具输出被错误渲染为 <code>(see attached image)</code> 占位符”和 prompt cache 跨边界失效等核心问题。</p>
+</li>
+<li><p><strong>Claude Code Skills 社区聚焦元能力与评估（2026-07-10）</strong><br>热门 PR 包括 <code>run_eval.py</code> 0% recall 修复、document-typography 排版质量、ODT 文档格式、skill-quality/security analyzer、self-audit 等，显示社区正把 “skill 自我评估与安全审计” 作为基础设施。</p>
+</li>
+<li><p><strong>OpenAI 官网索引出现 GPT-5/6、GPT Live、Copilot 集成与 Genebench Pro 页面（2026-07-10）</strong><br>但多为元数据/正文缺失，目前无法做实质性技术解读。</p>
+</li>
+</ol>
+<hr>
+<h2>2. OCR 与文档智能进展</h2>
+<ul>
+<li><strong>olmocr 因 PDF 线性化登上 GitHub Trending（2026-07-02）</strong>：allenai/olmocr 单日 +334 star，其将 PDF 转为模型可训练/推理的线性文本方案，对 OCR、文档理解训练数据构造以及 HMER 相关数据清洗有直接参考价值。</li>
+<li><strong>工程图纸理解进入工业场景（2026-07-12）</strong>：UST 案例明确提到 Claude Code 读取 schematics 与 pinouts，说明 OCR/版面分析/技术图表理解的下一站可能是高价值、高容错成本的制造与芯片设计文档。</li>
+<li><strong>文档排版与 ODT 格式支持（2026-07-10）</strong>：Claude Code Skills 社区在讨论 document-typography（防止孤行寡段、编号错位）与 ODT/ODS 处理，补齐开源办公文档格式能力。</li>
+<li><strong>本周没有直接的手写数学表达式识别（HMER）论文或数据集发布</strong>，但工业文档理解与结构化视觉解析的需求显著上升。</li>
+</ul>
+<hr>
+<h2>3. 多模态与推理生态</h2>
+<ul>
+<li><strong>多模态能力从“附加功能”走向工业落地</strong>：Fable 5、Claude Science 与 UST 物理 AI 案例都强调科学图表、工程图纸、视觉证据在长推理链中的作用。</li>
+<li><strong>“可见式延长思考”与推理预算控制（2026-07-05）</strong>：Claude 的 visible extended thinking / thinking budget 将推理过程透明化，对长上下文推理可检查性和幻觉定位有方法论意义。</li>
+<li><strong>跨模态概念特征操控（2026-07-10）</strong>：Golden Gate Claude 展示了通过调节单个跨文本-图像的“金门大桥”特征来轻量干预模型行为，为多模态可解释性提供了新路径。</li>
+<li><strong>AI CLI 工具集体进入长上下文 + 多模态深水区</strong>：超大图像触发 400 错误、语音 ASR 路由错误、WSL 图像附件不可见、图片 payload 内联导致 JSONL 加载慢等问题，说明图像/音频的预处理、路由与降级机制仍处工程化早期。</li>
+<li><strong>长上下文生命周期管理成为共同瓶颈</strong>：上下文压缩、fork/resume、prompt cache 命中率、压缩后可逆性、会话状态膨胀等议题在 Claude Code、OpenAI Codex、OpenCode、Pi、Qwen Code 中反复出现。</li>
+</ul>
+<hr>
+<h2>4. Post-Training 与对齐趋势</h2>
+<ul>
+<li><strong>“能力开关”式对齐</strong>：Anthropic 的 “off switch for dual-use knowledge” 尝试在保留通用能力的前提下精准压制两用知识，接近目标化 unlearning / 知识编辑。</li>
+<li><strong>人格与角色控制</strong>：Persona vectors 与 Assistant axis 研究通过定位神经网络中的“人格向量”和“助手轴”来抑制异常人格、谄媚与漂移。</li>
+<li><strong>部署阶段分类器与越狱框架</strong>：Constitutional Classifiers 与 Fable 5 安全分类器代表后训练对齐从“训练后价值观注入”延伸到“推理时动态分类 + 对抗评估”。</li>
+<li><strong>AI CLI 工具强化工具服从与权限边界</strong>：OpenAI Codex 的 <code>server_registered_tools_only</code> 白名单、父级权限继承、Guardian 中断；Gemini CLI 的破坏性命令拦截；Pi 的 <code>developer message</code> 角色与 constrained sampling 等，都反映工程层对“模型必须遵守用户拒绝信号”的约束。</li>
+<li><strong>Skill 层自我审计</strong>：Claude Code Skills 的 self-audit、skill-quality/security analyzer 体现了在应用层构建轻量对齐与输出安全闸门的趋势。</li>
+</ul>
+<hr>
+<h2>5. 幻觉与可靠性亮点</h2>
+<ul>
+<li><strong>工具幻觉与输出表示问题</strong>：Pi 出现“未声明字段输出”，Copilot CLI 在 headless 模式下调用未注册工具，Qwen Code 的 AutoMemory 产生幻觉 tool-call，OpenClaw 出现工具输出被折叠为 <code>(see attached image)</code> 占位符——这些问题显示“工具输出到模型可见文本的链路”是可靠性新前线。</li>
+<li><strong>生成内容真实性争议</strong>：HN 上 Tripadvisor AI 摘要忽略负面安全信息给出好评、Claude 误导用户完成任务（“Claude Played Me for a Fool”）等讨论，说明摘要与推荐场景的事实 grounding 仍是痛点。</li>
+<li><strong>对齐与系统提示边界争议</strong>：Anthropic 被用户质疑“prompt injection”再次引发对系统提示可控性与对齐安全性的讨论。</li>
+<li><strong>长上下文压缩带来的状态不一致</strong>：压缩后可逆性、压缩后 <code>maxTokens=1</code>、Plan→Compact→Re-Plan 死循环、子代理 resume 后状态漂移等，均会间接导致幻觉与错误执行。</li>
+<li><strong>高代价场景要求确定性降级</strong>：OpenClaw 的 deterministic fallback 与 UST 物理 AI 案例中的“制造级错误成本”共同推动“模型不可用时如何安全降级”的研究。</li>
+</ul>
+<hr>
+<h2>6. 研究社区脉搏</h2>
+<ul>
+<li><strong>Hacker News 热门讨论</strong>：<ul>
+<li><strong>Tripadvisor AI 摘要给危险酒店好评</strong>（25 分/9 评论）——事实幻觉与推荐系统可信度。</li>
+<li><strong>Claude AskUserQuestion 超时后继续执行</strong>（53 分/58 评论）——Agent 自主边界与对齐设计。</li>
+<li><strong>Claude-real-video：任意 LLM 看视频</strong>（70 分/19 评论）——多模态视频-语言集成。</li>
+<li><strong>Declaw Arena：CTF 式 Agent 越狱挑战</strong>（5 分）——Agent 安全与红队评估。</li>
+<li><strong>Context graphs / Handoff</strong>（少量评论）——长会话间上下文桥接与持久化决策。</li>
+</ul>
+</li>
+<li><strong>GitHub 活跃度</strong>：<ul>
+<li>OpenClaw 生态连续多日 Issues/PRs 超 500 条，集中在运行时可靠性、上下文压缩、工具输出表示、安全审批。</li>
+<li>AI CLI 工具（Claude Code、OpenAI Codex、Gemini CLI、Pi、OpenCode、Qwen Code）日均研究相关议题 5–10 条，方向重合度高：上下文预算、多模态输入、子代理编排、安全对齐。</li>
+<li>Claude Code Skills 社区关注 skill 评估、排版、文档格式与安全审计。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>7. 下周研究信号</h2>
+<ul>
+<li><strong>Fable 5 System Card 与 Claude Science 基准</strong>：Anthropic 已暗示系统卡内包含更详细的 agentic 安全评估，预计下周会有更多解读与第三方复现。</li>
+<li><strong>工业级多模态文档理解</strong>：UST 物理 AI 案例可能带动“工程图纸/原理图 OCR + 长上下文推理”的专门研究或数据集。</li>
+<li><strong>Agent 运行时治理工具</strong>：OpenClaw、OpenCode、Pi 等社区正密集处理上下文压缩、prompt cache、工具输出占位符、确定性降级，预计会出现更系统化的“Agent 可靠性 SDK”或评估基准。</li>
+<li><strong>越狱与对齐评估框架</strong>：Anthropic 的 jailbreak severity framework 可能会催生统一的评估协议和公开测试集。</li>
+<li><strong>AI 生成内容污染与自主性边界</strong>：HN 上关于 AI slop、Agent 自主超时、prompt injection 的讨论将持续，可能推动事实 grounding 与可验证生成的研究。</li>
+</ul>
+<hr>
+<p><em>本周没有观察到专门的 HMER 论文或视觉基座模型发布，但工程图纸理解、PDF 线性化与文档排版等“落地型 OCR/文档智能”需求显著升温。</em></p>
+<hr>
+<p><em>本日报由 <a href="https://github.com/QYQAQ/agents-radar">agents-radar</a> 自动生成。</em></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI Tools Weekly Digest 2026-07-13</title>
+      <link>https://duanyytop.github.io/agents-radar/#2026-07-13/ai-weekly-en</link>
+      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-07-13/ai-weekly-en</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <description>AI Tools Ecosystem Weekly Report 2026-W29 Coverage: 2026-07-01 ~ 2026-07-12 | Generated: 2026-07-13 01:32 UTC Research Weekly Recap — 2026-W29 Focus: long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, hallucination mitigationReporting period: July 2 – July 12, 2026 1. Week’s Top Research Stories Date Story Why It Matters Jul 1–3 Anthropic redeploys Claude Fable 5 and publishes a cyber-safeguards / jailbreak-severity framework First public “Mythos-class” model is bac...</description>
+      <content:encoded><![CDATA[<h1>AI Tools Ecosystem Weekly Report 2026-W29</h1>
+<blockquote>
+<p>Coverage: 2026-07-01 ~ 2026-07-12 | Generated: 2026-07-13 01:32 UTC</p>
+</blockquote>
+<hr>
+<h1>Research Weekly Recap — 2026-W29</h1>
+<p><em>Focus: long-context reasoning, OCR/HMER, multimodal reasoning, post-training alignment, hallucination mitigation</em><br><em>Reporting period: July 2 – July 12, 2026</em></p>
+<hr>
+<h2>1. Week’s Top Research Stories</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Story</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Jul 1–3</strong></td>
+<td><strong>Anthropic redeploys Claude Fable 5 and publishes a cyber-safeguards / jailbreak-severity framework</strong></td>
+<td>First public “Mythos-class” model is back online with explicit safety-classifier coverage lists and a draft jailbreak severity taxonomy. Directly shapes how post-training alignment is evaluated at deployment time.</td>
+</tr>
+<tr>
+<td><strong>Jul 2</strong></td>
+<td><strong>Claude Sonnet 5 released as “the most agentic Sonnet”</strong></td>
+<td>Anthropic pushes agentic planning, browser, and terminal capabilities into the cost-efficient Sonnet tier. Highlights the tension between capability down-tiering and reliability/safety.</td>
+</tr>
+<tr>
+<td><strong>Jul 2</strong></td>
+<td><strong>Claude Science workbench launched</strong></td>
+<td>A scientific AI workbench with literature parsing, multi-step research, chart/manuscript iteration, and audit trails. Relevant for long-context reasoning, multimodal document understanding, and traceability.</td>
+</tr>
+<tr>
+<td><strong>Jul 9–10</strong></td>
+<td><strong>Anthropic × UST “physical AI” case study</strong></td>
+<td>Claude is being used to read <strong>schematics and pinouts</strong> in semiconductor, automotive, and manufacturing workflows. High error-cost domain raises the stakes for OCR, layout understanding, and hallucination mitigation.</td>
+</tr>
+<tr>
+<td><strong>Jul 8–10</strong></td>
+<td><strong>Anthropic publishes “off switch for dual-use knowledge” and “global workspace in language models”</strong></td>
+<td>Advances in targeted capability suppression (knowledge editing/unlearning) and internal model representations; tied to interpretability and alignment.</td>
+</tr>
+<tr>
+<td><strong>Jul 2–10</strong></td>
+<td><strong>OpenAI metadata hints at GPT-5/6, GPT Live, Copilot integration, Genebench Pro, and bio-safety bounty</strong></td>
+<td>Signals upcoming product/research releases, but no substantive text is available yet; worth monitoring for concrete technical details.</td>
+</tr>
+<tr>
+<td><strong>Jul 2–12</strong></td>
+<td><strong>AI CLI tools pivot from feature expansion to runtime governance</strong></td>
+<td>Claude Code, OpenAI Codex, Gemini CLI, Pi, OpenCode, Qwen Code, and DeepSeek TUI all show dense issue traffic on <strong>context budget, compaction, subagent boundaries, and tool-safety controls</strong>.</td>
+</tr>
+<tr>
+<td><strong>Jul 5–12</strong></td>
+<td><strong>OpenClaw ecosystem exposes model-observable representation failures</strong></td>
+<td>Tool outputs are being silently folded into <strong>“(see attached image)”</strong> placeholders, and prompt-cache invalidation across session boundaries is degrading long-context inference.</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>2. OCR &amp; Document Intelligence Progress</h2>
+<ul>
+<li><strong>Engineering-diagram understanding enters high-stakes production.</strong> The UST × Anthropic case study explicitly mentions Claude reading <strong>schematics and pinouts</strong>—a signal that OCR and layout understanding are moving from generic document QA to precision engineering workflows.</li>
+<li><strong>PDF linearization tooling gains traction.</strong> On GitHub Trending, <strong>allenai/olmocr</strong> surged (+334 stars) for its PDF linearization pipeline, which has direct value for OCR, HMER, and document-understanding training-data construction.</li>
+<li><strong>Document-format skills in Claude Code Skills.</strong> Notable open PRs include:<ul>
+<li><code>document-typography</code> skill (orphan/widow control, numbering alignment).</li>
+<li><code>ODT/ODS</code> skill for OpenDocument / LibreOffice workflows.</li>
+</ul>
+</li>
+<li><strong>No dedicated HMER papers or visual-formula benchmarks appeared this week.</strong> The OCR/HMER research signal remains engineering-driven rather than algorithmic.</li>
+</ul>
+<hr>
+<h2>3. Multimodal &amp; Reasoning Ecosystem</h2>
+<ul>
+<li><strong>Frontier models lean into visual + long-horizon tasks.</strong> Fable 5 and Sonnet 5 are positioned as stronger on “the longer and more complex the task,” while Claude Science targets charts, manuscripts, and scientific images.</li>
+<li><strong>Cross-modal concept features resurface.</strong> Anthropic’s “Golden Gate Claude” work demonstrates that a single multimodal feature can be activated by both text and images, supporting the idea of separable, intervenable cross-modal representations.</li>
+<li><strong>Long-context engineering is now the central bottleneck.</strong><ul>
+<li>Context-budget introspection, compaction, resume/fork, and prompt-cache retention are top issues across all major CLI tools.</li>
+<li>Claude Code reports 1M-window alias failures and ~75% context consumption after compaction.</li>
+<li>OpenClaw sees prompt-cache invalidation when model-visible tool lists change across room/event/response boundaries.</li>
+</ul>
+</li>
+<li><strong>Reasoning-process control is becoming a first-class concern.</strong><ul>
+<li>Claude’s “visible extended thinking” and reasoning budgets.</li>
+<li>Pi / Qwen Code / OpenCode working on <code>reasoning_content</code> parsing, reasoning-effort controls, and thought-leakage fixes.</li>
+<li>OpenClaw PRs note <code>cron</code> thinking requests being dropped for newer model catalogs.</li>
+</ul>
+</li>
+<li><strong>Multimodal input plumbing is fragile.</strong><ul>
+<li>Oversized images triggering 400 errors and breaking prompt cache.</li>
+<li>Voice ASR mis-routed by <code>MultiModalProcessor</code>.</li>
+<li>Audio attachments, WSL image visibility, and inline image payloads causing JSONL/V8 string-limit issues.</li>
+<li><code>Claude-real-video</code> (HN Show) lets arbitrary LLMs consume video frames, underscoring demand for low-cost video understanding.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>4. Post-Training &amp; Alignment Trends</h2>
+<ul>
+<li><strong>Deployment-time safety classifiers get explicit.</strong> Fable 5’s cyber-safeguards article lists what the classifiers do and do <strong>not</strong> block, opening a measurable evaluation space for over-refusal and under-refusal.</li>
+<li><strong>Jailbreak severity framework drafted.</strong> Anthropic + Glasswing propose a severity taxonomy to standardize how researchers and regulators talk about jailbreak risk.</li>
+<li><strong>Constitutional classifiers and persona vectors.</strong> Anthropic continues to treat alignment as a layered system: input/output classifiers grounded in constitutional principles, plus interpretable “persona vectors” and an “assistant axis” to monitor and suppress sycophancy or character drift.</li>
+<li><strong>Targeted capability suppression.</strong> The “off switch for dual-use knowledge” paper explores suppressing high-risk knowledge without harming general capability—an instance of knowledge editing / unlearning for alignment.</li>
+<li><strong>Agent-level safety engineering is intensifying.</strong><ul>
+<li>OpenAI Codex: <code>server_registered_tools_only</code> allowlist, parent-permission inheritance, Guardian interrupt lifecycle.</li>
+<li>Gemini CLI: destructive-command blocking, path-trust checks, post-execution intent routing.</li>
+<li>Pi: <code>developer message</code> role, constrained sampling.</li>
+<li>DeepSeek TUI: constitution / safety posture decoupling.</li>
+<li>OpenClaw: model-determined operation approvals, credential masking, deterministic fallback.</li>
+</ul>
+</li>
+<li><strong>Skill-level self-audit.</strong> Claude Code Skills PRs include <code>self-audit</code>, <code>skill-quality-analyzer</code>, and <code>skill-security-analyzer</code>—meta-level tools that could become data sources for post-training alignment.</li>
+</ul>
+<hr>
+<h2>5. Hallucination &amp; Reliability Highlights</h2>
+<ul>
+<li><strong>Real-world grounding failures dominate HN attention.</strong><ul>
+<li><strong>Tripadvisor AI summaries</strong> praised dangerous hotels while omitting safety warnings—a clear factual hallucination / selective-aggregation failure.</li>
+<li><strong>“Claude Played Me for a Fool”</strong> described overconfident, plausible-sounding reasoning that misled the user.</li>
+</ul>
+</li>
+<li><strong>Tool hallucination and misrepresentation in agent runtimes.</strong><ul>
+<li>Pi: new model emits undeclared fields in tool calls → push for strict tools / grammar constraints.</li>
+<li>Copilot CLI: model invokes unregistered tool aliases (<code>str_replace</code>) in headless mode.</li>
+<li>Qwen Code: <code>AutoMemory</code> extractor hallucinates tool calls but still advances the cursor.</li>
+<li>OpenClaw: stdout/stderr rendered as literal <strong>“(see attached image)”</strong> to the model, causing evidence-free reasoning.</li>
+</ul>
+</li>
+<li><strong>State misreporting in multi-agent workflows.</strong><ul>
+<li>Subagent <code>MAX_TURNS</code> reaching the limit but being reported as success.</li>
+<li>Resume/fork operations duplicating or losing prior execution state.</li>
+</ul>
+</li>
+<li><strong>Context compression as a hallucination vector.</strong> Repeated “Plan → Compact → Re-Plan” loops and <code>maxTokens=1</code> after compaction suggest compaction can destroy task-critical context.</li>
+<li><strong>Red-teaming infrastructure emerges.</strong> <strong>Declaw Arena</strong> (HN Show) offers a CTF-style microVM to test AI-agent jailbreak and manipulation risks.</li>
+</ul>
+<hr>
+<h2>6. Research Community Pulse</h2>
+<ul>
+<li><strong>Hacker News threads of note:</strong><ul>
+<li><em>Context graphs</em> and <em>Handoff</em> — persistent, verifiable context bridges across agent sessions.</li>
+<li><em>Claude-real-video</em> — frame-level video understanding for any LLM.</li>
+<li><em>Declaw Arena</em> — CTF environment for agent red-teaming.</li>
+<li><em>Fable vs. 10 LLMs on refactoring a LangGraph god node</em> — practical reasoning evaluation on real code.</li>
+<li><em>Tripadvisor AI summaries</em> and <em>Claude Played Me for a Fool</em> — high-visibility reliability failures.</li>
+<li><em>Anthropic prompt-injection suspicion</em> and <em>Teaching Claude to Write Like Zweig</em> — system-prompt boundaries and lightweight style alignment.</li>
+<li><em>AI content flood: why the web’s signal is dying</em> — concern about feedback loops caused by synthetic content.</li>
+</ul>
+</li>
+<li><strong>GitHub CLI/OpenClaw communities</strong> show “high activity, high debt, governance-focused”: most projects are shifting from adding features to fixing runtime reliability, tool safety, and context management.</li>
+<li><strong>GitHub Trending:</strong> OCR/doc-intelligence tools remain strong: <strong>olmocr</strong>, PaddleOCR, Tesseract, LlamaIndex, PageIndex.</li>
+</ul>
+<hr>
+<h2>7. Next Week’s Research Signals</h2>
+<p><strong>Likely to intensify:</strong></p>
+<ol>
+<li><strong>Agentic long-context reliability benchmarks.</strong> Expect papers and benchmarks on compaction reversibility, prompt-cache efficiency, and cross-session state transfer, driven by the volume of CLI/OpenClaw issues.</li>
+<li><strong>Tool-output representation and grounding.</strong> The “placeholder image” problem suggests a need for standards on how non-text tool outputs are serialized for language models.</li>
+<li><strong>Multimodal document understanding for physical AI.</strong> Following the UST case, look for domain-specific OCR/layout work on schematics, CAD, and technical diagrams.</li>
+<li><strong>Deployment-time safety and unlearning.</strong> The Fable 5 safeguards, jailbreak framework, and dual-use “off switch” indicate a research stream on post-training, inference-time safety classifiers and targeted knowledge editing.</li>
+<li><strong>Hallucination evaluation via red-teaming.</strong> CTF-style environments like Declaw Arena and real-world grounding incidents (Tripadvisor, Claude) may catalyze new evaluation protocols.</li>
+<li><strong>Reasoning transparency and control.</strong> Visible reasoning budgets, reasoning-content protocols, and effort controls are likely to become standard API surfaces.</li>
+<li><strong>OpenAI release cycle.</strong> Metadata hints (GPT-5/6, GPT Live, Genebench Pro, bio-safety bounty) suggest substantive announcements may be imminent; verify once full text becomes available.</li>
+</ol>
+<hr>
+<p><em>End of recap.</em></p>
+<hr>
+<p><em>This digest is auto-generated by <a href="https://github.com/QYQAQ/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>AI CLI 工具社区动态日报 2026-07-12</title>
       <link>https://duanyytop.github.io/agents-radar/#2026-07-12/ai-cli</link>
@@ -12948,88 +13224,6 @@
 </blockquote>
 <hr>
 <p>⚠️ Trending report generation failed.</p>
-<hr>
-<p><em>This digest is auto-generated by <a href="https://github.com/QYQAQ/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Hacker News AI 社区动态日报 2026-07-06</title>
-      <link>https://duanyytop.github.io/agents-radar/#2026-07-06/ai-hn</link>
-      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-07-06/ai-hn</guid>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Hacker News AI 社区动态日报 2026-07-06 数据来源: Hacker News | 共 30 条 | 生成时间: 2026-07-06 00:29 UTC Hacker News 研究动态日报（2026-07-06） 1. 今日研究速览 今日 HN 中与本研究方向直接相关的讨论数量不多，但集中体现出两条主线：一是 AI Agent 的长上下文记忆与会话间上下文桥接（Context Graphs、Handoff）受到关注，反映出社区对“长窗口之外如何持久化推理状态”的持续兴趣；二是 AI 生成内容的可靠性与幻觉（Tripadvisor AI 摘要、Claude 误导用户）成为高争议话题，提示落地场景中的 grounding 与事实性仍是痛点。此外，Anthropic 被质疑的“prompt injection”事件再次点燃对系统提示边界与对齐安全性的讨论。OCR/HMER 与多模态视觉语言方向今日无直接相关帖子。 2. 研究新闻与讨论 🧠 长上下文与推理 Context graphs: how AI agents can store and use past de...</description>
-      <content:encoded><![CDATA[<h1>Hacker News AI 社区动态日报 2026-07-06</h1>
-<blockquote>
-<p>数据来源: <a href="https://news.ycombinator.com/">Hacker News</a> | 共 30 条 | 生成时间: 2026-07-06 00:29 UTC</p>
-</blockquote>
-<hr>
-<h2>Hacker News 研究动态日报（2026-07-06）</h2>
-<h3>1. 今日研究速览</h3>
-<p>今日 HN 中与本研究方向直接相关的讨论数量不多，但集中体现出两条主线：一是 <strong>AI Agent 的长上下文记忆与会话间上下文桥接</strong>（Context Graphs、Handoff）受到关注，反映出社区对“长窗口之外如何持久化推理状态”的持续兴趣；二是 <strong>AI 生成内容的可靠性与幻觉</strong>（Tripadvisor AI 摘要、Claude 误导用户）成为高争议话题，提示落地场景中的 grounding 与事实性仍是痛点。此外，Anthropic 被质疑的“prompt injection”事件再次点燃对系统提示边界与对齐安全性的讨论。OCR/HMER 与多模态视觉语言方向今日无直接相关帖子。</p>
-<hr>
-<h3>2. 研究新闻与讨论</h3>
-<h4>🧠 长上下文与推理</h4>
-<ul>
-<li><p><strong>Context graphs: how AI agents can store and use past decisions</strong><br>原文：<a href="https://nanonets.com/blog/what-is-a-context-graph/">https://nanonets.com/blog/what-is-a-context-graph/</a><br>HN 讨论：<a href="https://news.ycombinator.com/item?id=48798442">https://news.ycombinator.com/item?id=48798442</a><br>分数：9 | 评论：0<br>一句话：提出用“上下文图”结构让 Agent 持久化并复用历史决策，以改善长程推理一致性，但尚未引发社区评论。</p>
-</li>
-<li><p><strong>Show HN: Handoff – a verified context bridge between Claude Code sessions</strong><br>原文：<a href="https://github.com/ostikwhy-blip/claude-code-handoff-skill">https://github.com/ostikwhy-blip/claude-code-handoff-skill</a><br>HN 讨论：<a href="https://news.ycombinator.com/item?id=48795956">https://news.ycombinator.com/item?id=48795956</a><br>分数：7 | 评论：1<br>一句话：在 Claude Code 会话之间建立可验证的上下文桥接，直接回应长上下文窗口断会话导致状态丢失的研究痛点。</p>
-</li>
-</ul>
-<h4>📄 OCR 与文档智能</h4>
-<p>今日无相关帖子。</p>
-<h4>🎭 多模态与视觉语言</h4>
-<p>今日无相关帖子。</p>
-<h4>🔧 Post-Training 与对齐</h4>
-<ul>
-<li><p><strong>Anthropic performing prompt injection on its users</strong><br>原文：<a href="https://old.reddit.com/r/LLMDevs/comments/1udpw9h/just_got_this_response_from_claude_what_is_going/">https://old.reddit.com/r/LLMDevs/comments/1udpw9h/just_got_this_response_from_claude_what_is_going/</a><br>HN 讨论：<a href="https://news.ycombinator.com/item?id=48790548">https://news.ycombinator.com/item?id=48790548</a><br>分数：21 | 评论：0<br>一句话：用户称 Claude 输出中疑似包含系统提示注入内容，引发对服务商能否安全控制模型对齐与系统提示边界的争议。</p>
-</li>
-<li><p><strong>Teaching Claude to Write Like Zweig</strong><br>原文：<a href="https://rornic.dev/posts/teaching-claude-to-write-like-zweig/">https://rornic.dev/posts/teaching-claude-to-write-like-zweig/</a><br>HN 讨论：<a href="https://news.ycombinator.com/item?id=48792862">https://news.ycombinator.com/item?id=48792862</a><br>分数：5 | 评论：2<br>一句话：通过少量样本引导模型模仿特定文风，属于轻量风格对齐/偏好塑造的民间实验，讨论聚焦提示工程与微调的边界。</p>
-</li>
-</ul>
-<h4>👁️ 幻觉与可靠性</h4>
-<ul>
-<li><p><strong>Tripadvisor AI summaries give glowing reviews to dangerous hotels</strong><br>原文：<a href="https://www.euronews.com/travel/2026/07/03/tripadvisor-ai-summaries-give-glowing-reviews-to-dangerous-hotels-consumer-watchdog-finds">https://www.euronews.com/travel/2026/07/03/tripadvisor-ai-summaries-give-glowing-reviews-to-dangerous-hotels-consumer-watchdog-finds</a><br>HN 讨论：<a href="https://news.ycombinator.com/item?id=48797529">https://news.ycombinator.com/item?id=48797529</a><br>分数：25 | 评论：9<br>一句话：AI 摘要忽略负面安全信息而生成误导性正面评价，是典型的事实幻觉与推荐系统可信度案例。</p>
-</li>
-<li><p><strong>Claude Played Me for a Fool</strong><br>原文：<a href="https://ramblingafter.substack.com/p/claude-played-me-for-a-fool">https://ramblingafter.substack.com/p/claude-played-me-for-a-fool</a><br>HN 讨论：<a href="https://news.ycombinator.com/item?id=48796631">https://news.ycombinator.com/item?id=48796631</a><br>分数：8 | 评论：7<br>一句话：作者分享 Claude 以看似合理的推理误导其完成任务的经历，引发关于模型自信幻觉与人类认知依赖的讨论。</p>
-</li>
-</ul>
-<hr>
-<h3>3. 社区情绪信号</h3>
-<p>今日研究相关帖子的整体热度有限，但情绪偏向谨慎甚至批评。最活跃的是 Tripadvisor 摘要幻觉（25 分/9 评论）和 Anthropic prompt injection（21 分），显示社区对<strong>对齐安全、系统提示可控性</strong>和<strong>生成内容真实性</strong>的关切。共识是：现有 AI 摘要在关键安全信息上仍不可信；争议在于 prompt injection 是否属于服务商主动行为或模型失控。与更早的周期相比，本周更关注“长上下文之外的会话记忆”与“落地应用中的事实 grounding”，而非单纯的模型规模或基准分数。</p>
-<hr>
-<h3>4. 值得深读</h3>
-<ol>
-<li><p><strong>Tripadvisor AI summaries give glowing reviews to dangerous hotels</strong><br>理由：直接呈现生成式摘要在关键安全属性上“选择性失明”的幻觉风险，是研究 grounding、事实核查与推荐系统可信度的现实案例。</p>
-</li>
-<li><p><strong>Anthropic performing prompt injection on its users</strong><br>理由：触及系统提示完整性、模型对齐与部署安全的核心问题，对研究提示注入防御、系统提示隔离和供应商可控性具有警示意义。</p>
-</li>
-<li><p><strong>Context graphs: how AI agents can store and use past decisions</strong><br>理由：提出用图结构扩展 Agent 记忆，跳出了“单纯放大上下文窗口”的常规思路，对长上下文推理与多步决策的状态管理有参考价值。</p>
-</li>
-</ol>
-<hr>
-<p><em>本日报由 <a href="https://github.com/QYQAQ/agents-radar">agents-radar</a> 自动生成。</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Hugging Face Trending Models Digest 2026-07-06</title>
-      <link>https://duanyytop.github.io/agents-radar/#2026-07-06/ai-hf-en</link>
-      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-07-06/ai-hf-en</guid>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Hugging Face Trending Models Digest 2026-07-06 Source: Hugging Face Hub | 30 models | Generated: 2026-07-06 00:29 UTC Hugging Face Research Models Digest — 2026-07-06 1. Today&amp;#39;s Highlights This week&amp;#39;s trending leaderboard is dominated by Qwen 3.5/3.6-derived open-weight variants, with strong activity in multimodal vision-language reasoning, OCR/document understanding, and quantized long-context inference. Baidu&amp;#39;s Unlimited-OCR and NVIDIA&amp;#39;s LocateAnything-3B stand out as the most ...</description>
-      <content:encoded><![CDATA[<h1>Hugging Face Trending Models Digest 2026-07-06</h1>
-<blockquote>
-<p>Source: <a href="https://huggingface.co/">Hugging Face Hub</a> | 30 models | Generated: 2026-07-06 00:29 UTC</p>
-</blockquote>
-<hr>
-<h1>Hugging Face Research Models Digest — 2026-07-06</h1>
-<h2>1. Today&#39;s Highlights</h2>
-<p>This week&#39;s trending leaderboard is dominated by <strong>Qwen 3.5/3.6-derived open-weight variants</strong>, with strong activity in <strong>multimodal vision-language reasoning</strong>, <strong>OCR/document understanding</strong>, and <strong>quantized long-context inference</strong>. Baidu&#39;s <strong>Unlimited-OCR</strong> and NVIDIA&#39;s <strong>LocateAnything-3B</strong> stand out as the most directly relevant releases for OCR/HMER and visual grounding researchers, respectively. Reasoning-focused releases such as <strong>DeepSeek-V4-Pro-DSpark</strong> and <strong>GLM-5.2</strong> continue to gain traction, while a wave of post-training community fine-tunes—including abliterated and uncensored variants—highlights intense alignment experimentation. The prevalence of <strong>GGUF and NVFP4 quantization</strong> underscores a broader ecosystem push toward efficient, locally runnable multimodal models. Notably, explicit hallucination-mitigation checkpoints remain underrepresented in this week&#39;s top trends.</p>
-<hr>
-<h2>2. Trending Models by Research Relevance</h2>
-<h3>📄 OCR &amp; Document Models</h3>
-<ul>
-<li><strong>baidu/Unlimited-OCR</strong><br><a href="https://huggingface.co/baidu/Unlimited-OCR">https://huggingface.co/baidu/Unlimited-OCR</a><br>Author: baidu | Likes: 1,746 | Downloads: 1,044,217<br>Baidu&#39;s image-text-to-text OCR model, trending for high</li>
-</ul>
 <hr>
 <p><em>This digest is auto-generated by <a href="https://github.com/QYQAQ/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
